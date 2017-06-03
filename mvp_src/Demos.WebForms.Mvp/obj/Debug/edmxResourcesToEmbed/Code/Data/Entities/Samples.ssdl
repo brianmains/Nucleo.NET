@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Nucleo.Data.Entities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="NucleoDataEntitiesStoreContainer">
+    <EntitySet Name="IssueComments" EntityType="Nucleo.Data.Entities.Store.IssueComments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Issues" EntityType="Nucleo.Data.Entities.Store.Issues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewsCategoryTypes" EntityType="Nucleo.Data.Entities.Store.NewsCategoryTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewsItems" EntityType="Nucleo.Data.Entities.Store.NewsItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Projects" EntityType="Nucleo.Data.Entities.Store.Projects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProjectUsers" EntityType="Nucleo.Data.Entities.Store.ProjectUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="Nucleo.Data.Entities.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_IssueComments_Issues" Association="Nucleo.Data.Entities.Store.FK_IssueComments_Issues">
+      <End Role="Issues" EntitySet="Issues" />
+      <End Role="IssueComments" EntitySet="IssueComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Users_Assigned" Association="Nucleo.Data.Entities.Store.FK_Issues_Users_Assigned">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Issues" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Users_Owner" Association="Nucleo.Data.Entities.Store.FK_Issues_Users_Owner">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Issues" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectUsers_Projects" Association="Nucleo.Data.Entities.Store.FK_ProjectUsers_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="ProjectUsers" EntitySet="ProjectUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectUsers_Users" Association="Nucleo.Data.Entities.Store.FK_ProjectUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ProjectUsers" EntitySet="ProjectUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="IssueComments">
+    <Key>
+      <PropertyRef Name="IssueCommentKey" />
+    </Key>
+    <Property Name="IssueCommentKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IssueKey" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Issues">
+    <Key>
+      <PropertyRef Name="IssueKey" />
+    </Key>
+    <Property Name="IssueKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Priority" Type="tinyint" Nullable="false" />
+    <Property Name="IssueType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OwnerUserKey" Type="int" Nullable="false" />
+    <Property Name="AssignedUserKey" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NewsCategoryTypes">
+    <Key>
+      <PropertyRef Name="NewsCategoryTypeKey" />
+    </Key>
+    <Property Name="NewsCategoryTypeKey" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NewsCategoryTypeName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewsItems">
+    <Key>
+      <PropertyRef Name="NewsItemKey" />
+    </Key>
+    <Property Name="NewsItemKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NewsContent" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Url" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="ProjectKey" />
+    </Key>
+    <Property Name="ProjectKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectUsers">
+    <Key>
+      <PropertyRef Name="ProjectUserKey" />
+    </Key>
+    <Property Name="ProjectUserKey" Type="int" Nullable="false" />
+    <Property Name="ProjectKey" Type="int" Nullable="false" />
+    <Property Name="UserKey" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserKey" />
+    </Key>
+    <Property Name="UserKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_IssueComments_Issues">
+    <End Role="Issues" Type="Nucleo.Data.Entities.Store.Issues" Multiplicity="1" />
+    <End Role="IssueComments" Type="Nucleo.Data.Entities.Store.IssueComments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Issues">
+        <PropertyRef Name="IssueKey" />
+      </Principal>
+      <Dependent Role="IssueComments">
+        <PropertyRef Name="IssueKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Users_Assigned">
+    <End Role="Users" Type="Nucleo.Data.Entities.Store.Users" Multiplicity="1" />
+    <End Role="Issues" Type="Nucleo.Data.Entities.Store.Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserKey" />
+      </Principal>
+      <Dependent Role="Issues">
+        <PropertyRef Name="AssignedUserKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Users_Owner">
+    <End Role="Users" Type="Nucleo.Data.Entities.Store.Users" Multiplicity="1" />
+    <End Role="Issues" Type="Nucleo.Data.Entities.Store.Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserKey" />
+      </Principal>
+      <Dependent Role="Issues">
+        <PropertyRef Name="OwnerUserKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectUsers_Projects">
+    <End Role="Projects" Type="Nucleo.Data.Entities.Store.Projects" Multiplicity="1" />
+    <End Role="ProjectUsers" Type="Nucleo.Data.Entities.Store.ProjectUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ProjectKey" />
+      </Principal>
+      <Dependent Role="ProjectUsers">
+        <PropertyRef Name="ProjectKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectUsers_Users">
+    <End Role="Users" Type="Nucleo.Data.Entities.Store.Users" Multiplicity="1" />
+    <End Role="ProjectUsers" Type="Nucleo.Data.Entities.Store.ProjectUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserKey" />
+      </Principal>
+      <Dependent Role="ProjectUsers">
+        <PropertyRef Name="UserKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="NewsItemsSelectAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

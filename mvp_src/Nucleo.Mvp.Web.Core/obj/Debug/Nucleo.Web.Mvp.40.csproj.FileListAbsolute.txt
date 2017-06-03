@@ -1,0 +1,33 @@
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.Mvp.40.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.Mvp.40.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.40.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Mvp.40.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.40.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Mvp.40.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.40.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.40.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\ResolveAssemblyReference.cache
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\Nucleo.Web.Mvp.40.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\Nucleo.Web.Mvp.40.pdb
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.Mvp.40.dll
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.Mvp.40.pdb
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.40.dll
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Mvp.40.dll
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.40.dll
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Mvp.40.pdb
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.40.pdb
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.40.pdb
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\Nucleo.Web.Mvp.40.dll
+C:\Users\mainsb\Documents\Visual Studio 2010\Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\Nucleo.Web.Mvp.40.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.Mvp.40.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.Mvp.40.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.40.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Mvp.40.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.40.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Mvp.40.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.Web.40.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\bin\Debug\Nucleo.40.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\ResolveAssemblyReference.cache
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\Nucleo.Web.Mvp.40.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Web.Mvp\obj\Debug\Nucleo.Web.Mvp.40.pdb

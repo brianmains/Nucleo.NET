@@ -1,0 +1,8 @@
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\Bin\Release\Nucleo.Mvp.Silverlight.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\Bin\Release\Nucleo.Mvp.Silverlight.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\Bin\Release\Nucleo.Mvp.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\Bin\Release\Nucleo.Mvp.Core.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\obj\Release\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\obj\Release\Nucleo.Mvp.Silverlight.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\obj\Release\Nucleo.Mvp.Silverlight.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Silverlight\Bin\Release\Nucleo.Core.dll

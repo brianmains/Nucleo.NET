@@ -1,0 +1,6 @@
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Core\bin\Release\Nucleo.Mvp.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Core\bin\Release\Nucleo.Mvp.Core.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Core\bin\Release\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Core\obj\Release\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Core\obj\Release\Nucleo.Mvp.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Core\obj\Release\Nucleo.Mvp.Core.pdb

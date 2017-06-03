@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Mvp.WebForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nucleo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build40\Debug\Nucleo.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build40\Debug\Nucleo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Web.Core, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build40\Debug\Nucleo.Web.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\MvpWebFormsApplication.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Ajax\PresenterAjaxAttribute.cs" />
+    <Compile Include="Web\Ajax\PresenterAjaxHandler.cs" />
+    <Compile Include="Web\Ajax\PresenterProxyGenerator.cs" />
+    <Compile Include="Web\Ajax\PresenterWebMethodAttribute.cs" />
+    <Compile Include="Web\CodeGeneration\PresenterClassGenerator.cs" />
+    <Compile Include="Web\Mvp\DataSourceControls\ViewDataSource.cs" />
+    <Compile Include="Web\Presentation\BaseWebPresenter.cs" />
+    <Compile Include="Web\Presentation\BaseWebPresenter~1.cs" />
+    <Compile Include="Web\Presentation\BaseWebPresenter~2.cs" />
+    <Compile Include="Web\Presentation\Configuration\AjaxMethodElement.cs" />
+    <Compile Include="Web\Presentation\Configuration\AjaxMethodElementCollection.cs" />
+    <Compile Include="Web\Presentation\Configuration\PresenterElement.cs" />
+    <Compile Include="Web\Presentation\Configuration\PresenterElementCollection.cs" />
+    <Compile Include="Web\Presentation\Configuration\PresenterWebSettingsSection.cs" />
+    <Compile Include="Web\Presentation\Configuration\RoutingElement.cs" />
+    <Compile Include="Web\Presentation\Context\PresenterWebContext.cs" />
+    <Compile Include="Web\Presentation\Context\PresenterWebContextCreator.cs" />
+    <Compile Include="Web\Services\PresenterServiceBinder.cs" />
+    <Compile Include="Web\Services\ViewWcfService.cs" />
+    <Compile Include="Web\Services\ViewWcfService~1.cs" />
+    <Compile Include="Web\Services\ViewWebService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web\Services\ViewWebService~1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewPage~1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewUserControl~1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\FakeViewControl.cs" />
+    <Compile Include="Web\Views\FakeViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\WebViewHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Mvp.Core\Nucleo.Mvp.Core.csproj">
+      <Project>{DF226D96-36E6-4264-BB33-51BB777F60F6}</Project>
+      <Name>Nucleo.Mvp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp.Web.Core\Nucleo.Mvp.Web.Core.csproj">
+      <Project>{949F2046-F0BF-4229-9262-42ED1D9AC7FB}</Project>
+      <Name>Nucleo.Mvp.Web.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp\Nucleo.Mvp.csproj">
+      <Project>{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B}</Project>
+      <Name>Nucleo.Mvp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "c:\Content\VS Projects\Nucleo\Build40\$(Configuration)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

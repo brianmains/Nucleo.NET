@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Tests", "2. Tests", "{FB9AEB2E-6202-4BD9-8789-27472CA460B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. MVP", "1. MVP", "{C2846B81-C456-46F3-A570-83DA84556FE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Demos", "3. Demos", "{EC3C5B96-EFAC-4333-8D90-32787E7A873B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{032F80DE-F034-4F2B-A846-6878516694DB}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		mvp.testsettings = mvp.testsettings
+		Nucleo.MvpSolution.vsmdi = Nucleo.MvpSolution.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1a. Silverlight", "1a. Silverlight", "{7CDFDA81-5586-4C4F-843D-C1F42E024366}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1b. Web", "1b. Web", "{366666FA-DE55-4E25-801C-C9A2A02F9FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Mvp", "Nucleo.Mvp\Nucleo.Mvp.csproj", "{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Mvp.Core", "Nucleo.Mvp.Core\Nucleo.Mvp.Core.csproj", "{DF226D96-36E6-4264-BB33-51BB777F60F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Mvp.Silverlight", "Nucleo.Mvp.Silverlight\Nucleo.Mvp.Silverlight.csproj", "{B592A62A-E4D8-47EE-8C84-B8B1D4A80C43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Mvp.WebForms", "Nucleo.Mvp.WebForms\Nucleo.Mvp.WebForms.csproj", "{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit.MVP", "Tests.Unit.MVP\Tests.Unit.MVP.csproj", "{7F25C9D6-C1E4-4FF6-A370-106D98E206D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.WebForms.Mvp", "Demos.WebForms.Mvp\Demos.WebForms.Mvp.csproj", "{CAE702A7-47E1-446A-916C-A56FC9587C17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.WebForms.Mvp.Module", "Demos.WebForms.Mvp.Module\Demos.WebForms.Mvp.Module.csproj", "{D7D7C32A-7DD8-4C7C-B960-26C19A7A392C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Mvp.Web.Core", "Nucleo.Mvp.Web.Core\Nucleo.Mvp.Web.Core.csproj", "{949F2046-F0BF-4229-9262-42ED1D9AC7FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF226D96-36E6-4264-BB33-51BB777F60F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF226D96-36E6-4264-BB33-51BB777F60F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF226D96-36E6-4264-BB33-51BB777F60F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF226D96-36E6-4264-BB33-51BB777F60F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B592A62A-E4D8-47EE-8C84-B8B1D4A80C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B592A62A-E4D8-47EE-8C84-B8B1D4A80C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B592A62A-E4D8-47EE-8C84-B8B1D4A80C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B592A62A-E4D8-47EE-8C84-B8B1D4A80C43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F25C9D6-C1E4-4FF6-A370-106D98E206D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F25C9D6-C1E4-4FF6-A370-106D98E206D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F25C9D6-C1E4-4FF6-A370-106D98E206D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F25C9D6-C1E4-4FF6-A370-106D98E206D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE702A7-47E1-446A-916C-A56FC9587C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE702A7-47E1-446A-916C-A56FC9587C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE702A7-47E1-446A-916C-A56FC9587C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE702A7-47E1-446A-916C-A56FC9587C17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D7C32A-7DD8-4C7C-B960-26C19A7A392C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D7C32A-7DD8-4C7C-B960-26C19A7A392C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D7C32A-7DD8-4C7C-B960-26C19A7A392C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D7C32A-7DD8-4C7C-B960-26C19A7A392C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949F2046-F0BF-4229-9262-42ED1D9AC7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949F2046-F0BF-4229-9262-42ED1D9AC7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949F2046-F0BF-4229-9262-42ED1D9AC7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949F2046-F0BF-4229-9262-42ED1D9AC7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{032F80DE-F034-4F2B-A846-6878516694DB} = {FB9AEB2E-6202-4BD9-8789-27472CA460B9}
+		{7CDFDA81-5586-4C4F-843D-C1F42E024366} = {C2846B81-C456-46F3-A570-83DA84556FE0}
+		{366666FA-DE55-4E25-801C-C9A2A02F9FC2} = {C2846B81-C456-46F3-A570-83DA84556FE0}
+		{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B} = {C2846B81-C456-46F3-A570-83DA84556FE0}
+		{DF226D96-36E6-4264-BB33-51BB777F60F6} = {C2846B81-C456-46F3-A570-83DA84556FE0}
+		{B592A62A-E4D8-47EE-8C84-B8B1D4A80C43} = {7CDFDA81-5586-4C4F-843D-C1F42E024366}
+		{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B} = {366666FA-DE55-4E25-801C-C9A2A02F9FC2}
+		{7F25C9D6-C1E4-4FF6-A370-106D98E206D0} = {FB9AEB2E-6202-4BD9-8789-27472CA460B9}
+		{CAE702A7-47E1-446A-916C-A56FC9587C17} = {EC3C5B96-EFAC-4333-8D90-32787E7A873B}
+		{D7D7C32A-7DD8-4C7C-B960-26C19A7A392C} = {EC3C5B96-EFAC-4333-8D90-32787E7A873B}
+		{949F2046-F0BF-4229-9262-42ED1D9AC7FB} = {366666FA-DE55-4E25-801C-C9A2A02F9FC2}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Nucleo.MvpSolution.vsmdi
+	EndGlobalSection
+EndGlobal

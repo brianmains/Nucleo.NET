@@ -1,0 +1,10 @@
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\bin\Debug\Nucleo.Web.Mvp.35.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\bin\Debug\Nucleo.Web.Mvp.35.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\bin\Debug\Nucleo.35.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\bin\Debug\Nucleo.Web.35.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\bin\Debug\Nucleo.Web.35.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\bin\Debug\Nucleo.35.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\obj\Debug\ResolveAssemblyReference.cache
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\obj\Debug\Nucleo.Web.Mvp.35.dll
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\obj\Debug\Nucleo.Web.Mvp.35.pdb
+D:\VS Projects\NucleoNet.Solution\Nucleo.Web.MVP\bin\Debug\Nucleo.Web.Mvp.35.xml

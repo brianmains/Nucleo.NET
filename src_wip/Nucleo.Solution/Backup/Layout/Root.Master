@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="Nucleo.Layout.Root" %>
+<%@ Register TagPrefix="n" Namespace="Nucleo.Web" Assembly="Nucleo.Web.WebForms" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+	<link id="Link1" runat="server" href="~/Content/Css/styles.css" type="text/css" rel="Stylesheet" />
+	<link id="Link2" runat="server" href="~/Content/Css/jqueryui.css" type="text/css" rel="Stylesheet" />
+
+    <asp:ContentPlaceHolder ID="RootHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="aspnetform" runat="server">
+		
+
+		<asp:ScriptManager ID="asm" runat="server">
+			<Scripts>
+				<asp:ScriptReference Path="~/Content/Scripts/jquery.js" />
+				<asp:ScriptReference Path="~/Content/Scripts/jqueryui.js" />
+				<asp:ScriptReference Path="~/Content/Scripts/jquery.validate.js" />
+			</Scripts>
+		</asp:ScriptManager>
+		<n:NucleoAjaxManager ID="nam" runat="server"></n:NucleoAjaxManager>
+		<%-- ReferenceScripts="jquery,jqueryui" --%>
+
+		<div id="bodycontent">
+			<asp:ContentPlaceHolder ID="RootBody" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+    </form>
+</body>
+</html>

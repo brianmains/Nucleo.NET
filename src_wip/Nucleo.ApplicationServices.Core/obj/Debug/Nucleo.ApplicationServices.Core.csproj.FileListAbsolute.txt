@@ -1,0 +1,13 @@
+C:\Content\VS Projects\Nucleo\ApplicationServices\4.0\Nucleo.ApplicationServices.Core\bin\Debug\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo\ApplicationServices\4.0\Nucleo.ApplicationServices.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\ApplicationServices\4.0\Nucleo.ApplicationServices.Core\bin\Debug\Nucleo.ApplicationServices.Core.dll
+C:\Content\VS Projects\Nucleo\ApplicationServices\4.0\Nucleo.ApplicationServices.Core\bin\Debug\Nucleo.ApplicationServices.Core.pdb
+C:\Content\VS Projects\Nucleo\ApplicationServices\4.0\Nucleo.ApplicationServices.Core\obj\Debug\Nucleo.ApplicationServices.Core.dll
+C:\Content\VS Projects\Nucleo\ApplicationServices\4.0\Nucleo.ApplicationServices.Core\obj\Debug\Nucleo.ApplicationServices.Core.pdb
+C:\Content\VS Projects\Nucleo.Solution\Nucleo.ApplicationServices.Core\bin\Debug\Nucleo.ApplicationServices.Core.dll
+C:\Content\VS Projects\Nucleo.Solution\Nucleo.ApplicationServices.Core\bin\Debug\Nucleo.ApplicationServices.Core.pdb
+C:\Content\VS Projects\Nucleo.Solution\Nucleo.ApplicationServices.Core\bin\Debug\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo.Solution\Nucleo.ApplicationServices.Core\bin\Debug\Nucleo.Core.pdb
+C:\Content\VS Projects\Nucleo.Solution\Nucleo.ApplicationServices.Core\obj\Debug\Nucleo.ApplicationServices.Core.dll
+C:\Content\VS Projects\Nucleo.Solution\Nucleo.ApplicationServices.Core\obj\Debug\Nucleo.ApplicationServices.Core.pdb
+C:\Content\VS Projects\Nucleo.Solution\Nucleo.ApplicationServices.Core\obj\Debug\Nucleo.ApplicationServices.Core.csprojResolveAssemblyReference.cache

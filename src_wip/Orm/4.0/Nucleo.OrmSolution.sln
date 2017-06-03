@@ -1,0 +1,150 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Orm", "Nucleo.Orm\Nucleo.Orm.csproj", "{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Orm.Core", "Nucleo.Orm.Core\Nucleo.Orm.Core.csproj", "{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Orm.DataClasses", "Nucleo.Orm.DataClasses\Nucleo.Orm.DataClasses.csproj", "{E2F4CE0C-C9AD-43A7-90A6-F7EE6AB1766A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Orm.Entity", "Nucleo.Orm.Entity\Nucleo.Orm.Entity.csproj", "{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. ORM", "1. ORM", "{10470D2E-FAD7-4515-A306-ECFFB91CF083}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Tests", "2. Tests", "{307D4F38-4F28-46BD-A510-CD7642E34093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit.Orm", "Tests.Unit.Orm\Tests.Unit.Orm.csproj", "{4E177876-9EA4-455E-B8E2-AB2596688AC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED647A46-4B51-4244-85C4-C24A265B090C}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Nucleo.OrmSolution.vsmdi = Nucleo.OrmSolution.vsmdi
+		orm.testsettings = orm.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Orm.Entity.CodeFirst", "Nucleo.Orm.Entity.CodeFirst\Nucleo.Orm.Entity.CodeFirst.csproj", "{13ED2FE5-1CBC-4E3B-B2A7-314B1F9CD338}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Demos", "3. Demos", "{5A47A0DC-86B4-466D-8C85-FC0EE4990D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.Mvc.Orm", "Demos.Mvc.Orm\Demos.Mvc.Orm.csproj", "{28565FA9-BFD1-46F7-81A6-00BDA76B32E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.WebForms.Orm", "Demos.WebForms.Orm\Demos.WebForms.Orm.csproj", "{46BACDAA-0284-48CC-9DB6-FE3283925E2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.Data.CodeFirst", "Demos.Data.CodeFirst\Demos.Data.CodeFirst.csproj", "{68E6F7CC-37EA-4AE8-AC51-F9E658ADF337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.Data.EntityFramework", "Demos.Data.EntityFramework\Demos.Data.EntityFramework.csproj", "{F23E8CDA-8149-4563-94EC-74AAB1DBDD19}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs02
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Nucleo.Orm\\Nucleo.Orm.csproj
+		SccProjectTopLevelParentUniqueName1 = Nucleo.OrmSolution.sln
+		SccProjectName1 = Nucleo.Orm
+		SccLocalPath1 = Nucleo.Orm
+		SccProjectUniqueName2 = Nucleo.Orm.Core\\Nucleo.Orm.Core.csproj
+		SccProjectTopLevelParentUniqueName2 = Nucleo.OrmSolution.sln
+		SccProjectName2 = Nucleo.Orm.Core
+		SccLocalPath2 = Nucleo.Orm.Core
+		SccProjectUniqueName3 = Nucleo.Orm.DataClasses\\Nucleo.Orm.DataClasses.csproj
+		SccProjectTopLevelParentUniqueName3 = Nucleo.OrmSolution.sln
+		SccProjectName3 = Nucleo.Orm.DataClasses
+		SccLocalPath3 = Nucleo.Orm.DataClasses
+		SccProjectUniqueName4 = Nucleo.Orm.Entity\\Nucleo.Orm.Entity.csproj
+		SccProjectTopLevelParentUniqueName4 = Nucleo.OrmSolution.sln
+		SccProjectName4 = Nucleo.Orm.Entity
+		SccLocalPath4 = Nucleo.Orm.Entity
+		SccProjectUniqueName5 = Nucleo.Orm.Entity.CodeFirst\\Nucleo.Orm.Entity.CodeFirst.csproj
+		SccProjectTopLevelParentUniqueName5 = Nucleo.OrmSolution.sln
+		SccProjectName5 = Nucleo.Orm.Entity.CodeFirst
+		SccLocalPath5 = Nucleo.Orm.Entity.CodeFirst
+		SccProjectUniqueName6 = Demos.Mvc.Orm\\Demos.Mvc.Orm.csproj
+		SccProjectTopLevelParentUniqueName6 = Nucleo.OrmSolution.sln
+		SccProjectName6 = Demos.Mvc.Orm
+		SccLocalPath6 = Demos.Mvc.Orm
+		SccProjectUniqueName7 = Demos.WebForms.Orm\\Demos.WebForms.Orm.csproj
+		SccProjectTopLevelParentUniqueName7 = Nucleo.OrmSolution.sln
+		SccProjectName7 = Demos.WebForms.Orm
+		SccLocalPath7 = Demos.WebForms.Orm
+		SccProjectUniqueName8 = Tests.Unit.Orm\\Tests.Unit.Orm.csproj
+		SccProjectTopLevelParentUniqueName8 = Nucleo.OrmSolution.sln
+		SccProjectName8 = Tests.Unit.Orm
+		SccLocalPath8 = Tests.Unit.Orm
+		SccProjectUniqueName9 = Demos.Data.CodeFirst\\Demos.Data.CodeFirst.csproj
+		SccProjectTopLevelParentUniqueName9 = Nucleo.OrmSolution.sln
+		SccProjectName9 = Demos.Data.CodeFirst
+		SccLocalPath9 = Demos.Data.CodeFirst
+		SccProjectUniqueName10 = Demos.Data.EntityFramework\\Demos.Data.EntityFramework.csproj
+		SccProjectTopLevelParentUniqueName10 = Nucleo.OrmSolution.sln
+		SccProjectName10 = Demos.Data.EntityFramework
+		SccLocalPath10 = Demos.Data.EntityFramework
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Nucleo.OrmSolution.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2F4CE0C-C9AD-43A7-90A6-F7EE6AB1766A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2F4CE0C-C9AD-43A7-90A6-F7EE6AB1766A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2F4CE0C-C9AD-43A7-90A6-F7EE6AB1766A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2F4CE0C-C9AD-43A7-90A6-F7EE6AB1766A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E177876-9EA4-455E-B8E2-AB2596688AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E177876-9EA4-455E-B8E2-AB2596688AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E177876-9EA4-455E-B8E2-AB2596688AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E177876-9EA4-455E-B8E2-AB2596688AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13ED2FE5-1CBC-4E3B-B2A7-314B1F9CD338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13ED2FE5-1CBC-4E3B-B2A7-314B1F9CD338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13ED2FE5-1CBC-4E3B-B2A7-314B1F9CD338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13ED2FE5-1CBC-4E3B-B2A7-314B1F9CD338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28565FA9-BFD1-46F7-81A6-00BDA76B32E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28565FA9-BFD1-46F7-81A6-00BDA76B32E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28565FA9-BFD1-46F7-81A6-00BDA76B32E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28565FA9-BFD1-46F7-81A6-00BDA76B32E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46BACDAA-0284-48CC-9DB6-FE3283925E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BACDAA-0284-48CC-9DB6-FE3283925E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BACDAA-0284-48CC-9DB6-FE3283925E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BACDAA-0284-48CC-9DB6-FE3283925E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E6F7CC-37EA-4AE8-AC51-F9E658ADF337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E6F7CC-37EA-4AE8-AC51-F9E658ADF337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E6F7CC-37EA-4AE8-AC51-F9E658ADF337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E6F7CC-37EA-4AE8-AC51-F9E658ADF337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23E8CDA-8149-4563-94EC-74AAB1DBDD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23E8CDA-8149-4563-94EC-74AAB1DBDD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23E8CDA-8149-4563-94EC-74AAB1DBDD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23E8CDA-8149-4563-94EC-74AAB1DBDD19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99} = {10470D2E-FAD7-4515-A306-ECFFB91CF083}
+		{E2F4CE0C-C9AD-43A7-90A6-F7EE6AB1766A} = {10470D2E-FAD7-4515-A306-ECFFB91CF083}
+		{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3} = {10470D2E-FAD7-4515-A306-ECFFB91CF083}
+		{1DEF1FFD-91FD-4413-9265-96DFAE4DC427} = {10470D2E-FAD7-4515-A306-ECFFB91CF083}
+		{13ED2FE5-1CBC-4E3B-B2A7-314B1F9CD338} = {10470D2E-FAD7-4515-A306-ECFFB91CF083}
+		{4E177876-9EA4-455E-B8E2-AB2596688AC9} = {307D4F38-4F28-46BD-A510-CD7642E34093}
+		{ED647A46-4B51-4244-85C4-C24A265B090C} = {307D4F38-4F28-46BD-A510-CD7642E34093}
+		{28565FA9-BFD1-46F7-81A6-00BDA76B32E5} = {5A47A0DC-86B4-466D-8C85-FC0EE4990D7D}
+		{46BACDAA-0284-48CC-9DB6-FE3283925E2F} = {5A47A0DC-86B4-466D-8C85-FC0EE4990D7D}
+		{68E6F7CC-37EA-4AE8-AC51-F9E658ADF337} = {5A47A0DC-86B4-466D-8C85-FC0EE4990D7D}
+		{F23E8CDA-8149-4563-94EC-74AAB1DBDD19} = {5A47A0DC-86B4-466D-8C85-FC0EE4990D7D}
+	EndGlobalSection
+EndGlobal

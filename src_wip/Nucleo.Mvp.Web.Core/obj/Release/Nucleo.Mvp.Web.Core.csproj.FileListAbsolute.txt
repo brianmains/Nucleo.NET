@@ -1,0 +1,11 @@
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.Mvp.Web.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.Mvp.Web.Core.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.Mvp.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.Mvp.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.Mvp.Core.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\bin\Release\Nucleo.Mvp.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\obj\Release\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\obj\Release\Nucleo.Mvp.Web.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.Web.Core\obj\Release\Nucleo.Mvp.Web.Core.pdb

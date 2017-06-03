@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68E6F7CC-37EA-4AE8-AC51-F9E658ADF337}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Demos.Data.CodeFirst</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Data\CodeFirst\Address.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\AddressType.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\AdventureWorksDbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureWorksDbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\AdventureWorksDbContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\AdventureWorksDbContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureWorksDbContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\AdventureWorksDbContext.Partial.cs" />
+    <Compile Include="Code\Data\CodeFirst\AWBuildVersion.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\BillOfMaterial.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Contact.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ContactCreditCard.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ContactType.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\CountryRegion.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\CountryRegionCurrency.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\CreditCard.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Culture.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Currency.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\CurrencyRate.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Customer.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\CustomerAddress.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\DatabaseLog.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Department.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Document.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Employee.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\EmployeeAddress.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\EmployeeDepartmentHistory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\EmployeePayHistory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ErrorLog.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Illustration.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Individual.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\JobCandidate.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Location.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Product.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductCategory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductCostHistory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductDescription.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductDocument.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductInventory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductListPriceHistory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductModel.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductModelIllustration.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductModelProductDescriptionCulture.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductPhoto.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductProductPhoto.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductReview.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductSubcategory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ProductVendor.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\PurchaseOrderDetail.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\PurchaseOrderHeader.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesOrderDetail.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesOrderHeader.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesOrderHeaderSalesReason.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesPerson.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesPersonQuotaHistory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesReason.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesTaxRate.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesTerritory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SalesTerritoryHistory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ScrapReason.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Shift.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ShipMethod.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\ShoppingCartItem.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SpecialOffer.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\SpecialOfferProduct.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\StateProvince.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Store.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\StoreContact.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\TransactionHistory.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\TransactionHistoryArchive.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\UnitMeasure.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\Vendor.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\VendorAddress.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\VendorContact.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\WorkOrder.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Data\CodeFirst\WorkOrderRouting.cs">
+      <DependentUpon>AdventureWorksDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Code\Data\CodeFirst\AdventureWorksDbContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AdventureWorksDbContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Code\Data\CodeFirst\AdventureWorksDbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AdventureWorksDbContext.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Code\Data\CodeFirst\AdventureWorksDbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AdventureWorksDbContext.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Orm.Core\Nucleo.Orm.Core.csproj">
+      <Project>{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99}</Project>
+      <Name>Nucleo.Orm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm.Entity.CodeFirst\Nucleo.Orm.Entity.CodeFirst.csproj">
+      <Project>{13ED2FE5-1CBC-4E3B-B2A7-314B1F9CD338}</Project>
+      <Name>Nucleo.Orm.Entity.CodeFirst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm.Entity\Nucleo.Orm.Entity.csproj">
+      <Project>{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3}</Project>
+      <Name>Nucleo.Orm.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm\Nucleo.Orm.csproj">
+      <Project>{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}</Project>
+      <Name>Nucleo.Orm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

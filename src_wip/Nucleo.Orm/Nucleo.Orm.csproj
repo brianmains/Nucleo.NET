@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Orm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Orm\Configuration\DataClassDefinitionElement.cs" />
+    <Compile Include="Orm\Configuration\DataClassDefinitionElementCollection.cs" />
+    <Compile Include="Orm\Configuration\UnitOfWorkRegistrationElement.cs" />
+    <Compile Include="Orm\Configuration\UnitOfWorkRegistrationElementCollection.cs" />
+    <Compile Include="Orm\Configuration\UnitOfWorkSection.cs" />
+    <Compile Include="Orm\Discovery\ConfigurationUnitOfWorkDiscoveryStrategy.cs" />
+    <Compile Include="Orm\Generic\EntityKeyInformation.cs" />
+    <Compile Include="Orm\Generic\IEntityKeyGenerator.cs" />
+    <Compile Include="Orm\Generic\IGenericUnitOfWork.cs" />
+    <Compile Include="Orm\Queries\IListExtender.cs" />
+    <Compile Include="Orm\Queries\IListGenericExtender.cs" />
+    <Compile Include="Orm\Queries\IQueryableExtender.cs" />
+    <Compile Include="Orm\Queries\IQueryableGenericExtender.cs" />
+    <Compile Include="Orm\Queries\IQuerySource.cs" />
+    <Compile Include="Orm\Queries\ISupportsQueries.cs" />
+    <Compile Include="Orm\Queries\QueryProvider.cs" />
+    <Compile Include="Orm\UnitOfWorkManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Core\Nucleo.Core.csproj">
+      <Project>{de222dcb-a7e6-4fe8-987f-bdfc55136fb6}</Project>
+      <Name>Nucleo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm.Core\Nucleo.Orm.Core.csproj">
+      <Project>{4781cbcc-0bf4-4367-8530-8f9bfd2caa99}</Project>
+      <Name>Nucleo.Orm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo\Nucleo.csproj">
+      <Project>{55bb40e6-3042-44b8-aced-62d337f56877}</Project>
+      <Name>Nucleo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "c:\Content\VS Projects\Nucleo\Build40\$(Configuration)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

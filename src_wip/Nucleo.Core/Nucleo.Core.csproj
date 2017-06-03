@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE222DCB-A7E6-4FE8-987F-BDFC55136FB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile2</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\ApplicationConfigurationCollection.cs" />
+    <Compile Include="Application\BaseApplicationConfiguration.cs" />
+    <Compile Include="Application\IApplicationConfiguration.cs" />
+    <Compile Include="Application\NucleoApplicationConfigurations.cs" />
+    <Compile Include="Application\IApplication.cs" />
+    <Compile Include="Application\IApplicationConfigurations.cs" />
+    <Compile Include="Application\NucleoApplication.cs" />
+    <Compile Include="Attributes\AttributeCollection.cs" />
+    <Compile Include="Attributes\ITypeAttribute.cs" />
+    <Compile Include="BooleanUtility.cs" />
+    <Compile Include="BusinessDays.cs" />
+    <Compile Include="Collections\ChainableCollection.cs" />
+    <Compile Include="Collections\CollectionBase.cs" />
+    <Compile Include="Collections\DictionaryExtensions.cs" />
+    <Compile Include="Collections\FluentCollection.cs" />
+    <Compile Include="Collections\IEnumerableExtensions.cs" />
+    <Compile Include="Collections\IObjectKeyedDictionary.cs" />
+    <Compile Include="Collections\ISimpleCollection.cs" />
+    <Compile Include="Collections\ObjectCollection.cs" />
+    <Compile Include="Collections\ObjectKeyedDictionary.cs" />
+    <Compile Include="Collections\ReadonlyCollectionBase.cs" />
+    <Compile Include="Collections\SelectableCollectionBase.cs" />
+    <Compile Include="Collections\SimpleCollection.cs" />
+    <Compile Include="Collections\TypeRegistry.cs" />
+    <Compile Include="Context\IApplicationContext.cs" />
+    <Compile Include="Context\IService.cs" />
+    <Compile Include="Context\IServiceDictionary.cs" />
+    <Compile Include="Context\ServiceCollection.cs" />
+    <Compile Include="Context\Services\BaseInlineServiceDictionary.cs" />
+    <Compile Include="Context\Services\FakeUserSecurityService.cs" />
+    <Compile Include="Context\Services\InlineApplicationStateService.cs" />
+    <Compile Include="Context\Services\FakeLoggerService.cs" />
+    <Compile Include="Context\Services\FakeNavigationRoute.cs" />
+    <Compile Include="Context\Services\FakeNavigationService.cs" />
+    <Compile Include="Context\Services\IApplicationStateService.cs" />
+    <Compile Include="Context\Services\ICachingService.cs" />
+    <Compile Include="Context\Services\IDependencyInjectionService.cs" />
+    <Compile Include="Context\Services\IEncryptionService.cs" />
+    <Compile Include="Context\Services\ILoggerService.cs" />
+    <Compile Include="Context\Services\INavigationRoute.cs" />
+    <Compile Include="Context\Services\INavigationService.cs" />
+    <Compile Include="Context\Services\InlineCachingService.cs" />
+    <Compile Include="Context\Services\InlineSessionStateService.cs" />
+    <Compile Include="Context\Services\InMemoryUserSecurityService.cs" />
+    <Compile Include="Context\Services\ISessionStateService.cs" />
+    <Compile Include="Context\Services\ITemporaryDataService.cs" />
+    <Compile Include="Context\Services\IUserSecurityService.cs" />
+    <Compile Include="Data\Objects.cs" />
+    <Compile Include="DateTimeUtility.cs" />
+    <Compile Include="DayOfWeekReoccurrence.cs" />
+    <Compile Include="Dependencies\DependencyAttribute.cs" />
+    <Compile Include="Dependencies\DependencyStore.cs" />
+    <Compile Include="Dependencies\DictionaryBasedDependencyResolver.cs" />
+    <Compile Include="Dependencies\IDependencyResolver.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="Estimation\BaseDateTimeEstimator.cs" />
+    <Compile Include="Estimation\BaseEstimator.cs" />
+    <Compile Include="Estimation\DateEstimation.cs" />
+    <Compile Include="Estimation\DayOfWeekEstimator.cs" />
+    <Compile Include="Estimation\DaysEstimator.cs" />
+    <Compile Include="Estimation\MonthsEstimator.cs" />
+    <Compile Include="Estimation\WeeksEstimator.cs" />
+    <Compile Include="Estimation\YearsEstimator.cs" />
+    <Compile Include="EventArguments\CancellationEventArgs.cs" />
+    <Compile Include="EventArguments\ChangeEventArgs.cs" />
+    <Compile Include="EventArguments\DataCancelEventArgs.cs" />
+    <Compile Include="EventArguments\DataEventArgs.cs" />
+    <Compile Include="EventArguments\DictionaryEventArgs.cs" />
+    <Compile Include="EventArguments\ValidateEventArgs.cs" />
+    <Compile Include="EventsManagement\BaseEventDetails.cs" />
+    <Compile Include="EventsManagement\EventDetails.cs" />
+    <Compile Include="EventsManagement\EventRegistryOptions.cs" />
+    <Compile Include="EventsManagement\EventsRegistry.cs" />
+    <Compile Include="EventsManagement\EventSubscription.cs" />
+    <Compile Include="EventsManagement\EventSubscriptionAttribute.cs" />
+    <Compile Include="EventsManagement\IEvent.cs" />
+    <Compile Include="EventsManagement\IEventReceiver.cs" />
+    <Compile Include="EventsManagement\IEventSubscriber.cs" />
+    <Compile Include="EventsManagement\IEventSubscription.cs" />
+    <Compile Include="EventsManagement\Listeners\AnyListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\EntityListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\EntityTypeListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\EventListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\IListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\ListenerCriterion.cs" />
+    <Compile Include="EventsManagement\Listeners\NameIdentifierListenerCriteria.cs" />
+    <Compile Include="EventsManagement\PublishedEventDetails.cs" />
+    <Compile Include="EventsManagement\SubscriptionEventDetails.cs" />
+    <Compile Include="Exceptions\BaseException.cs" />
+    <Compile Include="Exceptions\DuplicateException.cs" />
+    <Compile Include="Exceptions\GuardException.cs" />
+    <Compile Include="Exceptions\MismatchException.cs" />
+    <Compile Include="Exceptions\NotFoundException.cs" />
+    <Compile Include="Exceptions\PropertyException.cs" />
+    <Compile Include="Exceptions\ValidateException.cs" />
+    <Compile Include="Exceptions\ValueImplementationException.cs" />
+    <Compile Include="Extensions\BoolExtensions.cs" />
+    <Compile Include="Extensions\BusinessDaysExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\MemberInfoExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Extensions\TypeLoaderExtensions.cs" />
+    <Compile Include="Guard.cs" />
+    <Compile Include="Identifier.cs" />
+    <Compile Include="LazyValue.cs" />
+    <Compile Include="Logs\FakeLogEntry.cs" />
+    <Compile Include="Logs\FakeLogManager.cs" />
+    <Compile Include="Logs\GeneralMessage.cs" />
+    <Compile Include="Logs\ILogManager.cs" />
+    <Compile Include="Logs\LoggerOptions.cs" />
+    <Compile Include="Logs\LogManager.cs" />
+    <Compile Include="Logs\LogManagerCollection.cs" />
+    <Compile Include="Logs\LogMessage.cs" />
+    <Compile Include="Logs\LogMessageType.cs" />
+    <Compile Include="Logs\LogMessageTypeCollection.cs" />
+    <Compile Include="Logs\LogMessageTypes.cs" />
+    <Compile Include="Logs\LogVerbosityType.cs" />
+    <Compile Include="Logs\LogVerbosityTypeCollection.cs" />
+    <Compile Include="Logs\LogVerbosityTypes.cs" />
+    <Compile Include="Lookups\Identification\ILookupIdentifier.cs" />
+    <Compile Include="Lookups\Identification\NameLookupIdentifier.cs" />
+    <Compile Include="Lookups\ILookup.cs" />
+    <Compile Include="Lookups\Lookup.cs" />
+    <Compile Include="Lookups\LookupAttribute.cs" />
+    <Compile Include="Lookups\LookupCollection.cs" />
+    <Compile Include="Lookups\LookupCriteria.cs" />
+    <Compile Include="Lookups\LookupManager.cs" />
+    <Compile Include="Lookups\Providers\ILookupProvider.cs" />
+    <Compile Include="Lookups\Providers\LookupProviderCollection.cs" />
+    <Compile Include="Lookups\Providers\StringFormatLookupProvider.cs" />
+    <Compile Include="Lookups\Repositories\ILookupRepository.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Cache\CacheableAttribute.cs" />
+    <Compile Include="Models\Cache\CacheInformation.cs" />
+    <Compile Include="Models\Cache\IModelInjectionCache.cs" />
+    <Compile Include="Models\Cache\ModelCacheResults.cs" />
+    <Compile Include="Models\DefaultModelInspector.cs" />
+    <Compile Include="Models\IModelDataLoader.cs" />
+    <Compile Include="Models\IModelInjection.cs" />
+    <Compile Include="Models\IModelInspector.cs" />
+    <Compile Include="Models\Lookups\ILookupInjection.cs" />
+    <Compile Include="Models\Lookups\LookupInjectionAttribute.cs" />
+    <Compile Include="Models\Lookups\LookupModelDataLoader.cs" />
+    <Compile Include="Models\ModelDataLoaderCollection.cs" />
+    <Compile Include="Models\ModelInjectionManager.cs" />
+    <Compile Include="Models\ModelInspectorOptions.cs" />
+    <Compile Include="Models\ModelMemberMetadata.cs" />
+    <Compile Include="Models\ModelValueEntry.cs" />
+    <Compile Include="Modules\Discovery\ModuleDiscoveryOptions.cs" />
+    <Compile Include="Modules\Discovery\IModuleDiscoverySource.cs" />
+    <Compile Include="Modules\Discovery\IModuleDiscoveryStrategy.cs" />
+    <Compile Include="Modules\IModule.cs" />
+    <Compile Include="Modules\Initialization\IModuleInitializer.cs" />
+    <Compile Include="Modules\ModuleAttribute.cs" />
+    <Compile Include="Modules\ModuleCollection.cs" />
+    <Compile Include="Modules\ModuleFactory.cs" />
+    <Compile Include="Modules\ModuleInspector.cs" />
+    <Compile Include="ObjectModel\AttributedObject.cs" />
+    <Compile Include="ObjectModel\ObjectReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routing\IRoutingEngine.cs" />
+    <Compile Include="Routing\IRoutingFailureHandler.cs" />
+    <Compile Include="Routing\IRoutingSecurity.cs" />
+    <Compile Include="Routing\RoutingEngineCollection.cs" />
+    <Compile Include="Routing\RoutingEngines.cs" />
+    <Compile Include="Security\AnonymousUser.cs" />
+    <Compile Include="Security\IAuthenticationProvider.cs" />
+    <Compile Include="Security\ISecurityProvider.cs" />
+    <Compile Include="Security\IUser.cs" />
+    <Compile Include="Security\Role.cs" />
+    <Compile Include="Security\RoleCollection.cs" />
+    <Compile Include="Security\AuthenticatedUser.cs" />
+    <Compile Include="Sitemaps\FileSitemapLocation.cs" />
+    <Compile Include="Sitemaps\DirectorySitemapLocation.cs" />
+    <Compile Include="Sitemaps\ISitemapLocation.cs" />
+    <Compile Include="Sitemaps\ISitemapProvider.cs" />
+    <Compile Include="Sitemaps\SitemapItem.cs" />
+    <Compile Include="Sitemaps\SitemapItemCollection.cs" />
+    <Compile Include="TypeLoader.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "c:\Content\VS Projects\Nucleo\Build40\$(Configuration)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

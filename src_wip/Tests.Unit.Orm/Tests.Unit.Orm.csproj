@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E177876-9EA4-455E-B8E2-AB2596688AC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Tests.Unit.Orm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="TypeMock, Version=7.1.6.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL" />
+    <Reference Include="Typemock.ArrangeActAssert, Version=7.1.6.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Orm\Configuration\UnitOfWorkRegistrationElementTest.cs" />
+    <Compile Include="Orm\Configuration\UnitOfWorkSectionTest.cs" />
+    <Compile Include="Orm\DataClasses\Legacy\TableUnitOfWorkTest.cs" />
+    <Compile Include="Orm\DataClasses\Queries\TableQuerySourceTest.cs" />
+    <Compile Include="Orm\DataClasses\TableEntityUnitOfWorkTest.cs" />
+    <Compile Include="Orm\Discovery\ConfigurationUnitOfWorkDiscoveryStrategyTest.cs" />
+    <Compile Include="Orm\Discovery\UnitOfWorkDiscoveryOptionsTest.cs" />
+    <Compile Include="Orm\Entities\DbContextHelperTest.cs" />
+    <Compile Include="Orm\Entities\DbSetUnitOfWorkTest.cs" />
+    <Compile Include="Orm\Entities\Generic\ContextGenericUnitOfWorkTest.cs" />
+    <Compile Include="Orm\Entities\Legacy\ObjectSetUnitOfWorkTest.cs" />
+    <Compile Include="Orm\Entities\NucleoObjectContextTest.cs" />
+    <Compile Include="Orm\Entities\ObjectEntitySetTest.cs" />
+    <Compile Include="Orm\Entities\ObjectSetEntityUnitOfWorkTest.cs" />
+    <Compile Include="Orm\Entities\Queries\DbSetQuerySourceTest.cs" />
+    <Compile Include="Orm\Generic\EntityKeyInformationTest.cs" />
+    <Compile Include="Orm\InMemoryUnitOfWorkTest.cs" />
+    <Compile Include="Orm\Triggers\ActionTriggerTest.cs" />
+    <Compile Include="Orm\UnitOfWorkManagerTest.cs" />
+    <Compile Include="Orm\Validation\Discovery\DefaultValidationRuleDiscoveryStrategyTest.cs" />
+    <Compile Include="Orm\Validation\Discovery\ValidationRuleTargetDiscoveryStrategyTest.cs" />
+    <Compile Include="Orm\Validation\EmptyValidationRuleTest.cs" />
+    <Compile Include="Orm\Validation\OrmValidatorTest.cs" />
+    <Compile Include="Orm\Validation\StaticValidationRuleTest.cs" />
+    <Compile Include="Orm\Validation\ValidationMessageTest.cs" />
+    <Compile Include="Orm\Validation\ValidationResultsTest.cs" />
+    <Compile Include="Orm\Validation\ValidationRuleCollectionTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Core\Nucleo.Core.csproj">
+      <Project>{de222dcb-a7e6-4fe8-987f-bdfc55136fb6}</Project>
+      <Name>Nucleo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm.Core\Nucleo.Orm.Core.csproj">
+      <Project>{4781cbcc-0bf4-4367-8530-8f9bfd2caa99}</Project>
+      <Name>Nucleo.Orm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm.DataClasses\Nucleo.Orm.DataClasses.csproj">
+      <Project>{e2f4ce0c-c9ad-43a7-90a6-f7ee6ab1766a}</Project>
+      <Name>Nucleo.Orm.DataClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm.Entity.CodeFirst\Nucleo.Orm.Entity.CodeFirst.csproj">
+      <Project>{13ed2fe5-1cbc-4e3b-b2a7-314b1f9cd338}</Project>
+      <Name>Nucleo.Orm.Entity.CodeFirst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm.Entity\Nucleo.Orm.Entity.csproj">
+      <Project>{d6ad398d-c5df-43ab-a44d-9d320d5f93c3}</Project>
+      <Name>Nucleo.Orm.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm\Nucleo.Orm.csproj">
+      <Project>{1def1ffd-91fd-4413-9265-96dfae4dc427}</Project>
+      <Name>Nucleo.Orm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo\Nucleo.csproj">
+      <Project>{55bb40e6-3042-44b8-aced-62d337f56877}</Project>
+      <Name>Nucleo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Nucleo.Data.Entities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SamplesObjectContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="IssueComments" EntityType="Nucleo.Data.Entities.IssueComment" />
+    <EntitySet Name="Issues" EntityType="Nucleo.Data.Entities.Issue" />
+    <EntitySet Name="NewsCategoryTypes" EntityType="Nucleo.Data.Entities.NewsCategoryType" />
+    <EntitySet Name="NewsItems" EntityType="Nucleo.Data.Entities.NewsItem" />
+    <EntitySet Name="Projects" EntityType="Nucleo.Data.Entities.Project" />
+    <EntitySet Name="ProjectUsers" EntityType="Nucleo.Data.Entities.ProjectUser" />
+    <EntitySet Name="Users" EntityType="Nucleo.Data.Entities.User" />
+    <AssociationSet Name="FK_IssueComments_Issues" Association="Nucleo.Data.Entities.FK_IssueComments_Issues">
+      <End Role="Issues" EntitySet="Issues" />
+      <End Role="IssueComments" EntitySet="IssueComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Users_Assigned" Association="Nucleo.Data.Entities.FK_Issues_Users_Assigned">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Issues" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Users_Owner" Association="Nucleo.Data.Entities.FK_Issues_Users_Owner">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Issues" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectUsers_Projects" Association="Nucleo.Data.Entities.FK_ProjectUsers_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="ProjectUsers" EntitySet="ProjectUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectUsers_Users" Association="Nucleo.Data.Entities.FK_ProjectUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ProjectUsers" EntitySet="ProjectUsers" />
+    </AssociationSet>
+    <FunctionImport Name="NewsItemsSelectAll" EntitySet="NewsItems" ReturnType="Collection(Nucleo.Data.Entities.NewsItem)" />
+  </EntityContainer>
+  <EntityType Name="IssueComment">
+    <Key>
+      <PropertyRef Name="IssueCommentKey" />
+    </Key>
+    <Property Name="IssueCommentKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IssueKey" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Issue" Relationship="Nucleo.Data.Entities.FK_IssueComments_Issues" FromRole="IssueComments" ToRole="Issues" />
+  </EntityType>
+  <EntityType Name="Issue">
+    <Key>
+      <PropertyRef Name="IssueKey" />
+    </Key>
+    <Property Name="IssueKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Priority" Type="Byte" Nullable="false" />
+    <Property Name="IssueType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OwnerUserKey" Type="Int32" Nullable="false" />
+    <Property Name="AssignedUserKey" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" />
+    <NavigationProperty Name="IssueComments" Relationship="Nucleo.Data.Entities.FK_IssueComments_Issues" FromRole="Issues" ToRole="IssueComments" />
+    <NavigationProperty Name="User" Relationship="Nucleo.Data.Entities.FK_Issues_Users_Assigned" FromRole="Issues" ToRole="Users" />
+    <NavigationProperty Name="User1" Relationship="Nucleo.Data.Entities.FK_Issues_Users_Owner" FromRole="Issues" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="NewsCategoryType">
+    <Key>
+      <PropertyRef Name="NewsCategoryTypeKey" />
+    </Key>
+    <Property Name="NewsCategoryTypeKey" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NewsCategoryTypeName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewsItem">
+    <Key>
+      <PropertyRef Name="NewsItemKey" />
+    </Key>
+    <Property Name="NewsItemKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NewsContent" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="ProjectKey" />
+    </Key>
+    <Property Name="ProjectKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProjectUsers" Relationship="Nucleo.Data.Entities.FK_ProjectUsers_Projects" FromRole="Projects" ToRole="ProjectUsers" />
+  </EntityType>
+  <EntityType Name="ProjectUser">
+    <Key>
+      <PropertyRef Name="ProjectUserKey" />
+    </Key>
+    <Property Name="ProjectUserKey" Type="Int32" Nullable="false" />
+    <Property Name="ProjectKey" Type="Int32" Nullable="false" />
+    <Property Name="UserKey" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Project" Relationship="Nucleo.Data.Entities.FK_ProjectUsers_Projects" FromRole="ProjectUsers" ToRole="Projects" />
+    <NavigationProperty Name="User" Relationship="Nucleo.Data.Entities.FK_ProjectUsers_Users" FromRole="ProjectUsers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserKey" />
+    </Key>
+    <Property Name="UserKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Issues" Relationship="Nucleo.Data.Entities.FK_Issues_Users_Assigned" FromRole="Users" ToRole="Issues" />
+    <NavigationProperty Name="Issues1" Relationship="Nucleo.Data.Entities.FK_Issues_Users_Owner" FromRole="Users" ToRole="Issues" />
+    <NavigationProperty Name="ProjectUsers" Relationship="Nucleo.Data.Entities.FK_ProjectUsers_Users" FromRole="Users" ToRole="ProjectUsers" />
+  </EntityType>
+  <Association Name="FK_IssueComments_Issues">
+    <End Role="Issues" Type="Nucleo.Data.Entities.Issue" Multiplicity="1" />
+    <End Role="IssueComments" Type="Nucleo.Data.Entities.IssueComment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Issues">
+        <PropertyRef Name="IssueKey" />
+      </Principal>
+      <Dependent Role="IssueComments">
+        <PropertyRef Name="IssueKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Users_Assigned">
+    <End Role="Users" Type="Nucleo.Data.Entities.User" Multiplicity="1" />
+    <End Role="Issues" Type="Nucleo.Data.Entities.Issue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserKey" />
+      </Principal>
+      <Dependent Role="Issues">
+        <PropertyRef Name="AssignedUserKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Users_Owner">
+    <End Role="Users" Type="Nucleo.Data.Entities.User" Multiplicity="1" />
+    <End Role="Issues" Type="Nucleo.Data.Entities.Issue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserKey" />
+      </Principal>
+      <Dependent Role="Issues">
+        <PropertyRef Name="OwnerUserKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectUsers_Projects">
+    <End Role="Projects" Type="Nucleo.Data.Entities.Project" Multiplicity="1" />
+    <End Role="ProjectUsers" Type="Nucleo.Data.Entities.ProjectUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ProjectKey" />
+      </Principal>
+      <Dependent Role="ProjectUsers">
+        <PropertyRef Name="ProjectKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectUsers_Users">
+    <End Role="Users" Type="Nucleo.Data.Entities.User" Multiplicity="1" />
+    <End Role="ProjectUsers" Type="Nucleo.Data.Entities.ProjectUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserKey" />
+      </Principal>
+      <Dependent Role="ProjectUsers">
+        <PropertyRef Name="UserKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

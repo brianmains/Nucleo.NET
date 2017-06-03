@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Mvp.WebForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\MvpWebFormsApplication.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Ajax\PresenterAjaxAttribute.cs" />
+    <Compile Include="Web\Ajax\PresenterAjaxHandler.cs" />
+    <Compile Include="Web\Ajax\PresenterWebMethodAttribute.cs" />
+    <Compile Include="Web\Mvp\DataSourceControls\ViewDataSource.cs" />
+    <Compile Include="Web\Presentation\BaseWebPresenter.cs" />
+    <Compile Include="Web\Presentation\BaseWebPresenter~1.cs" />
+    <Compile Include="Web\Presentation\BaseWebPresenter~2.cs" />
+    <Compile Include="Web\Presentation\Configuration\AjaxMethodElement.cs" />
+    <Compile Include="Web\Presentation\Configuration\AjaxMethodElementCollection.cs" />
+    <Compile Include="Web\Presentation\Configuration\PresenterElement.cs" />
+    <Compile Include="Web\Presentation\Configuration\PresenterElementCollection.cs" />
+    <Compile Include="Web\Presentation\Configuration\PresenterWebSettingsSection.cs" />
+    <Compile Include="Web\Presentation\Configuration\RoutingElement.cs" />
+    <Compile Include="Web\Presentation\Context\PresenterWebContext.cs" />
+    <Compile Include="Web\Presentation\Context\PresenterWebContextCreator.cs" />
+    <Compile Include="Web\Services\PresenterServiceBinder.cs" />
+    <Compile Include="Web\Services\ViewWcfService.cs" />
+    <Compile Include="Web\Services\ViewWcfService~1.cs" />
+    <Compile Include="Web\Services\ViewWebService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web\Services\ViewWebService~1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewPage~1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\BaseViewUserControl~1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\FakeViewControl.cs" />
+    <Compile Include="Web\Views\FakeViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Views\WebViewHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.ApplicationServices.Core\Nucleo.ApplicationServices.Core.csproj">
+      <Project>{6c384985-7eb1-404f-9560-07c3459e1f3b}</Project>
+      <Name>Nucleo.ApplicationServices.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.ApplicationServices.Web\Nucleo.ApplicationServices.Web.csproj">
+      <Project>{3957c729-8058-4817-93bf-19be71f0d314}</Project>
+      <Name>Nucleo.ApplicationServices.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.ApplicationServices\Nucleo.ApplicationServices.csproj">
+      <Project>{bbdae2f7-1e37-448b-ac5b-8a417f1456e9}</Project>
+      <Name>Nucleo.ApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Core\Nucleo.Core.csproj">
+      <Project>{de222dcb-a7e6-4fe8-987f-bdfc55136fb6}</Project>
+      <Name>Nucleo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp.Core\Nucleo.Mvp.Core.csproj">
+      <Project>{df226d96-36e6-4264-bb33-51bb777f60f6}</Project>
+      <Name>Nucleo.Mvp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp.Web.Core\Nucleo.Mvp.Web.Core.csproj">
+      <Project>{949f2046-f0bf-4229-9262-42ed1d9ac7fb}</Project>
+      <Name>Nucleo.Mvp.Web.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp\Nucleo.Mvp.csproj">
+      <Project>{1f98927f-872c-4c5e-b66a-bb30adc3aa6b}</Project>
+      <Name>Nucleo.Mvp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo\Nucleo.csproj">
+      <Project>{55bb40e6-3042-44b8-aced-62d337f56877}</Project>
+      <Name>Nucleo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "c:\Content\VS Projects\Nucleo\Build40\$(Configuration)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

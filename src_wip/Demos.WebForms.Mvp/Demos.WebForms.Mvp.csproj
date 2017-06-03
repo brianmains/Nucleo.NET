@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAE702A7-47E1-446A-916C-A56FC9587C17}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>MVP.Demos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Nucleo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build\Debug\Nucleo.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Build\Debug\Nucleo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Web.Core, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build40\Debug\Nucleo.Web.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Web.WebForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build40\Debug\Nucleo.Web.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\CodeSample.cs" />
+    <Compile Include="Code\CodeSampleFactory.cs" />
+    <Compile Include="Code\Demos\DemoPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Demos\DemoUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Demos\DemoViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Demos\DemoViewPage`1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Demos\DemoViewUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Demos\DemoViewUserControl`1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Demos\IDemoMasterPage.cs" />
+    <Compile Include="Code\Demos\IDemoPage.cs" />
+    <Compile Include="Code\Demos\IDemoUserControl.cs" />
+    <Compile Include="Code\ICodeSampleSupport.cs" />
+    <Compile Include="Code\IDescriptable.cs" />
+    <Compile Include="Code\Security\DemoMembershipProvider.cs" />
+    <Compile Include="Code\Sitemaps\SitemapRenderer.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\AjaxCallback.ascx.cs">
+      <DependentUpon>AjaxCallback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\AjaxCallback.ascx.designer.cs">
+      <DependentUpon>AjaxCallback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\ConfigAjaxCallback.ascx.cs">
+      <DependentUpon>ConfigAjaxCallback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\ConfigAjaxCallback.ascx.designer.cs">
+      <DependentUpon>ConfigAjaxCallback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\ConfigRequestFirstLook.aspx.cs">
+      <DependentUpon>ConfigRequestFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\ConfigRequestFirstLook.aspx.designer.cs">
+      <DependentUpon>ConfigRequestFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\WcfServicesFirstLook.aspx.cs">
+      <DependentUpon>WcfServicesFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\WcfServicesFirstLook.aspx.designer.cs">
+      <DependentUpon>WcfServicesFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\WebRequestFirstLook.aspx.cs">
+      <DependentUpon>WebRequestFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\WebRequestFirstLook.aspx.designer.cs">
+      <DependentUpon>WebRequestFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\WebServicesFirstLook.aspx.cs">
+      <DependentUpon>WebServicesFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\AjaxRequests\WebServicesFirstLook.aspx.designer.cs">
+      <DependentUpon>WebServicesFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\PresenterCreation.aspx.cs">
+      <DependentUpon>PresenterCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\PresenterCreation.aspx.designer.cs">
+      <DependentUpon>PresenterCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\PresenterDiscovery.aspx.cs">
+      <DependentUpon>PresenterDiscovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\PresenterDiscovery.aspx.designer.cs">
+      <DependentUpon>PresenterDiscovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\PresenterInitialization.aspx.cs">
+      <DependentUpon>PresenterInitialization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\PresenterInitialization.aspx.designer.cs">
+      <DependentUpon>PresenterInitialization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\Resolvers.aspx.cs">
+      <DependentUpon>Resolvers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\Resolvers.aspx.designer.cs">
+      <DependentUpon>Resolvers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\ViewInitialization.aspx.cs">
+      <DependentUpon>ViewInitialization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Customizations\ViewInitialization.aspx.designer.cs">
+      <DependentUpon>ViewInitialization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\NestedControls.aspx.cs">
+      <DependentUpon>NestedControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\NestedControls.aspx.designer.cs">
+      <DependentUpon>NestedControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\NestedControls01.ascx.cs">
+      <DependentUpon>NestedControls01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\NestedControls01.ascx.designer.cs">
+      <DependentUpon>NestedControls01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\NestedControls02.ascx.cs">
+      <DependentUpon>NestedControls02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\NestedControls02.ascx.designer.cs">
+      <DependentUpon>NestedControls02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\PagesFirstLook.aspx.cs">
+      <DependentUpon>PagesFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\PagesFirstLook.aspx.designer.cs">
+      <DependentUpon>PagesFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\TestClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\Updating.aspx.cs">
+      <DependentUpon>Updating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\Updating.aspx.designer.cs">
+      <DependentUpon>Updating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\UserControlsFirstLook.aspx.cs">
+      <DependentUpon>UserControlsFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\UserControlsFirstLook.aspx.designer.cs">
+      <DependentUpon>UserControlsFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\ViewDataSourceSample.ascx.cs">
+      <DependentUpon>ViewDataSourceSample.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DataSource\ViewDataSourceSample.ascx.designer.cs">
+      <DependentUpon>ViewDataSourceSample.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DI\PresenterInitialization.aspx.cs">
+      <DependentUpon>PresenterInitialization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DI\PresenterInitialization.aspx.designer.cs">
+      <DependentUpon>PresenterInitialization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DI\ViewInitializer.aspx.cs">
+      <DependentUpon>ViewInitializer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\DI\ViewInitializer.aspx.designer.cs">
+      <DependentUpon>ViewInitializer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Hierarchy\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Hierarchy\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Hierarchy\Hierarchy1.ascx.cs">
+      <DependentUpon>Hierarchy1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Hierarchy\Hierarchy1.ascx.designer.cs">
+      <DependentUpon>Hierarchy1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Hierarchy\Hierarchy2.ascx.cs">
+      <DependentUpon>Hierarchy2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\Hierarchy\Hierarchy2.ascx.designer.cs">
+      <DependentUpon>Hierarchy2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEvents.aspx.cs">
+      <DependentUpon>BubbleTunnelEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEvents.aspx.designer.cs">
+      <DependentUpon>BubbleTunnelEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsChild01.ascx.cs">
+      <DependentUpon>BubbleTunnelEventsChild01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsChild01.ascx.designer.cs">
+      <DependentUpon>BubbleTunnelEventsChild01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsChild02.ascx.cs">
+      <DependentUpon>BubbleTunnelEventsChild02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsChild02.ascx.designer.cs">
+      <DependentUpon>BubbleTunnelEventsChild02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsSubchild01.ascx.cs">
+      <DependentUpon>BubbleTunnelEventsSubchild01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsSubchild01.ascx.designer.cs">
+      <DependentUpon>BubbleTunnelEventsSubchild01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityInstanceReceiver.ascx.cs">
+      <DependentUpon>EntityInstanceReceiver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityInstanceReceiver.ascx.designer.cs">
+      <DependentUpon>EntityInstanceReceiver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityInstanceSender.ascx.cs">
+      <DependentUpon>EntityInstanceSender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityInstanceSender.ascx.designer.cs">
+      <DependentUpon>EntityInstanceSender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityTypeReceiver.ascx.cs">
+      <DependentUpon>EntityTypeReceiver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityTypeReceiver.ascx.designer.cs">
+      <DependentUpon>EntityTypeReceiver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityTypeSender.ascx.cs">
+      <DependentUpon>EntityTypeSender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityTypeSender.ascx.designer.cs">
+      <DependentUpon>EntityTypeSender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\GenericEntityTypeReceiver.ascx.cs">
+      <DependentUpon>GenericEntityTypeReceiver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\GenericEntityTypeReceiver.ascx.designer.cs">
+      <DependentUpon>GenericEntityTypeReceiver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\GenericEntityTypeSender.ascx.cs">
+      <DependentUpon>GenericEntityTypeSender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\GenericEntityTypeSender.ascx.designer.cs">
+      <DependentUpon>GenericEntityTypeSender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\TextIdentifierReceiver.ascx.cs">
+      <DependentUpon>TextIdentifierReceiver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\TextIdentifierReceiver.ascx.designer.cs">
+      <DependentUpon>TextIdentifierReceiver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\TextIdentifierSender.ascx.cs">
+      <DependentUpon>TextIdentifierSender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\EventTypes\TextIdentifierSender.ascx.designer.cs">
+      <DependentUpon>TextIdentifierSender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\FirstLookReceiver.ascx.cs">
+      <DependentUpon>FirstLookReceiver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\FirstLookReceiver.ascx.designer.cs">
+      <DependentUpon>FirstLookReceiver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\FirstLookSender.ascx.cs">
+      <DependentUpon>FirstLookSender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\FirstLookSender.ascx.designer.cs">
+      <DependentUpon>FirstLookSender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\ManyMessages.aspx.cs">
+      <DependentUpon>ManyMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\ManyMessages.aspx.designer.cs">
+      <DependentUpon>ManyMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\ManyMessagesChild.ascx.cs">
+      <DependentUpon>ManyMessagesChild.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\ManyMessagesChild.ascx.designer.cs">
+      <DependentUpon>ManyMessagesChild.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\SubscriptionTypes.aspx.cs">
+      <DependentUpon>SubscriptionTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\SubscriptionTypes.aspx.designer.cs">
+      <DependentUpon>SubscriptionTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\WithEvents.aspx.cs">
+      <DependentUpon>WithEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\WithEvents.aspx.designer.cs">
+      <DependentUpon>WithEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\WithEventsChild01.ascx.cs">
+      <DependentUpon>WithEventsChild01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\WithEventsChild01.ascx.designer.cs">
+      <DependentUpon>WithEventsChild01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\WithEventsChild02.ascx.cs">
+      <DependentUpon>WithEventsChild02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\MessagingSamples\WithEventsChild02.ascx.designer.cs">
+      <DependentUpon>WithEventsChild02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\FirstLook1.ascx.cs">
+      <DependentUpon>FirstLook1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\FirstLook1.ascx.designer.cs">
+      <DependentUpon>FirstLook1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\FirstLook2.ascx.cs">
+      <DependentUpon>FirstLook2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\FirstLook2.ascx.designer.cs">
+      <DependentUpon>FirstLook2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerGlobal.aspx.cs">
+      <DependentUpon>PerGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerGlobal.aspx.designer.cs">
+      <DependentUpon>PerGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerGlobalChild.ascx.cs">
+      <DependentUpon>PerGlobalChild.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerGlobalChild.ascx.designer.cs">
+      <DependentUpon>PerGlobalChild.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerModel.aspx.cs">
+      <DependentUpon>PerModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerModel.aspx.designer.cs">
+      <DependentUpon>PerModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerModelChild.ascx.cs">
+      <DependentUpon>PerModelChild.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelCachingSamples\PerModelChild.ascx.designer.cs">
+      <DependentUpon>PerModelChild.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\Caching.aspx.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\Caching.aspx.designer.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\Customization.aspx.cs">
+      <DependentUpon>Customization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\Customization.aspx.designer.cs">
+      <DependentUpon>Customization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\UsingLookups.aspx.cs">
+      <DependentUpon>UsingLookups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModelInjectionSamples\UsingLookups.aspx.designer.cs">
+      <DependentUpon>UsingLookups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModuleSamples\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\ModuleSamples\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\AttributeMatching.aspx.cs">
+      <DependentUpon>AttributeMatching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\AttributeMatching.aspx.designer.cs">
+      <DependentUpon>AttributeMatching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\ConfigurationMatching.aspx.cs">
+      <DependentUpon>ConfigurationMatching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\ConfigurationMatching.aspx.designer.cs">
+      <DependentUpon>ConfigurationMatching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\ConventionMatching.aspx.cs">
+      <DependentUpon>ConventionMatching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\ConventionMatching.aspx.designer.cs">
+      <DependentUpon>ConventionMatching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\NoPresenter.aspx.cs">
+      <DependentUpon>NoPresenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\PresenterLoadingSamples\NoPresenter.aspx.designer.cs">
+      <DependentUpon>NoPresenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\RoutingSamples\RoutingTarget.aspx.cs">
+      <DependentUpon>RoutingTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\RoutingSamples\RoutingTarget.aspx.designer.cs">
+      <DependentUpon>RoutingTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\RoutingSamples\ViewConventions.aspx.cs">
+      <DependentUpon>ViewConventions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\RoutingSamples\ViewConventions.aspx.designer.cs">
+      <DependentUpon>ViewConventions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\StateSamples\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\StateSamples\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\StateSamples\LoginSample.aspx.cs">
+      <DependentUpon>LoginSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\StateSamples\LoginSample.aspx.designer.cs">
+      <DependentUpon>LoginSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\WebServices\MvpSampleService.asmx.cs">
+      <DependentUpon>MvpSampleService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpSamples\WebServices\MvpSampleWcfService.svc.cs">
+      <DependentUpon>MvpSampleWcfService.svc</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\Addresses.ascx.cs">
+      <DependentUpon>Addresses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\Addresses.ascx.designer.cs">
+      <DependentUpon>Addresses.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\ContactInfo.ascx.cs">
+      <DependentUpon>ContactInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\ContactInfo.ascx.designer.cs">
+      <DependentUpon>ContactInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\Display.ascx.cs">
+      <DependentUpon>Display.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\Display.ascx.designer.cs">
+      <DependentUpon>Display.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\Parent.aspx.cs">
+      <DependentUpon>Parent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\Parent.aspx.designer.cs">
+      <DependentUpon>Parent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\PhoneNumbers.ascx.cs">
+      <DependentUpon>PhoneNumbers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\PhoneNumbers.ascx.designer.cs">
+      <DependentUpon>PhoneNumbers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MvpScenarios\TabbedForms\RelatedClasses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\AreaHome.Master.cs">
+      <DependentUpon>AreaHome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\AreaHome.Master.designer.cs">
+      <DependentUpon>AreaHome.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\CodeWindow.ascx.cs">
+      <DependentUpon>CodeWindow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\CodeWindow.ascx.designer.cs">
+      <DependentUpon>CodeWindow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\DemoLayout.Master.cs">
+      <DependentUpon>DemoLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\DemoLayout.Master.designer.cs">
+      <DependentUpon>DemoLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\DemoWindow.ascx.cs">
+      <DependentUpon>DemoWindow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\DemoWindow.ascx.designer.cs">
+      <DependentUpon>DemoWindow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\DescriptionWindow.ascx.cs">
+      <DependentUpon>DescriptionWindow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\DescriptionWindow.ascx.designer.cs">
+      <DependentUpon>DescriptionWindow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\Root.Master.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\Root.Master.designer.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\TestService.asmx.cs">
+      <DependentUpon>TestService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Demos.WebForms.Mvp.Module\Demos.WebForms.Mvp.Module.csproj">
+      <Project>{D7D7C32A-7DD8-4C7C-B960-26C19A7A392C}</Project>
+      <Name>Demos.WebForms.Mvp.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp.Core\Nucleo.Mvp.Core.csproj">
+      <Project>{DF226D96-36E6-4264-BB33-51BB777F60F6}</Project>
+      <Name>Nucleo.Mvp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp.Web.Core\Nucleo.Mvp.Web.Core.csproj">
+      <Project>{949F2046-F0BF-4229-9262-42ED1D9AC7FB}</Project>
+      <Name>Nucleo.Mvp.Web.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp.WebForms\Nucleo.Mvp.WebForms.csproj">
+      <Project>{FBE009CF-87FF-4C99-AB6C-C8E323EEB43B}</Project>
+      <Name>Nucleo.Mvp.WebForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Mvp\Nucleo.Mvp.csproj">
+      <Project>{1F98927F-872C-4C5E-B66A-BB30ADC3AA6B}</Project>
+      <Name>Nucleo.Mvp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="App_Data\Samples.mdf" />
+    <Content Include="App_Data\Samples_log.LDF">
+      <DependentUpon>Samples.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\Css\CustomStyles.css" />
+    <Content Include="Content\Css\images\background.png" />
+    <Content Include="Content\Css\jquery.mobile.css" />
+    <Content Include="Content\Css\jqueryui.css" />
+    <Content Include="Content\Css\styles.css" />
+    <Content Include="Content\Scripts\jquery.js" />
+    <Content Include="Content\Scripts\jquery.validate.addons.js" />
+    <Content Include="Content\Scripts\jquery.validate.addons.min.js" />
+    <Content Include="Content\Scripts\jquery.validate.js" />
+    <Content Include="Content\Scripts\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\jquerymobile.js" />
+    <Content Include="Content\Scripts\jqueryui.js" />
+    <Content Include="Content\Scripts\ui.draggable.js" />
+    <Content Include="Content\Scripts\ui.droppable.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Demos\MvpSamples\Home.aspx" />
+    <Content Include="Demos\MvpSamples\AjaxRequests\AjaxCallback.ascx" />
+    <Content Include="Demos\MvpSamples\AjaxRequests\ConfigAjaxCallback.ascx" />
+    <Content Include="Demos\MvpSamples\AjaxRequests\ConfigRequestFirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\AjaxRequests\WcfServicesFirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\AjaxRequests\WebRequestFirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\AjaxRequests\WebServicesFirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\Customizations\PresenterCreation.aspx" />
+    <Content Include="Demos\MvpSamples\Customizations\PresenterDiscovery.aspx" />
+    <Content Include="Demos\MvpSamples\Customizations\PresenterInitialization.aspx" />
+    <Content Include="Demos\MvpSamples\Customizations\Resolvers.aspx" />
+    <Content Include="Demos\MvpSamples\Customizations\ViewInitialization.aspx" />
+    <Content Include="Demos\MvpSamples\DataSource\NestedControls.aspx" />
+    <Content Include="Demos\MvpSamples\DataSource\NestedControls01.ascx" />
+    <Content Include="Demos\MvpSamples\DataSource\NestedControls02.ascx" />
+    <Content Include="Demos\MvpSamples\DataSource\PagesFirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\DataSource\Updating.aspx" />
+    <Content Include="Demos\MvpSamples\DataSource\UserControlsFirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\DataSource\ViewDataSourceSample.ascx" />
+    <Content Include="Demos\MvpSamples\DI\PresenterInitialization.aspx" />
+    <Content Include="Demos\MvpSamples\DI\ViewInitializer.aspx" />
+    <Content Include="Demos\MvpSamples\Hierarchy\FirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\Hierarchy\Hierarchy1.ascx" />
+    <Content Include="Demos\MvpSamples\Hierarchy\Hierarchy2.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEvents.aspx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsChild01.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsChild02.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\BubbleTunnelEventsSubchild01.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityInstanceReceiver.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityInstanceSender.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityTypeReceiver.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\EntityTypeSender.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\FirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\GenericEntityTypeReceiver.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\GenericEntityTypeSender.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\TextIdentifierReceiver.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\EventTypes\TextIdentifierSender.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\FirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\FirstLookReceiver.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\FirstLookSender.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\ManyMessages.aspx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\ManyMessagesChild.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\SubscriptionTypes.aspx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\WithEvents.aspx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\WithEventsChild01.ascx" />
+    <Content Include="Demos\MvpSamples\MessagingSamples\WithEventsChild02.ascx" />
+    <Content Include="Demos\MvpSamples\ModelCachingSamples\FirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\ModelCachingSamples\FirstLook1.ascx" />
+    <Content Include="Demos\MvpSamples\ModelCachingSamples\FirstLook2.ascx" />
+    <Content Include="Demos\MvpSamples\ModelCachingSamples\PerGlobal.aspx" />
+    <Content Include="Demos\MvpSamples\ModelCachingSamples\PerGlobalChild.ascx" />
+    <Content Include="Demos\MvpSamples\ModelCachingSamples\PerModel.aspx" />
+    <Content Include="Demos\MvpSamples\ModelCachingSamples\PerModelChild.ascx" />
+    <Content Include="Demos\MvpSamples\ModelInjectionSamples\Caching.aspx" />
+    <Content Include="Demos\MvpSamples\ModelInjectionSamples\Customization.aspx" />
+    <Content Include="Demos\MvpSamples\ModelInjectionSamples\FirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\ModelInjectionSamples\UsingLookups.aspx" />
+    <Content Include="Demos\MvpSamples\ModuleSamples\FirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\PresenterLoadingSamples\AttributeMatching.aspx" />
+    <Content Include="Demos\MvpSamples\PresenterLoadingSamples\ConfigurationMatching.aspx" />
+    <Content Include="Demos\MvpSamples\PresenterLoadingSamples\ConventionMatching.aspx" />
+    <Content Include="Demos\MvpSamples\PresenterLoadingSamples\NoPresenter.aspx" />
+    <Content Include="Demos\MvpSamples\RoutingSamples\RoutingTarget.aspx" />
+    <Content Include="Demos\MvpSamples\RoutingSamples\ViewConventions.aspx" />
+    <Content Include="Demos\MvpSamples\StateSamples\FirstLook.aspx" />
+    <Content Include="Demos\MvpSamples\StateSamples\LoginSample.aspx" />
+    <Content Include="Demos\MvpSamples\WebServices\MvpSampleService.asmx" />
+    <Content Include="Demos\MvpSamples\WebServices\MvpSampleWcfService.svc" />
+    <Content Include="Demos\MvpScenarios\Home.aspx" />
+    <Content Include="Demos\MvpScenarios\TabbedForms\Addresses.ascx" />
+    <Content Include="Demos\MvpScenarios\TabbedForms\ContactInfo.ascx" />
+    <Content Include="Demos\MvpScenarios\TabbedForms\Display.ascx" />
+    <Content Include="Demos\MvpScenarios\TabbedForms\Parent.aspx" />
+    <Content Include="Demos\MvpScenarios\TabbedForms\PhoneNumbers.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Layout\AreaHome.Master" />
+    <Content Include="Layout\CodeWindow.ascx" />
+    <Content Include="Layout\DemoLayout.Master" />
+    <Content Include="Layout\DemoWindow.ascx" />
+    <Content Include="Layout\DescriptionWindow.ascx" />
+    <Content Include="Layout\Root.Master" />
+    <Content Include="Web.config" />
+    <Content Include="WebServices\TestService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1260</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

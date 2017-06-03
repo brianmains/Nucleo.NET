@@ -1,0 +1,11 @@
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Core.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Core.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\obj\Debug\Nucleo.Orm.Entity.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\obj\Debug\Nucleo.Orm.Entity.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.dll

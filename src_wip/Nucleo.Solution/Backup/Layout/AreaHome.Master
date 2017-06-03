@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Layout/Root.Master" AutoEventWireup="true" CodeBehind="AreaHome.master.cs" Inherits="Nucleo.Layout.AreaHome" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="RootHead" runat="server">
+	
+	<asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="RootBody" runat="server">
+
+	<div style="text-align:center;">
+	<div style="width:800px;margin:0px auto;text-align:left;">
+
+		<div class="AreaHomeTopBar">
+			<div class="AreaHomeInfoPanel" style="position:relative;float:left;width:200px;">
+				<asp:ContentPlaceHolder ID="FrameworkDisplay" runat="server">
+        
+				</asp:ContentPlaceHolder>
+			</div>
+
+			<div class="AreaHomeInfoPanel" style="position:relative;float:left;width:600px;">
+				<asp:ContentPlaceHolder ID="FrameworkDescription" runat="server">
+        
+				</asp:ContentPlaceHolder>
+			</div>
+
+			<div style="clear:both;"></div>
+		</div>
+
+		<div class="AreaHomeMiddleBar">
+			
+		</div>
+
+		<div class="AreaHomeBottomBar">
+			<asp:ContentPlaceHolder ID="SiteMap" runat="server">
+				
+			</asp:ContentPlaceHolder>
+		</div>
+	</div>
+	</div>
+
+</asp:Content>

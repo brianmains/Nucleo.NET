@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83BF0A40-0D80-438D-8F31-072B2675130E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Tests.Unit.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TypeMock, Version=7.1.6.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL" />
+    <Reference Include="Typemock.ArrangeActAssert, Version=7.1.6.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\BaseApplicationConfigurationTest.cs" />
+    <Compile Include="BooleanUtilityTest.cs" />
+    <Compile Include="BusinessDaysTest.cs" />
+    <Compile Include="Collections\ChainableCollectionTest.cs" />
+    <Compile Include="Collections\CollectionBaseTest.cs" />
+    <Compile Include="Collections\DictionaryExtensionsTest.cs" />
+    <Compile Include="Collections\FluentCollectionTest.cs" />
+    <Compile Include="Collections\IEnumerableExtensionsTest.cs" />
+    <Compile Include="Collections\ObjectCollectionTest.cs" />
+    <Compile Include="Collections\ObjectKeyedDictionaryTest.cs" />
+    <Compile Include="Collections\ReadonlyCollectionBaseTest.cs" />
+    <Compile Include="Collections\SelectableCollectionBaseTest.cs" />
+    <Compile Include="Collections\SimpleCollectionTest.cs" />
+    <Compile Include="Collections\StringCollectionTest.cs" />
+    <Compile Include="Collections\TypeRegistryTest.cs" />
+    <Compile Include="Context\ApplicationContextTest.cs" />
+    <Compile Include="Context\Configuration\ContextSettingsSectionTest.cs" />
+    <Compile Include="Context\Providers\FakeApplicationContextServiceRegistryTest.cs" />
+    <Compile Include="Context\ServiceCollectionTest.cs" />
+    <Compile Include="Context\Services\BaseInlineServiceDictionaryTest.cs" />
+    <Compile Include="Context\Services\EmailServiceTest.cs" />
+    <Compile Include="Context\Services\InMemoryUserSecurityServiceTest.cs" />
+    <Compile Include="Context\Services\LoggerServiceTest.cs" />
+    <Compile Include="Data\DataRowUtilityTest.cs" />
+    <Compile Include="Data\DataTableUtilityTest.cs" />
+    <Compile Include="Data\DataTypeUtilityTest.cs" />
+    <Compile Include="Data\ObjectsTest.cs" />
+    <Compile Include="DateTimeEqualityTest.cs" />
+    <Compile Include="DateTimeUtilityTest.cs" />
+    <Compile Include="DayOfWeekReoccurrenceTest.cs" />
+    <Compile Include="Dependencies\DependencyStoreTest.cs" />
+    <Compile Include="Dependencies\DictionaryBasedDependencyResolverTest.cs" />
+    <Compile Include="Drawing\ColorHelperTest.cs" />
+    <Compile Include="Email\Configuration\EmailSectionTest.cs" />
+    <Compile Include="Email\EmailerTest.cs" />
+    <Compile Include="Email\EventLogEmailProviderTest.cs" />
+    <Compile Include="Email\FakeEmailProviderTest.cs" />
+    <Compile Include="Email\LoggerEmailProviderTest.cs" />
+    <Compile Include="Email\SmtpEmailProviderTest.cs" />
+    <Compile Include="Encryption\AESEncryptionProviderTest.cs" />
+    <Compile Include="Encryption\RijndaelEncryptionProviderTest.cs" />
+    <Compile Include="Encryption\Sha1HashProviderTest.cs" />
+    <Compile Include="Estimation\BaseDateTimeEstimatorTest.cs" />
+    <Compile Include="Estimation\DateEstimationTest.cs" />
+    <Compile Include="Estimation\DayOfWeekEstimatorTest.cs" />
+    <Compile Include="Estimation\DaysEstimatorTest.cs" />
+    <Compile Include="Estimation\MonthsEstimatorTest.cs" />
+    <Compile Include="Estimation\WeeksEstimatorTest.cs" />
+    <Compile Include="Estimation\YearsEstimatorTest.cs" />
+    <Compile Include="EventArguments\ChangeEventArgsTest.cs" />
+    <Compile Include="EventArguments\DataCancelEventArgsTest.cs" />
+    <Compile Include="EventArguments\DataEventArgsTest.cs" />
+    <Compile Include="EventArguments\DictionaryEventArgsTest.cs" />
+    <Compile Include="EventArguments\ValidateEventArgsTest.cs" />
+    <Compile Include="EventsManagement\BaseEventDetailsTest.cs" />
+    <Compile Include="EventsManagement\EventRegistryOptionsTest.cs" />
+    <Compile Include="EventsManagement\EventsRegistryTest.cs" />
+    <Compile Include="EventsManagement\EventSubscriptionTest.cs" />
+    <Compile Include="EventsManagement\Listeners\AnyListenerCriteriaTest.cs" />
+    <Compile Include="EventsManagement\Listeners\EntityListenerCriteriaTest.cs" />
+    <Compile Include="EventsManagement\Listeners\EntityTypeListenerCriteriaTest.cs" />
+    <Compile Include="EventsManagement\Listeners\ListenerCriterionTest.cs" />
+    <Compile Include="EventsManagement\Listeners\NameIdentifierListenerCriteriaTest.cs" />
+    <Compile Include="EventsManagement\PublishedEventDetailsTest.cs" />
+    <Compile Include="EventsManagement\SubscriptionEventDetailsTest.cs" />
+    <Compile Include="Exceptions\DuplicateExceptionTest.cs" />
+    <Compile Include="Extensions\BoolExtensionsTest.cs" />
+    <Compile Include="Extensions\ColorExtensionsTest.cs" />
+    <Compile Include="Extensions\DateTimeValidationExtensionsTest.cs" />
+    <Compile Include="Extensions\EnumerableValidationTest.cs" />
+    <Compile Include="Extensions\MemberInfoExtensionsTest.cs" />
+    <Compile Include="Extensions\ObjectExtensionsTest.cs" />
+    <Compile Include="Extensions\ObjectValidationExtensionsTest.cs" />
+    <Compile Include="Extensions\TypeExtensionsTest.cs" />
+    <Compile Include="Extensions\XElementExtensionsTest.cs" />
+    <Compile Include="GuardTest.cs" />
+    <Compile Include="IdentifierTest.cs" />
+    <Compile Include="IO\BinarySerializerTest.cs" />
+    <Compile Include="IO\ExtensionTest.cs" />
+    <Compile Include="IO\FoundDirectoryTest.cs" />
+    <Compile Include="IO\FoundFileTest.cs" />
+    <Compile Include="LazyValueTest.cs" />
+    <Compile Include="Logs\Configuration\LoggerSettingsSectionTest.cs" />
+    <Compile Include="Logs\Configuration\LogMessageTypeElementTest.cs" />
+    <Compile Include="Logs\Configuration\LogVerbosityTypeElementTest.cs" />
+    <Compile Include="Logs\ConsoleLogManagerTest.cs" />
+    <Compile Include="Logs\EventLogManagerTest.cs" />
+    <Compile Include="Logs\GeneralMessageTest.cs" />
+    <Compile Include="Logs\LoggerOptionsTest.cs" />
+    <Compile Include="Logs\LoggerTest.cs" />
+    <Compile Include="Logs\LoggerTextWriterTest.cs" />
+    <Compile Include="Logs\LogMessageTest.cs" />
+    <Compile Include="Logs\LogMessageTypeCollectionTest.cs" />
+    <Compile Include="Logs\LogMessageTypesTest.cs" />
+    <Compile Include="Logs\LogMessageTypeTest.cs" />
+    <Compile Include="Logs\LogVerbosityTypeCollectionTest.cs" />
+    <Compile Include="Logs\LogVerbosityTypesTest.cs" />
+    <Compile Include="Logs\LogVerbosityTypeTest.cs" />
+    <Compile Include="Lookups\Configuration\LookupElementTest.cs" />
+    <Compile Include="Lookups\Configuration\LookupGroupElementTest.cs" />
+    <Compile Include="Lookups\Configuration\LookupRepositoriesSectionTest.cs" />
+    <Compile Include="Lookups\Identification\NameLookupIdentifierTest.cs" />
+    <Compile Include="Lookups\LookupAttributeTest.cs" />
+    <Compile Include="Lookups\LookupCollectionTest.cs" />
+    <Compile Include="Lookups\LookupCriteriaTest.cs" />
+    <Compile Include="Lookups\LookupManagerTest.cs" />
+    <Compile Include="Lookups\LookupTest.cs" />
+    <Compile Include="Lookups\Providers\ConfigurationLookupProviderTest.cs" />
+    <Compile Include="Lookups\Providers\StringFormatLookupProviderTest.cs" />
+    <Compile Include="Lookups\Repositories\ConfigurationLookupRepositoryTest.cs" />
+    <Compile Include="Models\Cache\ModelCacheResultsTest.cs" />
+    <Compile Include="Models\Contracts\ContractModelDataLoaderTest.cs" />
+    <Compile Include="Models\Lookups\LookupInjectionAttributeTest.cs" />
+    <Compile Include="Models\Lookups\LookupModelDataLoaderTest.cs" />
+    <Compile Include="Models\ModelInjectionManagerTest.cs" />
+    <Compile Include="Models\ModelMemberMetadataTest.cs" />
+    <Compile Include="Models\ModelValueEntryTest.cs" />
+    <Compile Include="Modules\Discovery\AssemblyAttributedModuleDiscoveryStrategyTest.cs" />
+    <Compile Include="Modules\Discovery\ModuleDiscoveryOptionsTest.cs" />
+    <Compile Include="Modules\ModuleAttributeTest.cs" />
+    <Compile Include="Modules\ModuleFactoryTest.cs" />
+    <Compile Include="ObjectModel\AttributedObjectTest.cs" />
+    <Compile Include="ObjectModel\ObjectReaderTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\Configuration\ProviderConfigurationSectionBaseTest.cs" />
+    <Compile Include="Providers\ProviderBaseTest.cs" />
+    <Compile Include="Providers\ProviderCollectionTest.cs" />
+    <Compile Include="Reflection\AssemblySourceTest.cs" />
+    <Compile Include="Reflection\BaseReflectMemberTest.cs" />
+    <Compile Include="Reflection\ReflectDefinitionTest.cs" />
+    <Compile Include="Reflection\ReflectEventListTest.cs" />
+    <Compile Include="Reflection\ReflectEventTest.cs" />
+    <Compile Include="Reflection\ReflectMethodListTest.cs" />
+    <Compile Include="Reflection\ReflectMethodTest.cs" />
+    <Compile Include="Reflection\ReflectPropertyListTest.cs" />
+    <Compile Include="Reflection\ReflectPropertyTest.cs" />
+    <Compile Include="Reflection\ReflectTypeTest.cs" />
+    <Compile Include="Reflection\TypeUtilityTest.cs" />
+    <Compile Include="Routing\RoutingEnginesTest.cs" />
+    <Compile Include="Security\AnonymousUserTest.cs" />
+    <Compile Include="Security\AuthenticatedUserTest.cs" />
+    <Compile Include="Security\RoleCollectionTest.cs" />
+    <Compile Include="Security\RoleTest.cs" />
+    <Compile Include="Sitemaps\DirectorySitemapLocationTest.cs" />
+    <Compile Include="Sitemaps\FileSitemapLocationTest.cs" />
+    <Compile Include="Sitemaps\SitemapItemCollectionTest.cs" />
+    <Compile Include="Sitemaps\SiteMapItemTest.cs" />
+    <Compile Include="TypeLoaderTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Core\Nucleo.Core.csproj">
+      <Project>{de222dcb-a7e6-4fe8-987f-bdfc55136fb6}</Project>
+      <Name>Nucleo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo\Nucleo.csproj">
+      <Project>{55bb40e6-3042-44b8-aced-62d337f56877}</Project>
+      <Name>Nucleo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

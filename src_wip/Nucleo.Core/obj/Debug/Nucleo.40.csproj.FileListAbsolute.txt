@@ -1,0 +1,4 @@
+C:\Content\VS Projects\Nucleo\4.0\Nucleo.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\4.0\Nucleo.Core\obj\Debug\Nucleo.Errors.resources
+C:\Content\VS Projects\Nucleo\4.0\Nucleo.Core\obj\Debug\GenerateResource.read.1.tlog
+C:\Content\VS Projects\Nucleo\4.0\Nucleo.Core\obj\Debug\GenerateResource.write.1.tlog

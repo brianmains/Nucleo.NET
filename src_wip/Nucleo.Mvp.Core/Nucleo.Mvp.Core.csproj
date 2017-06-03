@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF226D96-36E6-4264-BB33-51BB777F60F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Mvp.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile2</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\MvpApplicationConfigurationsExtensions.cs" />
+    <Compile Include="Application\MvpApplicationConfiguration.cs" />
+    <Compile Include="Commands\BaseCommand.cs" />
+    <Compile Include="Commands\CommandCollection.cs" />
+    <Compile Include="Commands\CommandRegistrar.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Core\FrameworkSettings.cs" />
+    <Compile Include="Core\Options\FrameworkConfiguration.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="EventArguments\CommandEventArgs.cs" />
+    <Compile Include="EventArguments\PresenterEventArgs.cs" />
+    <Compile Include="EventArguments\StateValueChangedEventArgs.cs" />
+    <Compile Include="EventsManagement\BaseEvent.cs" />
+    <Compile Include="EventsManagement\EventsManager.cs" />
+    <Compile Include="Exceptions\PresenterNotFoundException.cs" />
+    <Compile Include="Extensions\EventsRegistryExtensions.cs" />
+    <Compile Include="Extensions\ICacheableModelExtensions.cs" />
+    <Compile Include="Models\BaseCacheableModel.cs" />
+    <Compile Include="Models\Cache\IModelCache.cs" />
+    <Compile Include="Models\ICacheableModel.cs" />
+    <Compile Include="Navigation\IInlineNavigationManager.cs" />
+    <Compile Include="Navigation\IInlineNavigationPresenter.cs" />
+    <Compile Include="Navigation\InlineNavigationManager.cs" />
+    <Compile Include="Presentation\BasePresenter.cs" />
+    <Compile Include="Presentation\BasePresenter~1.cs" />
+    <Compile Include="Presentation\BasePresenter~2.cs" />
+    <Compile Include="Commands\ICommandObserver.cs" />
+    <Compile Include="Presentation\Context\Caching\IPresenterContextCache.cs" />
+    <Compile Include="Presentation\Context\IPresenterContextCreator.cs" />
+    <Compile Include="Presentation\Context\PresenterContext.cs" />
+    <Compile Include="Presentation\Context\PresenterContextInternal.cs" />
+    <Compile Include="Presentation\Creation\DefaultPresenterCreator.cs" />
+    <Compile Include="Presentation\Creation\IPresenterCreator.cs" />
+    <Compile Include="Presentation\Discovery\AttributePresentationDiscoveryStrategy.cs" />
+    <Compile Include="Presentation\Discovery\DefaultPresentationDiscoveryStrategy.cs" />
+    <Compile Include="Presentation\Discovery\PresenterDiscoveryOptions.cs" />
+    <Compile Include="Presentation\Discovery\IPresentationDiscoveryStrategy.cs" />
+    <Compile Include="Presentation\Initialization\DefaultPresenterInitializer.cs" />
+    <Compile Include="Presentation\Initialization\IPresenterInitializer.cs" />
+    <Compile Include="Presentation\IPresenter.cs" />
+    <Compile Include="Presentation\IPresenter~1.cs" />
+    <Compile Include="Presentation\IPresenter~2.cs" />
+    <Compile Include="Presentation\Modules\BaseModularPresenter.cs" />
+    <Compile Include="Presentation\Modules\BaseModularPresenter`1.cs" />
+    <Compile Include="Presentation\Modules\BaseModularPresenter`2.cs" />
+    <Compile Include="Presentation\Modules\IModularPresenter.cs" />
+    <Compile Include="Presentation\PresentationManager.cs" />
+    <Compile Include="Presentation\PresenterBindingAttribute.cs" />
+    <Compile Include="Presentation\PresenterCollection.cs" />
+    <Compile Include="Presentation\PresenterFactory.cs" />
+    <Compile Include="Presentation\PresenterOptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\ISecurableApplicator.cs" />
+    <Compile Include="Security\ISecurableView.cs" />
+    <Compile Include="Security\SecurityResults.cs" />
+    <Compile Include="State\DefaultCurrentExecutionState.cs" />
+    <Compile Include="State\ICurrentExecutionState.cs" />
+    <Compile Include="State\StateValue.cs" />
+    <Compile Include="State\StateValueCollection.cs" />
+    <Compile Include="Views\Commands\ICommandableView.cs" />
+    <Compile Include="Views\Initialization\DefaultViewInitializer.cs" />
+    <Compile Include="Views\Initialization\IViewInitializer.cs" />
+    <Compile Include="Views\IView.cs" />
+    <Compile Include="Views\IViewModel.cs" />
+    <Compile Include="Views\IViewModel`1.cs" />
+    <Compile Include="Views\IViewPresenterAssignment.cs" />
+    <Compile Include="Views\IView`1.cs" />
+    <Compile Include="Views\View.cs" />
+    <Compile Include="Views\ViewCollection.cs" />
+    <Compile Include="Views\ViewMetadata.cs" />
+    <Compile Include="Views\ViewRegistration.cs" />
+    <Compile Include="Views\View`1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.ApplicationServices.Core\Nucleo.ApplicationServices.Core.csproj">
+      <Project>{6c384985-7eb1-404f-9560-07c3459e1f3b}</Project>
+      <Name>Nucleo.ApplicationServices.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Core\Nucleo.Core.csproj">
+      <Project>{de222dcb-a7e6-4fe8-987f-bdfc55136fb6}</Project>
+      <Name>Nucleo.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "c:\Content\VS Projects\Nucleo\Build40\$(Configuration)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

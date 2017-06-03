@@ -1,0 +1,15 @@
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.WebForms.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.WebForms.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.Web.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Web.Core.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.Core.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.Web.Core.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Mvp.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\bin\Release\Nucleo.Web.Core.pdb
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\obj\Release\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\obj\Release\Nucleo.Mvp.WebForms.dll
+C:\Content\VS Projects\Nucleo\Mvp\4.0\Nucleo.Mvp.WebForms\obj\Release\Nucleo.Mvp.WebForms.pdb

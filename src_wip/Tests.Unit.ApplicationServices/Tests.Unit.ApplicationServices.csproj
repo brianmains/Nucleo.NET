@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{715548F2-7CF1-4759-AD59-26618CE994F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Tests.Unit.ApplicationServices</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="TypeMock, Version=7.1.6.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL" />
+    <Reference Include="Typemock.ArrangeActAssert, Version=7.1.6.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceCollectionTest.cs" />
+    <Compile Include="Services\BaseCollectionServiceTest.cs" />
+    <Compile Include="Services\EmailServiceTest.cs" />
+    <Compile Include="Services\InMemoryCookieServiceTest.cs" />
+    <Compile Include="Services\InMemoryHealthMonitoringServiceTest.cs" />
+    <Compile Include="Services\InMemoryPostDataServiceTest.cs" />
+    <Compile Include="Services\InMemoryPostedFilesServiceTest.cs" />
+    <Compile Include="Services\InMemoryQuerystringServiceTest.cs" />
+    <Compile Include="Services\InMemoryRequestHeaderServiceTest.cs" />
+    <Compile Include="Services\InMemoryServerVariablesServiceTest.cs" />
+    <Compile Include="Services\InMemoryUrlResolutionServiceTest.cs" />
+    <Compile Include="Services\InMemoryUserSecurityServiceTest.cs" />
+    <Compile Include="Services\MembershipUserSecurityServiceTest.cs" />
+    <Compile Include="Services\SessionTemporaryDataServiceTest.cs" />
+    <Compile Include="Services\WebCookieServiceTest.cs" />
+    <Compile Include="Services\WebCurrentRequestServiceTest.cs" />
+    <Compile Include="Services\WebHealthMonitoringServiceTest.cs" />
+    <Compile Include="Services\WebPostDataServiceTest.cs" />
+    <Compile Include="Services\WebServerUtilityServiceTest.cs" />
+    <Compile Include="Services\WebUrlResolutionServiceTest.cs" />
+    <Compile Include="Services\WebUserSecurityServiceTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.ApplicationServices.Core\Nucleo.ApplicationServices.Core.csproj">
+      <Project>{6c384985-7eb1-404f-9560-07c3459e1f3b}</Project>
+      <Name>Nucleo.ApplicationServices.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.ApplicationServices.Web\Nucleo.ApplicationServices.Web.csproj">
+      <Project>{3957c729-8058-4817-93bf-19be71f0d314}</Project>
+      <Name>Nucleo.ApplicationServices.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.ApplicationServices\Nucleo.ApplicationServices.csproj">
+      <Project>{bbdae2f7-1e37-448b-ac5b-8a417f1456e9}</Project>
+      <Name>Nucleo.ApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Core\Nucleo.Core.csproj">
+      <Project>{de222dcb-a7e6-4fe8-987f-bdfc55136fb6}</Project>
+      <Name>Nucleo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo\Nucleo.csproj">
+      <Project>{55bb40e6-3042-44b8-aced-62d337f56877}</Project>
+      <Name>Nucleo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,103 @@
+﻿body
+{
+	
+}
+
+#bodycontent
+{
+	margin:0;
+	padding:0;
+}
+
+.CodeContent
+{
+	height:300px;
+	max-height:300px;
+	overflow:auto;
+}
+
+.CodeContent span
+{
+	font-size:8pt;
+}
+
+.CodeWindow
+{
+	padding:30px 10px;
+	border:1px solid black;
+}
+
+.HomeFooterBar
+{
+	background-color: #8A8275;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.HomeLinksBar
+{
+		
+}
+
+.HomeLinksBar a
+{
+	padding:20px;
+	height:50px;
+}
+
+.HomeTopBar
+{
+	background-color: #8A8275;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.TabContent
+{
+	padding:5px;
+	height:410px;
+}
+
+#TraceConsole
+{
+	height;400px;
+	width:100%;
+}
+
+
+.LeftColumn 
+{
+	padding:5px;
+	width:224px;
+	vertical-align:top;
+	border:1px solid black;
+}
+		
+.RightColumn
+{
+	padding:5px;
+	width:980px;
+	vertical-align:top;
+}
+
+.AreaHomeTopBar
+{
+	margin-bottom:20px;
+}
+
+.AreaHomeMiddleBar
+{
+	height:50px;
+	background-color:#E4E4E4;
+	white-space:nowrap;
+}
+
+.AreaHomeBottomBar
+{
+	background-color:#FCF7CC;
+}
+
+.AreaHomeInfoPanel
+{
+	margin:0px 10px 0px 10px;
+}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ReferenceValues>
+	<ReferenceValue>
+		<Name>M</Name>
+		<Value>Male</Value>
+	</ReferenceValue>
+	<ReferenceValue>
+		<Name>F</Name>
+		<Value>Female</Value>
+	</ReferenceValue>
+</ReferenceValues>

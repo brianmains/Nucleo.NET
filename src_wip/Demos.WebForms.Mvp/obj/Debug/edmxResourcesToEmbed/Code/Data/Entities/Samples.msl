@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NucleoDataEntitiesStoreContainer" CdmEntityContainer="SamplesObjectContext">
+    <EntitySetMapping Name="IssueComments">
+      <EntityTypeMapping TypeName="Nucleo.Data.Entities.IssueComment">
+        <MappingFragment StoreEntitySet="IssueComments">
+          <ScalarProperty Name="IssueCommentKey" ColumnName="IssueCommentKey" />
+          <ScalarProperty Name="IssueKey" ColumnName="IssueKey" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Issues">
+      <EntityTypeMapping TypeName="Nucleo.Data.Entities.Issue">
+        <MappingFragment StoreEntitySet="Issues">
+          <ScalarProperty Name="IssueKey" ColumnName="IssueKey" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="IssueType" ColumnName="IssueType" />
+          <ScalarProperty Name="OwnerUserKey" ColumnName="OwnerUserKey" />
+          <ScalarProperty Name="AssignedUserKey" ColumnName="AssignedUserKey" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsCategoryTypes">
+      <EntityTypeMapping TypeName="Nucleo.Data.Entities.NewsCategoryType">
+        <MappingFragment StoreEntitySet="NewsCategoryTypes">
+          <ScalarProperty Name="NewsCategoryTypeKey" ColumnName="NewsCategoryTypeKey" />
+          <ScalarProperty Name="NewsCategoryTypeName" ColumnName="NewsCategoryTypeName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsItems">
+      <EntityTypeMapping TypeName="Nucleo.Data.Entities.NewsItem">
+        <MappingFragment StoreEntitySet="NewsItems">
+          <ScalarProperty Name="NewsItemKey" ColumnName="NewsItemKey" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="NewsContent" ColumnName="NewsContent" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="Nucleo.Data.Entities.Project">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="ProjectKey" ColumnName="ProjectKey" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectUsers">
+      <EntityTypeMapping TypeName="Nucleo.Data.Entities.ProjectUser">
+        <MappingFragment StoreEntitySet="ProjectUsers">
+          <ScalarProperty Name="ProjectUserKey" ColumnName="ProjectUserKey" />
+          <ScalarProperty Name="ProjectKey" ColumnName="ProjectKey" />
+          <ScalarProperty Name="UserKey" ColumnName="UserKey" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Nucleo.Data.Entities.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserKey" ColumnName="UserKey" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="NewsItemsSelectAll" FunctionName="Nucleo.Data.Entities.Store.NewsItemsSelectAll" />
+  </EntityContainerMapping>
+</Mapping>

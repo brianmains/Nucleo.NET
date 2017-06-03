@@ -1,0 +1,1015 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3cadf2e3-f897-4daf-a16a-c6f31bfe1391" name="Brian@DAVID 2012-03-23 23:57:47" runUser="David\Brian" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="orm" id="c32688e4-f0a2-42ed-b3a7-8365fcecf72b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Brian_DAVID 2012-03-23 23_57_47">
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Core\bin\Debug\Nucleo.Orm.Core.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm\bin\Debug\Nucleo.Orm.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Typemock\Isolator\6.1\Typemock.ArrangeActAssert.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity.CodeFirst\bin\Debug\Nucleo.Orm.Entity.CodeFirst.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.DataClasses\bin\Debug\Nucleo.Orm.DataClasses.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Build\Debug\Nucleo.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Build\Debug\Nucleo.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Core\bin\Debug\Nucleo.Orm.Core.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Core\bin\Debug\Nucleo.Orm.Core.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.DataClasses\bin\Debug\Nucleo.Orm.DataClasses.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.DataClasses\bin\Debug\Nucleo.Orm.DataClasses.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm\bin\Debug\Nucleo.Orm.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm\bin\Debug\Nucleo.Orm.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity.CodeFirst\bin\Debug\Nucleo.Orm.Entity.CodeFirst.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity.CodeFirst\bin\Debug\Nucleo.Orm.Entity.CodeFirst.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-23T23:57:47.9602500-04:00" queuing="2012-03-23T23:57:51.8821250-04:00" start="2012-03-23T23:57:52.4133750-04:00" finish="2012-03-23T23:57:59.2688437-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="123" executed="123" passed="116" error="0" failed="7" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="DAVID\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="QueuingInsertAddsToChangeList" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="cad57930-f0bf-4909-3edd-6471ee663f58">
+      <Execution id="382b9929-f474-4f77-b408-7997791617b1" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingInsertAddsToChangeList" />
+    </UnitTest>
+    <UnitTest name="GettingAndSettingPropertiesWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="a3fcc15f-bd0a-1c1f-d5bf-10c25e374e73">
+      <Execution id="8411e575-6926-4dc3-a84c-cb824c732238" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Configuration.UnitOfWorkRegistrationElementTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingAndSettingPropertiesWorksOK" />
+    </UnitTest>
+    <UnitTest name="SettingDiscoveryStrategyStaticAssignsOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="54a96eca-b21a-8fe4-651e-7f151971e46c">
+      <Execution id="a3508a02-f50b-4ca1-a6a6-e3d2d602f334" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.OrmValidatorTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SettingDiscoveryStrategyStaticAssignsOK" />
+    </UnitTest>
+    <UnitTest name="CreatingNewObjectByInterfaceWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="4aaa3cb0-8eaa-e06c-4fb9-57127d516f61">
+      <Execution id="13ca2343-8ed8-430b-8da8-9adf67d19170" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingNewObjectByInterfaceWorksOK" />
+    </UnitTest>
+    <UnitTest name="CtorWithNullDataThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="27ce98cd-2122-17f9-d3f9-18bc5a3b8d37">
+      <Execution id="e57cdfc7-c319-45a2-b553-a2d6a3e8d731" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CtorWithNullDataThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingByKeyReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="faaec9bb-7e12-1870-005d-8af279658fb2">
+      <Execution id="91468daf-ab0f-46c1-aa0d-b0f4103c1ab7" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingByKeyReturnsNull" />
+    </UnitTest>
+    <UnitTest name="CreatingEntitySetWithNullCoreResultThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="2c7e5bdd-19e9-6fc5-1252-db496f8a4268">
+      <Execution id="06fbec17-9e30-4d7b-9fa4-fb02c4715106" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Legacy.ObjectSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingEntitySetWithNullCoreResultThrowsException" />
+    </UnitTest>
+    <UnitTest name="ValidatingNonValidatableEntityReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="25ae8631-d2b2-3c6a-ecfb-d293d2493bce">
+      <Execution id="7c5d6561-e213-4534-9f3e-aeff40e216d7" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.Discovery.DefaultValidationRuleDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingNonValidatableEntityReturnsNull" />
+    </UnitTest>
+    <UnitTest name="CreatingANewEntityCreatesOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="e725ecd4-2d11-c015-13f0-34e0f66a36fc">
+      <Execution id="e612b290-dac9-4c05-8fb7-efbda8a09622" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.TableEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingANewEntityCreatesOK" />
+    </UnitTest>
+    <UnitTest name="QueuingUpdateWithNullObjectThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="09e72b00-1ee6-4294-9a04-15fe96fb9b05">
+      <Execution id="987211db-b264-4c51-af00-8a846f30aa04" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingUpdateWithNullObjectThrowsException" />
+    </UnitTest>
+    <UnitTest name="CtorWithNullData2ThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="f03c6866-bc60-214f-0c44-8f942145c010">
+      <Execution id="32fbec73-a4f7-41b9-93e7-8ced06ac8863" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CtorWithNullData2ThrowsException" />
+    </UnitTest>
+    <UnitTest name="SavingChangesSavesOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="f022b687-5ab1-eae2-6a2b-5d8c4245ec36">
+      <Execution id="d8094a10-7d09-4263-918d-b0e3f6a8ed5b" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.NucleoObjectContextTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingChangesSavesOK" />
+    </UnitTest>
+    <UnitTest name="CreatesTheMessagesWithNullMessageThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="9cbf0c10-7a52-fe7c-cf5e-0409da61da27">
+      <Execution id="8780503c-541e-4496-8381-4be3f6b9a257" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationMessageTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatesTheMessagesWithNullMessageThrowsException" />
+    </UnitTest>
+    <UnitTest name="LinqExpressionIsAccessible" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="1037db9c-05ab-d2fa-7fdb-9b7281c3304e">
+      <Execution id="a6b8c2e3-eaa6-4ccc-9443-321938178baa" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectEntitySetTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LinqExpressionIsAccessible" />
+    </UnitTest>
+    <UnitTest name="CtorWithNullPointer2ThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="1b55080b-afe6-89a0-b78b-630876ea7e12">
+      <Execution id="a1fb0e93-b532-42bd-94de-f03872278a89" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CtorWithNullPointer2ThrowsException" />
+    </UnitTest>
+    <UnitTest name="LocatingNullUnitOfWorkThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="e5217617-63fb-8fe0-b269-f86f1c5e5623">
+      <Execution id="f2def432-a85b-49a2-acce-3e8d86679914" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LocatingNullUnitOfWorkThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueuingInsertWithNullEntityThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="bec18817-8d82-ccdb-b4ef-954d5362ad51">
+      <Execution id="41dcbd94-f3c6-4600-97bc-efca7e3b0b35" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingInsertWithNullEntityThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueryingIQueryableWithNullLambdaThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="792a0669-8c94-ce04-953a-c95835bfa4e8">
+      <Execution id="edcb935d-4800-42c0-bce9-29cea195bf3a" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryingIQueryableWithNullLambdaThrowsException" />
+    </UnitTest>
+    <UnitTest name="ValidatingNoRulesReturnsEmptyValidationResult" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="756926f6-eb56-17c4-d99d-eec14ba66ac9">
+      <Execution id="b7aa8ee3-727b-45ec-9a7e-d35d6057f170" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.OrmValidatorTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingNoRulesReturnsEmptyValidationResult" />
+    </UnitTest>
+    <UnitTest name="QueuingInsertWithNullInfoThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="0988e72e-5cf9-2a1b-d198-b5c38be59d44">
+      <Execution id="93ccbee4-2a68-423c-98fa-1485665e032e" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingInsertWithNullInfoThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingWithNullSetThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="8eb5e6a2-59e7-97f5-de8b-2026cef4dd0b">
+      <Execution id="9692e3f7-aebf-4ff0-bfc3-cdb7c9238f14" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.DbSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithNullSetThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingWithNullTableThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="c5d4ff3a-a82c-38c1-a4e4-f21e2371f342">
+      <Execution id="ae688ad3-b822-4592-9026-8dc45e542a4c" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.Queries.TableQuerySourceTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithNullTableThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueuingDeleteAddsToChangeList" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="67941f38-6d11-8a54-c930-f473133e8fdf">
+      <Execution id="fd0e94aa-a45b-479c-8904-e093e68dc8f3" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingDeleteAddsToChangeList" />
+    </UnitTest>
+    <UnitTest name="QueuingDeleteCallsOnSubmit" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="cf8739a2-fd07-96cd-50a8-0d03a9c947e6">
+      <Execution id="1d717990-2da1-4e28-b2fe-afb6950dcc15" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.TableEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingDeleteCallsOnSubmit" />
+    </UnitTest>
+    <UnitTest name="ValidatingEmptyRulesReturnsEmptyValidationResult" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="e14169b4-f90e-570f-6aa4-0bbc02fbe685">
+      <Execution id="a58a6a88-5e56-4116-bc1e-237cf85ceca0" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.OrmValidatorTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingEmptyRulesReturnsEmptyValidationResult" />
+    </UnitTest>
+    <UnitTest name="QueuingInsertWithNullObjectThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="c698b70a-0666-4226-4b97-8d0d5e83a00f">
+      <Execution id="03e104f7-33c2-4099-ac81-5c647de449d2" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingInsertWithNullObjectThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingWithNullUnitOfWorkReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="31a7c6fa-310d-7b58-606c-ea226e9d933a">
+      <Execution id="53a3fbba-5033-441a-9834-f1d654f9eccd" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Discovery.ConfigurationUnitOfWorkDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithNullUnitOfWorkReturnsNull" />
+    </UnitTest>
+    <UnitTest name="CreatingWithInvalidRegistrationTypeReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="dc686c0c-a3bc-ee0c-f37b-d570d864e84f">
+      <Execution id="0844c9c8-9571-4b51-8a39-975819e6eead" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Discovery.ConfigurationUnitOfWorkDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithInvalidRegistrationTypeReturnsNull" />
+    </UnitTest>
+    <UnitTest name="CreatingWithNullContextThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="cc018af1-cc80-56a7-4101-95e4838d4667">
+      <Execution id="9c060f9b-ef5d-42de-9263-e5482813da33" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.DbSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithNullContextThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueuingUpdateDoesNothing" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="f14445b8-e8cd-916f-7aeb-f4b2734a6d22">
+      <Execution id="919e3940-8f0d-4a12-8962-26c977ad005a" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingUpdateDoesNothing" />
+    </UnitTest>
+    <UnitTest name="SavingChangesCallsOnContext" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="f4564b45-9959-b643-af2a-722b08b6d1ea">
+      <Execution id="1a7257ad-05f4-47d9-8ca7-1b3d2baa1966" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.TableEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingChangesCallsOnContext" />
+    </UnitTest>
+    <UnitTest name="QueuingInsertCallsOnSubmit" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="b337a07e-e652-61f1-70b4-3b77f441fff1">
+      <Execution id="22a0b7d9-4e96-4c64-bed2-49c06571b6f4" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.TableEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingInsertCallsOnSubmit" />
+    </UnitTest>
+    <UnitTest name="AddingResultAddsToList" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="08664284-0bed-da38-ca74-f6848f5bd832">
+      <Execution id="29647690-d3ac-4451-b20b-4679b2705177" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationResultsTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddingResultAddsToList" />
+    </UnitTest>
+    <UnitTest name="ValidatingWithRulesReturnsSuccessResult" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="73dc24d9-be26-b700-200a-2c3022d769b9">
+      <Execution id="d6028df2-9aa9-4cac-ab0e-3b7465d63501" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.OrmValidatorTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingWithRulesReturnsSuccessResult" />
+    </UnitTest>
+    <UnitTest name="GettingContainerFromContextWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="5b7278ff-34f1-13ae-db5c-4f491aecccf4">
+      <Execution id="5757dae5-da27-4548-b885-196c7cfb03d9" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.Queries.TableQuerySourceTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingContainerFromContextWorksOK" />
+    </UnitTest>
+    <UnitTest name="QueuingDeleteWithNullEntityThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="3d763210-fe30-91d7-eba9-2a53978664c2">
+      <Execution id="c2bf639a-c965-49df-9b1c-5d05f9317c33" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingDeleteWithNullEntityThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueueingNullDeleteThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="b6587421-35c5-5c0a-4617-8a4fa0ccb140">
+      <Execution id="6f20f997-5356-4c0c-ab5d-d290e108a518" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueingNullDeleteThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingWithNullEntityThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="be1ba553-4de3-91b1-38e2-fea1af623de6">
+      <Execution id="99e2c71a-68be-438b-9b66-89f080a58362" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationResultsTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithNullEntityThrowsException" />
+    </UnitTest>
+    <UnitTest name="SettingUpWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="38a35ee8-686f-6f0d-1e45-da7a20977626">
+      <Execution id="082f3640-a75f-479c-8abc-663db6d74c85" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.StaticValidationRuleTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SettingUpWorksOK" />
+    </UnitTest>
+    <UnitTest name="QueueingNullUpdateThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="682e284c-0e95-b582-e3cd-022e8aeabd1f">
+      <Execution id="ce617f6b-0f27-45b6-83ff-3d8bce9e39a1" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueingNullUpdateThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingByKeyReturnsObject" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="1aaa83c2-d553-3cb3-7211-c00fa27df80c">
+      <Execution id="c25abdc3-d0ac-4ce0-a360-34b206b5f33f" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingByKeyReturnsObject" />
+    </UnitTest>
+    <UnitTest name="FiringActionWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="d6ebf0c6-5531-08fd-95e7-43e602f649ed">
+      <Execution id="daf33fc1-9eab-46f2-87a2-ee47cc30d0c9" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Triggers.ActionTriggerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FiringActionWorksOK" />
+    </UnitTest>
+    <UnitTest name="AddingErrorResultSetsIsErrorFlag" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="ebb9acfa-f8fe-53cc-15b4-a60c3c39566e">
+      <Execution id="16285882-aa1a-4bf1-8e3a-0b8427a5b69e" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationResultsTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddingErrorResultSetsIsErrorFlag" />
+    </UnitTest>
+    <UnitTest name="QueueingNullInsertThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="f975b55f-115f-a2ca-6e26-1adff96a3233">
+      <Execution id="0093026e-3028-4f68-8d48-103687aeac85" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueingNullInsertThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingEntitySetCreatesOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="9b1eb08d-c64d-2aaa-bf7a-f4549391fa2f">
+      <Execution id="c751bfa0-3a26-4e84-9821-5c8720d2884b" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectEntitySetTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingEntitySetCreatesOK" />
+    </UnitTest>
+    <UnitTest name="GettingByNullEntityKeyThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="da70f6ec-f23f-09f8-b3df-cf296cf4b626">
+      <Execution id="83dd1b00-4312-4bfa-9f70-958672f09437" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingByNullEntityKeyThrowsException" />
+    </UnitTest>
+    <UnitTest name="SavingChangesSavesToContext" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="78ea2635-d426-4747-d89c-71d7ec06981f">
+      <Execution id="8e4361b1-f509-4ee6-85db-a235bde41bab" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingChangesSavesToContext" />
+    </UnitTest>
+    <UnitTest name="QueuingInsertAddsToObjectSet" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="e41eb29c-c451-088a-3f75-2f5e5fb6b089">
+      <Execution id="bf77bc16-84e8-4594-ad83-c7f002d451f6" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingInsertAddsToObjectSet" />
+    </UnitTest>
+    <UnitTest name="QueuingUpdateAddsToChangeList" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="3412c098-5685-c08e-29d7-3b882a2a0fd5">
+      <Execution id="31cd03a0-90cf-4cc8-9d52-073863ccb8c0" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingUpdateAddsToChangeList" />
+    </UnitTest>
+    <UnitTest name="CreatingFromConfigWhenConfigDoesntExistThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="d1d48adf-cf30-0a1b-0fc4-71787e8d5c9e">
+      <Execution id="f6b0e7d2-f6c4-40a7-941d-4624bee20fc5" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingFromConfigWhenConfigDoesntExistThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingWithTableWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="6038f5ef-1b64-cd44-2af9-1bdf3444bfa9">
+      <Execution id="1d403077-a5e2-4ff5-8593-ab0c47378b28" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.Legacy.TableUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithTableWorksOK" />
+    </UnitTest>
+    <UnitTest name="CreatingUnitOfWorkAssignsOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="df455156-8cb1-8e84-fa6b-41a433f6420f">
+      <Execution id="4a9be7d0-6e9d-471a-9e70-ffe1a6eaba33" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.TableEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingUnitOfWorkAssignsOK" />
+    </UnitTest>
+    <UnitTest name="CreatingEntitySetWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="74c51790-40ef-1434-f736-6ae25646b3f6">
+      <Execution id="00df14b2-d081-4ae9-aac9-7a77b907aa34" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Legacy.ObjectSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingEntitySetWorksOK" />
+    </UnitTest>
+    <UnitTest name="ContextIsRetrievedFromTable" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="e1419735-0a7c-a343-7b6a-6b03d31f7385">
+      <Execution id="0229520f-f939-4760-aea8-41913f8b86a6" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.Legacy.TableUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ContextIsRetrievedFromTable" />
+    </UnitTest>
+    <UnitTest name="GettingAndSettingPropsWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="5fd0960a-c4bb-abe8-0208-be811544244b">
+      <Execution id="062591f6-8b6c-49f9-9a19-0916378e01d0" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Discovery.UnitOfWorkDiscoveryOptionsTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingAndSettingPropsWorksOK" />
+    </UnitTest>
+    <UnitTest name="GettingByInvalidKeyReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="1c401467-8168-5e0b-24aa-a1d6fcdabd19">
+      <Execution id="bbdb0deb-abc8-49a5-a577-9abb32235153" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingByInvalidKeyReturnsNull" />
+    </UnitTest>
+    <UnitTest name="CreatingNewObjectWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="9d2fdbf7-821f-8a91-55db-c664fa0486e3">
+      <Execution id="a59bc8b8-fff4-44b2-b815-79892ef89553" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingNewObjectWorksOK" />
+    </UnitTest>
+    <UnitTest name="GetByNullIDLookupUsingInterfaceThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="3af59cc2-4577-facc-79d9-ed40e31dd7f5">
+      <Execution id="542b9bad-a4df-485e-bd6c-2e2290b8d358" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetByNullIDLookupUsingInterfaceThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueryingWithNullExpression2ThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="82ea22e9-0145-757c-bde7-8f4176defc0a">
+      <Execution id="acbc8874-bd66-43ad-8945-2caac4b7ef95" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryingWithNullExpression2ThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingEntityWithNullInfoThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="049765dd-83f8-a129-7ac1-7d14eb10cba5">
+      <Execution id="ee6c2c56-f157-440f-a463-c26285336497" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingEntityWithNullInfoThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingObjectByIDReturnsCorrectObject" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="dd242d73-c31d-5754-03d1-f637ebfa213d">
+      <Execution id="40fb1ea8-18af-48dd-bf1b-d16e87560a39" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingObjectByIDReturnsCorrectObject" />
+    </UnitTest>
+    <UnitTest name="LocatingEmptyUnitOfWorkThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="8f0189e5-044f-f18a-62b7-e02f2a81ea5a">
+      <Execution id="afb1cf6a-860b-4b8d-bb31-b0ab8c76fad5" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LocatingEmptyUnitOfWorkThrowsException" />
+    </UnitTest>
+    <UnitTest name="ValidatingDoesNotLogToResult" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="0b4117ff-576c-7a91-a191-ade6c9b1c233">
+      <Execution id="3801ba23-9362-4219-94fb-03a51027557e" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.EmptyValidationRuleTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingDoesNotLogToResult" />
+    </UnitTest>
+    <UnitTest name="QueuingDeleteRemovedFromObjectSet" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="a810af21-efbd-264b-a00a-8b88a6ca836c">
+      <Execution id="52ba3466-3f3e-4826-97fa-34b6bd4205a2" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingDeleteRemovedFromObjectSet" />
+    </UnitTest>
+    <UnitTest name="CreatingNewEntityWithNullInfoThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="28b0daf5-c532-74d0-1652-6112aa55b68e">
+      <Execution id="d8551e4c-3992-4b7f-8bb6-89e29e30b946" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingNewEntityWithNullInfoThrowsException" />
+    </UnitTest>
+    <UnitTest name="FindingInsertValidationRulesForEntityWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="88cb810d-dbf6-a14f-d8f6-a0f0fb2e7389">
+      <Execution id="87dbfd5c-a879-4fb7-9525-f4fb6458e978" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.Discovery.ValidationRuleTargetDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FindingInsertValidationRulesForEntityWorksOK" />
+    </UnitTest>
+    <UnitTest name="QueuingUpdateWithNullInfoThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="17f807d4-9f56-dd15-98cc-dda877aabff9">
+      <Execution id="89e4f24f-ffb1-436f-84c3-c934ab2bccd4" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingUpdateWithNullInfoThrowsException" />
+    </UnitTest>
+    <UnitTest name="SavingDeletePushesChange" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="cf085bae-c255-d472-9e18-c04089610927">
+      <Execution id="924e0984-0f56-45f5-961a-411363718b50" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingDeletePushesChange" />
+    </UnitTest>
+    <UnitTest name="QueuingDeleteWithNullInfoThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="c8ea3952-ca57-e6dc-a4d4-6bf06cea9f82">
+      <Execution id="1f6aa299-2647-4ede-9938-a80a67f3a9bf" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingDeleteWithNullInfoThrowsException" />
+    </UnitTest>
+    <UnitTest name="ConstructingWithNullThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="bcc057b0-37c8-1f07-f6af-8eed4642fbcf">
+      <Execution id="790e7361-19f2-4c35-8727-346d43590511" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructingWithNullThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingByKeyWithInvalidTypeThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="9d33b626-d829-7c04-c666-1c16abf18557">
+      <Execution id="1d74fb33-84cc-4969-ab67-e89a1a0b4a27" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingByKeyWithInvalidTypeThrowsException" />
+    </UnitTest>
+    <UnitTest name="ValidatingValidatableEntityReturnsResults" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="966cdf85-4365-8b0d-7c05-da063daae3b9">
+      <Execution id="d2a04386-9dda-44e4-84b7-f1456810d2ff" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.Discovery.DefaultValidationRuleDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidatingValidatableEntityReturnsResults" />
+    </UnitTest>
+    <UnitTest name="QueueingInvalidUpdateThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="d654a00b-2a3c-4d1e-bfbe-fb3225eadd09">
+      <Execution id="72728966-12f0-4bc0-a395-cbeaa7478fa5" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueingInvalidUpdateThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingAssignsIsValidToTrue" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="66e23e06-339e-4ebd-9998-8074f11380db">
+      <Execution id="abcb155d-b342-4d4c-a5d2-ee11a065e8fb" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationResultsTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAssignsIsValidToTrue" />
+    </UnitTest>
+    <UnitTest name="CreatingWithOptionsAssignsOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="cc4b51ae-303b-9e5c-9757-1d3d9e8f1777">
+      <Execution id="cb2dfd49-feba-4646-b8b7-d63ef953eb28" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithOptionsAssignsOK" />
+    </UnitTest>
+    <UnitTest name="CreatingWithValidRegistrationReturnsUnitOfWork" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="a734e4ee-ee1e-7485-976c-a418b58a61d0">
+      <Execution id="55a5a72e-dd24-4d37-a961-873da6125edb" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Discovery.ConfigurationUnitOfWorkDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithValidRegistrationReturnsUnitOfWork" />
+    </UnitTest>
+    <UnitTest name="AttachingNullEntityThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="aeae47f1-8b97-6ad3-ab97-de773d491c11">
+      <Execution id="544085a7-c77a-4435-b346-6e995cb5c267" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Legacy.ObjectSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AttachingNullEntityThrowsException" />
+    </UnitTest>
+    <UnitTest name="LocatingUnitOfWorkWithNullOptionsThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="906e2135-2d75-dd03-729c-5b14c0fa1c6e">
+      <Execution id="12cd5e42-153b-4323-b79e-e0050e0e8897" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Discovery.ConfigurationUnitOfWorkDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LocatingUnitOfWorkWithNullOptionsThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingTriggerAssignsThrowsNoExceptions" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="7c739d6b-fe40-5934-ad29-84d85e984a64">
+      <Execution id="19d53b41-f994-4fec-9046-044f0b84123e" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Triggers.ActionTriggerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingTriggerAssignsThrowsNoExceptions" />
+    </UnitTest>
+    <UnitTest name="QueueingInvalidDeleteThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="659707f0-d8f0-76b8-1ec5-1f498fb75404">
+      <Execution id="1cbe4be7-206b-47b2-9d59-b969a112d29a" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueingInvalidDeleteThrowsException" />
+    </UnitTest>
+    <UnitTest name="LinqProviderIsAccessible" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="a77db4b6-00ac-3b1e-2601-9c6d5b6d5364">
+      <Execution id="f4cc9a4b-957e-4947-86c1-bb0e200eb1ad" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectEntitySetTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LinqProviderIsAccessible" />
+    </UnitTest>
+    <UnitTest name="ServingCachedMethodWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="fa9d216e-8a6b-8d7b-80a0-c9bdf6b0016d">
+      <Execution id="34372342-5499-4636-9bc1-98917981c2ca" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ServingCachedMethodWorksOK" />
+    </UnitTest>
+    <UnitTest name="SavingUpdatePushesChange" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="a429e980-5a34-1179-fc71-f510bbc62ec0">
+      <Execution id="cfae396c-f1c0-4879-9d49-9a27e4628f39" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingUpdatePushesChange" />
+    </UnitTest>
+    <UnitTest name="QueuingUpdateWhenNotAttachedAttachesItem" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="82792df3-2087-fcd9-499b-aaa565af3fd7">
+      <Execution id="7d6399fd-eb7c-4eb1-81c2-2f5e3f46e988" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.TableEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingUpdateWhenNotAttachedAttachesItem" />
+    </UnitTest>
+    <UnitTest name="DetachingAnEntityWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="dd01b293-83e0-2dbb-30e7-7422faba3757">
+      <Execution id="72ab7d87-25f8-44b6-ba40-16c6754525a2" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Legacy.ObjectSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DetachingAnEntityWorksOK" />
+    </UnitTest>
+    <UnitTest name="QueueingInvalidInsertThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="0e26f961-ec55-69fd-5c85-6e92fa1e2d0d">
+      <Execution id="dd3f21a6-4578-4d87-87fc-13b2cf76f643" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueingInvalidInsertThrowsException" />
+    </UnitTest>
+    <UnitTest name="AddingARangeOfRulesAddsOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="a450fc64-8213-57bd-9d03-bda5286c7979">
+      <Execution id="6f8d57e7-617e-4586-8a46-805f72cbc07b" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationRuleCollectionTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddingARangeOfRulesAddsOK" />
+    </UnitTest>
+    <UnitTest name="CreatingWithDbSetWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="8ec8f0c3-39ba-96f2-316f-5ff37fff4a88">
+      <Execution id="2a46aa96-0d4e-4601-af3c-8f90be2bc8a0" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.DbSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithDbSetWorksOK" />
+    </UnitTest>
+    <UnitTest name="GettingEntitySetNameWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="12c0784f-7073-1afc-cdc8-5a5b69da4f56">
+      <Execution id="16e393af-20ad-41ac-9aeb-2fb5c5b2053b" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Legacy.ObjectSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingEntitySetNameWorksOK" />
+    </UnitTest>
+    <UnitTest name="QueuingUpdateWhenAttachedDoesNotAttach" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="d69c55cf-d668-5519-9d89-d95aaff0f7ca">
+      <Execution id="ef85c08b-22c6-4c5a-a206-16235cc1df1d" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.TableEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingUpdateWhenAttachedDoesNotAttach" />
+    </UnitTest>
+    <UnitTest name="SettingSameDiscoveryStrategyStaticDoesntOverwrite" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="7e703dce-5d5f-d802-b26a-6c52b23e501b">
+      <Execution id="607d1681-583e-4e0c-a529-23ce366a149c" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.OrmValidatorTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SettingSameDiscoveryStrategyStaticDoesntOverwrite" />
+    </UnitTest>
+    <UnitTest name="DetachingNullEntityThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="93d22286-9001-b0ab-6fa3-c17638c0fa12">
+      <Execution id="7340293d-9aab-487c-a8c5-d3eb271c269d" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Legacy.ObjectSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DetachingNullEntityThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingAndSettingPropertiesWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="cf85672e-98c7-81c2-8473-46eea0cdd0ff">
+      <Execution id="61327144-1356-41c1-8f89-5eb67e2ae914" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Configuration.UnitOfWorkSectionTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingAndSettingPropertiesWorksOK" />
+    </UnitTest>
+    <UnitTest name="CreatingWithValidButMissingRegistrationReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="5b6f3b21-76b1-e845-7c9f-abc851c25973">
+      <Execution id="58f27e5e-190c-4c50-b089-dc343d7da1d8" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Discovery.ConfigurationUnitOfWorkDiscoveryStrategyTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithValidButMissingRegistrationReturnsNull" />
+    </UnitTest>
+    <UnitTest name="QueryingWithNullExpression3ThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="459a003a-a71e-1e65-4141-7bdd62b9ff3f">
+      <Execution id="0d745cad-2835-4fc0-8a38-5a3247153ccf" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryingWithNullExpression3ThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueryingGenericIQueryableWithNullLambdaThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="7f159efc-c116-df3f-4dea-cae98296411d">
+      <Execution id="0f3cf3d6-3381-45da-a41d-186d246829e7" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryingGenericIQueryableWithNullLambdaThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingValidEntityWithKeyReturnsObject" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="c161f08e-d345-c8e4-3271-6dc5549e5d5c">
+      <Execution id="7d3a76ed-a02e-4f99-a86f-1e3516a4c02a" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingValidEntityWithKeyReturnsObject" />
+    </UnitTest>
+    <UnitTest name="QueuingUpdateWithNullEntityThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="c16c6a4f-f8d8-e229-bd3b-4a2682e47acc">
+      <Execution id="1ad39be2-0e20-436a-940b-d572ecf2f7f9" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingUpdateWithNullEntityThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueryingWithNullExpression1ThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="dfe08ee1-e732-6298-2305-6ab6d1d973a3">
+      <Execution id="f8488dda-3146-40ee-a4d7-be21333afe69" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryingWithNullExpression1ThrowsException" />
+    </UnitTest>
+    <UnitTest name="CachingDiscoveredUnitOfWorkSetsToCache" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="0abbf6f9-df36-f302-00ff-446e563110db">
+      <Execution id="aea2efb5-1067-4fa1-8df6-0826ed7a33f8" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CachingDiscoveredUnitOfWorkSetsToCache" />
+    </UnitTest>
+    <UnitTest name="QueuingDeleteWithNullObjectThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="96dc3341-4461-eb75-546d-58fb23613a6d">
+      <Execution id="959b5873-ebae-4958-90ef-3966514a0dc2" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueuingDeleteWithNullObjectThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingAndSettingPropsWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="0611c74f-f31a-bafd-d04d-1fa0fb70a58c">
+      <Execution id="adcac656-1358-46a1-806e-fdc177001c08" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Generic.EntityKeyInformationTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingAndSettingPropsWorksOK" />
+    </UnitTest>
+    <UnitTest name="CtorWithNullPointerThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="95607df7-4a36-07ad-001e-2628ca3e9fa5">
+      <Execution id="85f625ec-7212-49c0-90d1-9c18642d7bb6" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CtorWithNullPointerThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingEntitySetThrowsWhenCtorParamNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="dc1eb3ed-f885-c6a7-0635-9472a074f8d3">
+      <Execution id="029d35fb-3de7-4f4e-892d-60f41ae6cd18" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectEntitySetTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingEntitySetThrowsWhenCtorParamNull" />
+    </UnitTest>
+    <UnitTest name="CreatingWithTableWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="870f6197-fafa-2df3-7218-0a9934c914c4">
+      <Execution id="314b69fa-fff2-49e1-9901-2e446897ce0a" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.DataClasses.Queries.TableQuerySourceTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithTableWorksOK" />
+    </UnitTest>
+    <UnitTest name="SavingNoChangesWhenNothingPushedDoesNothing" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="72913ab2-abb8-2613-5c29-1681318a114a">
+      <Execution id="8dfedd8f-23ed-4f66-a70d-644766504d89" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingNoChangesWhenNothingPushedDoesNothing" />
+    </UnitTest>
+    <UnitTest name="CreatesTheMessagesAssignsOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="e9915c47-9188-8b20-ac6c-3e7e3a01e157">
+      <Execution id="f79c2c26-d3ff-420e-95e2-a44949206efa" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationMessageTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatesTheMessagesAssignsOK" />
+    </UnitTest>
+    <UnitTest name="SavingInsertPushesChange" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="77b58743-b3ad-6982-7bb8-36fe3e46c0c5">
+      <Execution id="5736b557-fcb1-4b29-8859-a42cc4782381" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingInsertPushesChange" />
+    </UnitTest>
+    <UnitTest name="GetByNullIDLookupThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="d4a37770-ed78-35d3-e473-4f32ad9d782e">
+      <Execution id="2812e67b-7fb6-4bb7-bd42-6b5fa57b1dd3" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetByNullIDLookupThrowsException" />
+    </UnitTest>
+    <UnitTest name="QueryingWithNullExpression4ThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="734b575d-57e6-4b8b-a242-5534b8195ba4">
+      <Execution id="a92e35bf-0cda-403e-88f3-5eddc5eede27" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryingWithNullExpression4ThrowsException" />
+    </UnitTest>
+    <UnitTest name="GettingInvalidEntityWithKeyReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="146e094e-5cce-76ff-2575-f7a3f29ee44b">
+      <Execution id="1c849d31-5bc0-407c-b9b9-0771f91edc5d" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingInvalidEntityWithKeyReturnsNull" />
+    </UnitTest>
+    <UnitTest name="AddNullResultThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="ab6f7fc5-9dff-3c49-ecd7-74e4dd2d1cba">
+      <Execution id="fb6f5ad1-f4fb-4ae1-a01a-317047f933c7" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationResultsTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddNullResultThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatesTheMessagesWithEmptyMessageThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="055d5acf-8347-0a84-f435-c7ceefc95385">
+      <Execution id="09c781b0-f215-4a28-a860-fa95e6d7006a" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationMessageTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatesTheMessagesWithEmptyMessageThrowsException" />
+    </UnitTest>
+    <UnitTest name="LinqGetEnumeratorIsAccessible" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="a6ee4f77-dc69-f1ba-3743-e6e3982df605">
+      <Execution id="09737bf4-4fdb-4d2f-ae34-9e9bce6c0a07" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectEntitySetTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LinqGetEnumeratorIsAccessible" />
+    </UnitTest>
+    <UnitTest name="SavingChangesCommitsToContext" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="9b4ae5a4-a5e8-f271-16f0-890a450bfc6b">
+      <Execution id="02f2c22e-6e36-4a39-8c8a-491ee6db6267" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SavingChangesCommitsToContext" />
+    </UnitTest>
+    <UnitTest name="CreatingNewObjectReturnsActualInstance" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="4f992a06-21a1-c900-468a-c6a2cecc292a">
+      <Execution id="a32e4154-8156-4a62-a2f5-c36b7f01934b" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectSetEntityUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingNewObjectReturnsActualInstance" />
+    </UnitTest>
+    <UnitTest name="GettingObjectByKeySelectorGetsCorrectObject" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="6793f6ca-3b98-942f-04ef-912d041a64ec">
+      <Execution id="ae2c55d5-394d-43ea-a9b4-7ef399df4e57" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.InMemoryUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingObjectByKeySelectorGetsCorrectObject" />
+    </UnitTest>
+    <UnitTest name="LinqElementTypeIsAccessible" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="11e9c146-809a-29f4-e788-333bfde116f8">
+      <Execution id="505dbff0-2de7-4da6-8426-4b6d7a767f07" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.ObjectEntitySetTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LinqElementTypeIsAccessible" />
+    </UnitTest>
+    <UnitTest name="LocatingUnitOfWorkByNameWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="da2294e4-6224-f8f4-af00-bb7bd32e5d1d">
+      <Execution id="6b9caa4a-7679-4956-94d9-4f91cd58fbb7" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LocatingUnitOfWorkByNameWorksOK" />
+    </UnitTest>
+    <UnitTest name="CreatingNewEntityWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="2859fc40-0509-8486-bac0-4b238a48651c">
+      <Execution id="62b23cf9-bfaa-4622-adf6-8f74f057871d" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingNewEntityWorksOK" />
+    </UnitTest>
+    <UnitTest name="AttachingAnEntityWorksOK" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="be44b7f8-0b34-52a5-0492-f06bf0a5b9be">
+      <Execution id="07683842-5ddb-470b-9726-0665a7cb3d33" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Legacy.ObjectSetUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AttachingAnEntityWorksOK" />
+    </UnitTest>
+    <UnitTest name="CreatingWithNullOptionsThrowsException" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="767e6e10-19fb-d820-8589-e7a4e43d4027">
+      <Execution id="02033a3c-a0c6-43a2-91ba-dfa63c640562" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.UnitOfWorkManagerTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingWithNullOptionsThrowsException" />
+    </UnitTest>
+    <UnitTest name="CreatingAssignsToLocalParameters" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="69bf772a-4808-825b-bf53-00ca46528723">
+      <Execution id="7e255eaa-e64b-4e76-88f1-afe10c188796" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Validation.ValidationResultsTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAssignsToLocalParameters" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="049765dd-83f8-a129-7ac1-7d14eb10cba5" executionId="ee6c2c56-f157-440f-a463-c26285336497" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="055d5acf-8347-0a84-f435-c7ceefc95385" executionId="09c781b0-f215-4a28-a860-fa95e6d7006a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0611c74f-f31a-bafd-d04d-1fa0fb70a58c" executionId="adcac656-1358-46a1-806e-fdc177001c08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08664284-0bed-da38-ca74-f6848f5bd832" executionId="29647690-d3ac-4451-b20b-4679b2705177" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0988e72e-5cf9-2a1b-d198-b5c38be59d44" executionId="93ccbee4-2a68-423c-98fa-1485665e032e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09e72b00-1ee6-4294-9a04-15fe96fb9b05" executionId="987211db-b264-4c51-af00-8a846f30aa04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0abbf6f9-df36-f302-00ff-446e563110db" executionId="aea2efb5-1067-4fa1-8df6-0826ed7a33f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b4117ff-576c-7a91-a191-ade6c9b1c233" executionId="3801ba23-9362-4219-94fb-03a51027557e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0e26f961-ec55-69fd-5c85-6e92fa1e2d0d" executionId="dd3f21a6-4578-4d87-87fc-13b2cf76f643" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1037db9c-05ab-d2fa-7fdb-9b7281c3304e" executionId="a6b8c2e3-eaa6-4ccc-9443-321938178baa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11e9c146-809a-29f4-e788-333bfde116f8" executionId="505dbff0-2de7-4da6-8426-4b6d7a767f07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12c0784f-7073-1afc-cdc8-5a5b69da4f56" executionId="16e393af-20ad-41ac-9aeb-2fb5c5b2053b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="146e094e-5cce-76ff-2575-f7a3f29ee44b" executionId="1c849d31-5bc0-407c-b9b9-0771f91edc5d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17f807d4-9f56-dd15-98cc-dda877aabff9" executionId="89e4f24f-ffb1-436f-84c3-c934ab2bccd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1aaa83c2-d553-3cb3-7211-c00fa27df80c" executionId="c25abdc3-d0ac-4ce0-a360-34b206b5f33f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b55080b-afe6-89a0-b78b-630876ea7e12" executionId="a1fb0e93-b532-42bd-94de-f03872278a89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c401467-8168-5e0b-24aa-a1d6fcdabd19" executionId="bbdb0deb-abc8-49a5-a577-9abb32235153" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25ae8631-d2b2-3c6a-ecfb-d293d2493bce" executionId="7c5d6561-e213-4534-9f3e-aeff40e216d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27ce98cd-2122-17f9-d3f9-18bc5a3b8d37" executionId="e57cdfc7-c319-45a2-b553-a2d6a3e8d731" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2859fc40-0509-8486-bac0-4b238a48651c" executionId="62b23cf9-bfaa-4622-adf6-8f74f057871d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28b0daf5-c532-74d0-1652-6112aa55b68e" executionId="d8551e4c-3992-4b7f-8bb6-89e29e30b946" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c7e5bdd-19e9-6fc5-1252-db496f8a4268" executionId="06fbec17-9e30-4d7b-9fa4-fb02c4715106" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31a7c6fa-310d-7b58-606c-ea226e9d933a" executionId="53a3fbba-5033-441a-9834-f1d654f9eccd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3412c098-5685-c08e-29d7-3b882a2a0fd5" executionId="31cd03a0-90cf-4cc8-9d52-073863ccb8c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38a35ee8-686f-6f0d-1e45-da7a20977626" executionId="082f3640-a75f-479c-8abc-663db6d74c85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3af59cc2-4577-facc-79d9-ed40e31dd7f5" executionId="542b9bad-a4df-485e-bd6c-2e2290b8d358" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d763210-fe30-91d7-eba9-2a53978664c2" executionId="c2bf639a-c965-49df-9b1c-5d05f9317c33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="459a003a-a71e-1e65-4141-7bdd62b9ff3f" executionId="0d745cad-2835-4fc0-8a38-5a3247153ccf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4aaa3cb0-8eaa-e06c-4fb9-57127d516f61" executionId="13ca2343-8ed8-430b-8da8-9adf67d19170" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f992a06-21a1-c900-468a-c6a2cecc292a" executionId="a32e4154-8156-4a62-a2f5-c36b7f01934b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54a96eca-b21a-8fe4-651e-7f151971e46c" executionId="a3508a02-f50b-4ca1-a6a6-e3d2d602f334" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b6f3b21-76b1-e845-7c9f-abc851c25973" executionId="58f27e5e-190c-4c50-b089-dc343d7da1d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b7278ff-34f1-13ae-db5c-4f491aecccf4" executionId="5757dae5-da27-4548-b885-196c7cfb03d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5fd0960a-c4bb-abe8-0208-be811544244b" executionId="062591f6-8b6c-49f9-9a19-0916378e01d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6038f5ef-1b64-cd44-2af9-1bdf3444bfa9" executionId="1d403077-a5e2-4ff5-8593-ab0c47378b28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="659707f0-d8f0-76b8-1ec5-1f498fb75404" executionId="1cbe4be7-206b-47b2-9d59-b969a112d29a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66e23e06-339e-4ebd-9998-8074f11380db" executionId="abcb155d-b342-4d4c-a5d2-ee11a065e8fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6793f6ca-3b98-942f-04ef-912d041a64ec" executionId="ae2c55d5-394d-43ea-a9b4-7ef399df4e57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67941f38-6d11-8a54-c930-f473133e8fdf" executionId="fd0e94aa-a45b-479c-8904-e093e68dc8f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="682e284c-0e95-b582-e3cd-022e8aeabd1f" executionId="ce617f6b-0f27-45b6-83ff-3d8bce9e39a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69bf772a-4808-825b-bf53-00ca46528723" executionId="7e255eaa-e64b-4e76-88f1-afe10c188796" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72913ab2-abb8-2613-5c29-1681318a114a" executionId="8dfedd8f-23ed-4f66-a70d-644766504d89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="734b575d-57e6-4b8b-a242-5534b8195ba4" executionId="a92e35bf-0cda-403e-88f3-5eddc5eede27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73dc24d9-be26-b700-200a-2c3022d769b9" executionId="d6028df2-9aa9-4cac-ab0e-3b7465d63501" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74c51790-40ef-1434-f736-6ae25646b3f6" executionId="00df14b2-d081-4ae9-aac9-7a77b907aa34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="756926f6-eb56-17c4-d99d-eec14ba66ac9" executionId="b7aa8ee3-727b-45ec-9a7e-d35d6057f170" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="767e6e10-19fb-d820-8589-e7a4e43d4027" executionId="02033a3c-a0c6-43a2-91ba-dfa63c640562" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77b58743-b3ad-6982-7bb8-36fe3e46c0c5" executionId="5736b557-fcb1-4b29-8859-a42cc4782381" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78ea2635-d426-4747-d89c-71d7ec06981f" executionId="8e4361b1-f509-4ee6-85db-a235bde41bab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="792a0669-8c94-ce04-953a-c95835bfa4e8" executionId="edcb935d-4800-42c0-bce9-29cea195bf3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c739d6b-fe40-5934-ad29-84d85e984a64" executionId="19d53b41-f994-4fec-9046-044f0b84123e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e703dce-5d5f-d802-b26a-6c52b23e501b" executionId="607d1681-583e-4e0c-a529-23ce366a149c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f159efc-c116-df3f-4dea-cae98296411d" executionId="0f3cf3d6-3381-45da-a41d-186d246829e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82792df3-2087-fcd9-499b-aaa565af3fd7" executionId="7d6399fd-eb7c-4eb1-81c2-2f5e3f46e988" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82ea22e9-0145-757c-bde7-8f4176defc0a" executionId="acbc8874-bd66-43ad-8945-2caac4b7ef95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="870f6197-fafa-2df3-7218-0a9934c914c4" executionId="314b69fa-fff2-49e1-9901-2e446897ce0a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88cb810d-dbf6-a14f-d8f6-a0f0fb2e7389" executionId="87dbfd5c-a879-4fb7-9525-f4fb6458e978" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8eb5e6a2-59e7-97f5-de8b-2026cef4dd0b" executionId="9692e3f7-aebf-4ff0-bfc3-cdb7c9238f14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ec8f0c3-39ba-96f2-316f-5ff37fff4a88" executionId="2a46aa96-0d4e-4601-af3c-8f90be2bc8a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f0189e5-044f-f18a-62b7-e02f2a81ea5a" executionId="afb1cf6a-860b-4b8d-bb31-b0ab8c76fad5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="906e2135-2d75-dd03-729c-5b14c0fa1c6e" executionId="12cd5e42-153b-4323-b79e-e0050e0e8897" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93d22286-9001-b0ab-6fa3-c17638c0fa12" executionId="7340293d-9aab-487c-a8c5-d3eb271c269d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="95607df7-4a36-07ad-001e-2628ca3e9fa5" executionId="85f625ec-7212-49c0-90d1-9c18642d7bb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="966cdf85-4365-8b0d-7c05-da063daae3b9" executionId="d2a04386-9dda-44e4-84b7-f1456810d2ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96dc3341-4461-eb75-546d-58fb23613a6d" executionId="959b5873-ebae-4958-90ef-3966514a0dc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b1eb08d-c64d-2aaa-bf7a-f4549391fa2f" executionId="c751bfa0-3a26-4e84-9821-5c8720d2884b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b4ae5a4-a5e8-f271-16f0-890a450bfc6b" executionId="02f2c22e-6e36-4a39-8c8a-491ee6db6267" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9cbf0c10-7a52-fe7c-cf5e-0409da61da27" executionId="8780503c-541e-4496-8381-4be3f6b9a257" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d2fdbf7-821f-8a91-55db-c664fa0486e3" executionId="a59bc8b8-fff4-44b2-b815-79892ef89553" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d33b626-d829-7c04-c666-1c16abf18557" executionId="1d74fb33-84cc-4969-ab67-e89a1a0b4a27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3fcc15f-bd0a-1c1f-d5bf-10c25e374e73" executionId="8411e575-6926-4dc3-a84c-cb824c732238" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a429e980-5a34-1179-fc71-f510bbc62ec0" executionId="cfae396c-f1c0-4879-9d49-9a27e4628f39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a450fc64-8213-57bd-9d03-bda5286c7979" executionId="6f8d57e7-617e-4586-8a46-805f72cbc07b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6ee4f77-dc69-f1ba-3743-e6e3982df605" executionId="09737bf4-4fdb-4d2f-ae34-9e9bce6c0a07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a734e4ee-ee1e-7485-976c-a418b58a61d0" executionId="55a5a72e-dd24-4d37-a961-873da6125edb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a77db4b6-00ac-3b1e-2601-9c6d5b6d5364" executionId="f4cc9a4b-957e-4947-86c1-bb0e200eb1ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a810af21-efbd-264b-a00a-8b88a6ca836c" executionId="52ba3466-3f3e-4826-97fa-34b6bd4205a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab6f7fc5-9dff-3c49-ecd7-74e4dd2d1cba" executionId="fb6f5ad1-f4fb-4ae1-a01a-317047f933c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aeae47f1-8b97-6ad3-ab97-de773d491c11" executionId="544085a7-c77a-4435-b346-6e995cb5c267" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b337a07e-e652-61f1-70b4-3b77f441fff1" executionId="22a0b7d9-4e96-4c64-bed2-49c06571b6f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6587421-35c5-5c0a-4617-8a4fa0ccb140" executionId="6f20f997-5356-4c0c-ab5d-d290e108a518" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bcc057b0-37c8-1f07-f6af-8eed4642fbcf" executionId="790e7361-19f2-4c35-8727-346d43590511" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be1ba553-4de3-91b1-38e2-fea1af623de6" executionId="99e2c71a-68be-438b-9b66-89f080a58362" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be44b7f8-0b34-52a5-0492-f06bf0a5b9be" executionId="07683842-5ddb-470b-9726-0665a7cb3d33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bec18817-8d82-ccdb-b4ef-954d5362ad51" executionId="41dcbd94-f3c6-4600-97bc-efca7e3b0b35" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c161f08e-d345-c8e4-3271-6dc5549e5d5c" executionId="7d3a76ed-a02e-4f99-a86f-1e3516a4c02a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c16c6a4f-f8d8-e229-bd3b-4a2682e47acc" executionId="1ad39be2-0e20-436a-940b-d572ecf2f7f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5d4ff3a-a82c-38c1-a4e4-f21e2371f342" executionId="ae688ad3-b822-4592-9026-8dc45e542a4c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c698b70a-0666-4226-4b97-8d0d5e83a00f" executionId="03e104f7-33c2-4099-ac81-5c647de449d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8ea3952-ca57-e6dc-a4d4-6bf06cea9f82" executionId="1f6aa299-2647-4ede-9938-a80a67f3a9bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cad57930-f0bf-4909-3edd-6471ee663f58" executionId="382b9929-f474-4f77-b408-7997791617b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc018af1-cc80-56a7-4101-95e4838d4667" executionId="9c060f9b-ef5d-42de-9263-e5482813da33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc4b51ae-303b-9e5c-9757-1d3d9e8f1777" executionId="cb2dfd49-feba-4646-b8b7-d63ef953eb28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf085bae-c255-d472-9e18-c04089610927" executionId="924e0984-0f56-45f5-961a-411363718b50" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf85672e-98c7-81c2-8473-46eea0cdd0ff" executionId="61327144-1356-41c1-8f89-5eb67e2ae914" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf8739a2-fd07-96cd-50a8-0d03a9c947e6" executionId="1d717990-2da1-4e28-b2fe-afb6950dcc15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1d48adf-cf30-0a1b-0fc4-71787e8d5c9e" executionId="f6b0e7d2-f6c4-40a7-941d-4624bee20fc5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4a37770-ed78-35d3-e473-4f32ad9d782e" executionId="2812e67b-7fb6-4bb7-bd42-6b5fa57b1dd3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d654a00b-2a3c-4d1e-bfbe-fb3225eadd09" executionId="72728966-12f0-4bc0-a395-cbeaa7478fa5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d69c55cf-d668-5519-9d89-d95aaff0f7ca" executionId="ef85c08b-22c6-4c5a-a206-16235cc1df1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6ebf0c6-5531-08fd-95e7-43e602f649ed" executionId="daf33fc1-9eab-46f2-87a2-ee47cc30d0c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da2294e4-6224-f8f4-af00-bb7bd32e5d1d" executionId="6b9caa4a-7679-4956-94d9-4f91cd58fbb7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da70f6ec-f23f-09f8-b3df-cf296cf4b626" executionId="83dd1b00-4312-4bfa-9f70-958672f09437" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc1eb3ed-f885-c6a7-0635-9472a074f8d3" executionId="029d35fb-3de7-4f4e-892d-60f41ae6cd18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc686c0c-a3bc-ee0c-f37b-d570d864e84f" executionId="0844c9c8-9571-4b51-8a39-975819e6eead" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd01b293-83e0-2dbb-30e7-7422faba3757" executionId="72ab7d87-25f8-44b6-ba40-16c6754525a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd242d73-c31d-5754-03d1-f637ebfa213d" executionId="40fb1ea8-18af-48dd-bf1b-d16e87560a39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df455156-8cb1-8e84-fa6b-41a433f6420f" executionId="4a9be7d0-6e9d-471a-9e70-ffe1a6eaba33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dfe08ee1-e732-6298-2305-6ab6d1d973a3" executionId="f8488dda-3146-40ee-a4d7-be21333afe69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e14169b4-f90e-570f-6aa4-0bbc02fbe685" executionId="a58a6a88-5e56-4116-bc1e-237cf85ceca0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1419735-0a7c-a343-7b6a-6b03d31f7385" executionId="0229520f-f939-4760-aea8-41913f8b86a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e41eb29c-c451-088a-3f75-2f5e5fb6b089" executionId="bf77bc16-84e8-4594-ad83-c7f002d451f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5217617-63fb-8fe0-b269-f86f1c5e5623" executionId="f2def432-a85b-49a2-acce-3e8d86679914" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e725ecd4-2d11-c015-13f0-34e0f66a36fc" executionId="e612b290-dac9-4c05-8fb7-efbda8a09622" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e9915c47-9188-8b20-ac6c-3e7e3a01e157" executionId="f79c2c26-d3ff-420e-95e2-a44949206efa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebb9acfa-f8fe-53cc-15b4-a60c3c39566e" executionId="16285882-aa1a-4bf1-8e3a-0b8427a5b69e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f022b687-5ab1-eae2-6a2b-5d8c4245ec36" executionId="d8094a10-7d09-4263-918d-b0e3f6a8ed5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f03c6866-bc60-214f-0c44-8f942145c010" executionId="32fbec73-a4f7-41b9-93e7-8ced06ac8863" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f14445b8-e8cd-916f-7aeb-f4b2734a6d22" executionId="919e3940-8f0d-4a12-8962-26c977ad005a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4564b45-9959-b643-af2a-722b08b6d1ea" executionId="1a7257ad-05f4-47d9-8ca7-1b3d2baa1966" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f975b55f-115f-a2ca-6e26-1adff96a3233" executionId="0093026e-3028-4f68-8d48-103687aeac85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fa9d216e-8a6b-8d7b-80a0-c9bdf6b0016d" executionId="34372342-5499-4636-9bc1-98917981c2ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="faaec9bb-7e12-1870-005d-8af279658fb2" executionId="91468daf-ab0f-46c1-aa0d-b0f4103c1ab7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ee6c2c56-f157-440f-a463-c26285336497" testId="049765dd-83f8-a129-7ac1-7d14eb10cba5" testName="GettingEntityWithNullInfoThrowsException" computerName="DAVID" duration="00:00:00.2281630" startTime="2012-03-23T23:57:53.6682578-04:00" endTime="2012-03-23T23:57:54.2776328-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee6c2c56-f157-440f-a463-c26285336497">
+    </UnitTestResult>
+    <UnitTestResult executionId="09c781b0-f215-4a28-a860-fa95e6d7006a" testId="055d5acf-8347-0a84-f435-c7ceefc95385" testName="CreatesTheMessagesWithEmptyMessageThrowsException" computerName="DAVID" duration="00:00:00.0035862" startTime="2012-03-23T23:57:54.2825156-04:00" endTime="2012-03-23T23:57:54.2932578-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09c781b0-f215-4a28-a860-fa95e6d7006a">
+    </UnitTestResult>
+    <UnitTestResult executionId="adcac656-1358-46a1-806e-fdc177001c08" testId="0611c74f-f31a-bafd-d04d-1fa0fb70a58c" testName="GettingAndSettingPropsWorksOK" computerName="DAVID" duration="00:00:00.0065421" startTime="2012-03-23T23:57:54.2942343-04:00" endTime="2012-03-23T23:57:54.3049765-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adcac656-1358-46a1-806e-fdc177001c08">
+    </UnitTestResult>
+    <UnitTestResult executionId="29647690-d3ac-4451-b20b-4679b2705177" testId="08664284-0bed-da38-ca74-f6848f5bd832" testName="AddingResultAddsToList" computerName="DAVID" duration="00:00:00.0199910" startTime="2012-03-23T23:57:54.3079062-04:00" endTime="2012-03-23T23:57:54.3342734-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29647690-d3ac-4451-b20b-4679b2705177">
+    </UnitTestResult>
+    <UnitTestResult executionId="93ccbee4-2a68-423c-98fa-1485665e032e" testId="0988e72e-5cf9-2a1b-d198-b5c38be59d44" testName="QueuingInsertWithNullInfoThrowsException" computerName="DAVID" duration="00:00:00.0041874" startTime="2012-03-23T23:57:54.3362265-04:00" endTime="2012-03-23T23:57:54.3450156-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93ccbee4-2a68-423c-98fa-1485665e032e">
+    </UnitTestResult>
+    <UnitTestResult executionId="987211db-b264-4c51-af00-8a846f30aa04" testId="09e72b00-1ee6-4294-9a04-15fe96fb9b05" testName="QueuingUpdateWithNullObjectThrowsException" computerName="DAVID" duration="00:00:00.0132977" startTime="2012-03-23T23:57:54.3469687-04:00" endTime="2012-03-23T23:57:54.3655234-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="987211db-b264-4c51-af00-8a846f30aa04">
+    </UnitTestResult>
+    <UnitTestResult executionId="aea2efb5-1067-4fa1-8df6-0826ed7a33f8" testId="0abbf6f9-df36-f302-00ff-446e563110db" testName="CachingDiscoveredUnitOfWorkSetsToCache" computerName="DAVID" duration="00:00:00.1726942" startTime="2012-03-23T23:57:54.3684531-04:00" endTime="2012-03-23T23:57:54.5471640-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aea2efb5-1067-4fa1-8df6-0826ed7a33f8">
+    </UnitTestResult>
+    <UnitTestResult executionId="3801ba23-9362-4219-94fb-03a51027557e" testId="0b4117ff-576c-7a91-a191-ade6c9b1c233" testName="ValidatingDoesNotLogToResult" computerName="DAVID" duration="00:00:00.0051928" startTime="2012-03-23T23:57:54.5481406-04:00" endTime="2012-03-23T23:57:54.5598593-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3801ba23-9362-4219-94fb-03a51027557e">
+    </UnitTestResult>
+    <UnitTestResult executionId="dd3f21a6-4578-4d87-87fc-13b2cf76f643" testId="0e26f961-ec55-69fd-5c85-6e92fa1e2d0d" testName="QueueingInvalidInsertThrowsException" computerName="DAVID" duration="00:00:00.0043279" startTime="2012-03-23T23:57:54.5618125-04:00" endTime="2012-03-23T23:57:54.5706015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd3f21a6-4578-4d87-87fc-13b2cf76f643">
+    </UnitTestResult>
+    <UnitTestResult executionId="a6b8c2e3-eaa6-4ccc-9443-321938178baa" testId="1037db9c-05ab-d2fa-7fdb-9b7281c3304e" testName="LinqExpressionIsAccessible" computerName="DAVID" duration="00:00:01.1452092" startTime="2012-03-23T23:57:54.5725546-04:00" endTime="2012-03-23T23:57:55.7248984-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6b8c2e3-eaa6-4ccc-9443-321938178baa">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Nucleo.Orm.Entities.ObjectEntitySetTest.LinqExpressionIsAccessible threw exception: 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Data.Objects.ObjectQuery' does not contain a definition for 'Expression'</Message>
+          <StackTrace>    at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Nucleo.Orm.Entities.ObjectEntitySet.get_Expression() in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\ObjectEntitySet.cs:line 28
+   at Nucleo.Orm.Entities.ObjectEntitySetTest.LinqExpressionIsAccessible() in C:\Content\VS Projects\Nucleo\Orm\4.0\Tests.Unit.Orm\Orm\Entities\ObjectEntitySetTest.cs:line 57
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="505dbff0-2de7-4da6-8426-4b6d7a767f07" testId="11e9c146-809a-29f4-e788-333bfde116f8" testName="LinqElementTypeIsAccessible" computerName="DAVID" duration="00:00:00.0078529" startTime="2012-03-23T23:57:55.7297812-04:00" endTime="2012-03-23T23:57:55.7424765-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="505dbff0-2de7-4da6-8426-4b6d7a767f07">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Nucleo.Orm.Entities.ObjectEntitySetTest.LinqElementTypeIsAccessible threw exception: 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Data.Objects.ObjectQuery' does not contain a definition for 'ElementType'</Message>
+          <StackTrace>    at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Nucleo.Orm.Entities.ObjectEntitySet.get_ElementType() in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\ObjectEntitySet.cs:line 20
+   at Nucleo.Orm.Entities.ObjectEntitySetTest.LinqElementTypeIsAccessible() in C:\Content\VS Projects\Nucleo\Orm\4.0\Tests.Unit.Orm\Orm\Entities\ObjectEntitySetTest.cs:line 44
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="16e393af-20ad-41ac-9aeb-2fb5c5b2053b" testId="12c0784f-7073-1afc-cdc8-5a5b69da4f56" testName="GettingEntitySetNameWorksOK" computerName="DAVID" duration="00:00:00.1069705" startTime="2012-03-23T23:57:55.7493125-04:00" endTime="2012-03-23T23:57:55.8616171-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16e393af-20ad-41ac-9aeb-2fb5c5b2053b">
+    </UnitTestResult>
+    <UnitTestResult executionId="1c849d31-5bc0-407c-b9b9-0771f91edc5d" testId="146e094e-5cce-76ff-2575-f7a3f29ee44b" testName="GettingInvalidEntityWithKeyReturnsNull" computerName="DAVID" duration="00:00:00.0511592" startTime="2012-03-23T23:57:55.8635703-04:00" endTime="2012-03-23T23:57:55.9221640-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c849d31-5bc0-407c-b9b9-0771f91edc5d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest.GettingInvalidEntityWithKeyReturnsNull threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: keyName</Message>
+          <StackTrace>    at System.Data.EntityUtil.ThrowArgumentNullException(String parameterName)
+   at System.Data.EntityUtil.CheckArgumentNull[T](T value, String parameterName)
+   at System.Data.EntityKeyMember..ctor(String keyName, Object keyValue)
+   at Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWork.CreateEntityKey(EntityKeyInformation info) in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\Generic\ContextGenericUnitOfWork.cs:line 56
+   at Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWork.Get(EntityKeyInformation info) in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\Generic\ContextGenericUnitOfWork.cs:line 69
+   at Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest.GettingInvalidEntityWithKeyReturnsNull() in C:\Content\VS Projects\Nucleo\Orm\4.0\Tests.Unit.Orm\Orm\Entities\Generic\ContextGenericUnitOfWorkTest.cs:line 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="89e4f24f-ffb1-436f-84c3-c934ab2bccd4" testId="17f807d4-9f56-dd15-98cc-dda877aabff9" testName="QueuingUpdateWithNullInfoThrowsException" computerName="DAVID" duration="00:00:00.0027067" startTime="2012-03-23T23:57:55.9241171-04:00" endTime="2012-03-23T23:57:55.9338828-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89e4f24f-ffb1-436f-84c3-c934ab2bccd4">
+    </UnitTestResult>
+    <UnitTestResult executionId="c25abdc3-d0ac-4ce0-a360-34b206b5f33f" testId="1aaa83c2-d553-3cb3-7211-c00fa27df80c" testName="GettingByKeyReturnsObject" computerName="DAVID" duration="00:00:00.0117383" startTime="2012-03-23T23:57:55.9358359-04:00" endTime="2012-03-23T23:57:55.9524375-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c25abdc3-d0ac-4ce0-a360-34b206b5f33f">
+    </UnitTestResult>
+    <UnitTestResult executionId="a1fb0e93-b532-42bd-94de-f03872278a89" testId="1b55080b-afe6-89a0-b78b-630876ea7e12" testName="CtorWithNullPointer2ThrowsException" computerName="DAVID" duration="00:00:00.0017046" startTime="2012-03-23T23:57:55.9543906-04:00" endTime="2012-03-23T23:57:55.9592734-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1fb0e93-b532-42bd-94de-f03872278a89">
+    </UnitTestResult>
+    <UnitTestResult executionId="bbdb0deb-abc8-49a5-a577-9abb32235153" testId="1c401467-8168-5e0b-24aa-a1d6fcdabd19" testName="GettingByInvalidKeyReturnsNull" computerName="DAVID" duration="00:00:00.0037901" startTime="2012-03-23T23:57:55.9631796-04:00" endTime="2012-03-23T23:57:55.9700156-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bbdb0deb-abc8-49a5-a577-9abb32235153">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c5d6561-e213-4534-9f3e-aeff40e216d7" testId="25ae8631-d2b2-3c6a-ecfb-d293d2493bce" testName="ValidatingNonValidatableEntityReturnsNull" computerName="DAVID" duration="00:00:00.0031026" startTime="2012-03-23T23:57:55.9729453-04:00" endTime="2012-03-23T23:57:55.9797812-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c5d6561-e213-4534-9f3e-aeff40e216d7">
+    </UnitTestResult>
+    <UnitTestResult executionId="e57cdfc7-c319-45a2-b553-a2d6a3e8d731" testId="27ce98cd-2122-17f9-d3f9-18bc5a3b8d37" testName="CtorWithNullDataThrowsException" computerName="DAVID" duration="00:00:00.0025919" startTime="2012-03-23T23:57:55.9827109-04:00" endTime="2012-03-23T23:57:55.9885703-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e57cdfc7-c319-45a2-b553-a2d6a3e8d731">
+    </UnitTestResult>
+    <UnitTestResult executionId="62b23cf9-bfaa-4622-adf6-8f74f057871d" testId="2859fc40-0509-8486-bac0-4b238a48651c" testName="CreatingNewEntityWorksOK" computerName="DAVID" duration="00:00:00.0045522" startTime="2012-03-23T23:57:55.9934531-04:00" endTime="2012-03-23T23:57:56.0032187-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62b23cf9-bfaa-4622-adf6-8f74f057871d">
+    </UnitTestResult>
+    <UnitTestResult executionId="d8551e4c-3992-4b7f-8bb6-89e29e30b946" testId="28b0daf5-c532-74d0-1652-6112aa55b68e" testName="CreatingNewEntityWithNullInfoThrowsException" computerName="DAVID" duration="00:00:00.0036758" startTime="2012-03-23T23:57:56.0071250-04:00" endTime="2012-03-23T23:57:56.0149375-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8551e4c-3992-4b7f-8bb6-89e29e30b946">
+    </UnitTestResult>
+    <UnitTestResult executionId="06fbec17-9e30-4d7b-9fa4-fb02c4715106" testId="2c7e5bdd-19e9-6fc5-1252-db496f8a4268" testName="CreatingEntitySetWithNullCoreResultThrowsException" computerName="DAVID" duration="00:00:00.0088290" startTime="2012-03-23T23:57:56.0178671-04:00" endTime="2012-03-23T23:57:56.0315390-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06fbec17-9e30-4d7b-9fa4-fb02c4715106">
+    </UnitTestResult>
+    <UnitTestResult executionId="53a3fbba-5033-441a-9834-f1d654f9eccd" testId="31a7c6fa-310d-7b58-606c-ea226e9d933a" testName="CreatingWithNullUnitOfWorkReturnsNull" computerName="DAVID" duration="00:00:00.0236524" startTime="2012-03-23T23:57:56.0334921-04:00" endTime="2012-03-23T23:57:56.0696250-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53a3fbba-5033-441a-9834-f1d654f9eccd">
+    </UnitTestResult>
+    <UnitTestResult executionId="31cd03a0-90cf-4cc8-9d52-073863ccb8c0" testId="3412c098-5685-c08e-29d7-3b882a2a0fd5" testName="QueuingUpdateAddsToChangeList" computerName="DAVID" duration="00:00:00.0273456" startTime="2012-03-23T23:57:56.0735312-04:00" endTime="2012-03-23T23:57:56.1086875-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31cd03a0-90cf-4cc8-9d52-073863ccb8c0">
+    </UnitTestResult>
+    <UnitTestResult executionId="082f3640-a75f-479c-8abc-663db6d74c85" testId="38a35ee8-686f-6f0d-1e45-da7a20977626" testName="SettingUpWorksOK" computerName="DAVID" duration="00:00:00.0055747" startTime="2012-03-23T23:57:56.1125937-04:00" endTime="2012-03-23T23:57:56.1204062-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="082f3640-a75f-479c-8abc-663db6d74c85">
+    </UnitTestResult>
+    <UnitTestResult executionId="542b9bad-a4df-485e-bd6c-2e2290b8d358" testId="3af59cc2-4577-facc-79d9-ed40e31dd7f5" testName="GetByNullIDLookupUsingInterfaceThrowsException" computerName="DAVID" duration="00:00:00.0019826" startTime="2012-03-23T23:57:56.1243125-04:00" endTime="2012-03-23T23:57:56.1291953-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="542b9bad-a4df-485e-bd6c-2e2290b8d358">
+    </UnitTestResult>
+    <UnitTestResult executionId="c2bf639a-c965-49df-9b1c-5d05f9317c33" testId="3d763210-fe30-91d7-eba9-2a53978664c2" testName="QueuingDeleteWithNullEntityThrowsException" computerName="DAVID" duration="00:00:00.0051151" startTime="2012-03-23T23:57:56.1321250-04:00" endTime="2012-03-23T23:57:56.1399375-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2bf639a-c965-49df-9b1c-5d05f9317c33">
+    </UnitTestResult>
+    <UnitTestResult executionId="0d745cad-2835-4fc0-8a38-5a3247153ccf" testId="459a003a-a71e-1e65-4141-7bdd62b9ff3f" testName="QueryingWithNullExpression3ThrowsException" computerName="DAVID" duration="00:00:00.0066058" startTime="2012-03-23T23:57:56.1438437-04:00" endTime="2012-03-23T23:57:56.1526328-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d745cad-2835-4fc0-8a38-5a3247153ccf">
+    </UnitTestResult>
+    <UnitTestResult executionId="13ca2343-8ed8-430b-8da8-9adf67d19170" testId="4aaa3cb0-8eaa-e06c-4fb9-57127d516f61" testName="CreatingNewObjectByInterfaceWorksOK" computerName="DAVID" duration="00:00:00.0025385" startTime="2012-03-23T23:57:56.1565390-04:00" endTime="2012-03-23T23:57:56.1623984-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13ca2343-8ed8-430b-8da8-9adf67d19170">
+    </UnitTestResult>
+    <UnitTestResult executionId="a32e4154-8156-4a62-a2f5-c36b7f01934b" testId="4f992a06-21a1-c900-468a-c6a2cecc292a" testName="CreatingNewObjectReturnsActualInstance" computerName="DAVID" duration="00:00:00.0079459" startTime="2012-03-23T23:57:56.1663046-04:00" endTime="2012-03-23T23:57:56.1780234-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a32e4154-8156-4a62-a2f5-c36b7f01934b">
+    </UnitTestResult>
+    <UnitTestResult executionId="a3508a02-f50b-4ca1-a6a6-e3d2d602f334" testId="54a96eca-b21a-8fe4-651e-7f151971e46c" testName="SettingDiscoveryStrategyStaticAssignsOK" computerName="DAVID" duration="00:00:00.0099909" startTime="2012-03-23T23:57:56.1809531-04:00" endTime="2012-03-23T23:57:56.1946250-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3508a02-f50b-4ca1-a6a6-e3d2d602f334">
+    </UnitTestResult>
+    <UnitTestResult executionId="58f27e5e-190c-4c50-b089-dc343d7da1d8" testId="5b6f3b21-76b1-e845-7c9f-abc851c25973" testName="CreatingWithValidButMissingRegistrationReturnsNull" computerName="DAVID" duration="00:00:00.0244832" startTime="2012-03-23T23:57:56.1975546-04:00" endTime="2012-03-23T23:57:56.2258750-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58f27e5e-190c-4c50-b089-dc343d7da1d8">
+    </UnitTestResult>
+    <UnitTestResult executionId="5757dae5-da27-4548-b885-196c7cfb03d9" testId="5b7278ff-34f1-13ae-db5c-4f491aecccf4" testName="GettingContainerFromContextWorksOK" computerName="DAVID" duration="00:00:00.0483153" startTime="2012-03-23T23:57:56.2297812-04:00" endTime="2012-03-23T23:57:56.2815390-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5757dae5-da27-4548-b885-196c7cfb03d9">
+    </UnitTestResult>
+    <UnitTestResult executionId="062591f6-8b6c-49f9-9a19-0916378e01d0" testId="5fd0960a-c4bb-abe8-0208-be811544244b" testName="GettingAndSettingPropsWorksOK" computerName="DAVID" duration="00:00:00.0010339" startTime="2012-03-23T23:57:56.2844687-04:00" endTime="2012-03-23T23:57:56.2913046-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="062591f6-8b6c-49f9-9a19-0916378e01d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="1d403077-a5e2-4ff5-8593-ab0c47378b28" testId="6038f5ef-1b64-cd44-2af9-1bdf3444bfa9" testName="CreatingWithTableWorksOK" computerName="DAVID" duration="00:00:00.0060563" startTime="2012-03-23T23:57:56.2942343-04:00" endTime="2012-03-23T23:57:56.3049765-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d403077-a5e2-4ff5-8593-ab0c47378b28">
+    </UnitTestResult>
+    <UnitTestResult executionId="1cbe4be7-206b-47b2-9d59-b969a112d29a" testId="659707f0-d8f0-76b8-1ec5-1f498fb75404" testName="QueueingInvalidDeleteThrowsException" computerName="DAVID" duration="00:00:00.0021354" startTime="2012-03-23T23:57:56.3059531-04:00" endTime="2012-03-23T23:57:56.3118125-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1cbe4be7-206b-47b2-9d59-b969a112d29a">
+    </UnitTestResult>
+    <UnitTestResult executionId="abcb155d-b342-4d4c-a5d2-ee11a065e8fb" testId="66e23e06-339e-4ebd-9998-8074f11380db" testName="CreatingAssignsIsValidToTrue" computerName="DAVID" duration="00:00:00.0029484" startTime="2012-03-23T23:57:56.3147421-04:00" endTime="2012-03-23T23:57:56.3206015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abcb155d-b342-4d4c-a5d2-ee11a065e8fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="ae2c55d5-394d-43ea-a9b4-7ef399df4e57" testId="6793f6ca-3b98-942f-04ef-912d041a64ec" testName="GettingObjectByKeySelectorGetsCorrectObject" computerName="DAVID" duration="00:00:00.0030425" startTime="2012-03-23T23:57:56.3284140-04:00" endTime="2012-03-23T23:57:56.3342734-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae2c55d5-394d-43ea-a9b4-7ef399df4e57">
+    </UnitTestResult>
+    <UnitTestResult executionId="fd0e94aa-a45b-479c-8904-e093e68dc8f3" testId="67941f38-6d11-8a54-c930-f473133e8fdf" testName="QueuingDeleteAddsToChangeList" computerName="DAVID" duration="00:00:00.0026872" startTime="2012-03-23T23:57:56.3372031-04:00" endTime="2012-03-23T23:57:56.3430625-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd0e94aa-a45b-479c-8904-e093e68dc8f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="ce617f6b-0f27-45b6-83ff-3d8bce9e39a1" testId="682e284c-0e95-b582-e3cd-022e8aeabd1f" testName="QueueingNullUpdateThrowsException" computerName="DAVID" duration="00:00:00.0019415" startTime="2012-03-23T23:57:56.3469687-04:00" endTime="2012-03-23T23:57:56.3518515-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce617f6b-0f27-45b6-83ff-3d8bce9e39a1">
+    </UnitTestResult>
+    <UnitTestResult executionId="7e255eaa-e64b-4e76-88f1-afe10c188796" testId="69bf772a-4808-825b-bf53-00ca46528723" testName="CreatingAssignsToLocalParameters" computerName="DAVID" duration="00:00:00.0065128" startTime="2012-03-23T23:57:56.3557578-04:00" endTime="2012-03-23T23:57:56.3723593-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e255eaa-e64b-4e76-88f1-afe10c188796">
+    </UnitTestResult>
+    <UnitTestResult executionId="8dfedd8f-23ed-4f66-a70d-644766504d89" testId="72913ab2-abb8-2613-5c29-1681318a114a" testName="SavingNoChangesWhenNothingPushedDoesNothing" computerName="DAVID" duration="00:00:00.0033501" startTime="2012-03-23T23:57:56.3752890-04:00" endTime="2012-03-23T23:57:56.3831015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8dfedd8f-23ed-4f66-a70d-644766504d89">
+    </UnitTestResult>
+    <UnitTestResult executionId="a92e35bf-0cda-403e-88f3-5eddc5eede27" testId="734b575d-57e6-4b8b-a242-5534b8195ba4" testName="QueryingWithNullExpression4ThrowsException" computerName="DAVID" duration="00:00:00.0076168" startTime="2012-03-23T23:57:56.3860312-04:00" endTime="2012-03-23T23:57:56.3967734-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a92e35bf-0cda-403e-88f3-5eddc5eede27">
+    </UnitTestResult>
+    <UnitTestResult executionId="d6028df2-9aa9-4cac-ab0e-3b7465d63501" testId="73dc24d9-be26-b700-200a-2c3022d769b9" testName="ValidatingWithRulesReturnsSuccessResult" computerName="DAVID" duration="00:00:00.0289841" startTime="2012-03-23T23:57:56.3997031-04:00" endTime="2012-03-23T23:57:56.4338828-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6028df2-9aa9-4cac-ab0e-3b7465d63501">
+    </UnitTestResult>
+    <UnitTestResult executionId="00df14b2-d081-4ae9-aac9-7a77b907aa34" testId="74c51790-40ef-1434-f736-6ae25646b3f6" testName="CreatingEntitySetWorksOK" computerName="DAVID" duration="00:00:00.0036202" startTime="2012-03-23T23:57:56.4377890-04:00" endTime="2012-03-23T23:57:56.4446250-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00df14b2-d081-4ae9-aac9-7a77b907aa34">
+    </UnitTestResult>
+    <UnitTestResult executionId="b7aa8ee3-727b-45ec-9a7e-d35d6057f170" testId="756926f6-eb56-17c4-d99d-eec14ba66ac9" testName="ValidatingNoRulesReturnsEmptyValidationResult" computerName="DAVID" duration="00:00:00.0100973" startTime="2012-03-23T23:57:56.4475546-04:00" endTime="2012-03-23T23:57:56.4612265-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7aa8ee3-727b-45ec-9a7e-d35d6057f170">
+    </UnitTestResult>
+    <UnitTestResult executionId="02033a3c-a0c6-43a2-91ba-dfa63c640562" testId="767e6e10-19fb-d820-8589-e7a4e43d4027" testName="CreatingWithNullOptionsThrowsException" computerName="DAVID" duration="00:00:00.0020346" startTime="2012-03-23T23:57:56.4641562-04:00" endTime="2012-03-23T23:57:56.4690390-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02033a3c-a0c6-43a2-91ba-dfa63c640562">
+    </UnitTestResult>
+    <UnitTestResult executionId="5736b557-fcb1-4b29-8859-a42cc4782381" testId="77b58743-b3ad-6982-7bb8-36fe3e46c0c5" testName="SavingInsertPushesChange" computerName="DAVID" duration="00:00:00.0033856" startTime="2012-03-23T23:57:56.4719687-04:00" endTime="2012-03-23T23:57:56.4788046-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5736b557-fcb1-4b29-8859-a42cc4782381">
+    </UnitTestResult>
+    <UnitTestResult executionId="8e4361b1-f509-4ee6-85db-a235bde41bab" testId="78ea2635-d426-4747-d89c-71d7ec06981f" testName="SavingChangesSavesToContext" computerName="DAVID" duration="00:00:00.0057848" startTime="2012-03-23T23:57:56.4817343-04:00" endTime="2012-03-23T23:57:56.4905234-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e4361b1-f509-4ee6-85db-a235bde41bab">
+    </UnitTestResult>
+    <UnitTestResult executionId="edcb935d-4800-42c0-bce9-29cea195bf3a" testId="792a0669-8c94-ce04-953a-c95835bfa4e8" testName="QueryingIQueryableWithNullLambdaThrowsException" computerName="DAVID" duration="00:00:00.0063033" startTime="2012-03-23T23:57:56.4934531-04:00" endTime="2012-03-23T23:57:56.5032187-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edcb935d-4800-42c0-bce9-29cea195bf3a">
+    </UnitTestResult>
+    <UnitTestResult executionId="19d53b41-f994-4fec-9046-044f0b84123e" testId="7c739d6b-fe40-5934-ad29-84d85e984a64" testName="CreatingTriggerAssignsThrowsNoExceptions" computerName="DAVID" duration="00:00:00.0035890" startTime="2012-03-23T23:57:56.5061484-04:00" endTime="2012-03-23T23:57:56.5149375-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19d53b41-f994-4fec-9046-044f0b84123e">
+    </UnitTestResult>
+    <UnitTestResult executionId="607d1681-583e-4e0c-a529-23ce366a149c" testId="7e703dce-5d5f-d802-b26a-6c52b23e501b" testName="SettingSameDiscoveryStrategyStaticDoesntOverwrite" computerName="DAVID" duration="00:00:00.0057247" startTime="2012-03-23T23:57:56.5178671-04:00" endTime="2012-03-23T23:57:56.5266562-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="607d1681-583e-4e0c-a529-23ce366a149c">
+    </UnitTestResult>
+    <UnitTestResult executionId="0f3cf3d6-3381-45da-a41d-186d246829e7" testId="7f159efc-c116-df3f-4dea-cae98296411d" testName="QueryingGenericIQueryableWithNullLambdaThrowsException" computerName="DAVID" duration="00:00:00.0049682" startTime="2012-03-23T23:57:56.5295859-04:00" endTime="2012-03-23T23:57:56.5373984-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f3cf3d6-3381-45da-a41d-186d246829e7">
+    </UnitTestResult>
+    <UnitTestResult executionId="7d6399fd-eb7c-4eb1-81c2-2f5e3f46e988" testId="82792df3-2087-fcd9-499b-aaa565af3fd7" testName="QueuingUpdateWhenNotAttachedAttachesItem" computerName="DAVID" duration="00:00:00.0127669" startTime="2012-03-23T23:57:56.5413046-04:00" endTime="2012-03-23T23:57:56.5588828-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d6399fd-eb7c-4eb1-81c2-2f5e3f46e988">
+    </UnitTestResult>
+    <UnitTestResult executionId="acbc8874-bd66-43ad-8945-2caac4b7ef95" testId="82ea22e9-0145-757c-bde7-8f4176defc0a" testName="QueryingWithNullExpression2ThrowsException" computerName="DAVID" duration="00:00:00.0053587" startTime="2012-03-23T23:57:56.5618125-04:00" endTime="2012-03-23T23:57:56.5715781-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="acbc8874-bd66-43ad-8945-2caac4b7ef95">
+    </UnitTestResult>
+    <UnitTestResult executionId="314b69fa-fff2-49e1-9901-2e446897ce0a" testId="870f6197-fafa-2df3-7218-0a9934c914c4" testName="CreatingWithTableWorksOK" computerName="DAVID" duration="00:00:00.0023025" startTime="2012-03-23T23:57:56.5725546-04:00" endTime="2012-03-23T23:57:56.5803671-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="314b69fa-fff2-49e1-9901-2e446897ce0a">
+    </UnitTestResult>
+    <UnitTestResult executionId="87dbfd5c-a879-4fb7-9525-f4fb6458e978" testId="88cb810d-dbf6-a14f-d8f6-a0f0fb2e7389" testName="FindingInsertValidationRulesForEntityWorksOK" computerName="DAVID" duration="00:00:00.0037722" startTime="2012-03-23T23:57:56.5832968-04:00" endTime="2012-03-23T23:57:56.5911093-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87dbfd5c-a879-4fb7-9525-f4fb6458e978">
+    </UnitTestResult>
+    <UnitTestResult executionId="9692e3f7-aebf-4ff0-bfc3-cdb7c9238f14" testId="8eb5e6a2-59e7-97f5-de8b-2026cef4dd0b" testName="CreatingWithNullSetThrowsException" computerName="DAVID" duration="00:00:00.0300811" startTime="2012-03-23T23:57:56.5930625-04:00" endTime="2012-03-23T23:57:56.6331015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9692e3f7-aebf-4ff0-bfc3-cdb7c9238f14">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a46aa96-0d4e-4601-af3c-8f90be2bc8a0" testId="8ec8f0c3-39ba-96f2-316f-5ff37fff4a88" testName="CreatingWithDbSetWorksOK" computerName="DAVID" duration="00:00:00.0069989" startTime="2012-03-23T23:57:56.6340781-04:00" endTime="2012-03-23T23:57:56.6457968-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a46aa96-0d4e-4601-af3c-8f90be2bc8a0">
+    </UnitTestResult>
+    <UnitTestResult executionId="afb1cf6a-860b-4b8d-bb31-b0ab8c76fad5" testId="8f0189e5-044f-f18a-62b7-e02f2a81ea5a" testName="LocatingEmptyUnitOfWorkThrowsException" computerName="DAVID" duration="00:00:00.0033129" startTime="2012-03-23T23:57:56.6487265-04:00" endTime="2012-03-23T23:57:56.6565390-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="afb1cf6a-860b-4b8d-bb31-b0ab8c76fad5">
+    </UnitTestResult>
+    <UnitTestResult executionId="12cd5e42-153b-4323-b79e-e0050e0e8897" testId="906e2135-2d75-dd03-729c-5b14c0fa1c6e" testName="LocatingUnitOfWorkWithNullOptionsThrowsException" computerName="DAVID" duration="00:00:00.0057026" startTime="2012-03-23T23:57:56.6584921-04:00" endTime="2012-03-23T23:57:56.6692343-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12cd5e42-153b-4323-b79e-e0050e0e8897">
+    </UnitTestResult>
+    <UnitTestResult executionId="7340293d-9aab-487c-a8c5-d3eb271c269d" testId="93d22286-9001-b0ab-6fa3-c17638c0fa12" testName="DetachingNullEntityThrowsException" computerName="DAVID" duration="00:00:00.0038820" startTime="2012-03-23T23:57:56.6711875-04:00" endTime="2012-03-23T23:57:56.6819296-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7340293d-9aab-487c-a8c5-d3eb271c269d">
+    </UnitTestResult>
+    <UnitTestResult executionId="85f625ec-7212-49c0-90d1-9c18642d7bb6" testId="95607df7-4a36-07ad-001e-2628ca3e9fa5" testName="CtorWithNullPointerThrowsException" computerName="DAVID" duration="00:00:00.0026070" startTime="2012-03-23T23:57:56.6848593-04:00" endTime="2012-03-23T23:57:56.6916953-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85f625ec-7212-49c0-90d1-9c18642d7bb6">
+    </UnitTestResult>
+    <UnitTestResult executionId="d2a04386-9dda-44e4-84b7-f1456810d2ff" testId="966cdf85-4365-8b0d-7c05-da063daae3b9" testName="ValidatingValidatableEntityReturnsResults" computerName="DAVID" duration="00:00:00.0036979" startTime="2012-03-23T23:57:56.6926718-04:00" endTime="2012-03-23T23:57:56.7014609-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2a04386-9dda-44e4-84b7-f1456810d2ff">
+    </UnitTestResult>
+    <UnitTestResult executionId="959b5873-ebae-4958-90ef-3966514a0dc2" testId="96dc3341-4461-eb75-546d-58fb23613a6d" testName="QueuingDeleteWithNullObjectThrowsException" computerName="DAVID" duration="00:00:00.0039633" startTime="2012-03-23T23:57:56.7043906-04:00" endTime="2012-03-23T23:57:56.7131796-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="959b5873-ebae-4958-90ef-3966514a0dc2">
+    </UnitTestResult>
+    <UnitTestResult executionId="c751bfa0-3a26-4e84-9821-5c8720d2884b" testId="9b1eb08d-c64d-2aaa-bf7a-f4549391fa2f" testName="CreatingEntitySetCreatesOK" computerName="DAVID" duration="00:00:00.0783007" startTime="2012-03-23T23:57:56.7151328-04:00" endTime="2012-03-23T23:57:56.7981406-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c751bfa0-3a26-4e84-9821-5c8720d2884b">
+    </UnitTestResult>
+    <UnitTestResult executionId="02f2c22e-6e36-4a39-8c8a-491ee6db6267" testId="9b4ae5a4-a5e8-f271-16f0-890a450bfc6b" testName="SavingChangesCommitsToContext" computerName="DAVID" duration="00:00:00.0091112" startTime="2012-03-23T23:57:56.8010703-04:00" endTime="2012-03-23T23:57:56.8157187-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02f2c22e-6e36-4a39-8c8a-491ee6db6267">
+    </UnitTestResult>
+    <UnitTestResult executionId="8780503c-541e-4496-8381-4be3f6b9a257" testId="9cbf0c10-7a52-fe7c-cf5e-0409da61da27" testName="CreatesTheMessagesWithNullMessageThrowsException" computerName="DAVID" duration="00:00:00.0013716" startTime="2012-03-23T23:57:56.8166953-04:00" endTime="2012-03-23T23:57:56.8225546-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8780503c-541e-4496-8381-4be3f6b9a257">
+    </UnitTestResult>
+    <UnitTestResult executionId="a59bc8b8-fff4-44b2-b815-79892ef89553" testId="9d2fdbf7-821f-8a91-55db-c664fa0486e3" testName="CreatingNewObjectWorksOK" computerName="DAVID" duration="00:00:00.0017069" startTime="2012-03-23T23:57:56.8254843-04:00" endTime="2012-03-23T23:57:56.8303671-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a59bc8b8-fff4-44b2-b815-79892ef89553">
+    </UnitTestResult>
+    <UnitTestResult executionId="1d74fb33-84cc-4969-ab67-e89a1a0b4a27" testId="9d33b626-d829-7c04-c666-1c16abf18557" testName="GettingByKeyWithInvalidTypeThrowsException" computerName="DAVID" duration="00:00:00.0073548" startTime="2012-03-23T23:57:56.8332968-04:00" endTime="2012-03-23T23:57:56.8459921-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d74fb33-84cc-4969-ab67-e89a1a0b4a27">
+    </UnitTestResult>
+    <UnitTestResult executionId="8411e575-6926-4dc3-a84c-cb824c732238" testId="a3fcc15f-bd0a-1c1f-d5bf-10c25e374e73" testName="GettingAndSettingPropertiesWorksOK" computerName="DAVID" duration="00:00:00.0050028" startTime="2012-03-23T23:57:56.8489218-04:00" endTime="2012-03-23T23:57:56.8577109-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8411e575-6926-4dc3-a84c-cb824c732238">
+    </UnitTestResult>
+    <UnitTestResult executionId="cfae396c-f1c0-4879-9d49-9a27e4628f39" testId="a429e980-5a34-1179-fc71-f510bbc62ec0" testName="SavingUpdatePushesChange" computerName="DAVID" duration="00:00:00.0028947" startTime="2012-03-23T23:57:56.8606406-04:00" endTime="2012-03-23T23:57:56.8665000-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfae396c-f1c0-4879-9d49-9a27e4628f39">
+    </UnitTestResult>
+    <UnitTestResult executionId="6f8d57e7-617e-4586-8a46-805f72cbc07b" testId="a450fc64-8213-57bd-9d03-bda5286c7979" testName="AddingARangeOfRulesAddsOK" computerName="DAVID" duration="00:00:00.0049469" startTime="2012-03-23T23:57:56.8694296-04:00" endTime="2012-03-23T23:57:56.8772421-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f8d57e7-617e-4586-8a46-805f72cbc07b">
+    </UnitTestResult>
+    <UnitTestResult executionId="09737bf4-4fdb-4d2f-ae34-9e9bce6c0a07" testId="a6ee4f77-dc69-f1ba-3743-e6e3982df605" testName="LinqGetEnumeratorIsAccessible" computerName="DAVID" duration="00:00:00.0142956" startTime="2012-03-23T23:57:56.8811484-04:00" endTime="2012-03-23T23:57:56.8987265-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09737bf4-4fdb-4d2f-ae34-9e9bce6c0a07">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Nucleo.Orm.Entities.ObjectEntitySetTest.LinqGetEnumeratorIsAccessible threw exception: 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Data.Objects.ObjectQuery' does not contain a definition for 'GetEnumerator'</Message>
+          <StackTrace>    at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Nucleo.Orm.Entities.ObjectEntitySet.GetEnumerator() in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\ObjectEntitySet.cs:line 106
+   at Nucleo.Orm.Entities.ObjectEntitySetTest.LinqGetEnumeratorIsAccessible() in C:\Content\VS Projects\Nucleo\Orm\4.0\Tests.Unit.Orm\Orm\Entities\ObjectEntitySetTest.cs:line 70
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="55a5a72e-dd24-4d37-a961-873da6125edb" testId="a734e4ee-ee1e-7485-976c-a418b58a61d0" testName="CreatingWithValidRegistrationReturnsUnitOfWork" computerName="DAVID" duration="00:00:00.0075545" startTime="2012-03-23T23:57:56.9036093-04:00" endTime="2012-03-23T23:57:56.9143515-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55a5a72e-dd24-4d37-a961-873da6125edb">
+    </UnitTestResult>
+    <UnitTestResult executionId="f4cc9a4b-957e-4947-86c1-bb0e200eb1ad" testId="a77db4b6-00ac-3b1e-2601-9c6d5b6d5364" testName="LinqProviderIsAccessible" computerName="DAVID" duration="00:00:00.0087857" startTime="2012-03-23T23:57:56.9182578-04:00" endTime="2012-03-23T23:57:56.9299765-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4cc9a4b-957e-4947-86c1-bb0e200eb1ad">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Nucleo.Orm.Entities.ObjectEntitySetTest.LinqProviderIsAccessible threw exception: 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Data.Objects.ObjectQuery' does not contain a definition for 'Provider'</Message>
+          <StackTrace>    at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Nucleo.Orm.Entities.ObjectEntitySet.get_Provider() in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\ObjectEntitySet.cs:line 45
+   at Nucleo.Orm.Entities.ObjectEntitySetTest.LinqProviderIsAccessible() in C:\Content\VS Projects\Nucleo\Orm\4.0\Tests.Unit.Orm\Orm\Entities\ObjectEntitySetTest.cs:line 83
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="52ba3466-3f3e-4826-97fa-34b6bd4205a2" testId="a810af21-efbd-264b-a00a-8b88a6ca836c" testName="QueuingDeleteRemovedFromObjectSet" computerName="DAVID" duration="00:00:00.0049520" startTime="2012-03-23T23:57:56.9348593-04:00" endTime="2012-03-23T23:57:56.9436484-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52ba3466-3f3e-4826-97fa-34b6bd4205a2">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb6f5ad1-f4fb-4ae1-a01a-317047f933c7" testId="ab6f7fc5-9dff-3c49-ecd7-74e4dd2d1cba" testName="AddNullResultThrowsException" computerName="DAVID" duration="00:00:00.0036772" startTime="2012-03-23T23:57:56.9465781-04:00" endTime="2012-03-23T23:57:56.9534140-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb6f5ad1-f4fb-4ae1-a01a-317047f933c7">
+    </UnitTestResult>
+    <UnitTestResult executionId="544085a7-c77a-4435-b346-6e995cb5c267" testId="aeae47f1-8b97-6ad3-ab97-de773d491c11" testName="AttachingNullEntityThrowsException" computerName="DAVID" duration="00:00:00.0039750" startTime="2012-03-23T23:57:56.9563437-04:00" endTime="2012-03-23T23:57:56.9661093-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="544085a7-c77a-4435-b346-6e995cb5c267">
+    </UnitTestResult>
+    <UnitTestResult executionId="22a0b7d9-4e96-4c64-bed2-49c06571b6f4" testId="b337a07e-e652-61f1-70b4-3b77f441fff1" testName="QueuingInsertCallsOnSubmit" computerName="DAVID" duration="00:00:00.0077141" startTime="2012-03-23T23:57:56.9700156-04:00" endTime="2012-03-23T23:57:56.9807578-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22a0b7d9-4e96-4c64-bed2-49c06571b6f4">
+    </UnitTestResult>
+    <UnitTestResult executionId="6f20f997-5356-4c0c-ab5d-d290e108a518" testId="b6587421-35c5-5c0a-4617-8a4fa0ccb140" testName="QueueingNullDeleteThrowsException" computerName="DAVID" duration="00:00:00.0019563" startTime="2012-03-23T23:57:56.9846640-04:00" endTime="2012-03-23T23:57:56.9895468-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f20f997-5356-4c0c-ab5d-d290e108a518">
+    </UnitTestResult>
+    <UnitTestResult executionId="790e7361-19f2-4c35-8727-346d43590511" testId="bcc057b0-37c8-1f07-f6af-8eed4642fbcf" testName="ConstructingWithNullThrowsException" computerName="DAVID" duration="00:00:00.0018644" startTime="2012-03-23T23:57:56.9934531-04:00" endTime="2012-03-23T23:57:56.9983359-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="790e7361-19f2-4c35-8727-346d43590511">
+    </UnitTestResult>
+    <UnitTestResult executionId="99e2c71a-68be-438b-9b66-89f080a58362" testId="be1ba553-4de3-91b1-38e2-fea1af623de6" testName="CreatingWithNullEntityThrowsException" computerName="DAVID" duration="00:00:00.0018547" startTime="2012-03-23T23:57:57.0012656-04:00" endTime="2012-03-23T23:57:57.0051718-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99e2c71a-68be-438b-9b66-89f080a58362">
+    </UnitTestResult>
+    <UnitTestResult executionId="07683842-5ddb-470b-9726-0665a7cb3d33" testId="be44b7f8-0b34-52a5-0492-f06bf0a5b9be" testName="AttachingAnEntityWorksOK" computerName="DAVID" duration="00:00:00.0059708" startTime="2012-03-23T23:57:57.0100546-04:00" endTime="2012-03-23T23:57:57.0198203-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07683842-5ddb-470b-9726-0665a7cb3d33">
+    </UnitTestResult>
+    <UnitTestResult executionId="41dcbd94-f3c6-4600-97bc-efca7e3b0b35" testId="bec18817-8d82-ccdb-b4ef-954d5362ad51" testName="QueuingInsertWithNullEntityThrowsException" computerName="DAVID" duration="00:00:00.0040027" startTime="2012-03-23T23:57:57.0227500-04:00" endTime="2012-03-23T23:57:57.0295859-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41dcbd94-f3c6-4600-97bc-efca7e3b0b35">
+    </UnitTestResult>
+    <UnitTestResult executionId="7d3a76ed-a02e-4f99-a86f-1e3516a4c02a" testId="c161f08e-d345-c8e4-3271-6dc5549e5d5c" testName="GettingValidEntityWithKeyReturnsObject" computerName="DAVID" duration="00:00:00.0068693" startTime="2012-03-23T23:57:57.0334921-04:00" endTime="2012-03-23T23:57:57.0452109-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d3a76ed-a02e-4f99-a86f-1e3516a4c02a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest.GettingValidEntityWithKeyReturnsObject threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: keyName</Message>
+          <StackTrace>    at System.Data.EntityUtil.ThrowArgumentNullException(String parameterName)
+   at System.Data.EntityUtil.CheckArgumentNull[T](T value, String parameterName)
+   at System.Data.EntityKeyMember..ctor(String keyName, Object keyValue)
+   at Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWork.CreateEntityKey(EntityKeyInformation info) in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\Generic\ContextGenericUnitOfWork.cs:line 56
+   at Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWork.Get(EntityKeyInformation info) in C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\Orm\Entities\Generic\ContextGenericUnitOfWork.cs:line 69
+   at Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest.GettingValidEntityWithKeyReturnsObject() in C:\Content\VS Projects\Nucleo\Orm\4.0\Tests.Unit.Orm\Orm\Entities\Generic\ContextGenericUnitOfWorkTest.cs:line 93
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1ad39be2-0e20-436a-940b-d572ecf2f7f9" testId="c16c6a4f-f8d8-e229-bd3b-4a2682e47acc" testName="QueuingUpdateWithNullEntityThrowsException" computerName="DAVID" duration="00:00:00.0035322" startTime="2012-03-23T23:57:57.0510703-04:00" endTime="2012-03-23T23:57:57.0569296-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ad39be2-0e20-436a-940b-d572ecf2f7f9">
+    </UnitTestResult>
+    <UnitTestResult executionId="ae688ad3-b822-4592-9026-8dc45e542a4c" testId="c5d4ff3a-a82c-38c1-a4e4-f21e2371f342" testName="CreatingWithNullTableThrowsException" computerName="DAVID" duration="00:00:00.0020421" startTime="2012-03-23T23:57:57.0608359-04:00" endTime="2012-03-23T23:57:57.0657187-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae688ad3-b822-4592-9026-8dc45e542a4c">
+    </UnitTestResult>
+    <UnitTestResult executionId="03e104f7-33c2-4099-ac81-5c647de449d2" testId="c698b70a-0666-4226-4b97-8d0d5e83a00f" testName="QueuingInsertWithNullObjectThrowsException" computerName="DAVID" duration="00:00:00.0042365" startTime="2012-03-23T23:57:57.0696250-04:00" endTime="2012-03-23T23:57:57.0754843-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="03e104f7-33c2-4099-ac81-5c647de449d2">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f6aa299-2647-4ede-9938-a80a67f3a9bf" testId="c8ea3952-ca57-e6dc-a4d4-6bf06cea9f82" testName="QueuingDeleteWithNullInfoThrowsException" computerName="DAVID" duration="00:00:00.0033426" startTime="2012-03-23T23:57:57.0803671-04:00" endTime="2012-03-23T23:57:57.0862265-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f6aa299-2647-4ede-9938-a80a67f3a9bf">
+    </UnitTestResult>
+    <UnitTestResult executionId="382b9929-f474-4f77-b408-7997791617b1" testId="cad57930-f0bf-4909-3edd-6471ee663f58" testName="QueuingInsertAddsToChangeList" computerName="DAVID" duration="00:00:00.0028266" startTime="2012-03-23T23:57:57.0901328-04:00" endTime="2012-03-23T23:57:57.0969687-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="382b9929-f474-4f77-b408-7997791617b1">
+    </UnitTestResult>
+    <UnitTestResult executionId="9c060f9b-ef5d-42de-9263-e5482813da33" testId="cc018af1-cc80-56a7-4101-95e4838d4667" testName="CreatingWithNullContextThrowsException" computerName="DAVID" duration="00:00:00.0108262" startTime="2012-03-23T23:57:57.1038046-04:00" endTime="2012-03-23T23:57:57.1213828-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c060f9b-ef5d-42de-9263-e5482813da33">
+    </UnitTestResult>
+    <UnitTestResult executionId="cb2dfd49-feba-4646-b8b7-d63ef953eb28" testId="cc4b51ae-303b-9e5c-9757-1d3d9e8f1777" testName="CreatingWithOptionsAssignsOK" computerName="DAVID" duration="00:00:00.0141115" startTime="2012-03-23T23:57:57.1282187-04:00" endTime="2012-03-23T23:57:57.1467734-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb2dfd49-feba-4646-b8b7-d63ef953eb28">
+    </UnitTestResult>
+    <UnitTestResult executionId="924e0984-0f56-45f5-961a-411363718b50" testId="cf085bae-c255-d472-9e18-c04089610927" testName="SavingDeletePushesChange" computerName="DAVID" duration="00:00:00.0021625" startTime="2012-03-23T23:57:57.1497031-04:00" endTime="2012-03-23T23:57:57.1555625-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="924e0984-0f56-45f5-961a-411363718b50">
+    </UnitTestResult>
+    <UnitTestResult executionId="61327144-1356-41c1-8f89-5eb67e2ae914" testId="cf85672e-98c7-81c2-8473-46eea0cdd0ff" testName="GettingAndSettingPropertiesWorksOK" computerName="DAVID" duration="00:00:00.0026173" startTime="2012-03-23T23:57:57.1584921-04:00" endTime="2012-03-23T23:57:57.1643515-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61327144-1356-41c1-8f89-5eb67e2ae914">
+    </UnitTestResult>
+    <UnitTestResult executionId="1d717990-2da1-4e28-b2fe-afb6950dcc15" testId="cf8739a2-fd07-96cd-50a8-0d03a9c947e6" testName="QueuingDeleteCallsOnSubmit" computerName="DAVID" duration="00:00:00.0057638" startTime="2012-03-23T23:57:57.1672812-04:00" endTime="2012-03-23T23:57:57.1760703-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d717990-2da1-4e28-b2fe-afb6950dcc15">
+    </UnitTestResult>
+    <UnitTestResult executionId="f6b0e7d2-f6c4-40a7-941d-4624bee20fc5" testId="d1d48adf-cf30-0a1b-0fc4-71787e8d5c9e" testName="CreatingFromConfigWhenConfigDoesntExistThrowsException" computerName="DAVID" duration="00:00:00.0099305" startTime="2012-03-23T23:57:57.1790000-04:00" endTime="2012-03-23T23:57:57.1926718-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6b0e7d2-f6c4-40a7-941d-4624bee20fc5">
+    </UnitTestResult>
+    <UnitTestResult executionId="2812e67b-7fb6-4bb7-bd42-6b5fa57b1dd3" testId="d4a37770-ed78-35d3-e473-4f32ad9d782e" testName="GetByNullIDLookupThrowsException" computerName="DAVID" duration="00:00:00.0020670" startTime="2012-03-23T23:57:57.1965781-04:00" endTime="2012-03-23T23:57:57.2014609-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2812e67b-7fb6-4bb7-bd42-6b5fa57b1dd3">
+    </UnitTestResult>
+    <UnitTestResult executionId="72728966-12f0-4bc0-a395-cbeaa7478fa5" testId="d654a00b-2a3c-4d1e-bfbe-fb3225eadd09" testName="QueueingInvalidUpdateThrowsException" computerName="DAVID" duration="00:00:00.0024997" startTime="2012-03-23T23:57:57.2043906-04:00" endTime="2012-03-23T23:57:57.2102500-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72728966-12f0-4bc0-a395-cbeaa7478fa5">
+    </UnitTestResult>
+    <UnitTestResult executionId="ef85c08b-22c6-4c5a-a206-16235cc1df1d" testId="d69c55cf-d668-5519-9d89-d95aaff0f7ca" testName="QueuingUpdateWhenAttachedDoesNotAttach" computerName="DAVID" duration="00:00:00.0065863" startTime="2012-03-23T23:57:57.2131796-04:00" endTime="2012-03-23T23:57:57.2219687-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef85c08b-22c6-4c5a-a206-16235cc1df1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="daf33fc1-9eab-46f2-87a2-ee47cc30d0c9" testId="d6ebf0c6-5531-08fd-95e7-43e602f649ed" testName="FiringActionWorksOK" computerName="DAVID" duration="00:00:00.0056951" startTime="2012-03-23T23:57:57.2258750-04:00" endTime="2012-03-23T23:57:57.2346640-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="daf33fc1-9eab-46f2-87a2-ee47cc30d0c9">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b9caa4a-7679-4956-94d9-4f91cd58fbb7" testId="da2294e4-6224-f8f4-af00-bb7bd32e5d1d" testName="LocatingUnitOfWorkByNameWorksOK" computerName="DAVID" duration="00:00:00.0064457" startTime="2012-03-23T23:57:57.2385703-04:00" endTime="2012-03-23T23:57:57.2473593-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b9caa4a-7679-4956-94d9-4f91cd58fbb7">
+    </UnitTestResult>
+    <UnitTestResult executionId="83dd1b00-4312-4bfa-9f70-958672f09437" testId="da70f6ec-f23f-09f8-b3df-cf296cf4b626" testName="GettingByNullEntityKeyThrowsException" computerName="DAVID" duration="00:00:00.0044659" startTime="2012-03-23T23:57:57.2512656-04:00" endTime="2012-03-23T23:57:57.2581015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83dd1b00-4312-4bfa-9f70-958672f09437">
+    </UnitTestResult>
+    <UnitTestResult executionId="029d35fb-3de7-4f4e-892d-60f41ae6cd18" testId="dc1eb3ed-f885-c6a7-0635-9472a074f8d3" testName="CreatingEntitySetThrowsWhenCtorParamNull" computerName="DAVID" duration="00:00:00.0179617" startTime="2012-03-23T23:57:57.2620078-04:00" endTime="2012-03-23T23:57:57.2825156-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="029d35fb-3de7-4f4e-892d-60f41ae6cd18">
+    </UnitTestResult>
+    <UnitTestResult executionId="0844c9c8-9571-4b51-8a39-975819e6eead" testId="dc686c0c-a3bc-ee0c-f37b-d570d864e84f" testName="CreatingWithInvalidRegistrationTypeReturnsNull" computerName="DAVID" duration="00:00:00.0097140" startTime="2012-03-23T23:57:57.2864218-04:00" endTime="2012-03-23T23:57:57.3000937-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0844c9c8-9571-4b51-8a39-975819e6eead">
+    </UnitTestResult>
+    <UnitTestResult executionId="72ab7d87-25f8-44b6-ba40-16c6754525a2" testId="dd01b293-83e0-2dbb-30e7-7422faba3757" testName="DetachingAnEntityWorksOK" computerName="DAVID" duration="00:00:00.0053934" startTime="2012-03-23T23:57:57.3040000-04:00" endTime="2012-03-23T23:57:57.3127890-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72ab7d87-25f8-44b6-ba40-16c6754525a2">
+    </UnitTestResult>
+    <UnitTestResult executionId="40fb1ea8-18af-48dd-bf1b-d16e87560a39" testId="dd242d73-c31d-5754-03d1-f637ebfa213d" testName="GettingObjectByIDReturnsCorrectObject" computerName="DAVID" duration="00:00:00.0026165" startTime="2012-03-23T23:57:57.3157187-04:00" endTime="2012-03-23T23:57:57.3215781-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40fb1ea8-18af-48dd-bf1b-d16e87560a39">
+    </UnitTestResult>
+    <UnitTestResult executionId="4a9be7d0-6e9d-471a-9e70-ffe1a6eaba33" testId="df455156-8cb1-8e84-fa6b-41a433f6420f" testName="CreatingUnitOfWorkAssignsOK" computerName="DAVID" duration="00:00:00.0038775" startTime="2012-03-23T23:57:57.3245078-04:00" endTime="2012-03-23T23:57:57.3313437-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a9be7d0-6e9d-471a-9e70-ffe1a6eaba33">
+    </UnitTestResult>
+    <UnitTestResult executionId="f8488dda-3146-40ee-a4d7-be21333afe69" testId="dfe08ee1-e732-6298-2305-6ab6d1d973a3" testName="QueryingWithNullExpression1ThrowsException" computerName="DAVID" duration="00:00:00.0052040" startTime="2012-03-23T23:57:57.3342734-04:00" endTime="2012-03-23T23:57:57.3430625-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8488dda-3146-40ee-a4d7-be21333afe69">
+    </UnitTestResult>
+    <UnitTestResult executionId="a58a6a88-5e56-4116-bc1e-237cf85ceca0" testId="e14169b4-f90e-570f-6aa4-0bbc02fbe685" testName="ValidatingEmptyRulesReturnsEmptyValidationResult" computerName="DAVID" duration="00:00:00.0105298" startTime="2012-03-23T23:57:57.3459921-04:00" endTime="2012-03-23T23:57:57.3596640-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a58a6a88-5e56-4116-bc1e-237cf85ceca0">
+    </UnitTestResult>
+    <UnitTestResult executionId="0229520f-f939-4760-aea8-41913f8b86a6" testId="e1419735-0a7c-a343-7b6a-6b03d31f7385" testName="ContextIsRetrievedFromTable" computerName="DAVID" duration="00:00:00.0100557" startTime="2012-03-23T23:57:57.3625937-04:00" endTime="2012-03-23T23:57:57.3762656-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0229520f-f939-4760-aea8-41913f8b86a6">
+    </UnitTestResult>
+    <UnitTestResult executionId="bf77bc16-84e8-4594-ad83-c7f002d451f6" testId="e41eb29c-c451-088a-3f75-2f5e5fb6b089" testName="QueuingInsertAddsToObjectSet" computerName="DAVID" duration="00:00:00.0077118" startTime="2012-03-23T23:57:57.3791953-04:00" endTime="2012-03-23T23:57:57.3899375-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf77bc16-84e8-4594-ad83-c7f002d451f6">
+    </UnitTestResult>
+    <UnitTestResult executionId="f2def432-a85b-49a2-acce-3e8d86679914" testId="e5217617-63fb-8fe0-b269-f86f1c5e5623" testName="LocatingNullUnitOfWorkThrowsException" computerName="DAVID" duration="00:00:00.0036010" startTime="2012-03-23T23:57:57.3938437-04:00" endTime="2012-03-23T23:57:57.3997031-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2def432-a85b-49a2-acce-3e8d86679914">
+    </UnitTestResult>
+    <UnitTestResult executionId="e612b290-dac9-4c05-8fb7-efbda8a09622" testId="e725ecd4-2d11-c015-13f0-34e0f66a36fc" testName="CreatingANewEntityCreatesOK" computerName="DAVID" duration="00:00:00.0043173" startTime="2012-03-23T23:57:57.4211875-04:00" endTime="2012-03-23T23:57:57.4290000-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e612b290-dac9-4c05-8fb7-efbda8a09622">
+    </UnitTestResult>
+    <UnitTestResult executionId="f79c2c26-d3ff-420e-95e2-a44949206efa" testId="e9915c47-9188-8b20-ac6c-3e7e3a01e157" testName="CreatesTheMessagesAssignsOK" computerName="DAVID" duration="00:00:00.0021796" startTime="2012-03-23T23:57:57.4319296-04:00" endTime="2012-03-23T23:57:57.4368125-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f79c2c26-d3ff-420e-95e2-a44949206efa">
+    </UnitTestResult>
+    <UnitTestResult executionId="16285882-aa1a-4bf1-8e3a-0b8427a5b69e" testId="ebb9acfa-f8fe-53cc-15b4-a60c3c39566e" testName="AddingErrorResultSetsIsErrorFlag" computerName="DAVID" duration="00:00:00.0040695" startTime="2012-03-23T23:57:57.4397421-04:00" endTime="2012-03-23T23:57:57.4475546-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16285882-aa1a-4bf1-8e3a-0b8427a5b69e">
+    </UnitTestResult>
+    <UnitTestResult executionId="d8094a10-7d09-4263-918d-b0e3f6a8ed5b" testId="f022b687-5ab1-eae2-6a2b-5d8c4245ec36" testName="SavingChangesSavesOK" computerName="DAVID" duration="00:00:00.0091726" startTime="2012-03-23T23:57:57.4504843-04:00" endTime="2012-03-23T23:57:57.4631796-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8094a10-7d09-4263-918d-b0e3f6a8ed5b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Nucleo.Orm.Entities.NucleoObjectContextTest.SavingChangesSavesOK threw exception: 
+TypeMock.VerifyException: 
+TypeMock Verification: Method System.Data.Objects.ObjectContext.SaveChanges() was expected but was not called</Message>
+          <StackTrace>    at en.a(jl A_0, d3 A_1, hq A_2, Predicate`1 A_3)
+   at b7.b(Delegate A_0)
+   at b7.WasCalledWithAnyArguments[T](Func`1 func)
+   at Nucleo.Orm.Entities.NucleoObjectContextTest.SavingChangesSavesOK() in C:\Content\VS Projects\Nucleo\Orm\4.0\Tests.Unit.Orm\Orm\Entities\NucleoObjectContextTest.cs:line 21
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="32fbec73-a4f7-41b9-93e7-8ced06ac8863" testId="f03c6866-bc60-214f-0c44-8f942145c010" testName="CtorWithNullData2ThrowsException" computerName="DAVID" duration="00:00:00.0022902" startTime="2012-03-23T23:57:57.4690390-04:00" endTime="2012-03-23T23:57:57.4748984-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32fbec73-a4f7-41b9-93e7-8ced06ac8863">
+    </UnitTestResult>
+    <UnitTestResult executionId="919e3940-8f0d-4a12-8962-26c977ad005a" testId="f14445b8-e8cd-916f-7aeb-f4b2734a6d22" testName="QueuingUpdateDoesNothing" computerName="DAVID" duration="00:00:00.0153357" startTime="2012-03-23T23:57:57.4778281-04:00" endTime="2012-03-23T23:57:57.4963828-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="919e3940-8f0d-4a12-8962-26c977ad005a">
+    </UnitTestResult>
+    <UnitTestResult executionId="1a7257ad-05f4-47d9-8ca7-1b3d2baa1966" testId="f4564b45-9959-b643-af2a-722b08b6d1ea" testName="SavingChangesCallsOnContext" computerName="DAVID" duration="00:00:00.0061102" startTime="2012-03-23T23:57:57.4993125-04:00" endTime="2012-03-23T23:57:57.5090781-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a7257ad-05f4-47d9-8ca7-1b3d2baa1966">
+    </UnitTestResult>
+    <UnitTestResult executionId="0093026e-3028-4f68-8d48-103687aeac85" testId="f975b55f-115f-a2ca-6e26-1adff96a3233" testName="QueueingNullInsertThrowsException" computerName="DAVID" duration="00:00:00.0019684" startTime="2012-03-23T23:57:57.5129843-04:00" endTime="2012-03-23T23:57:57.5178671-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0093026e-3028-4f68-8d48-103687aeac85">
+    </UnitTestResult>
+    <UnitTestResult executionId="34372342-5499-4636-9bc1-98917981c2ca" testId="fa9d216e-8a6b-8d7b-80a0-c9bdf6b0016d" testName="ServingCachedMethodWorksOK" computerName="DAVID" duration="00:00:00.0124809" startTime="2012-03-23T23:57:57.5207968-04:00" endTime="2012-03-23T23:57:57.5364218-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34372342-5499-4636-9bc1-98917981c2ca">
+    </UnitTestResult>
+    <UnitTestResult executionId="91468daf-ab0f-46c1-aa0d-b0f4103c1ab7" testId="faaec9bb-7e12-1870-005d-8af279658fb2" testName="GettingByKeyReturnsNull" computerName="DAVID" duration="00:00:00.0161059" startTime="2012-03-23T23:57:57.5813437-04:00" endTime="2012-03-23T23:57:57.6721640-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91468daf-ab0f-46c1-aa0d-b0f4103c1ab7">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,3027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Demos.Data.Entities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AdventureWorksObjectContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AWBuildVersions" EntityType="Demos.Data.Entities.AWBuildVersion" />
+    <EntitySet Name="DatabaseLogs" EntityType="Demos.Data.Entities.DatabaseLog" />
+    <EntitySet Name="ErrorLogs" EntityType="Demos.Data.Entities.ErrorLog" />
+    <EntitySet Name="Departments" EntityType="Demos.Data.Entities.Department" />
+    <EntitySet Name="Employees" EntityType="Demos.Data.Entities.Employee" />
+    <EntitySet Name="EmployeeAddresses" EntityType="Demos.Data.Entities.EmployeeAddress" />
+    <EntitySet Name="EmployeeDepartmentHistories" EntityType="Demos.Data.Entities.EmployeeDepartmentHistory" />
+    <EntitySet Name="EmployeePayHistories" EntityType="Demos.Data.Entities.EmployeePayHistory" />
+    <EntitySet Name="JobCandidates" EntityType="Demos.Data.Entities.JobCandidate" />
+    <EntitySet Name="Shifts" EntityType="Demos.Data.Entities.Shift" />
+    <EntitySet Name="Addresses" EntityType="Demos.Data.Entities.Address" />
+    <EntitySet Name="AddressTypes" EntityType="Demos.Data.Entities.AddressType" />
+    <EntitySet Name="Contacts" EntityType="Demos.Data.Entities.Contact" />
+    <EntitySet Name="ContactTypes" EntityType="Demos.Data.Entities.ContactType" />
+    <EntitySet Name="CountryRegions" EntityType="Demos.Data.Entities.CountryRegion" />
+    <EntitySet Name="StateProvinces" EntityType="Demos.Data.Entities.StateProvince" />
+    <EntitySet Name="BillOfMaterials" EntityType="Demos.Data.Entities.BillOfMaterial" />
+    <EntitySet Name="Cultures" EntityType="Demos.Data.Entities.Culture" />
+    <EntitySet Name="Documents" EntityType="Demos.Data.Entities.Document" />
+    <EntitySet Name="Illustrations" EntityType="Demos.Data.Entities.Illustration" />
+    <EntitySet Name="Locations" EntityType="Demos.Data.Entities.Location" />
+    <EntitySet Name="Products" EntityType="Demos.Data.Entities.Product" />
+    <EntitySet Name="ProductCategories" EntityType="Demos.Data.Entities.ProductCategory" />
+    <EntitySet Name="ProductCostHistories" EntityType="Demos.Data.Entities.ProductCostHistory" />
+    <EntitySet Name="ProductDescriptions" EntityType="Demos.Data.Entities.ProductDescription" />
+    <EntitySet Name="ProductDocuments" EntityType="Demos.Data.Entities.ProductDocument" />
+    <EntitySet Name="ProductInventories" EntityType="Demos.Data.Entities.ProductInventory" />
+    <EntitySet Name="ProductListPriceHistories" EntityType="Demos.Data.Entities.ProductListPriceHistory" />
+    <EntitySet Name="ProductModels" EntityType="Demos.Data.Entities.ProductModel" />
+    <EntitySet Name="ProductModelIllustrations" EntityType="Demos.Data.Entities.ProductModelIllustration" />
+    <EntitySet Name="ProductModelProductDescriptionCultures" EntityType="Demos.Data.Entities.ProductModelProductDescriptionCulture" />
+    <EntitySet Name="ProductPhotoes" EntityType="Demos.Data.Entities.ProductPhoto" />
+    <EntitySet Name="ProductProductPhotoes" EntityType="Demos.Data.Entities.ProductProductPhoto" />
+    <EntitySet Name="ProductReviews" EntityType="Demos.Data.Entities.ProductReview" />
+    <EntitySet Name="ProductSubcategories" EntityType="Demos.Data.Entities.ProductSubcategory" />
+    <EntitySet Name="ScrapReasons" EntityType="Demos.Data.Entities.ScrapReason" />
+    <EntitySet Name="TransactionHistories" EntityType="Demos.Data.Entities.TransactionHistory" />
+    <EntitySet Name="TransactionHistoryArchives" EntityType="Demos.Data.Entities.TransactionHistoryArchive" />
+    <EntitySet Name="UnitMeasures" EntityType="Demos.Data.Entities.UnitMeasure" />
+    <EntitySet Name="WorkOrders" EntityType="Demos.Data.Entities.WorkOrder" />
+    <EntitySet Name="WorkOrderRoutings" EntityType="Demos.Data.Entities.WorkOrderRouting" />
+    <EntitySet Name="ProductVendors" EntityType="Demos.Data.Entities.ProductVendor" />
+    <EntitySet Name="PurchaseOrderDetails" EntityType="Demos.Data.Entities.PurchaseOrderDetail" />
+    <EntitySet Name="PurchaseOrderHeaders" EntityType="Demos.Data.Entities.PurchaseOrderHeader" />
+    <EntitySet Name="ShipMethods" EntityType="Demos.Data.Entities.ShipMethod" />
+    <EntitySet Name="Vendors" EntityType="Demos.Data.Entities.Vendor" />
+    <EntitySet Name="VendorAddresses" EntityType="Demos.Data.Entities.VendorAddress" />
+    <EntitySet Name="VendorContacts" EntityType="Demos.Data.Entities.VendorContact" />
+    <EntitySet Name="ContactCreditCards" EntityType="Demos.Data.Entities.ContactCreditCard" />
+    <EntitySet Name="CountryRegionCurrencies" EntityType="Demos.Data.Entities.CountryRegionCurrency" />
+    <EntitySet Name="CreditCards" EntityType="Demos.Data.Entities.CreditCard" />
+    <EntitySet Name="Currencies" EntityType="Demos.Data.Entities.Currency" />
+    <EntitySet Name="CurrencyRates" EntityType="Demos.Data.Entities.CurrencyRate" />
+    <EntitySet Name="Customers" EntityType="Demos.Data.Entities.Customer" />
+    <EntitySet Name="CustomerAddresses" EntityType="Demos.Data.Entities.CustomerAddress" />
+    <EntitySet Name="Individuals" EntityType="Demos.Data.Entities.Individual" />
+    <EntitySet Name="SalesOrderDetails" EntityType="Demos.Data.Entities.SalesOrderDetail" />
+    <EntitySet Name="SalesOrderHeaders" EntityType="Demos.Data.Entities.SalesOrderHeader" />
+    <EntitySet Name="SalesOrderHeaderSalesReasons" EntityType="Demos.Data.Entities.SalesOrderHeaderSalesReason" />
+    <EntitySet Name="SalesPersons" EntityType="Demos.Data.Entities.SalesPerson" />
+    <EntitySet Name="SalesPersonQuotaHistories" EntityType="Demos.Data.Entities.SalesPersonQuotaHistory" />
+    <EntitySet Name="SalesReasons" EntityType="Demos.Data.Entities.SalesReason" />
+    <EntitySet Name="SalesTaxRates" EntityType="Demos.Data.Entities.SalesTaxRate" />
+    <EntitySet Name="SalesTerritories" EntityType="Demos.Data.Entities.SalesTerritory" />
+    <EntitySet Name="SalesTerritoryHistories" EntityType="Demos.Data.Entities.SalesTerritoryHistory" />
+    <EntitySet Name="ShoppingCartItems" EntityType="Demos.Data.Entities.ShoppingCartItem" />
+    <EntitySet Name="SpecialOffers" EntityType="Demos.Data.Entities.SpecialOffer" />
+    <EntitySet Name="SpecialOfferProducts" EntityType="Demos.Data.Entities.SpecialOfferProduct" />
+    <EntitySet Name="Stores" EntityType="Demos.Data.Entities.Store" />
+    <EntitySet Name="StoreContacts" EntityType="Demos.Data.Entities.StoreContact" />
+    <EntitySet Name="vEmployees" EntityType="Demos.Data.Entities.vEmployee" />
+    <EntitySet Name="vEmployeeDepartments" EntityType="Demos.Data.Entities.vEmployeeDepartment" />
+    <EntitySet Name="vEmployeeDepartmentHistories" EntityType="Demos.Data.Entities.vEmployeeDepartmentHistory" />
+    <EntitySet Name="vJobCandidates" EntityType="Demos.Data.Entities.vJobCandidate" />
+    <EntitySet Name="vJobCandidateEducations" EntityType="Demos.Data.Entities.vJobCandidateEducation" />
+    <EntitySet Name="vJobCandidateEmployments" EntityType="Demos.Data.Entities.vJobCandidateEmployment" />
+    <EntitySet Name="vAdditionalContactInfoes" EntityType="Demos.Data.Entities.vAdditionalContactInfo" />
+    <EntitySet Name="vStateProvinceCountryRegions" EntityType="Demos.Data.Entities.vStateProvinceCountryRegion" />
+    <EntitySet Name="vProductAndDescriptions" EntityType="Demos.Data.Entities.vProductAndDescription" />
+    <EntitySet Name="vProductModelCatalogDescriptions" EntityType="Demos.Data.Entities.vProductModelCatalogDescription" />
+    <EntitySet Name="vProductModelInstructions" EntityType="Demos.Data.Entities.vProductModelInstruction" />
+    <EntitySet Name="vVendors" EntityType="Demos.Data.Entities.vVendor" />
+    <EntitySet Name="vIndividualCustomers" EntityType="Demos.Data.Entities.vIndividualCustomer" />
+    <EntitySet Name="vIndividualDemographics" EntityType="Demos.Data.Entities.vIndividualDemographic" />
+    <EntitySet Name="vSalesPersons" EntityType="Demos.Data.Entities.vSalesPerson" />
+    <EntitySet Name="vSalesPersonSalesByFiscalYears" EntityType="Demos.Data.Entities.vSalesPersonSalesByFiscalYear" />
+    <EntitySet Name="vStoreWithDemographics" EntityType="Demos.Data.Entities.vStoreWithDemographic" />
+    <AssociationSet Name="FK_EmployeeDepartmentHistory_Department_DepartmentID" Association="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Department_DepartmentID">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="EmployeeDepartmentHistory" EntitySet="EmployeeDepartmentHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Contact_ContactID" Association="Demos.Data.Entities.FK_Employee_Contact_ContactID">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Employee_ManagerID" Association="Demos.Data.Entities.FK_Employee_Employee_ManagerID">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Employee1" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeAddress_Employee_EmployeeID" Association="Demos.Data.Entities.FK_EmployeeAddress_Employee_EmployeeID">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeeAddress" EntitySet="EmployeeAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeDepartmentHistory_Employee_EmployeeID" Association="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Employee_EmployeeID">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeeDepartmentHistory" EntitySet="EmployeeDepartmentHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeePayHistory_Employee_EmployeeID" Association="Demos.Data.Entities.FK_EmployeePayHistory_Employee_EmployeeID">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeePayHistory" EntitySet="EmployeePayHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobCandidate_Employee_EmployeeID" Association="Demos.Data.Entities.FK_JobCandidate_Employee_EmployeeID">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="JobCandidate" EntitySet="JobCandidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderHeader_Employee_EmployeeID" Association="Demos.Data.Entities.FK_PurchaseOrderHeader_Employee_EmployeeID">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="PurchaseOrderHeader" EntitySet="PurchaseOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesPerson_Employee_SalesPersonID" Association="Demos.Data.Entities.FK_SalesPerson_Employee_SalesPersonID">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="SalesPerson" EntitySet="SalesPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeAddress_Address_AddressID" Association="Demos.Data.Entities.FK_EmployeeAddress_Address_AddressID">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="EmployeeAddress" EntitySet="EmployeeAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeDepartmentHistory_Shift_ShiftID" Association="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Shift_ShiftID">
+      <End Role="Shift" EntitySet="Shifts" />
+      <End Role="EmployeeDepartmentHistory" EntitySet="EmployeeDepartmentHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_StateProvince_StateProvinceID" Association="Demos.Data.Entities.FK_Address_StateProvince_StateProvinceID">
+      <End Role="StateProvince" EntitySet="StateProvinces" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerAddress_Address_AddressID" Association="Demos.Data.Entities.FK_CustomerAddress_Address_AddressID">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="CustomerAddress" EntitySet="CustomerAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_Address_BillToAddressID" Association="Demos.Data.Entities.FK_SalesOrderHeader_Address_BillToAddressID">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_Address_ShipToAddressID" Association="Demos.Data.Entities.FK_SalesOrderHeader_Address_ShipToAddressID">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorAddress_Address_AddressID" Association="Demos.Data.Entities.FK_VendorAddress_Address_AddressID">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="VendorAddress" EntitySet="VendorAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerAddress_AddressType_AddressTypeID" Association="Demos.Data.Entities.FK_CustomerAddress_AddressType_AddressTypeID">
+      <End Role="AddressType" EntitySet="AddressTypes" />
+      <End Role="CustomerAddress" EntitySet="CustomerAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorAddress_AddressType_AddressTypeID" Association="Demos.Data.Entities.FK_VendorAddress_AddressType_AddressTypeID">
+      <End Role="AddressType" EntitySet="AddressTypes" />
+      <End Role="VendorAddress" EntitySet="VendorAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactCreditCard_Contact_ContactID" Association="Demos.Data.Entities.FK_ContactCreditCard_Contact_ContactID">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="ContactCreditCard" EntitySet="ContactCreditCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Individual_Contact_ContactID" Association="Demos.Data.Entities.FK_Individual_Contact_ContactID">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Individual" EntitySet="Individuals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_Contact_ContactID" Association="Demos.Data.Entities.FK_SalesOrderHeader_Contact_ContactID">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StoreContact_Contact_ContactID" Association="Demos.Data.Entities.FK_StoreContact_Contact_ContactID">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="StoreContact" EntitySet="StoreContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorContact_Contact_ContactID" Association="Demos.Data.Entities.FK_VendorContact_Contact_ContactID">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="VendorContact" EntitySet="VendorContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StoreContact_ContactType_ContactTypeID" Association="Demos.Data.Entities.FK_StoreContact_ContactType_ContactTypeID">
+      <End Role="ContactType" EntitySet="ContactTypes" />
+      <End Role="StoreContact" EntitySet="StoreContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorContact_ContactType_ContactTypeID" Association="Demos.Data.Entities.FK_VendorContact_ContactType_ContactTypeID">
+      <End Role="ContactType" EntitySet="ContactTypes" />
+      <End Role="VendorContact" EntitySet="VendorContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" Association="Demos.Data.Entities.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode">
+      <End Role="CountryRegion" EntitySet="CountryRegions" />
+      <End Role="CountryRegionCurrency" EntitySet="CountryRegionCurrencies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StateProvince_CountryRegion_CountryRegionCode" Association="Demos.Data.Entities.FK_StateProvince_CountryRegion_CountryRegionCode">
+      <End Role="CountryRegion" EntitySet="CountryRegions" />
+      <End Role="StateProvince" EntitySet="StateProvinces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesTaxRate_StateProvince_StateProvinceID" Association="Demos.Data.Entities.FK_SalesTaxRate_StateProvince_StateProvinceID">
+      <End Role="StateProvince" EntitySet="StateProvinces" />
+      <End Role="SalesTaxRate" EntitySet="SalesTaxRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StateProvince_SalesTerritory_TerritoryID" Association="Demos.Data.Entities.FK_StateProvince_SalesTerritory_TerritoryID">
+      <End Role="SalesTerritory" EntitySet="SalesTerritories" />
+      <End Role="StateProvince" EntitySet="StateProvinces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BillOfMaterials_Product_ComponentID" Association="Demos.Data.Entities.FK_BillOfMaterials_Product_ComponentID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="BillOfMaterials" EntitySet="BillOfMaterials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BillOfMaterials_Product_ProductAssemblyID" Association="Demos.Data.Entities.FK_BillOfMaterials_Product_ProductAssemblyID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="BillOfMaterials" EntitySet="BillOfMaterials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" Association="Demos.Data.Entities.FK_BillOfMaterials_UnitMeasure_UnitMeasureCode">
+      <End Role="UnitMeasure" EntitySet="UnitMeasures" />
+      <End Role="BillOfMaterials" EntitySet="BillOfMaterials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductModelProductDescriptionCulture_Culture_CultureID" Association="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_Culture_CultureID">
+      <End Role="Culture" EntitySet="Cultures" />
+      <End Role="ProductModelProductDescriptionCulture" EntitySet="ProductModelProductDescriptionCultures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductDocument_Document_DocumentID" Association="Demos.Data.Entities.FK_ProductDocument_Document_DocumentID">
+      <End Role="Document" EntitySet="Documents" />
+      <End Role="ProductDocument" EntitySet="ProductDocuments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductModelIllustration_Illustration_IllustrationID" Association="Demos.Data.Entities.FK_ProductModelIllustration_Illustration_IllustrationID">
+      <End Role="Illustration" EntitySet="Illustrations" />
+      <End Role="ProductModelIllustration" EntitySet="ProductModelIllustrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductInventory_Location_LocationID" Association="Demos.Data.Entities.FK_ProductInventory_Location_LocationID">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="ProductInventory" EntitySet="ProductInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkOrderRouting_Location_LocationID" Association="Demos.Data.Entities.FK_WorkOrderRouting_Location_LocationID">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="WorkOrderRouting" EntitySet="WorkOrderRoutings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductModel_ProductModelID" Association="Demos.Data.Entities.FK_Product_ProductModel_ProductModelID">
+      <End Role="ProductModel" EntitySet="ProductModels" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductSubcategory_ProductSubcategoryID" Association="Demos.Data.Entities.FK_Product_ProductSubcategory_ProductSubcategoryID">
+      <End Role="ProductSubcategory" EntitySet="ProductSubcategories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_UnitMeasure_SizeUnitMeasureCode" Association="Demos.Data.Entities.FK_Product_UnitMeasure_SizeUnitMeasureCode">
+      <End Role="UnitMeasure" EntitySet="UnitMeasures" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_UnitMeasure_WeightUnitMeasureCode" Association="Demos.Data.Entities.FK_Product_UnitMeasure_WeightUnitMeasureCode">
+      <End Role="UnitMeasure" EntitySet="UnitMeasures" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductCostHistory_Product_ProductID" Association="Demos.Data.Entities.FK_ProductCostHistory_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductCostHistory" EntitySet="ProductCostHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductDocument_Product_ProductID" Association="Demos.Data.Entities.FK_ProductDocument_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductDocument" EntitySet="ProductDocuments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductInventory_Product_ProductID" Association="Demos.Data.Entities.FK_ProductInventory_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductInventory" EntitySet="ProductInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductListPriceHistory_Product_ProductID" Association="Demos.Data.Entities.FK_ProductListPriceHistory_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductListPriceHistory" EntitySet="ProductListPriceHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductProductPhoto_Product_ProductID" Association="Demos.Data.Entities.FK_ProductProductPhoto_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductProductPhoto" EntitySet="ProductProductPhotoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductReview_Product_ProductID" Association="Demos.Data.Entities.FK_ProductReview_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductReview" EntitySet="ProductReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductVendor_Product_ProductID" Association="Demos.Data.Entities.FK_ProductVendor_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductVendor" EntitySet="ProductVendors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderDetail_Product_ProductID" Association="Demos.Data.Entities.FK_PurchaseOrderDetail_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShoppingCartItem_Product_ProductID" Association="Demos.Data.Entities.FK_ShoppingCartItem_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ShoppingCartItem" EntitySet="ShoppingCartItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SpecialOfferProduct_Product_ProductID" Association="Demos.Data.Entities.FK_SpecialOfferProduct_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="SpecialOfferProduct" EntitySet="SpecialOfferProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionHistory_Product_ProductID" Association="Demos.Data.Entities.FK_TransactionHistory_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="TransactionHistory" EntitySet="TransactionHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkOrder_Product_ProductID" Association="Demos.Data.Entities.FK_WorkOrder_Product_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="WorkOrder" EntitySet="WorkOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductSubcategory_ProductCategory_ProductCategoryID" Association="Demos.Data.Entities.FK_ProductSubcategory_ProductCategory_ProductCategoryID">
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+      <End Role="ProductSubcategory" EntitySet="ProductSubcategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" Association="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID">
+      <End Role="ProductDescription" EntitySet="ProductDescriptions" />
+      <End Role="ProductModelProductDescriptionCulture" EntitySet="ProductModelProductDescriptionCultures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductModelIllustration_ProductModel_ProductModelID" Association="Demos.Data.Entities.FK_ProductModelIllustration_ProductModel_ProductModelID">
+      <End Role="ProductModel" EntitySet="ProductModels" />
+      <End Role="ProductModelIllustration" EntitySet="ProductModelIllustrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" Association="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID">
+      <End Role="ProductModel" EntitySet="ProductModels" />
+      <End Role="ProductModelProductDescriptionCulture" EntitySet="ProductModelProductDescriptionCultures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" Association="Demos.Data.Entities.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID">
+      <End Role="ProductPhoto" EntitySet="ProductPhotoes" />
+      <End Role="ProductProductPhoto" EntitySet="ProductProductPhotoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkOrder_ScrapReason_ScrapReasonID" Association="Demos.Data.Entities.FK_WorkOrder_ScrapReason_ScrapReasonID">
+      <End Role="ScrapReason" EntitySet="ScrapReasons" />
+      <End Role="WorkOrder" EntitySet="WorkOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductVendor_UnitMeasure_UnitMeasureCode" Association="Demos.Data.Entities.FK_ProductVendor_UnitMeasure_UnitMeasureCode">
+      <End Role="UnitMeasure" EntitySet="UnitMeasures" />
+      <End Role="ProductVendor" EntitySet="ProductVendors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkOrderRouting_WorkOrder_WorkOrderID" Association="Demos.Data.Entities.FK_WorkOrderRouting_WorkOrder_WorkOrderID">
+      <End Role="WorkOrder" EntitySet="WorkOrders" />
+      <End Role="WorkOrderRouting" EntitySet="WorkOrderRoutings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductVendor_Vendor_VendorID" Association="Demos.Data.Entities.FK_ProductVendor_Vendor_VendorID">
+      <End Role="Vendor" EntitySet="Vendors" />
+      <End Role="ProductVendor" EntitySet="ProductVendors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" Association="Demos.Data.Entities.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID">
+      <End Role="PurchaseOrderHeader" EntitySet="PurchaseOrderHeaders" />
+      <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" Association="Demos.Data.Entities.FK_PurchaseOrderHeader_ShipMethod_ShipMethodID">
+      <End Role="ShipMethod" EntitySet="ShipMethods" />
+      <End Role="PurchaseOrderHeader" EntitySet="PurchaseOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderHeader_Vendor_VendorID" Association="Demos.Data.Entities.FK_PurchaseOrderHeader_Vendor_VendorID">
+      <End Role="Vendor" EntitySet="Vendors" />
+      <End Role="PurchaseOrderHeader" EntitySet="PurchaseOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_ShipMethod_ShipMethodID" Association="Demos.Data.Entities.FK_SalesOrderHeader_ShipMethod_ShipMethodID">
+      <End Role="ShipMethod" EntitySet="ShipMethods" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorAddress_Vendor_VendorID" Association="Demos.Data.Entities.FK_VendorAddress_Vendor_VendorID">
+      <End Role="Vendor" EntitySet="Vendors" />
+      <End Role="VendorAddress" EntitySet="VendorAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorContact_Vendor_VendorID" Association="Demos.Data.Entities.FK_VendorContact_Vendor_VendorID">
+      <End Role="Vendor" EntitySet="Vendors" />
+      <End Role="VendorContact" EntitySet="VendorContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactCreditCard_CreditCard_CreditCardID" Association="Demos.Data.Entities.FK_ContactCreditCard_CreditCard_CreditCardID">
+      <End Role="CreditCard" EntitySet="CreditCards" />
+      <End Role="ContactCreditCard" EntitySet="ContactCreditCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CountryRegionCurrency_Currency_CurrencyCode" Association="Demos.Data.Entities.FK_CountryRegionCurrency_Currency_CurrencyCode">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="CountryRegionCurrency" EntitySet="CountryRegionCurrencies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_CreditCard_CreditCardID" Association="Demos.Data.Entities.FK_SalesOrderHeader_CreditCard_CreditCardID">
+      <End Role="CreditCard" EntitySet="CreditCards" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CurrencyRate_Currency_FromCurrencyCode" Association="Demos.Data.Entities.FK_CurrencyRate_Currency_FromCurrencyCode">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CurrencyRate_Currency_ToCurrencyCode" Association="Demos.Data.Entities.FK_CurrencyRate_Currency_ToCurrencyCode">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" Association="Demos.Data.Entities.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID">
+      <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_SalesTerritory_TerritoryID" Association="Demos.Data.Entities.FK_Customer_SalesTerritory_TerritoryID">
+      <End Role="SalesTerritory" EntitySet="SalesTerritories" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerAddress_Customer_CustomerID" Association="Demos.Data.Entities.FK_CustomerAddress_Customer_CustomerID">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="CustomerAddress" EntitySet="CustomerAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Individual_Customer_CustomerID" Association="Demos.Data.Entities.FK_Individual_Customer_CustomerID">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Individual" EntitySet="Individuals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_Customer_CustomerID" Association="Demos.Data.Entities.FK_SalesOrderHeader_Customer_CustomerID">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Store_Customer_CustomerID" Association="Demos.Data.Entities.FK_Store_Customer_CustomerID">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Store" EntitySet="Stores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" Association="Demos.Data.Entities.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+      <End Role="SalesOrderDetail" EntitySet="SalesOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" Association="Demos.Data.Entities.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID">
+      <End Role="SpecialOfferProduct" EntitySet="SpecialOfferProducts" />
+      <End Role="SalesOrderDetail" EntitySet="SalesOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_SalesPerson_SalesPersonID" Association="Demos.Data.Entities.FK_SalesOrderHeader_SalesPerson_SalesPersonID">
+      <End Role="SalesPerson" EntitySet="SalesPersons" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_SalesTerritory_TerritoryID" Association="Demos.Data.Entities.FK_SalesOrderHeader_SalesTerritory_TerritoryID">
+      <End Role="SalesTerritory" EntitySet="SalesTerritories" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" Association="Demos.Data.Entities.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID">
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeaders" />
+      <End Role="SalesOrderHeaderSalesReason" EntitySet="SalesOrderHeaderSalesReasons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" Association="Demos.Data.Entities.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID">
+      <End Role="SalesReason" EntitySet="SalesReasons" />
+      <End Role="SalesOrderHeaderSalesReason" EntitySet="SalesOrderHeaderSalesReasons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesPerson_SalesTerritory_TerritoryID" Association="Demos.Data.Entities.FK_SalesPerson_SalesTerritory_TerritoryID">
+      <End Role="SalesTerritory" EntitySet="SalesTerritories" />
+      <End Role="SalesPerson" EntitySet="SalesPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesPersonQuotaHistory_SalesPerson_SalesPersonID" Association="Demos.Data.Entities.FK_SalesPersonQuotaHistory_SalesPerson_SalesPersonID">
+      <End Role="SalesPerson" EntitySet="SalesPersons" />
+      <End Role="SalesPersonQuotaHistory" EntitySet="SalesPersonQuotaHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesTerritoryHistory_SalesPerson_SalesPersonID" Association="Demos.Data.Entities.FK_SalesTerritoryHistory_SalesPerson_SalesPersonID">
+      <End Role="SalesPerson" EntitySet="SalesPersons" />
+      <End Role="SalesTerritoryHistory" EntitySet="SalesTerritoryHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Store_SalesPerson_SalesPersonID" Association="Demos.Data.Entities.FK_Store_SalesPerson_SalesPersonID">
+      <End Role="SalesPerson" EntitySet="SalesPersons" />
+      <End Role="Store" EntitySet="Stores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" Association="Demos.Data.Entities.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID">
+      <End Role="SalesTerritory" EntitySet="SalesTerritories" />
+      <End Role="SalesTerritoryHistory" EntitySet="SalesTerritoryHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" Association="Demos.Data.Entities.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID">
+      <End Role="SpecialOffer" EntitySet="SpecialOffers" />
+      <End Role="SpecialOfferProduct" EntitySet="SpecialOfferProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StoreContact_Store_CustomerID" Association="Demos.Data.Entities.FK_StoreContact_Store_CustomerID">
+      <End Role="Store" EntitySet="Stores" />
+      <End Role="StoreContact" EntitySet="StoreContacts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AWBuildVersion">
+    <Key>
+      <PropertyRef Name="SystemInformationID" />
+    </Key>
+    <Property Name="SystemInformationID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Database_Version" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="VersionDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DatabaseLog">
+    <Key>
+      <PropertyRef Name="DatabaseLogID" />
+    </Key>
+    <Property Name="DatabaseLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PostTime" Type="DateTime" Nullable="false" />
+    <Property Name="DatabaseUser" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Event" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Schema" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Object" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="TSQL" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="XmlEvent" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogID" />
+    </Key>
+    <Property Name="ErrorLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorTime" Type="DateTime" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ErrorNumber" Type="Int32" Nullable="false" />
+    <Property Name="ErrorSeverity" Type="Int32" />
+    <Property Name="ErrorState" Type="Int32" />
+    <Property Name="ErrorProcedure" Type="String" MaxLength="126" Unicode="true" FixedLength="false" />
+    <Property Name="ErrorLine" Type="Int32" />
+    <Property Name="ErrorMessage" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="EmployeeDepartmentHistories" Relationship="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Department_DepartmentID" FromRole="Department" ToRole="EmployeeDepartmentHistory" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NationalIDNumber" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="LoginID" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ManagerID" Type="Int32" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" />
+    <Property Name="MaritalStatus" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+    <Property Name="HireDate" Type="DateTime" Nullable="false" />
+    <Property Name="SalariedFlag" Type="Boolean" Nullable="false" />
+    <Property Name="VacationHours" Type="Int16" Nullable="false" />
+    <Property Name="SickLeaveHours" Type="Int16" Nullable="false" />
+    <Property Name="CurrentFlag" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Contact" Relationship="Demos.Data.Entities.FK_Employee_Contact_ContactID" FromRole="Employee" ToRole="Contact" />
+    <NavigationProperty Name="Employee1" Relationship="Demos.Data.Entities.FK_Employee_Employee_ManagerID" FromRole="Employee" ToRole="Employee1" />
+    <NavigationProperty Name="Employee2" Relationship="Demos.Data.Entities.FK_Employee_Employee_ManagerID" FromRole="Employee1" ToRole="Employee" />
+    <NavigationProperty Name="EmployeeAddresses" Relationship="Demos.Data.Entities.FK_EmployeeAddress_Employee_EmployeeID" FromRole="Employee" ToRole="EmployeeAddress" />
+    <NavigationProperty Name="EmployeeDepartmentHistories" Relationship="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Employee_EmployeeID" FromRole="Employee" ToRole="EmployeeDepartmentHistory" />
+    <NavigationProperty Name="EmployeePayHistories" Relationship="Demos.Data.Entities.FK_EmployeePayHistory_Employee_EmployeeID" FromRole="Employee" ToRole="EmployeePayHistory" />
+    <NavigationProperty Name="JobCandidates" Relationship="Demos.Data.Entities.FK_JobCandidate_Employee_EmployeeID" FromRole="Employee" ToRole="JobCandidate" />
+    <NavigationProperty Name="PurchaseOrderHeaders" Relationship="Demos.Data.Entities.FK_PurchaseOrderHeader_Employee_EmployeeID" FromRole="Employee" ToRole="PurchaseOrderHeader" />
+    <NavigationProperty Name="SalesPerson" Relationship="Demos.Data.Entities.FK_SalesPerson_Employee_SalesPersonID" FromRole="Employee" ToRole="SalesPerson" />
+  </EntityType>
+  <EntityType Name="EmployeeAddress">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="AddressID" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Demos.Data.Entities.FK_EmployeeAddress_Employee_EmployeeID" FromRole="EmployeeAddress" ToRole="Employee" />
+    <NavigationProperty Name="Address" Relationship="Demos.Data.Entities.FK_EmployeeAddress_Address_AddressID" FromRole="EmployeeAddress" ToRole="Address" />
+  </EntityType>
+  <EntityType Name="EmployeeDepartmentHistory">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="ShiftID" />
+      <PropertyRef Name="StartDate" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentID" Type="Int16" Nullable="false" />
+    <Property Name="ShiftID" Type="Byte" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Department_DepartmentID" FromRole="EmployeeDepartmentHistory" ToRole="Department" />
+    <NavigationProperty Name="Employee" Relationship="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Employee_EmployeeID" FromRole="EmployeeDepartmentHistory" ToRole="Employee" />
+    <NavigationProperty Name="Shift" Relationship="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Shift_ShiftID" FromRole="EmployeeDepartmentHistory" ToRole="Shift" />
+  </EntityType>
+  <EntityType Name="EmployeePayHistory">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="RateChangeDate" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="RateChangeDate" Type="DateTime" Nullable="false" />
+    <Property Name="Rate" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="PayFrequency" Type="Byte" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Demos.Data.Entities.FK_EmployeePayHistory_Employee_EmployeeID" FromRole="EmployeePayHistory" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="JobCandidate">
+    <Key>
+      <PropertyRef Name="JobCandidateID" />
+    </Key>
+    <Property Name="JobCandidateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="Resume" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Demos.Data.Entities.FK_JobCandidate_Employee_EmployeeID" FromRole="JobCandidate" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Shift">
+    <Key>
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Name="ShiftID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="EmployeeDepartmentHistories" Relationship="Demos.Data.Entities.FK_EmployeeDepartmentHistory_Shift_ShiftID" FromRole="Shift" ToRole="EmployeeDepartmentHistory" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvinceID" Type="Int32" Nullable="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="EmployeeAddresses" Relationship="Demos.Data.Entities.FK_EmployeeAddress_Address_AddressID" FromRole="Address" ToRole="EmployeeAddress" />
+    <NavigationProperty Name="StateProvince" Relationship="Demos.Data.Entities.FK_Address_StateProvince_StateProvinceID" FromRole="Address" ToRole="StateProvince" />
+    <NavigationProperty Name="CustomerAddresses" Relationship="Demos.Data.Entities.FK_CustomerAddress_Address_AddressID" FromRole="Address" ToRole="CustomerAddress" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Address_BillToAddressID" FromRole="Address" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="SalesOrderHeaders1" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Address_ShipToAddressID" FromRole="Address" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="VendorAddresses" Relationship="Demos.Data.Entities.FK_VendorAddress_Address_AddressID" FromRole="Address" ToRole="VendorAddress" />
+  </EntityType>
+  <EntityType Name="AddressType">
+    <Key>
+      <PropertyRef Name="AddressTypeID" />
+    </Key>
+    <Property Name="AddressTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="CustomerAddresses" Relationship="Demos.Data.Entities.FK_CustomerAddress_AddressType_AddressTypeID" FromRole="AddressType" ToRole="CustomerAddress" />
+    <NavigationProperty Name="VendorAddresses" Relationship="Demos.Data.Entities.FK_VendorAddress_AddressType_AddressTypeID" FromRole="AddressType" ToRole="VendorAddress" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="ContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameStyle" Type="Boolean" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordHash" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="AdditionalContactInfo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Employees" Relationship="Demos.Data.Entities.FK_Employee_Contact_ContactID" FromRole="Contact" ToRole="Employee" />
+    <NavigationProperty Name="ContactCreditCards" Relationship="Demos.Data.Entities.FK_ContactCreditCard_Contact_ContactID" FromRole="Contact" ToRole="ContactCreditCard" />
+    <NavigationProperty Name="Individuals" Relationship="Demos.Data.Entities.FK_Individual_Contact_ContactID" FromRole="Contact" ToRole="Individual" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Contact_ContactID" FromRole="Contact" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="StoreContacts" Relationship="Demos.Data.Entities.FK_StoreContact_Contact_ContactID" FromRole="Contact" ToRole="StoreContact" />
+    <NavigationProperty Name="VendorContacts" Relationship="Demos.Data.Entities.FK_VendorContact_Contact_ContactID" FromRole="Contact" ToRole="VendorContact" />
+  </EntityType>
+  <EntityType Name="ContactType">
+    <Key>
+      <PropertyRef Name="ContactTypeID" />
+    </Key>
+    <Property Name="ContactTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="StoreContacts" Relationship="Demos.Data.Entities.FK_StoreContact_ContactType_ContactTypeID" FromRole="ContactType" ToRole="StoreContact" />
+    <NavigationProperty Name="VendorContacts" Relationship="Demos.Data.Entities.FK_VendorContact_ContactType_ContactTypeID" FromRole="ContactType" ToRole="VendorContact" />
+  </EntityType>
+  <EntityType Name="CountryRegion">
+    <Key>
+      <PropertyRef Name="CountryRegionCode" />
+    </Key>
+    <Property Name="CountryRegionCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="CountryRegionCurrencies" Relationship="Demos.Data.Entities.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" FromRole="CountryRegion" ToRole="CountryRegionCurrency" />
+    <NavigationProperty Name="StateProvinces" Relationship="Demos.Data.Entities.FK_StateProvince_CountryRegion_CountryRegionCode" FromRole="CountryRegion" ToRole="StateProvince" />
+  </EntityType>
+  <EntityType Name="StateProvince">
+    <Key>
+      <PropertyRef Name="StateProvinceID" />
+    </Key>
+    <Property Name="StateProvinceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateProvinceCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="CountryRegionCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="IsOnlyStateProvinceFlag" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TerritoryID" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Addresses" Relationship="Demos.Data.Entities.FK_Address_StateProvince_StateProvinceID" FromRole="StateProvince" ToRole="Address" />
+    <NavigationProperty Name="CountryRegion" Relationship="Demos.Data.Entities.FK_StateProvince_CountryRegion_CountryRegionCode" FromRole="StateProvince" ToRole="CountryRegion" />
+    <NavigationProperty Name="SalesTaxRates" Relationship="Demos.Data.Entities.FK_SalesTaxRate_StateProvince_StateProvinceID" FromRole="StateProvince" ToRole="SalesTaxRate" />
+    <NavigationProperty Name="SalesTerritory" Relationship="Demos.Data.Entities.FK_StateProvince_SalesTerritory_TerritoryID" FromRole="StateProvince" ToRole="SalesTerritory" />
+  </EntityType>
+  <EntityType Name="BillOfMaterial">
+    <Key>
+      <PropertyRef Name="BillOfMaterialsID" />
+    </Key>
+    <Property Name="BillOfMaterialsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductAssemblyID" Type="Int32" />
+    <Property Name="ComponentID" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="UnitMeasureCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="BOMLevel" Type="Int16" Nullable="false" />
+    <Property Name="PerAssemblyQty" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_BillOfMaterials_Product_ComponentID" FromRole="BillOfMaterials" ToRole="Product" />
+    <NavigationProperty Name="Product1" Relationship="Demos.Data.Entities.FK_BillOfMaterials_Product_ProductAssemblyID" FromRole="BillOfMaterials" ToRole="Product" />
+    <NavigationProperty Name="UnitMeasure" Relationship="Demos.Data.Entities.FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" FromRole="BillOfMaterials" ToRole="UnitMeasure" />
+  </EntityType>
+  <EntityType Name="Culture">
+    <Key>
+      <PropertyRef Name="CultureID" />
+    </Key>
+    <Property Name="CultureID" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductModelProductDescriptionCultures" Relationship="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_Culture_CultureID" FromRole="Culture" ToRole="ProductModelProductDescriptionCulture" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="DocumentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FileName" Type="String" Nullable="false" MaxLength="400" Unicode="true" FixedLength="false" />
+    <Property Name="FileExtension" Type="String" Nullable="false" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="Revision" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="true" />
+    <Property Name="ChangeNumber" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="DocumentSummary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Document1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductDocuments" Relationship="Demos.Data.Entities.FK_ProductDocument_Document_DocumentID" FromRole="Document" ToRole="ProductDocument" />
+  </EntityType>
+  <EntityType Name="Illustration">
+    <Key>
+      <PropertyRef Name="IllustrationID" />
+    </Key>
+    <Property Name="IllustrationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Diagram" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductModelIllustrations" Relationship="Demos.Data.Entities.FK_ProductModelIllustration_Illustration_IllustrationID" FromRole="Illustration" ToRole="ProductModelIllustration" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CostRate" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Availability" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductInventories" Relationship="Demos.Data.Entities.FK_ProductInventory_Location_LocationID" FromRole="Location" ToRole="ProductInventory" />
+    <NavigationProperty Name="WorkOrderRoutings" Relationship="Demos.Data.Entities.FK_WorkOrderRouting_Location_LocationID" FromRole="Location" ToRole="WorkOrderRouting" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="MakeFlag" Type="Boolean" Nullable="false" />
+    <Property Name="FinishedGoodsFlag" Type="Boolean" Nullable="false" />
+    <Property Name="Color" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="SafetyStockLevel" Type="Int16" Nullable="false" />
+    <Property Name="ReorderPoint" Type="Int16" Nullable="false" />
+    <Property Name="StandardCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ListPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Size" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="SizeUnitMeasureCode" Type="String" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="WeightUnitMeasureCode" Type="String" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="Weight" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="DaysToManufacture" Type="Int32" Nullable="false" />
+    <Property Name="ProductLine" Type="String" MaxLength="2" Unicode="true" FixedLength="true" />
+    <Property Name="Class" Type="String" MaxLength="2" Unicode="true" FixedLength="true" />
+    <Property Name="Style" Type="String" MaxLength="2" Unicode="true" FixedLength="true" />
+    <Property Name="ProductSubcategoryID" Type="Int32" />
+    <Property Name="ProductModelID" Type="Int32" />
+    <Property Name="SellStartDate" Type="DateTime" Nullable="false" />
+    <Property Name="SellEndDate" Type="DateTime" />
+    <Property Name="DiscontinuedDate" Type="DateTime" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="BillOfMaterials" Relationship="Demos.Data.Entities.FK_BillOfMaterials_Product_ComponentID" FromRole="Product" ToRole="BillOfMaterials" />
+    <NavigationProperty Name="BillOfMaterials1" Relationship="Demos.Data.Entities.FK_BillOfMaterials_Product_ProductAssemblyID" FromRole="Product" ToRole="BillOfMaterials" />
+    <NavigationProperty Name="ProductModel" Relationship="Demos.Data.Entities.FK_Product_ProductModel_ProductModelID" FromRole="Product" ToRole="ProductModel" />
+    <NavigationProperty Name="ProductSubcategory" Relationship="Demos.Data.Entities.FK_Product_ProductSubcategory_ProductSubcategoryID" FromRole="Product" ToRole="ProductSubcategory" />
+    <NavigationProperty Name="UnitMeasure" Relationship="Demos.Data.Entities.FK_Product_UnitMeasure_SizeUnitMeasureCode" FromRole="Product" ToRole="UnitMeasure" />
+    <NavigationProperty Name="UnitMeasure1" Relationship="Demos.Data.Entities.FK_Product_UnitMeasure_WeightUnitMeasureCode" FromRole="Product" ToRole="UnitMeasure" />
+    <NavigationProperty Name="ProductCostHistories" Relationship="Demos.Data.Entities.FK_ProductCostHistory_Product_ProductID" FromRole="Product" ToRole="ProductCostHistory" />
+    <NavigationProperty Name="ProductDocuments" Relationship="Demos.Data.Entities.FK_ProductDocument_Product_ProductID" FromRole="Product" ToRole="ProductDocument" />
+    <NavigationProperty Name="ProductInventories" Relationship="Demos.Data.Entities.FK_ProductInventory_Product_ProductID" FromRole="Product" ToRole="ProductInventory" />
+    <NavigationProperty Name="ProductListPriceHistories" Relationship="Demos.Data.Entities.FK_ProductListPriceHistory_Product_ProductID" FromRole="Product" ToRole="ProductListPriceHistory" />
+    <NavigationProperty Name="ProductProductPhotoes" Relationship="Demos.Data.Entities.FK_ProductProductPhoto_Product_ProductID" FromRole="Product" ToRole="ProductProductPhoto" />
+    <NavigationProperty Name="ProductReviews" Relationship="Demos.Data.Entities.FK_ProductReview_Product_ProductID" FromRole="Product" ToRole="ProductReview" />
+    <NavigationProperty Name="ProductVendors" Relationship="Demos.Data.Entities.FK_ProductVendor_Product_ProductID" FromRole="Product" ToRole="ProductVendor" />
+    <NavigationProperty Name="PurchaseOrderDetails" Relationship="Demos.Data.Entities.FK_PurchaseOrderDetail_Product_ProductID" FromRole="Product" ToRole="PurchaseOrderDetail" />
+    <NavigationProperty Name="ShoppingCartItems" Relationship="Demos.Data.Entities.FK_ShoppingCartItem_Product_ProductID" FromRole="Product" ToRole="ShoppingCartItem" />
+    <NavigationProperty Name="SpecialOfferProducts" Relationship="Demos.Data.Entities.FK_SpecialOfferProduct_Product_ProductID" FromRole="Product" ToRole="SpecialOfferProduct" />
+    <NavigationProperty Name="TransactionHistories" Relationship="Demos.Data.Entities.FK_TransactionHistory_Product_ProductID" FromRole="Product" ToRole="TransactionHistory" />
+    <NavigationProperty Name="WorkOrders" Relationship="Demos.Data.Entities.FK_WorkOrder_Product_ProductID" FromRole="Product" ToRole="WorkOrder" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="ProductCategoryID" />
+    </Key>
+    <Property Name="ProductCategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductSubcategories" Relationship="Demos.Data.Entities.FK_ProductSubcategory_ProductCategory_ProductCategoryID" FromRole="ProductCategory" ToRole="ProductSubcategory" />
+  </EntityType>
+  <EntityType Name="ProductCostHistory">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="StartDate" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="StandardCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ProductCostHistory_Product_ProductID" FromRole="ProductCostHistory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="ProductDescription">
+    <Key>
+      <PropertyRef Name="ProductDescriptionID" />
+    </Key>
+    <Property Name="ProductDescriptionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="400" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductModelProductDescriptionCultures" Relationship="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" FromRole="ProductDescription" ToRole="ProductModelProductDescriptionCulture" />
+  </EntityType>
+  <EntityType Name="ProductDocument">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="DocumentID" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Document" Relationship="Demos.Data.Entities.FK_ProductDocument_Document_DocumentID" FromRole="ProductDocument" ToRole="Document" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ProductDocument_Product_ProductID" FromRole="ProductDocument" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="ProductInventory">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="LocationID" Type="Int16" Nullable="false" />
+    <Property Name="Shelf" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Bin" Type="Byte" Nullable="false" />
+    <Property Name="Quantity" Type="Int16" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Location" Relationship="Demos.Data.Entities.FK_ProductInventory_Location_LocationID" FromRole="ProductInventory" ToRole="Location" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ProductInventory_Product_ProductID" FromRole="ProductInventory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="ProductListPriceHistory">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="StartDate" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="ListPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ProductListPriceHistory_Product_ProductID" FromRole="ProductListPriceHistory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="ProductModel">
+    <Key>
+      <PropertyRef Name="ProductModelID" />
+    </Key>
+    <Property Name="ProductModelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CatalogDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Instructions" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Demos.Data.Entities.FK_Product_ProductModel_ProductModelID" FromRole="ProductModel" ToRole="Product" />
+    <NavigationProperty Name="ProductModelIllustrations" Relationship="Demos.Data.Entities.FK_ProductModelIllustration_ProductModel_ProductModelID" FromRole="ProductModel" ToRole="ProductModelIllustration" />
+    <NavigationProperty Name="ProductModelProductDescriptionCultures" Relationship="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" FromRole="ProductModel" ToRole="ProductModelProductDescriptionCulture" />
+  </EntityType>
+  <EntityType Name="ProductModelIllustration">
+    <Key>
+      <PropertyRef Name="ProductModelID" />
+      <PropertyRef Name="IllustrationID" />
+    </Key>
+    <Property Name="ProductModelID" Type="Int32" Nullable="false" />
+    <Property Name="IllustrationID" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Illustration" Relationship="Demos.Data.Entities.FK_ProductModelIllustration_Illustration_IllustrationID" FromRole="ProductModelIllustration" ToRole="Illustration" />
+    <NavigationProperty Name="ProductModel" Relationship="Demos.Data.Entities.FK_ProductModelIllustration_ProductModel_ProductModelID" FromRole="ProductModelIllustration" ToRole="ProductModel" />
+  </EntityType>
+  <EntityType Name="ProductModelProductDescriptionCulture">
+    <Key>
+      <PropertyRef Name="ProductModelID" />
+      <PropertyRef Name="ProductDescriptionID" />
+      <PropertyRef Name="CultureID" />
+    </Key>
+    <Property Name="ProductModelID" Type="Int32" Nullable="false" />
+    <Property Name="ProductDescriptionID" Type="Int32" Nullable="false" />
+    <Property Name="CultureID" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Culture" Relationship="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_Culture_CultureID" FromRole="ProductModelProductDescriptionCulture" ToRole="Culture" />
+    <NavigationProperty Name="ProductDescription" Relationship="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" FromRole="ProductModelProductDescriptionCulture" ToRole="ProductDescription" />
+    <NavigationProperty Name="ProductModel" Relationship="Demos.Data.Entities.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" FromRole="ProductModelProductDescriptionCulture" ToRole="ProductModel" />
+  </EntityType>
+  <EntityType Name="ProductPhoto">
+    <Key>
+      <PropertyRef Name="ProductPhotoID" />
+    </Key>
+    <Property Name="ProductPhotoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ThumbNailPhoto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ThumbnailPhotoFileName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LargePhoto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="LargePhotoFileName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductProductPhotoes" Relationship="Demos.Data.Entities.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" FromRole="ProductPhoto" ToRole="ProductProductPhoto" />
+  </EntityType>
+  <EntityType Name="ProductProductPhoto">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="ProductPhotoID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="ProductPhotoID" Type="Int32" Nullable="false" />
+    <Property Name="Primary" Type="Boolean" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ProductProductPhoto_Product_ProductID" FromRole="ProductProductPhoto" ToRole="Product" />
+    <NavigationProperty Name="ProductPhoto" Relationship="Demos.Data.Entities.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" FromRole="ProductProductPhoto" ToRole="ProductPhoto" />
+  </EntityType>
+  <EntityType Name="ProductReview">
+    <Key>
+      <PropertyRef Name="ProductReviewID" />
+    </Key>
+    <Property Name="ProductReviewID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="ReviewerName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReviewDate" Type="DateTime" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Rating" Type="Int32" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="3850" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ProductReview_Product_ProductID" FromRole="ProductReview" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="ProductSubcategory">
+    <Key>
+      <PropertyRef Name="ProductSubcategoryID" />
+    </Key>
+    <Property Name="ProductSubcategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCategoryID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Demos.Data.Entities.FK_Product_ProductSubcategory_ProductSubcategoryID" FromRole="ProductSubcategory" ToRole="Product" />
+    <NavigationProperty Name="ProductCategory" Relationship="Demos.Data.Entities.FK_ProductSubcategory_ProductCategory_ProductCategoryID" FromRole="ProductSubcategory" ToRole="ProductCategory" />
+  </EntityType>
+  <EntityType Name="ScrapReason">
+    <Key>
+      <PropertyRef Name="ScrapReasonID" />
+    </Key>
+    <Property Name="ScrapReasonID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="WorkOrders" Relationship="Demos.Data.Entities.FK_WorkOrder_ScrapReason_ScrapReasonID" FromRole="ScrapReason" ToRole="WorkOrder" />
+  </EntityType>
+  <EntityType Name="TransactionHistory">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="ReferenceOrderID" Type="Int32" Nullable="false" />
+    <Property Name="ReferenceOrderLineID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Nullable="false" />
+    <Property Name="TransactionType" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ActualCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_TransactionHistory_Product_ProductID" FromRole="TransactionHistory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="TransactionHistoryArchive">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="ReferenceOrderID" Type="Int32" Nullable="false" />
+    <Property Name="ReferenceOrderLineID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Nullable="false" />
+    <Property Name="TransactionType" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ActualCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnitMeasure">
+    <Key>
+      <PropertyRef Name="UnitMeasureCode" />
+    </Key>
+    <Property Name="UnitMeasureCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="BillOfMaterials" Relationship="Demos.Data.Entities.FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" FromRole="UnitMeasure" ToRole="BillOfMaterials" />
+    <NavigationProperty Name="Products" Relationship="Demos.Data.Entities.FK_Product_UnitMeasure_SizeUnitMeasureCode" FromRole="UnitMeasure" ToRole="Product" />
+    <NavigationProperty Name="Products1" Relationship="Demos.Data.Entities.FK_Product_UnitMeasure_WeightUnitMeasureCode" FromRole="UnitMeasure" ToRole="Product" />
+    <NavigationProperty Name="ProductVendors" Relationship="Demos.Data.Entities.FK_ProductVendor_UnitMeasure_UnitMeasureCode" FromRole="UnitMeasure" ToRole="ProductVendor" />
+  </EntityType>
+  <EntityType Name="WorkOrder">
+    <Key>
+      <PropertyRef Name="WorkOrderID" />
+    </Key>
+    <Property Name="WorkOrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="OrderQty" Type="Int32" Nullable="false" />
+    <Property Name="StockedQty" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ScrappedQty" Type="Int16" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" />
+    <Property Name="ScrapReasonID" Type="Int16" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_WorkOrder_Product_ProductID" FromRole="WorkOrder" ToRole="Product" />
+    <NavigationProperty Name="ScrapReason" Relationship="Demos.Data.Entities.FK_WorkOrder_ScrapReason_ScrapReasonID" FromRole="WorkOrder" ToRole="ScrapReason" />
+    <NavigationProperty Name="WorkOrderRoutings" Relationship="Demos.Data.Entities.FK_WorkOrderRouting_WorkOrder_WorkOrderID" FromRole="WorkOrder" ToRole="WorkOrderRouting" />
+  </EntityType>
+  <EntityType Name="WorkOrderRouting">
+    <Key>
+      <PropertyRef Name="WorkOrderID" />
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="OperationSequence" />
+    </Key>
+    <Property Name="WorkOrderID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="OperationSequence" Type="Int16" Nullable="false" />
+    <Property Name="LocationID" Type="Int16" Nullable="false" />
+    <Property Name="ScheduledStartDate" Type="DateTime" Nullable="false" />
+    <Property Name="ScheduledEndDate" Type="DateTime" Nullable="false" />
+    <Property Name="ActualStartDate" Type="DateTime" />
+    <Property Name="ActualEndDate" Type="DateTime" />
+    <Property Name="ActualResourceHrs" Type="Decimal" Precision="9" Scale="4" />
+    <Property Name="PlannedCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ActualCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Location" Relationship="Demos.Data.Entities.FK_WorkOrderRouting_Location_LocationID" FromRole="WorkOrderRouting" ToRole="Location" />
+    <NavigationProperty Name="WorkOrder" Relationship="Demos.Data.Entities.FK_WorkOrderRouting_WorkOrder_WorkOrderID" FromRole="WorkOrderRouting" ToRole="WorkOrder" />
+  </EntityType>
+  <EntityType Name="ProductVendor">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="VendorID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="VendorID" Type="Int32" Nullable="false" />
+    <Property Name="AverageLeadTime" Type="Int32" Nullable="false" />
+    <Property Name="StandardPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="LastReceiptCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LastReceiptDate" Type="DateTime" />
+    <Property Name="MinOrderQty" Type="Int32" Nullable="false" />
+    <Property Name="MaxOrderQty" Type="Int32" Nullable="false" />
+    <Property Name="OnOrderQty" Type="Int32" />
+    <Property Name="UnitMeasureCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ProductVendor_Product_ProductID" FromRole="ProductVendor" ToRole="Product" />
+    <NavigationProperty Name="UnitMeasure" Relationship="Demos.Data.Entities.FK_ProductVendor_UnitMeasure_UnitMeasureCode" FromRole="ProductVendor" ToRole="UnitMeasure" />
+    <NavigationProperty Name="Vendor" Relationship="Demos.Data.Entities.FK_ProductVendor_Vendor_VendorID" FromRole="ProductVendor" ToRole="Vendor" />
+  </EntityType>
+  <EntityType Name="PurchaseOrderDetail">
+    <Key>
+      <PropertyRef Name="PurchaseOrderID" />
+      <PropertyRef Name="PurchaseOrderDetailID" />
+    </Key>
+    <Property Name="PurchaseOrderID" Type="Int32" Nullable="false" />
+    <Property Name="PurchaseOrderDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" />
+    <Property Name="OrderQty" Type="Int16" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="LineTotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ReceivedQty" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="RejectedQty" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="StockedQty" Type="Decimal" Nullable="false" Precision="9" Scale="2" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_PurchaseOrderDetail_Product_ProductID" FromRole="PurchaseOrderDetail" ToRole="Product" />
+    <NavigationProperty Name="PurchaseOrderHeader" Relationship="Demos.Data.Entities.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" FromRole="PurchaseOrderDetail" ToRole="PurchaseOrderHeader" />
+  </EntityType>
+  <EntityType Name="PurchaseOrderHeader">
+    <Key>
+      <PropertyRef Name="PurchaseOrderID" />
+    </Key>
+    <Property Name="PurchaseOrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RevisionNumber" Type="Byte" Nullable="false" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="VendorID" Type="Int32" Nullable="false" />
+    <Property Name="ShipMethodID" Type="Int32" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" />
+    <Property Name="ShipDate" Type="DateTime" />
+    <Property Name="SubTotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TaxAmt" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Freight" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TotalDue" Type="Decimal" Nullable="false" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Demos.Data.Entities.FK_PurchaseOrderHeader_Employee_EmployeeID" FromRole="PurchaseOrderHeader" ToRole="Employee" />
+    <NavigationProperty Name="PurchaseOrderDetails" Relationship="Demos.Data.Entities.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID" FromRole="PurchaseOrderHeader" ToRole="PurchaseOrderDetail" />
+    <NavigationProperty Name="ShipMethod" Relationship="Demos.Data.Entities.FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" FromRole="PurchaseOrderHeader" ToRole="ShipMethod" />
+    <NavigationProperty Name="Vendor" Relationship="Demos.Data.Entities.FK_PurchaseOrderHeader_Vendor_VendorID" FromRole="PurchaseOrderHeader" ToRole="Vendor" />
+  </EntityType>
+  <EntityType Name="ShipMethod">
+    <Key>
+      <PropertyRef Name="ShipMethodID" />
+    </Key>
+    <Property Name="ShipMethodID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ShipBase" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ShipRate" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="PurchaseOrderHeaders" Relationship="Demos.Data.Entities.FK_PurchaseOrderHeader_ShipMethod_ShipMethodID" FromRole="ShipMethod" ToRole="PurchaseOrderHeader" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_ShipMethod_ShipMethodID" FromRole="ShipMethod" ToRole="SalesOrderHeader" />
+  </EntityType>
+  <EntityType Name="Vendor">
+    <Key>
+      <PropertyRef Name="VendorID" />
+    </Key>
+    <Property Name="VendorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountNumber" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreditRating" Type="Byte" Nullable="false" />
+    <Property Name="PreferredVendorStatus" Type="Boolean" Nullable="false" />
+    <Property Name="ActiveFlag" Type="Boolean" Nullable="false" />
+    <Property Name="PurchasingWebServiceURL" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ProductVendors" Relationship="Demos.Data.Entities.FK_ProductVendor_Vendor_VendorID" FromRole="Vendor" ToRole="ProductVendor" />
+    <NavigationProperty Name="PurchaseOrderHeaders" Relationship="Demos.Data.Entities.FK_PurchaseOrderHeader_Vendor_VendorID" FromRole="Vendor" ToRole="PurchaseOrderHeader" />
+    <NavigationProperty Name="VendorAddresses" Relationship="Demos.Data.Entities.FK_VendorAddress_Vendor_VendorID" FromRole="Vendor" ToRole="VendorAddress" />
+    <NavigationProperty Name="VendorContacts" Relationship="Demos.Data.Entities.FK_VendorContact_Vendor_VendorID" FromRole="Vendor" ToRole="VendorContact" />
+  </EntityType>
+  <EntityType Name="VendorAddress">
+    <Key>
+      <PropertyRef Name="VendorID" />
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="VendorID" Type="Int32" Nullable="false" />
+    <Property Name="AddressID" Type="Int32" Nullable="false" />
+    <Property Name="AddressTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Address" Relationship="Demos.Data.Entities.FK_VendorAddress_Address_AddressID" FromRole="VendorAddress" ToRole="Address" />
+    <NavigationProperty Name="AddressType" Relationship="Demos.Data.Entities.FK_VendorAddress_AddressType_AddressTypeID" FromRole="VendorAddress" ToRole="AddressType" />
+    <NavigationProperty Name="Vendor" Relationship="Demos.Data.Entities.FK_VendorAddress_Vendor_VendorID" FromRole="VendorAddress" ToRole="Vendor" />
+  </EntityType>
+  <EntityType Name="VendorContact">
+    <Key>
+      <PropertyRef Name="VendorID" />
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="VendorID" Type="Int32" Nullable="false" />
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="ContactTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Contact" Relationship="Demos.Data.Entities.FK_VendorContact_Contact_ContactID" FromRole="VendorContact" ToRole="Contact" />
+    <NavigationProperty Name="ContactType" Relationship="Demos.Data.Entities.FK_VendorContact_ContactType_ContactTypeID" FromRole="VendorContact" ToRole="ContactType" />
+    <NavigationProperty Name="Vendor" Relationship="Demos.Data.Entities.FK_VendorContact_Vendor_VendorID" FromRole="VendorContact" ToRole="Vendor" />
+  </EntityType>
+  <EntityType Name="ContactCreditCard">
+    <Key>
+      <PropertyRef Name="ContactID" />
+      <PropertyRef Name="CreditCardID" />
+    </Key>
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="CreditCardID" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Contact" Relationship="Demos.Data.Entities.FK_ContactCreditCard_Contact_ContactID" FromRole="ContactCreditCard" ToRole="Contact" />
+    <NavigationProperty Name="CreditCard" Relationship="Demos.Data.Entities.FK_ContactCreditCard_CreditCard_CreditCardID" FromRole="ContactCreditCard" ToRole="CreditCard" />
+  </EntityType>
+  <EntityType Name="CountryRegionCurrency">
+    <Key>
+      <PropertyRef Name="CountryRegionCode" />
+      <PropertyRef Name="CurrencyCode" />
+    </Key>
+    <Property Name="CountryRegionCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="CountryRegion" Relationship="Demos.Data.Entities.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" FromRole="CountryRegionCurrency" ToRole="CountryRegion" />
+    <NavigationProperty Name="Currency" Relationship="Demos.Data.Entities.FK_CountryRegionCurrency_Currency_CurrencyCode" FromRole="CountryRegionCurrency" ToRole="Currency" />
+  </EntityType>
+  <EntityType Name="CreditCard">
+    <Key>
+      <PropertyRef Name="CreditCardID" />
+    </Key>
+    <Property Name="CreditCardID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CardType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CardNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="ExpMonth" Type="Byte" Nullable="false" />
+    <Property Name="ExpYear" Type="Int16" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ContactCreditCards" Relationship="Demos.Data.Entities.FK_ContactCreditCard_CreditCard_CreditCardID" FromRole="CreditCard" ToRole="ContactCreditCard" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_CreditCard_CreditCardID" FromRole="CreditCard" ToRole="SalesOrderHeader" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyCode" />
+    </Key>
+    <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="CountryRegionCurrencies" Relationship="Demos.Data.Entities.FK_CountryRegionCurrency_Currency_CurrencyCode" FromRole="Currency" ToRole="CountryRegionCurrency" />
+    <NavigationProperty Name="CurrencyRates" Relationship="Demos.Data.Entities.FK_CurrencyRate_Currency_FromCurrencyCode" FromRole="Currency" ToRole="CurrencyRate" />
+    <NavigationProperty Name="CurrencyRates1" Relationship="Demos.Data.Entities.FK_CurrencyRate_Currency_ToCurrencyCode" FromRole="Currency" ToRole="CurrencyRate" />
+  </EntityType>
+  <EntityType Name="CurrencyRate">
+    <Key>
+      <PropertyRef Name="CurrencyRateID" />
+    </Key>
+    <Property Name="CurrencyRateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CurrencyRateDate" Type="DateTime" Nullable="false" />
+    <Property Name="FromCurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="ToCurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="AverageRate" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="EndOfDayRate" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Currency" Relationship="Demos.Data.Entities.FK_CurrencyRate_Currency_FromCurrencyCode" FromRole="CurrencyRate" ToRole="Currency" />
+    <NavigationProperty Name="Currency1" Relationship="Demos.Data.Entities.FK_CurrencyRate_Currency_ToCurrencyCode" FromRole="CurrencyRate" ToRole="Currency" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" FromRole="CurrencyRate" ToRole="SalesOrderHeader" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TerritoryID" Type="Int32" />
+    <Property Name="AccountNumber" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CustomerType" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SalesTerritory" Relationship="Demos.Data.Entities.FK_Customer_SalesTerritory_TerritoryID" FromRole="Customer" ToRole="SalesTerritory" />
+    <NavigationProperty Name="CustomerAddresses" Relationship="Demos.Data.Entities.FK_CustomerAddress_Customer_CustomerID" FromRole="Customer" ToRole="CustomerAddress" />
+    <NavigationProperty Name="Individual" Relationship="Demos.Data.Entities.FK_Individual_Customer_CustomerID" FromRole="Customer" ToRole="Individual" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Customer_CustomerID" FromRole="Customer" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="Store" Relationship="Demos.Data.Entities.FK_Store_Customer_CustomerID" FromRole="Customer" ToRole="Store" />
+  </EntityType>
+  <EntityType Name="CustomerAddress">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="AddressID" Type="Int32" Nullable="false" />
+    <Property Name="AddressTypeID" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Address" Relationship="Demos.Data.Entities.FK_CustomerAddress_Address_AddressID" FromRole="CustomerAddress" ToRole="Address" />
+    <NavigationProperty Name="AddressType" Relationship="Demos.Data.Entities.FK_CustomerAddress_AddressType_AddressTypeID" FromRole="CustomerAddress" ToRole="AddressType" />
+    <NavigationProperty Name="Customer" Relationship="Demos.Data.Entities.FK_CustomerAddress_Customer_CustomerID" FromRole="CustomerAddress" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Individual">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="Demographics" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Contact" Relationship="Demos.Data.Entities.FK_Individual_Contact_ContactID" FromRole="Individual" ToRole="Contact" />
+    <NavigationProperty Name="Customer" Relationship="Demos.Data.Entities.FK_Individual_Customer_CustomerID" FromRole="Individual" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="SalesOrderDetail">
+    <Key>
+      <PropertyRef Name="SalesOrderID" />
+      <PropertyRef Name="SalesOrderDetailID" />
+    </Key>
+    <Property Name="SalesOrderID" Type="Int32" Nullable="false" />
+    <Property Name="SalesOrderDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CarrierTrackingNumber" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="OrderQty" Type="Int16" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="SpecialOfferID" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="UnitPriceDiscount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="LineTotal" Type="Decimal" Nullable="false" Precision="38" Scale="6" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SalesOrderHeader" Relationship="Demos.Data.Entities.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderDetail" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="SpecialOfferProduct" Relationship="Demos.Data.Entities.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" FromRole="SalesOrderDetail" ToRole="SpecialOfferProduct" />
+  </EntityType>
+  <EntityType Name="SalesOrderHeader">
+    <Key>
+      <PropertyRef Name="SalesOrderID" />
+    </Key>
+    <Property Name="SalesOrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RevisionNumber" Type="Byte" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" />
+    <Property Name="ShipDate" Type="DateTime" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="OnlineOrderFlag" Type="Boolean" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="PurchaseOrderNumber" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="SalesPersonID" Type="Int32" />
+    <Property Name="TerritoryID" Type="Int32" />
+    <Property Name="BillToAddressID" Type="Int32" Nullable="false" />
+    <Property Name="ShipToAddressID" Type="Int32" Nullable="false" />
+    <Property Name="ShipMethodID" Type="Int32" Nullable="false" />
+    <Property Name="CreditCardID" Type="Int32" />
+    <Property Name="CreditCardApprovalCode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CurrencyRateID" Type="Int32" />
+    <Property Name="SubTotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TaxAmt" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Freight" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TotalDue" Type="Decimal" Nullable="false" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Comment" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Address" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Address_BillToAddressID" FromRole="SalesOrderHeader" ToRole="Address" />
+    <NavigationProperty Name="Address1" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Address_ShipToAddressID" FromRole="SalesOrderHeader" ToRole="Address" />
+    <NavigationProperty Name="Contact" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Contact_ContactID" FromRole="SalesOrderHeader" ToRole="Contact" />
+    <NavigationProperty Name="ShipMethod" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_ShipMethod_ShipMethodID" FromRole="SalesOrderHeader" ToRole="ShipMethod" />
+    <NavigationProperty Name="CreditCard" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_CreditCard_CreditCardID" FromRole="SalesOrderHeader" ToRole="CreditCard" />
+    <NavigationProperty Name="CurrencyRate" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" FromRole="SalesOrderHeader" ToRole="CurrencyRate" />
+    <NavigationProperty Name="Customer" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_Customer_CustomerID" FromRole="SalesOrderHeader" ToRole="Customer" />
+    <NavigationProperty Name="SalesOrderDetails" Relationship="Demos.Data.Entities.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderHeader" ToRole="SalesOrderDetail" />
+    <NavigationProperty Name="SalesPerson" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_SalesPerson_SalesPersonID" FromRole="SalesOrderHeader" ToRole="SalesPerson" />
+    <NavigationProperty Name="SalesTerritory" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_SalesTerritory_TerritoryID" FromRole="SalesOrderHeader" ToRole="SalesTerritory" />
+    <NavigationProperty Name="SalesOrderHeaderSalesReasons" Relationship="Demos.Data.Entities.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderHeader" ToRole="SalesOrderHeaderSalesReason" />
+  </EntityType>
+  <EntityType Name="SalesOrderHeaderSalesReason">
+    <Key>
+      <PropertyRef Name="SalesOrderID" />
+      <PropertyRef Name="SalesReasonID" />
+    </Key>
+    <Property Name="SalesOrderID" Type="Int32" Nullable="false" />
+    <Property Name="SalesReasonID" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SalesOrderHeader" Relationship="Demos.Data.Entities.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderHeaderSalesReason" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="SalesReason" Relationship="Demos.Data.Entities.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" FromRole="SalesOrderHeaderSalesReason" ToRole="SalesReason" />
+  </EntityType>
+  <EntityType Name="SalesPerson">
+    <Key>
+      <PropertyRef Name="SalesPersonID" />
+    </Key>
+    <Property Name="SalesPersonID" Type="Int32" Nullable="false" />
+    <Property Name="TerritoryID" Type="Int32" />
+    <Property Name="SalesQuota" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Bonus" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CommissionPct" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="SalesYTD" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SalesLastYear" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Demos.Data.Entities.FK_SalesPerson_Employee_SalesPersonID" FromRole="SalesPerson" ToRole="Employee" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_SalesPerson_SalesPersonID" FromRole="SalesPerson" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="SalesTerritory" Relationship="Demos.Data.Entities.FK_SalesPerson_SalesTerritory_TerritoryID" FromRole="SalesPerson" ToRole="SalesTerritory" />
+    <NavigationProperty Name="SalesPersonQuotaHistories" Relationship="Demos.Data.Entities.FK_SalesPersonQuotaHistory_SalesPerson_SalesPersonID" FromRole="SalesPerson" ToRole="SalesPersonQuotaHistory" />
+    <NavigationProperty Name="SalesTerritoryHistories" Relationship="Demos.Data.Entities.FK_SalesTerritoryHistory_SalesPerson_SalesPersonID" FromRole="SalesPerson" ToRole="SalesTerritoryHistory" />
+    <NavigationProperty Name="Stores" Relationship="Demos.Data.Entities.FK_Store_SalesPerson_SalesPersonID" FromRole="SalesPerson" ToRole="Store" />
+  </EntityType>
+  <EntityType Name="SalesPersonQuotaHistory">
+    <Key>
+      <PropertyRef Name="SalesPersonID" />
+      <PropertyRef Name="QuotaDate" />
+    </Key>
+    <Property Name="SalesPersonID" Type="Int32" Nullable="false" />
+    <Property Name="QuotaDate" Type="DateTime" Nullable="false" />
+    <Property Name="SalesQuota" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SalesPerson" Relationship="Demos.Data.Entities.FK_SalesPersonQuotaHistory_SalesPerson_SalesPersonID" FromRole="SalesPersonQuotaHistory" ToRole="SalesPerson" />
+  </EntityType>
+  <EntityType Name="SalesReason">
+    <Key>
+      <PropertyRef Name="SalesReasonID" />
+    </Key>
+    <Property Name="SalesReasonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReasonType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SalesOrderHeaderSalesReasons" Relationship="Demos.Data.Entities.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" FromRole="SalesReason" ToRole="SalesOrderHeaderSalesReason" />
+  </EntityType>
+  <EntityType Name="SalesTaxRate">
+    <Key>
+      <PropertyRef Name="SalesTaxRateID" />
+    </Key>
+    <Property Name="SalesTaxRateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateProvinceID" Type="Int32" Nullable="false" />
+    <Property Name="TaxType" Type="Byte" Nullable="false" />
+    <Property Name="TaxRate" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="StateProvince" Relationship="Demos.Data.Entities.FK_SalesTaxRate_StateProvince_StateProvinceID" FromRole="SalesTaxRate" ToRole="StateProvince" />
+  </EntityType>
+  <EntityType Name="SalesTerritory">
+    <Key>
+      <PropertyRef Name="TerritoryID" />
+    </Key>
+    <Property Name="TerritoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegionCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="Group" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SalesYTD" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SalesLastYear" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CostYTD" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CostLastYear" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="StateProvinces" Relationship="Demos.Data.Entities.FK_StateProvince_SalesTerritory_TerritoryID" FromRole="SalesTerritory" ToRole="StateProvince" />
+    <NavigationProperty Name="Customers" Relationship="Demos.Data.Entities.FK_Customer_SalesTerritory_TerritoryID" FromRole="SalesTerritory" ToRole="Customer" />
+    <NavigationProperty Name="SalesOrderHeaders" Relationship="Demos.Data.Entities.FK_SalesOrderHeader_SalesTerritory_TerritoryID" FromRole="SalesTerritory" ToRole="SalesOrderHeader" />
+    <NavigationProperty Name="SalesPersons" Relationship="Demos.Data.Entities.FK_SalesPerson_SalesTerritory_TerritoryID" FromRole="SalesTerritory" ToRole="SalesPerson" />
+    <NavigationProperty Name="SalesTerritoryHistories" Relationship="Demos.Data.Entities.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" FromRole="SalesTerritory" ToRole="SalesTerritoryHistory" />
+  </EntityType>
+  <EntityType Name="SalesTerritoryHistory">
+    <Key>
+      <PropertyRef Name="SalesPersonID" />
+      <PropertyRef Name="TerritoryID" />
+      <PropertyRef Name="StartDate" />
+    </Key>
+    <Property Name="SalesPersonID" Type="Int32" Nullable="false" />
+    <Property Name="TerritoryID" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SalesPerson" Relationship="Demos.Data.Entities.FK_SalesTerritoryHistory_SalesPerson_SalesPersonID" FromRole="SalesTerritoryHistory" ToRole="SalesPerson" />
+    <NavigationProperty Name="SalesTerritory" Relationship="Demos.Data.Entities.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" FromRole="SalesTerritoryHistory" ToRole="SalesTerritory" />
+  </EntityType>
+  <EntityType Name="ShoppingCartItem">
+    <Key>
+      <PropertyRef Name="ShoppingCartItemID" />
+    </Key>
+    <Property Name="ShoppingCartItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ShoppingCartID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_ShoppingCartItem_Product_ProductID" FromRole="ShoppingCartItem" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="SpecialOffer">
+    <Key>
+      <PropertyRef Name="SpecialOfferID" />
+    </Key>
+    <Property Name="SpecialOfferID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="DiscountPct" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Category" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="MinQty" Type="Int32" Nullable="false" />
+    <Property Name="MaxQty" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="SpecialOfferProducts" Relationship="Demos.Data.Entities.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" FromRole="SpecialOffer" ToRole="SpecialOfferProduct" />
+  </EntityType>
+  <EntityType Name="SpecialOfferProduct">
+    <Key>
+      <PropertyRef Name="SpecialOfferID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="SpecialOfferID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Demos.Data.Entities.FK_SpecialOfferProduct_Product_ProductID" FromRole="SpecialOfferProduct" ToRole="Product" />
+    <NavigationProperty Name="SalesOrderDetails" Relationship="Demos.Data.Entities.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" FromRole="SpecialOfferProduct" ToRole="SalesOrderDetail" />
+    <NavigationProperty Name="SpecialOffer" Relationship="Demos.Data.Entities.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" FromRole="SpecialOfferProduct" ToRole="SpecialOffer" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SalesPersonID" Type="Int32" />
+    <Property Name="Demographics" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="Demos.Data.Entities.FK_Store_Customer_CustomerID" FromRole="Store" ToRole="Customer" />
+    <NavigationProperty Name="SalesPerson" Relationship="Demos.Data.Entities.FK_Store_SalesPerson_SalesPersonID" FromRole="Store" ToRole="SalesPerson" />
+    <NavigationProperty Name="StoreContacts" Relationship="Demos.Data.Entities.FK_StoreContact_Store_CustomerID" FromRole="Store" ToRole="StoreContact" />
+  </EntityType>
+  <EntityType Name="StoreContact">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="ContactID" Type="Int32" Nullable="false" />
+    <Property Name="ContactTypeID" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Contact" Relationship="Demos.Data.Entities.FK_StoreContact_Contact_ContactID" FromRole="StoreContact" ToRole="Contact" />
+    <NavigationProperty Name="ContactType" Relationship="Demos.Data.Entities.FK_StoreContact_ContactType_ContactTypeID" FromRole="StoreContact" ToRole="ContactType" />
+    <NavigationProperty Name="Store" Relationship="Demos.Data.Entities.FK_StoreContact_Store_CustomerID" FromRole="StoreContact" ToRole="Store" />
+  </EntityType>
+  <EntityType Name="vEmployee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="JobTitle" />
+      <PropertyRef Name="EmailPromotion" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="StateProvinceName" />
+      <PropertyRef Name="PostalCode" />
+      <PropertyRef Name="CountryRegionName" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="JobTitle" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+    <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvinceName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegionName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AdditionalContactInfo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vEmployeeDepartment">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="JobTitle" />
+      <PropertyRef Name="Department" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="StartDate" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="JobTitle" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vEmployeeDepartmentHistory">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="Shift" />
+      <PropertyRef Name="Department" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="StartDate" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Shift" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="vJobCandidate">
+    <Key>
+      <PropertyRef Name="JobCandidateID" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="JobCandidateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="Name_Prefix" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Name_First" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Name_Middle" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Name_Last" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Name_Suffix" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Skills" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Addr_Type" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Addr_Loc_CountryRegion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Addr_Loc_State" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Addr_Loc_City" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Addr_PostalCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EMail" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="WebSite" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vJobCandidateEducation">
+    <Key>
+      <PropertyRef Name="JobCandidateID" />
+    </Key>
+    <Property Name="JobCandidateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Edu_Level" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_StartDate" Type="DateTime" />
+    <Property Name="Edu_EndDate" Type="DateTime" />
+    <Property Name="Edu_Degree" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_Major" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_Minor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_GPA" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_GPAScale" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_School" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_Loc_CountryRegion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_Loc_State" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Edu_Loc_City" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vJobCandidateEmployment">
+    <Key>
+      <PropertyRef Name="JobCandidateID" />
+    </Key>
+    <Property Name="JobCandidateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emp_StartDate" Type="DateTime" />
+    <Property Name="Emp_EndDate" Type="DateTime" />
+    <Property Name="Emp_OrgName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Emp_JobTitle" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Emp_Responsibility" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Emp_FunctionCategory" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Emp_IndustryCategory" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Emp_Loc_CountryRegion" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Emp_Loc_State" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Emp_Loc_City" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vAdditionalContactInfo">
+    <Key>
+      <PropertyRef Name="ContactID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="ContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TelephoneNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TelephoneSpecialInstructions" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Street" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvince" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegion" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="HomeAddressSpecialInstructions" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EMailAddress" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="EMailSpecialInstructions" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EMailTelephoneNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vStateProvinceCountryRegion">
+    <Key>
+      <PropertyRef Name="StateProvinceID" />
+      <PropertyRef Name="StateProvinceCode" />
+      <PropertyRef Name="IsOnlyStateProvinceFlag" />
+      <PropertyRef Name="StateProvinceName" />
+      <PropertyRef Name="TerritoryID" />
+      <PropertyRef Name="CountryRegionCode" />
+      <PropertyRef Name="CountryRegionName" />
+    </Key>
+    <Property Name="StateProvinceID" Type="Int32" Nullable="false" />
+    <Property Name="StateProvinceCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="IsOnlyStateProvinceFlag" Type="Boolean" Nullable="false" />
+    <Property Name="StateProvinceName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TerritoryID" Type="Int32" Nullable="false" />
+    <Property Name="CountryRegionCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegionName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vProductAndDescription">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="ProductModel" />
+      <PropertyRef Name="CultureID" />
+      <PropertyRef Name="Description" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductModel" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CultureID" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="400" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vProductModelCatalogDescription">
+    <Key>
+      <PropertyRef Name="ProductModelID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="ProductModelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Manufacturer" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Copyright" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="ProductURL" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="WarrantyPeriod" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="WarrantyDescription" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="NoOfYears" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MaintenanceDescription" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Wheel" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Saddle" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Pedal" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BikeFrame" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Crankset" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PictureAngle" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PictureSize" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ProductPhotoID" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Material" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Color" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ProductLine" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Style" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RiderExperience" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vProductModelInstruction">
+    <Key>
+      <PropertyRef Name="ProductModelID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="rowguid" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="ProductModelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Instructions" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LocationID" Type="Int32" />
+    <Property Name="SetupHours" Type="Decimal" Precision="9" Scale="4" />
+    <Property Name="MachineHours" Type="Decimal" Precision="9" Scale="4" />
+    <Property Name="LaborHours" Type="Decimal" Precision="9" Scale="4" />
+    <Property Name="LotSize" Type="Int32" />
+    <Property Name="Step" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vVendor">
+    <Key>
+      <PropertyRef Name="VendorID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="ContactType" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="EmailPromotion" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="StateProvinceName" />
+      <PropertyRef Name="PostalCode" />
+      <PropertyRef Name="CountryRegionName" />
+    </Key>
+    <Property Name="VendorID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ContactType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+    <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvinceName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegionName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vIndividualCustomer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="EmailPromotion" />
+      <PropertyRef Name="AddressType" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="StateProvinceName" />
+      <PropertyRef Name="PostalCode" />
+      <PropertyRef Name="CountryRegionName" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+    <Property Name="AddressType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvinceName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegionName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Demographics" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vIndividualDemographic">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="TotalPurchaseYTD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="DateFirstPurchase" Type="DateTime" />
+    <Property Name="BirthDate" Type="DateTime" />
+    <Property Name="MaritalStatus" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="YearlyIncome" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Gender" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="TotalChildren" Type="Int32" />
+    <Property Name="NumberChildrenAtHome" Type="Int32" />
+    <Property Name="Education" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Occupation" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="HomeOwnerFlag" Type="Boolean" />
+    <Property Name="NumberCarsOwned" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vSalesPerson">
+    <Key>
+      <PropertyRef Name="SalesPersonID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="JobTitle" />
+      <PropertyRef Name="EmailPromotion" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="StateProvinceName" />
+      <PropertyRef Name="PostalCode" />
+      <PropertyRef Name="CountryRegionName" />
+      <PropertyRef Name="SalesYTD" />
+      <PropertyRef Name="SalesLastYear" />
+    </Key>
+    <Property Name="SalesPersonID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="JobTitle" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+    <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvinceName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegionName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TerritoryName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TerritoryGroup" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SalesQuota" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SalesYTD" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SalesLastYear" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="vSalesPersonSalesByFiscalYear">
+    <Key>
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="SalesTerritory" />
+    </Key>
+    <Property Name="SalesPersonID" Type="Int32" />
+    <Property Name="FullName" Type="String" MaxLength="152" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SalesTerritory" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="C2002" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="C2003" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="C2004" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="vStoreWithDemographic">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="ContactType" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="EmailPromotion" />
+      <PropertyRef Name="AddressType" />
+      <PropertyRef Name="AddressLine1" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="StateProvinceName" />
+      <PropertyRef Name="PostalCode" />
+      <PropertyRef Name="CountryRegionName" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ContactType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+    <Property Name="AddressType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvinceName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CountryRegionName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AnnualSales" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="AnnualRevenue" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="BankName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BusinessType" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="YearOpened" Type="Int32" />
+    <Property Name="Specialty" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SquareFeet" Type="Int32" />
+    <Property Name="Brands" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Internet" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="NumberEmployees" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_EmployeeDepartmentHistory_Department_DepartmentID">
+    <End Role="Department" Type="Demos.Data.Entities.Department" Multiplicity="1" />
+    <End Role="EmployeeDepartmentHistory" Type="Demos.Data.Entities.EmployeeDepartmentHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="EmployeeDepartmentHistory">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Contact_ContactID">
+    <End Role="Contact" Type="Demos.Data.Entities.Contact" Multiplicity="1" />
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="ContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Employee_ManagerID">
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="0..1" />
+    <End Role="Employee1" Type="Demos.Data.Entities.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Employee1">
+        <PropertyRef Name="ManagerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeAddress_Employee_EmployeeID">
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="1" />
+    <End Role="EmployeeAddress" Type="Demos.Data.Entities.EmployeeAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="EmployeeAddress">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeDepartmentHistory_Employee_EmployeeID">
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="1" />
+    <End Role="EmployeeDepartmentHistory" Type="Demos.Data.Entities.EmployeeDepartmentHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="EmployeeDepartmentHistory">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeePayHistory_Employee_EmployeeID">
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="1" />
+    <End Role="EmployeePayHistory" Type="Demos.Data.Entities.EmployeePayHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="EmployeePayHistory">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobCandidate_Employee_EmployeeID">
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="0..1" />
+    <End Role="JobCandidate" Type="Demos.Data.Entities.JobCandidate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="JobCandidate">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrderHeader_Employee_EmployeeID">
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="1" />
+    <End Role="PurchaseOrderHeader" Type="Demos.Data.Entities.PurchaseOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderHeader">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesPerson_Employee_SalesPersonID">
+    <End Role="Employee" Type="Demos.Data.Entities.Employee" Multiplicity="1" />
+    <End Role="SalesPerson" Type="Demos.Data.Entities.SalesPerson" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="SalesPerson">
+        <PropertyRef Name="SalesPersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeAddress_Address_AddressID">
+    <End Role="Address" Type="Demos.Data.Entities.Address" Multiplicity="1" />
+    <End Role="EmployeeAddress" Type="Demos.Data.Entities.EmployeeAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="EmployeeAddress">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeDepartmentHistory_Shift_ShiftID">
+    <End Role="Shift" Type="Demos.Data.Entities.Shift" Multiplicity="1" />
+    <End Role="EmployeeDepartmentHistory" Type="Demos.Data.Entities.EmployeeDepartmentHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shift">
+        <PropertyRef Name="ShiftID" />
+      </Principal>
+      <Dependent Role="EmployeeDepartmentHistory">
+        <PropertyRef Name="ShiftID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Address_StateProvince_StateProvinceID">
+    <End Role="StateProvince" Type="Demos.Data.Entities.StateProvince" Multiplicity="1" />
+    <End Role="Address" Type="Demos.Data.Entities.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateProvince">
+        <PropertyRef Name="StateProvinceID" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="StateProvinceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerAddress_Address_AddressID">
+    <End Role="Address" Type="Demos.Data.Entities.Address" Multiplicity="1" />
+    <End Role="CustomerAddress" Type="Demos.Data.Entities.CustomerAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="CustomerAddress">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_Address_BillToAddressID">
+    <End Role="Address" Type="Demos.Data.Entities.Address" Multiplicity="1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="BillToAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_Address_ShipToAddressID">
+    <End Role="Address" Type="Demos.Data.Entities.Address" Multiplicity="1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="ShipToAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorAddress_Address_AddressID">
+    <End Role="Address" Type="Demos.Data.Entities.Address" Multiplicity="1" />
+    <End Role="VendorAddress" Type="Demos.Data.Entities.VendorAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="VendorAddress">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerAddress_AddressType_AddressTypeID">
+    <End Role="AddressType" Type="Demos.Data.Entities.AddressType" Multiplicity="1" />
+    <End Role="CustomerAddress" Type="Demos.Data.Entities.CustomerAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressType">
+        <PropertyRef Name="AddressTypeID" />
+      </Principal>
+      <Dependent Role="CustomerAddress">
+        <PropertyRef Name="AddressTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorAddress_AddressType_AddressTypeID">
+    <End Role="AddressType" Type="Demos.Data.Entities.AddressType" Multiplicity="1" />
+    <End Role="VendorAddress" Type="Demos.Data.Entities.VendorAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressType">
+        <PropertyRef Name="AddressTypeID" />
+      </Principal>
+      <Dependent Role="VendorAddress">
+        <PropertyRef Name="AddressTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactCreditCard_Contact_ContactID">
+    <End Role="Contact" Type="Demos.Data.Entities.Contact" Multiplicity="1" />
+    <End Role="ContactCreditCard" Type="Demos.Data.Entities.ContactCreditCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactID" />
+      </Principal>
+      <Dependent Role="ContactCreditCard">
+        <PropertyRef Name="ContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Individual_Contact_ContactID">
+    <End Role="Contact" Type="Demos.Data.Entities.Contact" Multiplicity="1" />
+    <End Role="Individual" Type="Demos.Data.Entities.Individual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactID" />
+      </Principal>
+      <Dependent Role="Individual">
+        <PropertyRef Name="ContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_Contact_ContactID">
+    <End Role="Contact" Type="Demos.Data.Entities.Contact" Multiplicity="1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="ContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StoreContact_Contact_ContactID">
+    <End Role="Contact" Type="Demos.Data.Entities.Contact" Multiplicity="1" />
+    <End Role="StoreContact" Type="Demos.Data.Entities.StoreContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactID" />
+      </Principal>
+      <Dependent Role="StoreContact">
+        <PropertyRef Name="ContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorContact_Contact_ContactID">
+    <End Role="Contact" Type="Demos.Data.Entities.Contact" Multiplicity="1" />
+    <End Role="VendorContact" Type="Demos.Data.Entities.VendorContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="ContactID" />
+      </Principal>
+      <Dependent Role="VendorContact">
+        <PropertyRef Name="ContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StoreContact_ContactType_ContactTypeID">
+    <End Role="ContactType" Type="Demos.Data.Entities.ContactType" Multiplicity="1" />
+    <End Role="StoreContact" Type="Demos.Data.Entities.StoreContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactType">
+        <PropertyRef Name="ContactTypeID" />
+      </Principal>
+      <Dependent Role="StoreContact">
+        <PropertyRef Name="ContactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorContact_ContactType_ContactTypeID">
+    <End Role="ContactType" Type="Demos.Data.Entities.ContactType" Multiplicity="1" />
+    <End Role="VendorContact" Type="Demos.Data.Entities.VendorContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactType">
+        <PropertyRef Name="ContactTypeID" />
+      </Principal>
+      <Dependent Role="VendorContact">
+        <PropertyRef Name="ContactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CountryRegionCurrency_CountryRegion_CountryRegionCode">
+    <End Role="CountryRegion" Type="Demos.Data.Entities.CountryRegion" Multiplicity="1" />
+    <End Role="CountryRegionCurrency" Type="Demos.Data.Entities.CountryRegionCurrency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CountryRegion">
+        <PropertyRef Name="CountryRegionCode" />
+      </Principal>
+      <Dependent Role="CountryRegionCurrency">
+        <PropertyRef Name="CountryRegionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StateProvince_CountryRegion_CountryRegionCode">
+    <End Role="CountryRegion" Type="Demos.Data.Entities.CountryRegion" Multiplicity="1" />
+    <End Role="StateProvince" Type="Demos.Data.Entities.StateProvince" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CountryRegion">
+        <PropertyRef Name="CountryRegionCode" />
+      </Principal>
+      <Dependent Role="StateProvince">
+        <PropertyRef Name="CountryRegionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesTaxRate_StateProvince_StateProvinceID">
+    <End Role="StateProvince" Type="Demos.Data.Entities.StateProvince" Multiplicity="1" />
+    <End Role="SalesTaxRate" Type="Demos.Data.Entities.SalesTaxRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateProvince">
+        <PropertyRef Name="StateProvinceID" />
+      </Principal>
+      <Dependent Role="SalesTaxRate">
+        <PropertyRef Name="StateProvinceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StateProvince_SalesTerritory_TerritoryID">
+    <End Role="SalesTerritory" Type="Demos.Data.Entities.SalesTerritory" Multiplicity="1" />
+    <End Role="StateProvince" Type="Demos.Data.Entities.StateProvince" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesTerritory">
+        <PropertyRef Name="TerritoryID" />
+      </Principal>
+      <Dependent Role="StateProvince">
+        <PropertyRef Name="TerritoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BillOfMaterials_Product_ComponentID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="BillOfMaterials" Type="Demos.Data.Entities.BillOfMaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="BillOfMaterials">
+        <PropertyRef Name="ComponentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BillOfMaterials_Product_ProductAssemblyID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="0..1" />
+    <End Role="BillOfMaterials" Type="Demos.Data.Entities.BillOfMaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="BillOfMaterials">
+        <PropertyRef Name="ProductAssemblyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BillOfMaterials_UnitMeasure_UnitMeasureCode">
+    <End Role="UnitMeasure" Type="Demos.Data.Entities.UnitMeasure" Multiplicity="1" />
+    <End Role="BillOfMaterials" Type="Demos.Data.Entities.BillOfMaterial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitMeasure">
+        <PropertyRef Name="UnitMeasureCode" />
+      </Principal>
+      <Dependent Role="BillOfMaterials">
+        <PropertyRef Name="UnitMeasureCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductModelProductDescriptionCulture_Culture_CultureID">
+    <End Role="Culture" Type="Demos.Data.Entities.Culture" Multiplicity="1" />
+    <End Role="ProductModelProductDescriptionCulture" Type="Demos.Data.Entities.ProductModelProductDescriptionCulture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Culture">
+        <PropertyRef Name="CultureID" />
+      </Principal>
+      <Dependent Role="ProductModelProductDescriptionCulture">
+        <PropertyRef Name="CultureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductDocument_Document_DocumentID">
+    <End Role="Document" Type="Demos.Data.Entities.Document" Multiplicity="1" />
+    <End Role="ProductDocument" Type="Demos.Data.Entities.ProductDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="DocumentID" />
+      </Principal>
+      <Dependent Role="ProductDocument">
+        <PropertyRef Name="DocumentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductModelIllustration_Illustration_IllustrationID">
+    <End Role="Illustration" Type="Demos.Data.Entities.Illustration" Multiplicity="1" />
+    <End Role="ProductModelIllustration" Type="Demos.Data.Entities.ProductModelIllustration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Illustration">
+        <PropertyRef Name="IllustrationID" />
+      </Principal>
+      <Dependent Role="ProductModelIllustration">
+        <PropertyRef Name="IllustrationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductInventory_Location_LocationID">
+    <End Role="Location" Type="Demos.Data.Entities.Location" Multiplicity="1" />
+    <End Role="ProductInventory" Type="Demos.Data.Entities.ProductInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="ProductInventory">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkOrderRouting_Location_LocationID">
+    <End Role="Location" Type="Demos.Data.Entities.Location" Multiplicity="1" />
+    <End Role="WorkOrderRouting" Type="Demos.Data.Entities.WorkOrderRouting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="WorkOrderRouting">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductModel_ProductModelID">
+    <End Role="ProductModel" Type="Demos.Data.Entities.ProductModel" Multiplicity="0..1" />
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductModel">
+        <PropertyRef Name="ProductModelID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductSubcategory_ProductSubcategoryID">
+    <End Role="ProductSubcategory" Type="Demos.Data.Entities.ProductSubcategory" Multiplicity="0..1" />
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSubcategory">
+        <PropertyRef Name="ProductSubcategoryID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductSubcategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_UnitMeasure_SizeUnitMeasureCode">
+    <End Role="UnitMeasure" Type="Demos.Data.Entities.UnitMeasure" Multiplicity="0..1" />
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitMeasure">
+        <PropertyRef Name="UnitMeasureCode" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="SizeUnitMeasureCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_UnitMeasure_WeightUnitMeasureCode">
+    <End Role="UnitMeasure" Type="Demos.Data.Entities.UnitMeasure" Multiplicity="0..1" />
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitMeasure">
+        <PropertyRef Name="UnitMeasureCode" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="WeightUnitMeasureCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductCostHistory_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ProductCostHistory" Type="Demos.Data.Entities.ProductCostHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductCostHistory">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductDocument_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ProductDocument" Type="Demos.Data.Entities.ProductDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductDocument">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductInventory_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ProductInventory" Type="Demos.Data.Entities.ProductInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductInventory">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductListPriceHistory_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ProductListPriceHistory" Type="Demos.Data.Entities.ProductListPriceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductListPriceHistory">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductProductPhoto_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ProductProductPhoto" Type="Demos.Data.Entities.ProductProductPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductProductPhoto">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductReview_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ProductReview" Type="Demos.Data.Entities.ProductReview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductReview">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductVendor_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ProductVendor" Type="Demos.Data.Entities.ProductVendor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductVendor">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrderDetail_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="PurchaseOrderDetail" Type="Demos.Data.Entities.PurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderDetail">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShoppingCartItem_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="ShoppingCartItem" Type="Demos.Data.Entities.ShoppingCartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ShoppingCartItem">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SpecialOfferProduct_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="SpecialOfferProduct" Type="Demos.Data.Entities.SpecialOfferProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="SpecialOfferProduct">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionHistory_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="TransactionHistory" Type="Demos.Data.Entities.TransactionHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="TransactionHistory">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkOrder_Product_ProductID">
+    <End Role="Product" Type="Demos.Data.Entities.Product" Multiplicity="1" />
+    <End Role="WorkOrder" Type="Demos.Data.Entities.WorkOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="WorkOrder">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductSubcategory_ProductCategory_ProductCategoryID">
+    <End Role="ProductCategory" Type="Demos.Data.Entities.ProductCategory" Multiplicity="1" />
+    <End Role="ProductSubcategory" Type="Demos.Data.Entities.ProductSubcategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="ProductCategoryID" />
+      </Principal>
+      <Dependent Role="ProductSubcategory">
+        <PropertyRef Name="ProductCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID">
+    <End Role="ProductDescription" Type="Demos.Data.Entities.ProductDescription" Multiplicity="1" />
+    <End Role="ProductModelProductDescriptionCulture" Type="Demos.Data.Entities.ProductModelProductDescriptionCulture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductDescription">
+        <PropertyRef Name="ProductDescriptionID" />
+      </Principal>
+      <Dependent Role="ProductModelProductDescriptionCulture">
+        <PropertyRef Name="ProductDescriptionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductModelIllustration_ProductModel_ProductModelID">
+    <End Role="ProductModel" Type="Demos.Data.Entities.ProductModel" Multiplicity="1" />
+    <End Role="ProductModelIllustration" Type="Demos.Data.Entities.ProductModelIllustration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductModel">
+        <PropertyRef Name="ProductModelID" />
+      </Principal>
+      <Dependent Role="ProductModelIllustration">
+        <PropertyRef Name="ProductModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID">
+    <End Role="ProductModel" Type="Demos.Data.Entities.ProductModel" Multiplicity="1" />
+    <End Role="ProductModelProductDescriptionCulture" Type="Demos.Data.Entities.ProductModelProductDescriptionCulture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductModel">
+        <PropertyRef Name="ProductModelID" />
+      </Principal>
+      <Dependent Role="ProductModelProductDescriptionCulture">
+        <PropertyRef Name="ProductModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductProductPhoto_ProductPhoto_ProductPhotoID">
+    <End Role="ProductPhoto" Type="Demos.Data.Entities.ProductPhoto" Multiplicity="1" />
+    <End Role="ProductProductPhoto" Type="Demos.Data.Entities.ProductProductPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductPhoto">
+        <PropertyRef Name="ProductPhotoID" />
+      </Principal>
+      <Dependent Role="ProductProductPhoto">
+        <PropertyRef Name="ProductPhotoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkOrder_ScrapReason_ScrapReasonID">
+    <End Role="ScrapReason" Type="Demos.Data.Entities.ScrapReason" Multiplicity="0..1" />
+    <End Role="WorkOrder" Type="Demos.Data.Entities.WorkOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScrapReason">
+        <PropertyRef Name="ScrapReasonID" />
+      </Principal>
+      <Dependent Role="WorkOrder">
+        <PropertyRef Name="ScrapReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductVendor_UnitMeasure_UnitMeasureCode">
+    <End Role="UnitMeasure" Type="Demos.Data.Entities.UnitMeasure" Multiplicity="1" />
+    <End Role="ProductVendor" Type="Demos.Data.Entities.ProductVendor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitMeasure">
+        <PropertyRef Name="UnitMeasureCode" />
+      </Principal>
+      <Dependent Role="ProductVendor">
+        <PropertyRef Name="UnitMeasureCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkOrderRouting_WorkOrder_WorkOrderID">
+    <End Role="WorkOrder" Type="Demos.Data.Entities.WorkOrder" Multiplicity="1" />
+    <End Role="WorkOrderRouting" Type="Demos.Data.Entities.WorkOrderRouting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkOrder">
+        <PropertyRef Name="WorkOrderID" />
+      </Principal>
+      <Dependent Role="WorkOrderRouting">
+        <PropertyRef Name="WorkOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductVendor_Vendor_VendorID">
+    <End Role="Vendor" Type="Demos.Data.Entities.Vendor" Multiplicity="1" />
+    <End Role="ProductVendor" Type="Demos.Data.Entities.ProductVendor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="VendorID" />
+      </Principal>
+      <Dependent Role="ProductVendor">
+        <PropertyRef Name="VendorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID">
+    <End Role="PurchaseOrderHeader" Type="Demos.Data.Entities.PurchaseOrderHeader" Multiplicity="1" />
+    <End Role="PurchaseOrderDetail" Type="Demos.Data.Entities.PurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrderHeader">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderDetail">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrderHeader_ShipMethod_ShipMethodID">
+    <End Role="ShipMethod" Type="Demos.Data.Entities.ShipMethod" Multiplicity="1" />
+    <End Role="PurchaseOrderHeader" Type="Demos.Data.Entities.PurchaseOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShipMethod">
+        <PropertyRef Name="ShipMethodID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderHeader">
+        <PropertyRef Name="ShipMethodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrderHeader_Vendor_VendorID">
+    <End Role="Vendor" Type="Demos.Data.Entities.Vendor" Multiplicity="1" />
+    <End Role="PurchaseOrderHeader" Type="Demos.Data.Entities.PurchaseOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="VendorID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderHeader">
+        <PropertyRef Name="VendorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_ShipMethod_ShipMethodID">
+    <End Role="ShipMethod" Type="Demos.Data.Entities.ShipMethod" Multiplicity="1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShipMethod">
+        <PropertyRef Name="ShipMethodID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="ShipMethodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorAddress_Vendor_VendorID">
+    <End Role="Vendor" Type="Demos.Data.Entities.Vendor" Multiplicity="1" />
+    <End Role="VendorAddress" Type="Demos.Data.Entities.VendorAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="VendorID" />
+      </Principal>
+      <Dependent Role="VendorAddress">
+        <PropertyRef Name="VendorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorContact_Vendor_VendorID">
+    <End Role="Vendor" Type="Demos.Data.Entities.Vendor" Multiplicity="1" />
+    <End Role="VendorContact" Type="Demos.Data.Entities.VendorContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="VendorID" />
+      </Principal>
+      <Dependent Role="VendorContact">
+        <PropertyRef Name="VendorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactCreditCard_CreditCard_CreditCardID">
+    <End Role="CreditCard" Type="Demos.Data.Entities.CreditCard" Multiplicity="1" />
+    <End Role="ContactCreditCard" Type="Demos.Data.Entities.ContactCreditCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CreditCard">
+        <PropertyRef Name="CreditCardID" />
+      </Principal>
+      <Dependent Role="ContactCreditCard">
+        <PropertyRef Name="CreditCardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CountryRegionCurrency_Currency_CurrencyCode">
+    <End Role="Currency" Type="Demos.Data.Entities.Currency" Multiplicity="1" />
+    <End Role="CountryRegionCurrency" Type="Demos.Data.Entities.CountryRegionCurrency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyCode" />
+      </Principal>
+      <Dependent Role="CountryRegionCurrency">
+        <PropertyRef Name="CurrencyCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_CreditCard_CreditCardID">
+    <End Role="CreditCard" Type="Demos.Data.Entities.CreditCard" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CreditCard">
+        <PropertyRef Name="CreditCardID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="CreditCardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CurrencyRate_Currency_FromCurrencyCode">
+    <End Role="Currency" Type="Demos.Data.Entities.Currency" Multiplicity="1" />
+    <End Role="CurrencyRate" Type="Demos.Data.Entities.CurrencyRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyCode" />
+      </Principal>
+      <Dependent Role="CurrencyRate">
+        <PropertyRef Name="FromCurrencyCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CurrencyRate_Currency_ToCurrencyCode">
+    <End Role="Currency" Type="Demos.Data.Entities.Currency" Multiplicity="1" />
+    <End Role="CurrencyRate" Type="Demos.Data.Entities.CurrencyRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyCode" />
+      </Principal>
+      <Dependent Role="CurrencyRate">
+        <PropertyRef Name="ToCurrencyCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_CurrencyRate_CurrencyRateID">
+    <End Role="CurrencyRate" Type="Demos.Data.Entities.CurrencyRate" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CurrencyRate">
+        <PropertyRef Name="CurrencyRateID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="CurrencyRateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_SalesTerritory_TerritoryID">
+    <End Role="SalesTerritory" Type="Demos.Data.Entities.SalesTerritory" Multiplicity="0..1" />
+    <End Role="Customer" Type="Demos.Data.Entities.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesTerritory">
+        <PropertyRef Name="TerritoryID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="TerritoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerAddress_Customer_CustomerID">
+    <End Role="Customer" Type="Demos.Data.Entities.Customer" Multiplicity="1" />
+    <End Role="CustomerAddress" Type="Demos.Data.Entities.CustomerAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="CustomerAddress">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Individual_Customer_CustomerID">
+    <End Role="Customer" Type="Demos.Data.Entities.Customer" Multiplicity="1" />
+    <End Role="Individual" Type="Demos.Data.Entities.Individual" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Individual">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_Customer_CustomerID">
+    <End Role="Customer" Type="Demos.Data.Entities.Customer" Multiplicity="1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Store_Customer_CustomerID">
+    <End Role="Customer" Type="Demos.Data.Entities.Customer" Multiplicity="1" />
+    <End Role="Store" Type="Demos.Data.Entities.Store" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Store">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SalesOrderDetail" Type="Demos.Data.Entities.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrderHeader">
+        <PropertyRef Name="SalesOrderID" />
+      </Principal>
+      <Dependent Role="SalesOrderDetail">
+        <PropertyRef Name="SalesOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID">
+    <End Role="SpecialOfferProduct" Type="Demos.Data.Entities.SpecialOfferProduct" Multiplicity="1" />
+    <End Role="SalesOrderDetail" Type="Demos.Data.Entities.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecialOfferProduct">
+        <PropertyRef Name="SpecialOfferID" />
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="SalesOrderDetail">
+        <PropertyRef Name="SpecialOfferID" />
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_SalesPerson_SalesPersonID">
+    <End Role="SalesPerson" Type="Demos.Data.Entities.SalesPerson" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesPerson">
+        <PropertyRef Name="SalesPersonID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="SalesPersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_SalesTerritory_TerritoryID">
+    <End Role="SalesTerritory" Type="Demos.Data.Entities.SalesTerritory" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesTerritory">
+        <PropertyRef Name="TerritoryID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="TerritoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID">
+    <End Role="SalesOrderHeader" Type="Demos.Data.Entities.SalesOrderHeader" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SalesOrderHeaderSalesReason" Type="Demos.Data.Entities.SalesOrderHeaderSalesReason" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrderHeader">
+        <PropertyRef Name="SalesOrderID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeaderSalesReason">
+        <PropertyRef Name="SalesOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID">
+    <End Role="SalesReason" Type="Demos.Data.Entities.SalesReason" Multiplicity="1" />
+    <End Role="SalesOrderHeaderSalesReason" Type="Demos.Data.Entities.SalesOrderHeaderSalesReason" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesReason">
+        <PropertyRef Name="SalesReasonID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeaderSalesReason">
+        <PropertyRef Name="SalesReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesPerson_SalesTerritory_TerritoryID">
+    <End Role="SalesTerritory" Type="Demos.Data.Entities.SalesTerritory" Multiplicity="0..1" />
+    <End Role="SalesPerson" Type="Demos.Data.Entities.SalesPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesTerritory">
+        <PropertyRef Name="TerritoryID" />
+      </Principal>
+      <Dependent Role="SalesPerson">
+        <PropertyRef Name="TerritoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesPersonQuotaHistory_SalesPerson_SalesPersonID">
+    <End Role="SalesPerson" Type="Demos.Data.Entities.SalesPerson" Multiplicity="1" />
+    <End Role="SalesPersonQuotaHistory" Type="Demos.Data.Entities.SalesPersonQuotaHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesPerson">
+        <PropertyRef Name="SalesPersonID" />
+      </Principal>
+      <Dependent Role="SalesPersonQuotaHistory">
+        <PropertyRef Name="SalesPersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesTerritoryHistory_SalesPerson_SalesPersonID">
+    <End Role="SalesPerson" Type="Demos.Data.Entities.SalesPerson" Multiplicity="1" />
+    <End Role="SalesTerritoryHistory" Type="Demos.Data.Entities.SalesTerritoryHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesPerson">
+        <PropertyRef Name="SalesPersonID" />
+      </Principal>
+      <Dependent Role="SalesTerritoryHistory">
+        <PropertyRef Name="SalesPersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Store_SalesPerson_SalesPersonID">
+    <End Role="SalesPerson" Type="Demos.Data.Entities.SalesPerson" Multiplicity="0..1" />
+    <End Role="Store" Type="Demos.Data.Entities.Store" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesPerson">
+        <PropertyRef Name="SalesPersonID" />
+      </Principal>
+      <Dependent Role="Store">
+        <PropertyRef Name="SalesPersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesTerritoryHistory_SalesTerritory_TerritoryID">
+    <End Role="SalesTerritory" Type="Demos.Data.Entities.SalesTerritory" Multiplicity="1" />
+    <End Role="SalesTerritoryHistory" Type="Demos.Data.Entities.SalesTerritoryHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesTerritory">
+        <PropertyRef Name="TerritoryID" />
+      </Principal>
+      <Dependent Role="SalesTerritoryHistory">
+        <PropertyRef Name="TerritoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID">
+    <End Role="SpecialOffer" Type="Demos.Data.Entities.SpecialOffer" Multiplicity="1" />
+    <End Role="SpecialOfferProduct" Type="Demos.Data.Entities.SpecialOfferProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecialOffer">
+        <PropertyRef Name="SpecialOfferID" />
+      </Principal>
+      <Dependent Role="SpecialOfferProduct">
+        <PropertyRef Name="SpecialOfferID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StoreContact_Store_CustomerID">
+    <End Role="Store" Type="Demos.Data.Entities.Store" Multiplicity="1" />
+    <End Role="StoreContact" Type="Demos.Data.Entities.StoreContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="StoreContact">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

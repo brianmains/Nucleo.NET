@@ -1,0 +1,97 @@
+﻿.NucleoAccordionHeader
+{
+	background-color:Navy;
+	color:White;
+	font-size: 11pt;
+	padding: 5px 5px 5px 10px;
+	border:1px solid black;
+	margin:0px 0px 0px 0px;
+}
+  
+.NucleoAccordionHeaderLink
+{
+	color:White;
+}
+
+.NucleoAccordionHeaderSelected
+{
+	background-color:Navy;
+	color:LightYellow;
+	font-size: 11pt;
+	padding: 5px 5px 5px 10px;
+	border:1px solid black;
+	margin:0px 0px 0px 0px;
+}
+
+.NucleoAccordionHeaderLinkSelected
+{
+	color:LightYellow;
+	font-weight:bold;
+}
+  
+.NucleoAccordionContent
+{
+	border:1px solid black;
+	padding:5px;
+}
+
+.NucleoDragDropPanel
+{
+	padding:5px 5px 5px 5px;
+}
+
+.NucleoPanelContent
+{
+	background-color:SmokeWhite;
+	color:Navy;
+	padding:2px 2px 2px 2px;
+}
+
+.NucleoPanelTitleBar
+{
+	background-color:CornflowerBlue;
+	color:LightYellow;
+	font-weight:bold;
+	padding:2px 2px 2px 5px;
+}
+
+.NucleoPanelWrapper
+{
+	border:1px solid navy;
+}
+
+.NucleoTextEditorNormalState
+{
+	border: 1px solid black;
+}
+
+.NucleoTextEditorErrorState
+{
+	background:url(<%= WebResource("Nucleo.Web.EditorControls.erroricon.png") %>) #FFFFFF 0px 0px no-repeat;
+	padding-left:20px;
+	border: 1px solid #FB3939;
+	color: #CC0000;
+}
+
+.NucleoValidationList li
+{
+	list-style-type:none;
+	left:0px;
+	#left:-40px;
+	_left:-40px;
+}
+
+.NucleoValidationItemError
+{
+	list-style-image:url(<%= WebResource("Nucleo.Web.ValidationControls.validationerror.png") %>);
+}
+
+.NucleoValidationItemInformation
+{
+	list-style-image:url(<%= WebResource("Nucleo.Web.ValidationControls.validationinfo.png") %>);
+}
+
+.NucleoValidationItemWarning
+{
+	list-style-image:url(<%= WebResource("Nucleo.Web.ValidationControls.validationwarning.png") %>);
+}

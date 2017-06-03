@@ -1,0 +1,15 @@
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.Web.Mvp.dll
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.Web.Mvp.pdb
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.dll
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.Web.dll
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.Web.WinFx.dll
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.WinFx.dll
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.WinFx.pdb
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.Web.WinFx.pdb
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.Web.pdb
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.pdb
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.xml
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\obj\Release\ResolveAssemblyReference.cache
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\obj\Release\Nucleo.Web.Mvp.dll
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\obj\Release\Nucleo.Web.Mvp.pdb
+D:\VS Projects\NucleoNet\Nucleo.Web.MVP\bin\Release\Nucleo.WinFx.xml

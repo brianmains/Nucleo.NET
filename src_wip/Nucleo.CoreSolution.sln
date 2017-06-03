@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo", "Nucleo\Nucleo.csproj", "{55BB40E6-3042-44B8-ACED-62D337F56877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Core", "Nucleo.Core\Nucleo.Core.csproj", "{DE222DCB-A7E6-4FE8-987F-BDFC55136FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit.Core", "Tests.Unit.Core\Tests.Unit.Core.csproj", "{83BF0A40-0D80-438D-8F31-072B2675130E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Components", "1. Components", "{ED31B79A-E576-447B-A919-C569188FD9BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Tests", "2. Tests", "{721A4459-19E5-4888-A7F9-D1C36377AD95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F0884F5-1E94-4BF2-B046-158ECDB8DFB3}"
+	ProjectSection(SolutionItems) = preProject
+		core.testsettings = core.testsettings
+		Local.testsettings = Local.testsettings
+		Nucleo.CoreSolution.vsmdi = Nucleo.CoreSolution.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Module", "Tests.Module\Tests.Module.csproj", "{61BCCBCA-981B-44D0-BB01-56FA90683F45}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs02
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Nucleo\\Nucleo.csproj
+		SccProjectTopLevelParentUniqueName1 = Nucleo.CoreSolution.sln
+		SccProjectName1 = Nucleo
+		SccLocalPath1 = Nucleo
+		SccProjectUniqueName2 = Nucleo.Core\\Nucleo.Core.csproj
+		SccProjectTopLevelParentUniqueName2 = Nucleo.CoreSolution.sln
+		SccProjectName2 = Nucleo.Core
+		SccLocalPath2 = Nucleo.Core
+		SccProjectUniqueName3 = Tests.Unit.Core\\Tests.Unit.Core.csproj
+		SccProjectTopLevelParentUniqueName3 = Nucleo.CoreSolution.sln
+		SccProjectName3 = Tests.Unit.Core
+		SccLocalPath3 = Tests.Unit.Core
+		SccProjectUniqueName4 = Tests.Module\\Tests.Module.csproj
+		SccProjectTopLevelParentUniqueName4 = Nucleo.CoreSolution.sln
+		SccProjectName4 = Tests.Module
+		SccLocalPath4 = Tests.Module
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Nucleo.CoreSolution.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55BB40E6-3042-44B8-ACED-62D337F56877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55BB40E6-3042-44B8-ACED-62D337F56877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55BB40E6-3042-44B8-ACED-62D337F56877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55BB40E6-3042-44B8-ACED-62D337F56877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE222DCB-A7E6-4FE8-987F-BDFC55136FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE222DCB-A7E6-4FE8-987F-BDFC55136FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE222DCB-A7E6-4FE8-987F-BDFC55136FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE222DCB-A7E6-4FE8-987F-BDFC55136FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BF0A40-0D80-438D-8F31-072B2675130E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BF0A40-0D80-438D-8F31-072B2675130E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BF0A40-0D80-438D-8F31-072B2675130E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BF0A40-0D80-438D-8F31-072B2675130E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61BCCBCA-981B-44D0-BB01-56FA90683F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BCCBCA-981B-44D0-BB01-56FA90683F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BCCBCA-981B-44D0-BB01-56FA90683F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BCCBCA-981B-44D0-BB01-56FA90683F45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE222DCB-A7E6-4FE8-987F-BDFC55136FB6} = {ED31B79A-E576-447B-A919-C569188FD9BD}
+		{55BB40E6-3042-44B8-ACED-62D337F56877} = {ED31B79A-E576-447B-A919-C569188FD9BD}
+		{83BF0A40-0D80-438D-8F31-072B2675130E} = {721A4459-19E5-4888-A7F9-D1C36377AD95}
+		{8F0884F5-1E94-4BF2-B046-158ECDB8DFB3} = {721A4459-19E5-4888-A7F9-D1C36377AD95}
+		{61BCCBCA-981B-44D0-BB01-56FA90683F45} = {721A4459-19E5-4888-A7F9-D1C36377AD95}
+	EndGlobalSection
+EndGlobal

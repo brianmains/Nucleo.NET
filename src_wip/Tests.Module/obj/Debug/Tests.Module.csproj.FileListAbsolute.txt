@@ -1,0 +1,9 @@
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\bin\Debug\Tests.Module.dll
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\bin\Debug\Tests.Module.pdb
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\bin\Debug\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\bin\Debug\Nucleo.dll
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\bin\Debug\Nucleo.Core.pdb
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\bin\Debug\Nucleo.pdb
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\obj\Debug\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\obj\Debug\Tests.Module.dll
+C:\Content\VS Projects\Nucleo\Core\4.0\Tests.Module\obj\Debug\Tests.Module.pdb

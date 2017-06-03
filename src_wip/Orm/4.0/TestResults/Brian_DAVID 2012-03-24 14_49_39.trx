@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8d1d1ee5-acde-44bf-b1a9-f5b21e3fa070" name="Brian@DAVID 2012-03-24 14:49:39" runUser="David\Brian" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="orm" id="c32688e4-f0a2-42ed-b3a7-8365fcecf72b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Brian_DAVID 2012-03-24 14_49_39">
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Core\bin\Debug\Nucleo.Orm.Core.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm\bin\Debug\Nucleo.Orm.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Typemock\Isolator\6.1\Typemock.ArrangeActAssert.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity.CodeFirst\bin\Debug\Nucleo.Orm.Entity.CodeFirst.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.DataClasses\bin\Debug\Nucleo.Orm.DataClasses.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Build\Debug\Nucleo.dll" />
+      <DeploymentItem filename="C:\Content\VS Projects\Nucleo\Orm\4.0\Build\Debug\Nucleo.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Core\bin\Debug\Nucleo.Orm.Core.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Core\bin\Debug\Nucleo.Orm.Core.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.DataClasses\bin\Debug\Nucleo.Orm.DataClasses.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.DataClasses\bin\Debug\Nucleo.Orm.DataClasses.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm\bin\Debug\Nucleo.Orm.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm\bin\Debug\Nucleo.Orm.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity\bin\Debug\Nucleo.Orm.Entity.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity.CodeFirst\bin\Debug\Nucleo.Orm.Entity.CodeFirst.dll" pdbFile="C:\Content\VS Projects\Nucleo\Orm\4.0\Nucleo.Orm.Entity.CodeFirst\bin\Debug\Nucleo.Orm.Entity.CodeFirst.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-24T14:49:39.3007656-04:00" queuing="2012-03-24T14:49:42.3681484-04:00" start="2012-03-24T14:49:42.6240078-04:00" finish="2012-03-24T14:49:46.9579921-04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="DAVID\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GettingInvalidEntityWithKeyReturnsNull" storage="c:\content\vs projects\nucleo\orm\4.0\tests.unit.orm\bin\debug\tests.unit.orm.dll" id="146e094e-5cce-76ff-2575-f7a3f29ee44b">
+      <Execution id="44b3ab85-8273-41d7-88db-643d0295a3f8" />
+      <TestMethod codeBase="C:/Content/VS Projects/Nucleo/Orm/4.0/Tests.Unit.Orm/bin/Debug/Tests.Unit.Orm.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nucleo.Orm.Entities.Generic.ContextGenericUnitOfWorkTest, Tests.Unit.Orm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GettingInvalidEntityWithKeyReturnsNull" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="146e094e-5cce-76ff-2575-f7a3f29ee44b" executionId="44b3ab85-8273-41d7-88db-643d0295a3f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="44b3ab85-8273-41d7-88db-643d0295a3f8" testId="146e094e-5cce-76ff-2575-f7a3f29ee44b" testName="GettingInvalidEntityWithKeyReturnsNull" computerName="DAVID" duration="00:00:00.3523576" startTime="2012-03-24T14:49:44.4804531-04:00" endTime="2012-03-24T14:49:45.1904140-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44b3ab85-8273-41d7-88db-643d0295a3f8">
+    </UnitTestResult>
+  </Results>
+</TestRun>

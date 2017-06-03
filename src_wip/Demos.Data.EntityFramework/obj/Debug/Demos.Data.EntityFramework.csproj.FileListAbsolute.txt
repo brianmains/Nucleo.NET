@@ -1,0 +1,14 @@
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Demos.Data.EntityFramework.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Demos.Data.EntityFramework.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.Orm.Core.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.Orm.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.Orm.Entity.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.Core.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.Orm.Core.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.Orm.Entity.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Nucleo.Orm.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\obj\Debug\Demos.Data.EntityFramework.dll
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\obj\Debug\Demos.Data.EntityFramework.pdb
+C:\Content\VS Projects\Nucleo\Orm\4.0\Demos.Data.EntityFramework\bin\Debug\Demos.Data.EntityFramework.dll.config

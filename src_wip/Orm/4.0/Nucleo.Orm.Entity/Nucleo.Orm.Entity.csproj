@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6AD398D-C5DF-43AB-A44D-9D320D5F93C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Orm.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nucleo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build40\Debug\Nucleo.dll</HintPath>
+    </Reference>
+    <Reference Include="Nucleo.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build40\Debug\Nucleo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\IObjectContextExtensions.cs" />
+    <Compile Include="Extensions\ObjectContextExtensions.cs" />
+    <Compile Include="Lookups\Providers\ObjectContextLookupProvider.cs" />
+    <Compile Include="Lookups\Repositories\ObjectSetLookupRepository.cs" />
+    <Compile Include="Orm\Entities\Generic\ContextGenericUnitOfWork.cs" />
+    <Compile Include="Orm\Entities\Generic\IContextUnitOfWorkExtensions.cs" />
+    <Compile Include="Orm\Entities\Generic\IEntityKeyGenerator.cs" />
+    <Compile Include="Orm\Entities\IObjectContext.cs" />
+    <Compile Include="Orm\Entities\IObjectSet.cs" />
+    <Compile Include="Orm\Entities\IObjectSetUnitOfWork.cs" />
+    <Compile Include="Orm\Entities\NucleoObjectContext.cs" />
+    <Compile Include="Orm\Entities\ObjectContextHelper.cs" />
+    <Compile Include="Orm\Entities\ObjectEntitySet.cs" />
+    <Compile Include="Orm\Entities\ObjectSetEntityUnitOfWork.cs" />
+    <Compile Include="Orm\Entities\Legacy\ObjectSetUnitOfWork.cs" />
+    <Compile Include="Orm\Entities\Queries\IObjectResultExtender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Orm\Entities\Queries\ObjectSetQuerySource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Orm.Core\Nucleo.Orm.Core.csproj">
+      <Project>{4781CBCC-0BF4-4367-8530-8F9BFD2CAA99}</Project>
+      <Name>Nucleo.Orm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Orm\Nucleo.Orm.csproj">
+      <Project>{1DEF1FFD-91FD-4413-9265-96DFAE4DC427}</Project>
+      <Name>Nucleo.Orm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "c:\Content\VS Projects\Nucleo\Build40\$(Configuration)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

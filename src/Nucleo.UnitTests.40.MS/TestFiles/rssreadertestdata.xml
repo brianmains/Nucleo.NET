@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<rss version="2.0">
+	<channel>
+		<title>Worthy News</title>
+		<link>http://www.worthynews.com</link>
+		<description>Worthy News</description>
+		<pubDate>Wed, 28 Mar 2007 20:39:31 -0400</pubDate>
+		<lastBuildDate>Wed, 28 Mar 2007 20:39:31 -0400</lastBuildDate>
+		<generator>Worthy News Builder</generator>
+		<image>
+			<title>Worthy News</title>
+			<url>http://www.worthynews.com/news-editor/images/main/rss-feed.gif</url>
+			<link>http://www.worthynews.com</link>
+		</image>
+		<item>
+			<title>U.S. launches huge show of force in Persian Gulf, sending message to Iran - Int'l Herald Tribune</title>
+			<link>http://www.worthynews.com/news/iht-com-bin-print-php-id-5041868/</link>
+			<description>U.S. warplanes screamed off the deck of two aircraft carriers in the Persian Gulf Tuesday in a massive show of force that military officials said was intended to send a message to Iran.</description>
+			<pubDate>Wed, 28 Mar 2007 03:36:00 -0400</pubDate>
+		</item>
+		<item>
+			<title>Oil spikes &#36;5 on rumors of Iran attack - CNN Money</title>
+			<link>http://www.worthynews.com/news/money-cnn-com-2007-03-27-markets-oil_spikes-index-htm-postversion-2007032717/</link>
+			<description>U.S. crude futures briefly spiked over &#36;5 a barrel in electronic trading late Tuesday on rumors that Iran fired on U.S. Navy warships.</description>
+			<pubDate>Wed, 28 Mar 2007 03:29:00 -0400</pubDate>
+		</item>
+		<item>
+			<title>Germany Vows EU Constitution By June - All Headline News</title>
+			<link>http://www.worthynews.com/news/allheadlinenews-com-articles-7006856949/</link>
+			<description>German Chancellor Angela Merkel on Sunday pledged to have a &quot;roadmap&quot; for the much-delayed European Union constitution by the end of June. Merkel made the pronouncement as she said there was a strong consensus among the 27 EU member-states that a decision on the constitution is reached before Germany's presidency ends in June 30.</description>
+			<pubDate>Wed, 28 Mar 2007 03:26:00 -0400</pubDate>
+		</item>
+		<item>
+			<title>Youths clash with riot police at Paris' Gare du Nord station - CNN</title>
+			<link>http://www.worthynews.com/news/cnn-com-2007-WORLD-europe-03-28-france-subway-clashes-ap-index-html/</link>
+			<description>Riot police firing tear gas and brandishing batons clashed Tuesday with bands of youths who shattered windows and looted shops at a major Paris train station, officials said. Nine people were arrested.</description>
+			<pubDate>Wed, 28 Mar 2007 02:49:00 -0400</pubDate>
+		</item>
+		<item>
+			<title>UK ready to produce Iran evidence - BBC</title>
+			<link>http://www.worthynews.com/news/newsvote-bbc-co-uk-mpapps-pagetools-print-news-bbc-co-uk-2-hi-uk_news-6501555-stm/</link>
+			<description>The government is preparing to release photographic evidence to support its assertion that 15 UK sailors seized by Iran were not in Iranian waters.</description>
+			<pubDate>Wed, 28 Mar 2007 02:44:00 -0400</pubDate>
+		</item>
+	</channel>
+</rss>

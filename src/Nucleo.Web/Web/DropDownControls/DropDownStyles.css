@@ -1,0 +1,44 @@
+﻿.DropDownInput
+{
+	width:150px;
+	height:24px;
+	border:1px solid black;
+	vertical-align:middle;
+}
+
+.DropDownMenu
+{
+	border:1px solid black;
+	padding:1px 4px 2px 4px;
+}
+
+.DropDownMenuContent
+{
+	float:left;
+	padding:2px 4px 2px 2px;
+}
+
+.DropDownMenuClose
+{
+	float:right;
+	width:16px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+.DropDownMenuCloseImage
+{
+	height:16px;
+	background-image:url(<%= WebResource("Nucleo.Web.DropDownControls.closemenu.png") %>);
+}
+
+.DropDownSelector
+{
+	border: 0px none;
+	vertical-align:middle;
+}
+
+.DropDownSelectorImage
+{
+	background-image:url(<%= WebResource("Nucleo.Web.DropDownControls.selectordropdown.png") %>);
+}

@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{535C9B95-94F6-4C76-A8D4-B7170E5CB890}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.35</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET35</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET35</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\AttributeCollection.cs" />
+    <Compile Include="Attributes\ITypeAttribute.cs" />
+    <Compile Include="BooleanUtility.cs" />
+    <Compile Include="BusinessDays.cs" />
+    <Compile Include="Collections\ChainableCollection.cs" />
+    <Compile Include="Collections\CollectionBase.cs" />
+    <Compile Include="Collections\DictionaryExtensions.cs" />
+    <Compile Include="Collections\IEnumerableExtensions.cs" />
+    <Compile Include="Collections\IObjectKeyedDictionary.cs" />
+    <Compile Include="Collections\ISimpleCollection.cs" />
+    <Compile Include="Collections\ObjectCollection.cs" />
+    <Compile Include="Collections\ObjectKeyedDictionary.cs" />
+    <Compile Include="Collections\ReadonlyCollectionBase.cs" />
+    <Compile Include="Collections\SelectableCollectionBase.cs" />
+    <Compile Include="Collections\SimpleCollection.cs" />
+    <Compile Include="Collections\StringCollection.cs" />
+    <Compile Include="Collections\StringCollectionConverter.cs" />
+    <Compile Include="Collections\TripletDictionary.cs" />
+    <Compile Include="Collections\TripletItem.cs" />
+    <Compile Include="Collections\TypeRegistry.cs" />
+    <Compile Include="Configuration\ActivatorLoader.cs" />
+    <Compile Include="Configuration\ConfigurationCollectionBase.cs" />
+    <Compile Include="Configuration\ConfigurationElementBase.cs" />
+    <Compile Include="Configuration\ConfigurationSectionBase.cs" />
+    <Compile Include="Configuration\ConfigurationSectionExtensions.cs" />
+    <Compile Include="Configuration\FakeConfigurationCollectionBase.cs" />
+    <Compile Include="Configuration\FakeConfigurationElementBase.cs" />
+    <Compile Include="Configuration\NamedDefaultValueElement.cs" />
+    <Compile Include="Configuration\NamedDefaultValueElementCollection.cs" />
+    <Compile Include="Configuration\NameTypeElement.cs" />
+    <Compile Include="Configuration\NameTypeElementCollection.cs" />
+    <Compile Include="Configuration\NameTypeElementExtensions.cs" />
+    <Compile Include="Configuration\NameValueElement.cs" />
+    <Compile Include="Configuration\NameValueElementCollection.cs" />
+    <Compile Include="Configuration\TypeRegistrationElement.cs" />
+    <Compile Include="Configuration\TypeRegistrationElementCollection.cs" />
+    <Compile Include="Context\ApplicationContext.cs" />
+    <Compile Include="Context\Configuration\ContextSettingsSection.cs" />
+    <Compile Include="Context\IApplicationContext.cs" />
+    <Compile Include="Context\IService.cs" />
+    <Compile Include="Context\IServiceDictionary.cs" />
+    <Compile Include="Context\Providers\ConfigurationApplicationContextServiceRegistry.cs" />
+    <Compile Include="Context\Providers\IApplicationContextServiceRegistry.cs" />
+    <Compile Include="Context\Providers\InMemoryApplicationContextServiceRegistry.cs" />
+    <Compile Include="Context\ServiceCollection.cs" />
+    <Compile Include="Context\Services\BaseInlineServiceDictionary.cs" />
+    <Compile Include="Context\Services\EmailService.cs" />
+    <Compile Include="Context\Services\FakeLoggerService.cs" />
+    <Compile Include="Context\Services\FakeNavigationRoute.cs" />
+    <Compile Include="Context\Services\FakeNavigationService.cs" />
+    <Compile Include="Context\Services\IApplicationStateService.cs" />
+    <Compile Include="Context\Services\ICachingService.cs" />
+    <Compile Include="Context\Services\IDependencyInjectionService.cs" />
+    <Compile Include="Context\Services\IEmailService.cs" />
+    <Compile Include="Context\Services\IEncryptionService.cs" />
+    <Compile Include="Context\Services\ILoggerService.cs" />
+    <Compile Include="Context\Services\INavigationRoute.cs" />
+    <Compile Include="Context\Services\INavigationService.cs" />
+    <Compile Include="Context\Services\InlineCachingService.cs" />
+    <Compile Include="Context\Services\InlineSessionStateService.cs" />
+    <Compile Include="Context\Services\InlineStateManagementService.cs" />
+    <Compile Include="Context\Services\InMemoryUserSecurityService.cs" />
+    <Compile Include="Context\Services\ISessionStateService.cs" />
+    <Compile Include="Context\Services\IStateManagementService.cs" />
+    <Compile Include="Context\Services\ITemporaryDataService.cs" />
+    <Compile Include="Context\Services\IUserSecurityService.cs" />
+    <Compile Include="Context\Services\LoggerService.cs" />
+    <Compile Include="Context\Services\StateManagementService.cs" />
+    <Compile Include="DataServices\DataServiceExecutor.cs" />
+    <Compile Include="DataServices\DataServiceExecutorResults.cs" />
+    <Compile Include="DataServices\Modules\BaseDataServiceModule.cs" />
+    <Compile Include="DataServices\Modules\BaseModuleLoader.cs" />
+    <Compile Include="DataServices\Modules\BaseModuleScheduler.cs" />
+    <Compile Include="DataServices\Modules\ConfigurationModuleLoader.cs" />
+    <Compile Include="DataServices\Modules\ConfigurationModuleScheduler.cs" />
+    <Compile Include="DataServices\Modules\Configuration\ExecutingModuleElement.cs" />
+    <Compile Include="DataServices\Modules\Configuration\ExecutingModuleElementCollection.cs" />
+    <Compile Include="DataServices\Modules\Configuration\ModuleElement.cs" />
+    <Compile Include="DataServices\Modules\Configuration\ModuleElementCollection.cs" />
+    <Compile Include="DataServices\Modules\Configuration\ModuleSettingsSection.cs" />
+    <Compile Include="DataServices\Modules\DataServiceModuleCollection.cs" />
+    <Compile Include="DataServices\Modules\FakeDataServiceModule.cs" />
+    <Compile Include="DataServices\Modules\FakeDataServiceScheduler.cs" />
+    <Compile Include="DataServices\Modules\FakeModuleLoader.cs" />
+    <Compile Include="DataServices\Modules\IDataServiceModule.cs" />
+    <Compile Include="DataServices\Modules\ModuleIdentifier.cs" />
+    <Compile Include="DataServices\Modules\ModuleIdentifierCollection.cs" />
+    <Compile Include="DataServices\Results\ExceptionDataServiceResult.cs" />
+    <Compile Include="DataServices\Results\FailureDataServiceResult.cs" />
+    <Compile Include="DataServices\Results\FakeDataServiceResult.cs" />
+    <Compile Include="DataServices\Results\IDataServiceResult.cs" />
+    <Compile Include="DataServices\Results\SuccessDataServiceResult.cs" />
+    <Compile Include="Data\DataRowUtility.cs" />
+    <Compile Include="Data\DataRowUtilityExtensions.cs" />
+    <Compile Include="Data\DataTableUtility.cs" />
+    <Compile Include="Data\DataTypeUtility.cs" />
+    <Compile Include="Data\ValueConverter.cs" />
+    <Compile Include="DateTimeEquality.cs" />
+    <Compile Include="DateTimeUtility.cs" />
+    <Compile Include="DayOfWeekReoccurrence.cs" />
+    <Compile Include="Drawing\ColorHelper.cs" />
+    <Compile Include="Email\Configuration\EmailSection.cs" />
+    <Compile Include="Email\Emailer.cs" />
+    <Compile Include="Email\EmailProvider.cs" />
+    <Compile Include="Email\FakeEmailProvider.cs" />
+    <Compile Include="Email\SmtpEmailProvider.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="Errors.Designer.cs" />
+    <Compile Include="Estimation\BaseDateTimeEstimator.cs" />
+    <Compile Include="Estimation\BaseEstimator.cs" />
+    <Compile Include="Estimation\DateEstimation.cs" />
+    <Compile Include="Estimation\DayOfWeekEstimator.cs" />
+    <Compile Include="Estimation\DaysEstimator.cs" />
+    <Compile Include="Estimation\MonthsEstimator.cs" />
+    <Compile Include="Estimation\WeeksEstimator.cs" />
+    <Compile Include="Estimation\YearsEstimator.cs" />
+    <Compile Include="EventArguments\ChangeEventArgs.cs" />
+    <Compile Include="EventArguments\DataCancelEventArgs.cs" />
+    <Compile Include="EventArguments\DataCommandEventArgs.cs" />
+    <Compile Include="EventArguments\DataEventArgs.cs" />
+    <Compile Include="EventArguments\DictionaryEventArgs.cs" />
+    <Compile Include="EventArguments\FileEventArgs.cs" />
+    <Compile Include="EventArguments\FiredEventEventArgs.cs" />
+    <Compile Include="EventArguments\ObjectPropertyChangedEventArgs.cs" />
+    <Compile Include="EventArguments\PropertyChangedEventArgs.cs" />
+    <Compile Include="EventArguments\SelectedIndexChangedEventArgs.cs" />
+    <Compile Include="EventArguments\StatePropertyChangedEventArgs.cs" />
+    <Compile Include="EventArguments\ValidateEventArgs.cs" />
+    <Compile Include="EventArguments\ValueChangedEventArgs.cs" />
+    <Compile Include="EventsManagement\BaseEventDetails.cs" />
+    <Compile Include="EventsManagement\Configuration\EventsScheduleSection.cs" />
+    <Compile Include="EventsManagement\EventDetails.cs" />
+    <Compile Include="EventsManagement\EventInformation.cs" />
+    <Compile Include="EventsManagement\EventInformationCollection.cs" />
+    <Compile Include="EventsManagement\EventScheduleProvider.cs" />
+    <Compile Include="EventsManagement\EventsRegistry.cs" />
+    <Compile Include="EventsManagement\EventsSchedule.cs" />
+    <Compile Include="EventsManagement\EventSubscription.cs" />
+    <Compile Include="EventsManagement\EventSubscriptionAttribute.cs" />
+    <Compile Include="EventsManagement\FakeEventScheduleProvider.cs" />
+    <Compile Include="EventsManagement\IEvent.cs" />
+    <Compile Include="EventsManagement\IEventReceiver.cs" />
+    <Compile Include="EventsManagement\IEventSubscriber.cs" />
+    <Compile Include="EventsManagement\IEventSubscription.cs" />
+    <Compile Include="EventsManagement\Listeners\AnyListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\EntityListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\EntityTypeListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\EventListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\IListenerCriteria.cs" />
+    <Compile Include="EventsManagement\Listeners\ListenerCriterion.cs" />
+    <Compile Include="EventsManagement\Listeners\NameIdentifierListenerCriteria.cs" />
+    <Compile Include="EventsManagement\PublishedEventDetails.cs" />
+    <Compile Include="EventsManagement\SubscriptionEventDetails.cs" />
+    <Compile Include="Exceptions\BaseException.cs" />
+    <Compile Include="Exceptions\DuplicateException.cs" />
+    <Compile Include="Exceptions\MismatchException.cs" />
+    <Compile Include="Exceptions\NotFoundException.cs" />
+    <Compile Include="Exceptions\PropertyException.cs" />
+    <Compile Include="Exceptions\ValidateException.cs" />
+    <Compile Include="Extensions\BoolExtensions.cs" />
+    <Compile Include="Extensions\BusinessDaysExtensions.cs" />
+    <Compile Include="Extensions\ColorExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\MemberInfoExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Extensions\XElementExtensions.cs" />
+    <Compile Include="Identifier.cs" />
+    <Compile Include="IO\BinarySerializer.cs" />
+    <Compile Include="IO\FilePath.cs" />
+    <Compile Include="IO\FileReaderWriter.cs" />
+    <Compile Include="LazyValue.cs" />
+    <Compile Include="Logs\Configuration\LoggerSettingsSection.cs" />
+    <Compile Include="Logs\Configuration\LogMessageTypeElement.cs" />
+    <Compile Include="Logs\Configuration\LogMessageTypeElementCollection.cs" />
+    <Compile Include="Logs\Configuration\LogVerbosityTypeElement.cs" />
+    <Compile Include="Logs\Configuration\LogVerbosityTypeElementCollection.cs" />
+    <Compile Include="Logs\ConsoleLogManager.cs" />
+    <Compile Include="Logs\EventLogManager.cs" />
+    <Compile Include="Logs\FakeLogEntry.cs" />
+    <Compile Include="Logs\FakeLogManager.cs" />
+    <Compile Include="Logs\GeneralMessage.cs" />
+    <Compile Include="Logs\ILogManager.cs" />
+    <Compile Include="Logs\Logger.cs" />
+    <Compile Include="Logs\LoggerOptions.cs" />
+    <Compile Include="Logs\LoggerTextWriter.cs" />
+    <Compile Include="Logs\LogManager.cs" />
+    <Compile Include="Logs\LogManagerCollection.cs" />
+    <Compile Include="Logs\LogMessage.cs" />
+    <Compile Include="Logs\LogMessageType.cs" />
+    <Compile Include="Logs\LogMessageTypeCollection.cs" />
+    <Compile Include="Logs\LogMessageTypes.cs" />
+    <Compile Include="Logs\LogVerbosityType.cs" />
+    <Compile Include="Logs\LogVerbosityTypeCollection.cs" />
+    <Compile Include="Logs\LogVerbosityTypes.cs" />
+    <Compile Include="Lookups\CacheLookupRepository.cs" />
+    <Compile Include="Lookups\ConfigurationLookupRepository.cs" />
+    <Compile Include="Lookups\Configuration\LookupElement.cs" />
+    <Compile Include="Lookups\Configuration\LookupElementCollection.cs" />
+    <Compile Include="Lookups\Configuration\LookupGroupElement.cs" />
+    <Compile Include="Lookups\Configuration\LookupGroupElementCollection.cs" />
+    <Compile Include="Lookups\Configuration\LookupRepositoriesSection.cs" />
+    <Compile Include="Lookups\ILookup.cs" />
+    <Compile Include="Lookups\ILookupCache.cs" />
+    <Compile Include="Lookups\ILookupRepository.cs" />
+    <Compile Include="Lookups\Lookup.cs" />
+    <Compile Include="Lookups\LookupAttribute.cs" />
+    <Compile Include="Lookups\LookupCollection.cs" />
+    <Compile Include="Lookups\LookupCriteria.cs" />
+    <Compile Include="Lookups\LookupManager.cs" />
+    <Compile Include="Lookups\XmlLookupRepository.cs" />
+    <Compile Include="Math\IndexCounter.cs" />
+    <Compile Include="Math\IndexRow.cs" />
+    <Compile Include="Math\IndexRowCollection.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Cache\CacheableAttribute.cs" />
+    <Compile Include="Models\Cache\CacheInformation.cs" />
+    <Compile Include="Models\Cache\IModelCache.cs" />
+    <Compile Include="Models\Cache\ModelCacheResults.cs" />
+    <Compile Include="Models\Contracts\ContractInjectionAttribute.cs" />
+    <Compile Include="Models\Contracts\ContractModelDataLoader.cs" />
+    <Compile Include="Models\Contracts\IContractInjection.cs" />
+    <Compile Include="Models\DefaultModelInspector.cs" />
+    <Compile Include="Models\IModelDataLoader.cs" />
+    <Compile Include="Models\IModelInjection.cs" />
+    <Compile Include="Models\IModelInspector.cs" />
+    <Compile Include="Models\Lookups\ILookupInjection.cs" />
+    <Compile Include="Models\Lookups\LookupInjectionAttribute.cs" />
+    <Compile Include="Models\Lookups\LookupModelDataLoader.cs" />
+    <Compile Include="Models\ModelDataLoaderCollection.cs" />
+    <Compile Include="Models\ModelInjectionManager.cs" />
+    <Compile Include="Models\ModelInspectorOptions.cs" />
+    <Compile Include="Models\ModelMemberMetadata.cs" />
+    <Compile Include="Models\ModelValueEntry.cs" />
+    <Compile Include="Newsletters\Configuration\NewsletterSection.cs" />
+    <Compile Include="Newsletters\FakeNewsletterProvider.cs" />
+    <Compile Include="Newsletters\NewsletterInformation.cs" />
+    <Compile Include="Newsletters\NewsletterInformationCollection.cs" />
+    <Compile Include="Newsletters\NewsletterManager.cs" />
+    <Compile Include="Newsletters\NewsletterProvider.cs" />
+    <Compile Include="ObjectModel\AttributedObject.cs" />
+    <Compile Include="ObjectModel\ObjectReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\Configuration\ProviderConfigurationElementBase.cs" />
+    <Compile Include="Providers\Configuration\ProviderConfigurationSectionBase.cs" />
+    <Compile Include="Providers\IProvider.cs" />
+    <Compile Include="Providers\IProviderCollection.cs" />
+    <Compile Include="Providers\ProviderBase.cs" />
+    <Compile Include="Providers\ProviderCollection.cs" />
+    <Compile Include="Providers\ProviderHelper.cs" />
+    <Compile Include="Reflection\BaseReflectMember.cs" />
+    <Compile Include="Reflection\BaseReflectMemberList.cs" />
+    <Compile Include="Reflection\DotNotationParser.cs" />
+    <Compile Include="Reflection\Reflect.cs" />
+    <Compile Include="Reflection\ReflectDefinition.cs" />
+    <Compile Include="Reflection\ReflectEvent.cs" />
+    <Compile Include="Reflection\ReflectEventList.cs" />
+    <Compile Include="Reflection\ReflectExtensions.cs" />
+    <Compile Include="Reflection\ReflectionUtility.cs" />
+    <Compile Include="Reflection\ReflectMethod.cs" />
+    <Compile Include="Reflection\ReflectMethodCollection.cs" />
+    <Compile Include="Reflection\ReflectMethodList.cs" />
+    <Compile Include="Reflection\ReflectProperty.cs" />
+    <Compile Include="Reflection\ReflectPropertyCollection.cs" />
+    <Compile Include="Reflection\ReflectPropertyList.cs" />
+    <Compile Include="Reflection\ReflectPropertyValue.cs" />
+    <Compile Include="Reflection\ReflectPropertyValueCollection.cs" />
+    <Compile Include="Reflection\ReflectType.cs" />
+    <Compile Include="Reflection\TypeUtility.cs" />
+    <Compile Include="Routing\IRoutingEngine.cs" />
+    <Compile Include="Routing\RoutingEngineCollection.cs" />
+    <Compile Include="Routing\RoutingEngines.cs" />
+    <Compile Include="Rss\FakeRssResourceProvider.cs" />
+    <Compile Include="Rss\IRssResourceProvider.cs" />
+    <Compile Include="Rss\LocalRssResourceProvider.cs" />
+    <Compile Include="Rss\OnlineRssResourceProvider.cs" />
+    <Compile Include="Rss\RssChannel.cs" />
+    <Compile Include="Rss\RssEnclosure.cs" />
+    <Compile Include="Rss\RssItem.cs" />
+    <Compile Include="Rss\RssReader.cs" />
+    <Compile Include="Security\Role.cs" />
+    <Compile Include="Security\RoleCollection.cs" />
+    <Compile Include="State\Configuration\StateManagementSection.cs" />
+    <Compile Include="State\Configuration\StatePropertyElement.cs" />
+    <Compile Include="State\Configuration\StatePropertyElementCollection.cs" />
+    <Compile Include="State\Configuration\StateRegionElement.cs" />
+    <Compile Include="State\Configuration\StateRegionElementCollection.cs" />
+    <Compile Include="State\Configuration\ValueProvidersElement.cs" />
+    <Compile Include="State\FakeStateManager.cs" />
+    <Compile Include="State\FakeStateValuesProvider.cs" />
+    <Compile Include="State\IStateManager.cs" />
+    <Compile Include="State\StateManager.cs" />
+    <Compile Include="State\StateProperty.cs" />
+    <Compile Include="State\StatePropertyCollection.cs" />
+    <Compile Include="State\StateUser.cs" />
+    <Compile Include="State\StateValuesProvider.cs" />
+    <Compile Include="State\StateValuesProviderCollection.cs" />
+    <Compile Include="State\XmlStateValuesProvider.cs" />
+    <Compile Include="Text\Configuration\MessagesSection.cs" />
+    <Compile Include="Text\Configuration\StaticMessagesSection.cs" />
+    <Compile Include="Text\FakeMessageProvider.cs" />
+    <Compile Include="Text\Message.cs" />
+    <Compile Include="Text\MessageCollection.cs" />
+    <Compile Include="Text\MessageProvider.cs" />
+    <Compile Include="Text\Messages.cs" />
+    <Compile Include="Text\MultiLineString.cs" />
+    <Compile Include="Text\StringUtility.cs" />
+    <Compile Include="TypeNameGenerator.cs" />
+    <Compile Include="Validation\Configuration\ValidationSettingsSection.cs" />
+    <Compile Include="Validation\DataAnnotatedInstanceAttribute.cs" />
+    <Compile Include="Validation\DataAnnotationsValidationProvider.cs" />
+    <Compile Include="Validation\DataErrorInfoValidationProvider.cs" />
+    <Compile Include="Validation\EmptyValidationType.cs" />
+    <Compile Include="Validation\ErrorValidationType.cs" />
+    <Compile Include="Validation\FakeValidationProvider.cs" />
+    <Compile Include="Validation\InformationValidationType.cs" />
+    <Compile Include="Validation\Settings\ConfigurationValidationSettings.cs" />
+    <Compile Include="Validation\Settings\FakeValidationSettings.cs" />
+    <Compile Include="Validation\Settings\InlineValidationSettings.cs" />
+    <Compile Include="Validation\Settings\IValidationSettings.cs" />
+    <Compile Include="Validation\ValidationItem.cs" />
+    <Compile Include="Validation\ValidationItemCollection.cs" />
+    <Compile Include="Validation\ValidationManager.cs" />
+    <Compile Include="Validation\ValidationProvider.cs" />
+    <Compile Include="Validation\ValidationProviderCollection.cs" />
+    <Compile Include="Validation\ValidationSession.cs" />
+    <Compile Include="Validation\ValidationType.cs" />
+    <Compile Include="Validation\WarningValidationType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Errors.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gender.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

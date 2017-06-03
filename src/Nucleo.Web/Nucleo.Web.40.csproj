@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF95E95B-C899-401E-BD3F-A5DE3A298D28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Web.40</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonScriptMetadata.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="Errors.Designer.cs" />
+    <Compile Include="EventArguments\AccordionItemEventArgs.cs" />
+    <Compile Include="EventArguments\RedirectEventArgs.cs" />
+    <Compile Include="EventArguments\RenderEventArgs.cs" />
+    <Compile Include="EventArguments\RepeatItemEventArgs.cs" />
+    <Compile Include="EventArguments\ValidatedControlEventArgs.cs" />
+    <Compile Include="Extensions\BaseControlWriterExtensions.cs" />
+    <Compile Include="Extensions\ControlCollectionExtensions.cs" />
+    <Compile Include="Extensions\DetailsViewExtensions.cs" />
+    <Compile Include="Extensions\GridViewExtensions.cs" />
+    <Compile Include="Extensions\IButtonControlExtensions.cs" />
+    <Compile Include="Extensions\IDictionaryExtensions.cs" />
+    <Compile Include="Extensions\INavigationServiceExtensions.cs" />
+    <Compile Include="Extensions\ITextControlExtensions.cs" />
+    <Compile Include="Extensions\ListControlExtensions.cs" />
+    <Compile Include="Extensions\ListViewExtensions.cs" />
+    <Compile Include="Extensions\MembershipExtensions.cs" />
+    <Compile Include="Extensions\PageExtensions.cs" />
+    <Compile Include="Extensions\ScriptDescriptorExtensions.cs" />
+    <Compile Include="Extensions\TagElementExtensions.cs" />
+    <Compile Include="Extensions\ValidatorCollectionExtensions.cs" />
+    <Compile Include="JavaScriptUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyHandler.cs" />
+    <Compile Include="Web\AccordionControls\Accordion.cs" />
+    <Compile Include="Web\AccordionControls\AccordionItem.cs" />
+    <Compile Include="Web\AccordionControls\AccordionItemCollection.cs" />
+    <Compile Include="Web\AccordionControls\AccordionItemRenderer.cs" />
+    <Compile Include="Web\AccordionControls\AccordionItemScriptMetadata.cs" />
+    <Compile Include="Web\AccordionControls\AccordionRenderer.cs" />
+    <Compile Include="Web\AccordionControls\AccordionScriptMetadata.cs" />
+    <Compile Include="Web\AccordionControls\ClientSettings\AccordionClientEvents.cs" />
+    <Compile Include="Web\AccordionControls\ClientSettings\AccordionItemClientEvents.cs" />
+    <Compile Include="Web\AjaxComponentCollection.cs" />
+    <Compile Include="Web\BaseAjaxControl.cs" />
+    <Compile Include="Web\BaseAjaxControlScriptMetadata.cs" />
+    <Compile Include="Web\BaseAjaxExtender.cs" />
+    <Compile Include="Web\BaseAjaxExtenderScriptMetadata.cs" />
+    <Compile Include="Web\BaseAjaxPanel.cs" />
+    <Compile Include="Web\BaseAjaxPanelScriptMetadata.cs" />
+    <Compile Include="Web\BaseControl.cs" />
+    <Compile Include="Web\BaseControlWriter.cs" />
+    <Compile Include="Web\BaseWebControl.cs" />
+    <Compile Include="Web\Browsers\BrowserCapability.cs" />
+    <Compile Include="Web\ButtonControls\BaseButtonExtender.cs" />
+    <Compile Include="Web\ButtonControls\BaseButtonExtenderScriptMetadata.cs" />
+    <Compile Include="Web\ButtonControls\Button.cs" />
+    <Compile Include="Web\ButtonControls\ButtonEnabledExtender.cs" />
+    <Compile Include="Web\ButtonControls\ButtonEnabledExtenderScriptMetadata.cs" />
+    <Compile Include="Web\ButtonControls\ButtonList.cs" />
+    <Compile Include="Web\ButtonControls\ButtonListControlCollection.cs" />
+    <Compile Include="Web\ButtonControls\ButtonListScriptMetadata.cs" />
+    <Compile Include="Web\ButtonControls\ButtonRenderer.cs" />
+    <Compile Include="Web\ButtonControls\ButtonScriptMetadata.cs" />
+    <Compile Include="Web\ButtonControls\ButtonVisibilityExtender.cs" />
+    <Compile Include="Web\ButtonControls\ButtonVisibilityExtenderScriptMetadata.cs" />
+    <Compile Include="Web\ButtonControls\ClientSettings\ButtonClientEvents.cs" />
+    <Compile Include="Web\ClientPropertyNamingDetails.cs" />
+    <Compile Include="Web\ClientRegistration\BaseClientDescriptor.cs" />
+    <Compile Include="Web\ClientRegistration\ClientCssAttribute.cs" />
+    <Compile Include="Web\ClientRegistration\ClientCssRegistry.cs" />
+    <Compile Include="Web\ClientRegistration\ClientDescriptionRegistrationAttribute.cs" />
+    <Compile Include="Web\ClientRegistration\ClientDescriptorEvent.cs" />
+    <Compile Include="Web\ClientRegistration\ClientDescriptorEventCollection.cs" />
+    <Compile Include="Web\ClientRegistration\ClientDescriptorProperty.cs" />
+    <Compile Include="Web\ClientRegistration\ClientDescriptorPropertyCollection.cs" />
+    <Compile Include="Web\ClientRegistration\ClientDescriptorRegistry.cs" />
+    <Compile Include="Web\ClientRegistration\ClientEventAttribute.cs" />
+    <Compile Include="Web\ClientRegistration\ClientPropertyAttribute.cs" />
+    <Compile Include="Web\ClientRegistration\ClientScriptAttribute.cs" />
+    <Compile Include="Web\ClientRegistration\ClientScriptRegistry.cs" />
+    <Compile Include="Web\ClientRegistration\Css\ClientAttributeCssRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Css\IClientAttributeCssRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Css\ICssRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Css\ICssRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Css\ISelfTypeCssRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Css\IWebCssMetadataCssRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Css\SelfTypeCssRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Css\WebCssMetadataCssRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Description\ClientAttributeDescriptorRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Description\ControlPropertyDictionaryDescriptorRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Description\IClientAttributeDescriptorRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Description\IControlPropertyDictionaryDescriptorRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Description\IDescriptorRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Description\IDescriptorRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\ClientAttributeScriptRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\IClientAttributeScriptRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\ILocalWebScriptMetadataScriptRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\IScriptRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\IScriptRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\IWebScriptMetadataScriptRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\LocalWebScriptMetadataScriptRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\SelfTypeScriptRegistrar.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\ISelfTypeScriptRegistryImplementation.cs" />
+    <Compile Include="Web\ClientRegistration\Scripts\WebScriptMetadataScriptRegistrar.cs" />
+    <Compile Include="Web\ClientSettings\ClientEvents.cs" />
+    <Compile Include="Web\ClientSettings\WebServiceSettings.cs" />
+    <Compile Include="Web\ClientState\ClientStateData.cs" />
+    <Compile Include="Web\ClientState\ClientStateDataJavaScriptConverter.cs" />
+    <Compile Include="Web\ClientState\ClientStateDictionary.cs" />
+    <Compile Include="Web\ClientState\IClientStateControl.cs" />
+    <Compile Include="Web\ClientState\ListClientStateData.cs" />
+    <Compile Include="Web\ClientState\ListClientStateDataJavaScriptConverter.cs" />
+    <Compile Include="Web\CodeGeneration\ClassDefinition.cs" />
+    <Compile Include="Web\CodeGeneration\ClassEventMember.cs" />
+    <Compile Include="Web\CodeGeneration\ClassMember.cs" />
+    <Compile Include="Web\CodeGeneration\ClassMemberCollection.cs" />
+    <Compile Include="Web\CodeGeneration\ClassMethodMember.cs" />
+    <Compile Include="Web\CodeGeneration\ClassPropertyMember.cs" />
+    <Compile Include="Web\CodeGeneration\IClassGenerator.cs" />
+    <Compile Include="Web\CodeGeneration\MethodParameterCollection.cs" />
+    <Compile Include="Web\Collections\AjaxCollectionConverter.cs" />
+    <Compile Include="Web\Collections\IAjaxSerializableCollection.cs" />
+    <Compile Include="Web\ContentRegistrar.cs" />
+    <Compile Include="Web\ContentRendering.cs" />
+    <Compile Include="Web\Context\Services\ContextBasedServiceDictionary.cs" />
+    <Compile Include="Web\Context\Services\FakeBrowserCapabilitiesService.cs" />
+    <Compile Include="Web\Context\Services\HttpContextDependencyInjectionService.cs" />
+    <Compile Include="Web\Context\Services\IBrowserCapabilitiesService.cs" />
+    <Compile Include="Web\Context\Services\ICookieService.cs" />
+    <Compile Include="Web\Context\Services\IHealthMonitoringService.cs" />
+    <Compile Include="Web\Context\Services\InlineCookieService.cs" />
+    <Compile Include="Web\Context\Services\InlineHealthMonitoringService.cs" />
+    <Compile Include="Web\Context\Services\InlinePostDataService.cs" />
+    <Compile Include="Web\Context\Services\InlinePostedFilesService.cs" />
+    <Compile Include="Web\Context\Services\InlineQuerystringService.cs" />
+    <Compile Include="Web\Context\Services\InlineRequestHeaderService.cs" />
+    <Compile Include="Web\Context\Services\InlineServerUtilityService.cs" />
+    <Compile Include="Web\Context\Services\InlineServerVariablesService.cs" />
+    <Compile Include="Web\Context\Services\InlineUrlResolutionService.cs" />
+    <Compile Include="Web\Context\Services\IPostDataService.cs" />
+    <Compile Include="Web\Context\Services\IPostedFilesService.cs" />
+    <Compile Include="Web\Context\Services\IQuerystringService.cs" />
+    <Compile Include="Web\Context\Services\IRequestHeaderService.cs" />
+    <Compile Include="Web\Context\Services\IServerUtilityService.cs" />
+    <Compile Include="Web\Context\Services\IServerVariablesService.cs" />
+    <Compile Include="Web\Context\Services\IUrlResolutionService.cs" />
+    <Compile Include="Web\Context\Services\MembershipUserSecurityService.cs" />
+    <Compile Include="Web\Context\Services\SessionTemporaryDataService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsApplicationStateService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsBrowserCapabilitiesService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsCachingService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsCookieService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsHealthMonitoringService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsNavigationRoute.cs" />
+    <Compile Include="Web\Context\Services\WebFormsNavigationService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsPostDataService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsPostedFilesService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsQuerystringService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsRequestHeaderService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsServerUtilityService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsServerVariablesService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsSessionStateService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsUrlResolutionService.cs" />
+    <Compile Include="Web\Context\Services\WebFormsUserSecurityService.cs" />
+    <Compile Include="Web\Context\Providers\WebFormsApplicationContextServiceRegistry.cs" />
+    <Compile Include="Web\ControlCollectionList.cs" />
+    <Compile Include="Web\ControlCssMetadata.cs" />
+    <Compile Include="Web\ControlIdentifier.cs" />
+    <Compile Include="Web\ControlListCollection.cs" />
+    <Compile Include="Web\ControlStorage\ControlPropertyOptions.cs" />
+    <Compile Include="Web\ControlStorage\ControlPropertyValue.cs" />
+    <Compile Include="Web\ControlStorage\ControlPropertyValuesDictionary.cs" />
+    <Compile Include="Web\ControlReference.cs" />
+    <Compile Include="Web\ControlRendering.cs" />
+    <Compile Include="Web\ControlRenderingUtility.cs" />
+    <Compile Include="Web\ControlScriptMetadata.cs" />
+    <Compile Include="Web\ControlStorage\IDictionaryControl.cs" />
+    <Compile Include="Web\Controls\Check.cs" />
+    <Compile Include="Web\Controls\CheckImage.cs" />
+    <Compile Include="Web\Controls\CheckImageCollection.cs" />
+    <Compile Include="Web\Controls\CheckRenderer.cs" />
+    <Compile Include="Web\Controls\CheckScriptMetadata.cs" />
+    <Compile Include="Web\Controls\Configuration\ControlDefaultSettingsElement.cs" />
+    <Compile Include="Web\Controls\Configuration\ControlDefaultSettingsElementCollection.cs" />
+    <Compile Include="Web\Controls\Configuration\ControlDefaultSettingsSection.cs" />
+    <Compile Include="Web\Controls\HiddenField.cs" />
+    <Compile Include="Web\Controls\HiddenFieldManager.cs" />
+    <Compile Include="Web\Controls\IdentityParameter.cs" />
+    <Compile Include="Web\Controls\IRepeatableControl.cs" />
+    <Compile Include="Web\Controls\Link.cs" />
+    <Compile Include="Web\Controls\LinkRenderer.cs" />
+    <Compile Include="Web\Controls\LinkScriptMetadata.cs" />
+    <Compile Include="Web\Controls\StandardCalendar.cs" />
+    <Compile Include="Web\Controls\TraceConsoleTextArea.cs" />
+    <Compile Include="Web\Controls\WebPartPanel.cs" />
+    <Compile Include="Web\ControlTemplate.cs" />
+    <Compile Include="Web\ControlTestingUtility.cs" />
+    <Compile Include="Web\ControlUtility.cs" />
+    <Compile Include="Web\CoreWebScriptMetadata.cs" />
+    <Compile Include="Web\Core\IWebContext.cs" />
+    <Compile Include="Web\Core\IWebSingletonManager.cs" />
+    <Compile Include="Web\Core\WebSingletonManager.cs" />
+    <Compile Include="Web\CssReference.cs" />
+    <Compile Include="Web\CssReferenceCollection.cs" />
+    <Compile Include="Web\CssReferenceRequestDetails.cs" />
+    <Compile Include="Web\CssReferenceRequestDetailsCollection.cs" />
+    <Compile Include="Web\DataboundControls\DataboundItem.cs" />
+    <Compile Include="Web\DataboundControls\EditableDataboundItem.cs" />
+    <Compile Include="Web\DataFields\BasePrimitiveDataField.cs" />
+    <Compile Include="Web\DataFields\BaseReflectedSingleEditDataField.cs" />
+    <Compile Include="Web\DataFields\BaseSingleDataField.cs" />
+    <Compile Include="Web\DataFields\BaseSingleEditDataField.cs" />
+    <Compile Include="Web\DataFields\BooleanField.cs" />
+    <Compile Include="Web\DataFields\DropDownField.cs" />
+    <Compile Include="Web\DataFields\HyperlinkTextField.cs" />
+    <Compile Include="Web\DataFields\ImageRepresentationField.cs" />
+    <Compile Include="Web\DataFields\PhoneNumberField.cs" />
+    <Compile Include="Web\DataFields\TextField.cs" />
+    <Compile Include="Web\DataServices\Modules\WebSitePingDataServiceModule.cs" />
+    <Compile Include="Web\Description\ComponentDescriptionRequestDetails.cs" />
+    <Compile Include="Web\Description\ComponentDescriptorCollection.cs" />
+    <Compile Include="Web\DropDownControls\DropDown.cs" />
+    <Compile Include="Web\DropDownControls\DropDownCssMetadata.cs" />
+    <Compile Include="Web\DropDownControls\DropDownInputOptions.cs" />
+    <Compile Include="Web\DropDownControls\DropDownMenuOptions.cs" />
+    <Compile Include="Web\DropDownControls\DropDownRenderer.cs" />
+    <Compile Include="Web\DropDownControls\DropDownScriptMetadata.cs" />
+    <Compile Include="Web\DropDownControls\DropDownSelectorOptions.cs" />
+    <Compile Include="Web\EditorControls\BaseEditorControl.cs" />
+    <Compile Include="Web\EditorControls\BaseEditorControlScriptMetadata.cs" />
+    <Compile Include="Web\EditorControls\IEditorControl.cs" />
+    <Compile Include="Web\EditorControls\TextEditor.cs" />
+    <Compile Include="Web\EditorControls\TextEditorRenderer.cs" />
+    <Compile Include="Web\EditorControls\TextEditorScriptMetadata.cs" />
+    <Compile Include="Web\ElementIdentifier.cs" />
+    <Compile Include="Web\EventsManagement\ProviderErrorEvent.cs" />
+    <Compile Include="Web\EventsManagement\WebErrorEvent.cs" />
+    <Compile Include="Web\EventsManagement\WebMonitoringEventBase.cs" />
+    <Compile Include="Web\EventsManagement\XmlEventProvider.cs" />
+    <Compile Include="Web\ExtenderControlCollection.cs" />
+    <Compile Include="Web\FakeDescriptor.cs" />
+    <Compile Include="Web\FakeTemplate.cs" />
+    <Compile Include="Web\FormControls\FormItemContainer.cs" />
+    <Compile Include="Web\FormControls\FormItemContainerRenderer.cs" />
+    <Compile Include="Web\FormControls\FormItemDisplay.cs" />
+    <Compile Include="Web\FormControls\FormItemCollection.cs" />
+    <Compile Include="Web\FormControls\FormItemDisplayRenderer.cs" />
+    <Compile Include="Web\FormControls\FormItemDisplayStyle.cs" />
+    <Compile Include="Web\FormControls\FormItemSection.cs" />
+    <Compile Include="Web\FormControls\FormItemSectionCollection.cs" />
+    <Compile Include="Web\FormControls\FormItemSectionHeader.cs" />
+    <Compile Include="Web\FormControls\FormItemSectionRenderer.cs" />
+    <Compile Include="Web\FormControls\IFormItem.cs" />
+    <Compile Include="Web\Handlers\Configuration\FileMonitoringSettingsSection.cs" />
+    <Compile Include="Web\Handlers\FileMonitoringHttpHandler.cs" />
+    <Compile Include="Web\Handlers\HttpHandlerBase.cs" />
+    <Compile Include="Web\Handlers\UserControlHandler.cs" />
+    <Compile Include="Web\Helpers\ObjectDataSourceHelper.cs" />
+    <Compile Include="Web\Helpers\UrlResolutionHelper.cs" />
+    <Compile Include="Web\HtmlStreamControlWriter.cs" />
+    <Compile Include="Web\IAjaxComponent.cs" />
+    <Compile Include="Web\IAjaxControl.cs" />
+    <Compile Include="Web\IAjaxExtender.cs" />
+    <Compile Include="Web\IAjaxScriptableComponent.cs" />
+    <Compile Include="Web\IContentRegistrar.cs" />
+    <Compile Include="Web\IControlDriver.cs" />
+    <Compile Include="Web\IDescriptor.cs" />
+    <Compile Include="Web\IEditorControl.cs" />
+    <Compile Include="Web\IElementDescriptor.cs" />
+    <Compile Include="Web\IJsonOutput.cs" />
+    <Compile Include="Web\Images\ImageItem.cs" />
+    <Compile Include="Web\Images\ImageItemCollection.cs" />
+    <Compile Include="Web\Inspectors\CheckControlInspector.cs" />
+    <Compile Include="Web\Inspectors\IContainerControlInspector.cs" />
+    <Compile Include="Web\Inspectors\IControlInspector.cs" />
+    <Compile Include="Web\Inspectors\IDataBoundInspector.cs" />
+    <Compile Include="Web\Inspectors\IValueControlInspector.cs" />
+    <Compile Include="Web\Inspectors\ListControlInspector.cs" />
+    <Compile Include="Web\Inspectors\ModelBindingInspectors.cs" />
+    <Compile Include="Web\Inspectors\PanelInspector.cs" />
+    <Compile Include="Web\Inspectors\TextControlInspector.cs" />
+    <Compile Include="Web\IRenderableControl.cs" />
+    <Compile Include="Web\IScriptComponent.cs" />
+    <Compile Include="Web\ISupportsChangeNotification.cs" />
+    <Compile Include="Web\JsonSerializableObject.cs" />
+    <Compile Include="Web\ListControls\Builders\ListInterfaceBuilder.cs" />
+    <Compile Include="Web\ListControls\ClientCheckboxList.cs" />
+    <Compile Include="Web\ListControls\PageableList.cs" />
+    <Compile Include="Web\ListControls\PageableListItem.cs" />
+    <Compile Include="Web\ListControls\PageableListItemRenderer.cs" />
+    <Compile Include="Web\ListControls\PageableListItemScriptMetadata.cs" />
+    <Compile Include="Web\ListControls\PageableListPagingOptions.cs" />
+    <Compile Include="Web\ListControls\PageableListRenderer.cs" />
+    <Compile Include="Web\ListControls\PageableListScriptMetadata.cs" />
+    <Compile Include="Web\Logs\HealthMonitoringLogManager.cs" />
+    <Compile Include="Web\Logs\LoggerErrorEvent.cs" />
+    <Compile Include="Web\Logs\LoggerMessageEvent.cs" />
+    <Compile Include="Web\Logs\WebTraceLogManager.cs" />
+    <Compile Include="Web\Lookups\Controls\ILookupControl.cs" />
+    <Compile Include="Web\Lookups\Controls\ListLookupControl.cs" />
+    <Compile Include="Web\MappingControls\ClientSettings\MappingManagerClientEvents.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingExtender.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingExtenderControlBuilder.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingExtenderOperation.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingExtenderOperationCollection.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingExtenderScriptMetadata.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingManager.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingManagerRenderer.cs" />
+    <Compile Include="Web\MappingControls\ControlMappingManagerScriptMetadata.cs" />
+    <Compile Include="Web\Mappings\ButtonControlManager.cs" />
+    <Compile Include="Web\Mappings\CheckboxControlManager.cs" />
+    <Compile Include="Web\Mappings\Configuration\ControlMappingElement.cs" />
+    <Compile Include="Web\Mappings\Configuration\ControlMappingElementCollection.cs" />
+    <Compile Include="Web\Mappings\Configuration\ControlMappingGroupElement.cs" />
+    <Compile Include="Web\Mappings\Configuration\ControlMappingGroupElementCollection.cs" />
+    <Compile Include="Web\Mappings\Configuration\ControlMappingsSection.cs" />
+    <Compile Include="Web\Mappings\ControlManager.cs" />
+    <Compile Include="Web\Mappings\ControlManagerCollection.cs" />
+    <Compile Include="Web\Mappings\ControlManagerFactory.cs" />
+    <Compile Include="Web\Mappings\ControlMapping.cs" />
+    <Compile Include="Web\Mappings\ControlMappingCollection.cs" />
+    <Compile Include="Web\Mappings\ControlMappingsManager.cs" />
+    <Compile Include="Web\Mappings\HiddenFieldControlManager.cs" />
+    <Compile Include="Web\Mappings\ListControlManager.cs" />
+    <Compile Include="Web\Mappings\TextControlManager.cs" />
+    <Compile Include="Web\MathControls\CalculatedFieldExtender.cs" />
+    <Compile Include="Web\MathControls\CalculatedFieldExtenderScriptMetadata.cs" />
+    <Compile Include="Web\MathControls\CalculatorExtender.cs" />
+    <Compile Include="Web\MathControls\CalculatorExtenderScriptMetadata.cs" />
+    <Compile Include="Web\MathControls\CalculatorView.cs" />
+    <Compile Include="Web\MathControls\CalculatorViewScriptMetadata.cs" />
+    <Compile Include="Web\MathControls\CalculatorViewWebFormsWebRenderer.cs" />
+    <Compile Include="Web\MathControls\ICalculator.cs" />
+    <Compile Include="Web\NavigationControls\ClientSettings\NavigationBarClientEvents.cs" />
+    <Compile Include="Web\NavigationControls\ClientSettings\NavigationBarItemClientEvents.cs" />
+    <Compile Include="Web\NavigationControls\ClientSettings\NavigationContainerClientEvents.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBar.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarCollection.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarContainer.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarContainerRenderer.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarContainerScriptMetadata.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarItem.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarItemCollection.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarItemRenderer.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarItemScriptMetadata.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarRenderer.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarScriptMetadata.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarView.cs" />
+    <Compile Include="Web\NavigationControls\NavigationBarViewScriptMetadata.cs" />
+    <Compile Include="Web\NucleoAjaxManager.cs" />
+    <Compile Include="Web\NucleoScriptBehaviorDescriptor.cs" />
+    <Compile Include="Web\NucleoScriptControlDescriptor.cs" />
+    <Compile Include="Web\NucleoScriptReference.cs" />
+    <Compile Include="Web\NucleoServiceReference.cs" />
+    <Compile Include="Web\Pages\BaseAjaxPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Description\ControlDescriptionCollection.cs" />
+    <Compile Include="Web\Description\ElementDescriptionCollection.cs" />
+    <Compile Include="Web\Description\EventDescriptionCollection.cs" />
+    <Compile Include="Web\Description\CustomScriptIDFormatter.cs" />
+    <Compile Include="Web\Description\ExtenderDescriptionCollection.cs" />
+    <Compile Include="Web\Description\IScriptIDFormatter.cs" />
+    <Compile Include="Web\Description\MSScriptIDFormatter.cs" />
+    <Compile Include="Web\Description\ComponentDescriptor.cs" />
+    <Compile Include="Web\Description\PropertyDescriptionCollection.cs" />
+    <Compile Include="Web\Pages\FakePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Pages\IPageDriver.cs" />
+    <Compile Include="Web\Pages\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Pages\PageRequestContext.cs" />
+    <Compile Include="Web\Pages\PageControllerWrapper.cs" />
+    <Compile Include="Web\Pages\Widgets\PageWidget.cs" />
+    <Compile Include="Web\Pages\Widgets\PageWidgetCollection.cs" />
+    <Compile Include="Web\Panels\SecurityPanel.cs" />
+    <Compile Include="Web\Parameters\PagePropertyParameter.cs" />
+    <Compile Include="Web\Parameters\UserNameParameter.cs" />
+    <Compile Include="Web\PostedFile.cs" />
+    <Compile Include="Web\PrototypeWebTemplate.cs" />
+    <Compile Include="Web\Repeating\FlowRepeatLayoutManager.cs" />
+    <Compile Include="Web\Repeating\IRepeatableList.cs" />
+    <Compile Include="Web\Repeating\LayoutItem.cs" />
+    <Compile Include="Web\Repeating\LayoutRow.cs" />
+    <Compile Include="Web\Repeating\LayoutStructure.cs" />
+    <Compile Include="Web\Repeating\RepeatLayoutManager.cs" />
+    <Compile Include="Web\Repeating\RepeatRenderer.cs" />
+    <Compile Include="Web\Repeating\TableRepeatLayoutManager.cs" />
+    <Compile Include="Web\Routing\DirectRoute.cs" />
+    <Compile Include="Web\Routing\BaseWebFormsRoutingEngine.cs" />
+    <Compile Include="Web\Routing\DirectRouteWebFormsRoutingEngine.cs" />
+    <Compile Include="Web\Routing\PageConventionRoutingEngine.cs" />
+    <Compile Include="Web\ScriptComponent.cs" />
+    <Compile Include="Web\ScriptComponentCollection.cs" />
+    <Compile Include="Web\ScriptControlCollection.cs" />
+    <Compile Include="Web\ScriptDescriptionRequestDetails.cs" />
+    <Compile Include="Web\ScriptDescriptionRequestDetailsCollection.cs" />
+    <Compile Include="Web\ScriptDescriptorCollection.cs" />
+    <Compile Include="Web\ScriptDescriptorWrapper.cs" />
+    <Compile Include="Web\ScriptModes.cs" />
+    <Compile Include="Web\ScriptObjectHelper.cs" />
+    <Compile Include="Web\ScriptReferenceCollection.cs" />
+    <Compile Include="Web\ScriptReferencing.cs" />
+    <Compile Include="Web\ScriptReferencingRequestDetails.cs" />
+    <Compile Include="Web\ScriptReferencingRequestDetailsCollection.cs" />
+    <Compile Include="Web\Scripts\Configuration\ExternalScriptElement.cs" />
+    <Compile Include="Web\Scripts\Configuration\ExternalScriptElementCollection.cs" />
+    <Compile Include="Web\Scripts\Configuration\ExternalScriptSettingsSection.cs" />
+    <Compile Include="Web\Scripts\DynamicScript.cs" />
+    <Compile Include="Web\Scripts\DynamicScriptCollection.cs" />
+    <Compile Include="Web\Scripts\DynamicScriptLoader.cs" />
+    <Compile Include="Web\Scripts\ReferenceScriptManager.cs" />
+    <Compile Include="Web\Scripts\ScriptBlock.cs" />
+    <Compile Include="Web\Scripts\ScriptBlockCollection.cs" />
+    <Compile Include="Web\Scripts\ScriptSection.cs" />
+    <Compile Include="Web\Searching\IControlSearcher.cs" />
+    <Compile Include="Web\Searching\WebControlSearcher.cs" />
+    <Compile Include="Web\Serialization\GenericCollectionJavaScriptConverter.cs" />
+    <Compile Include="Web\Serialization\LinqObjectConverter.cs" />
+    <Compile Include="Web\Serialization\ListItemCollectionJavaScriptConverter.cs" />
+    <Compile Include="Web\Serialization\StyleConverter.cs" />
+    <Compile Include="Web\ServiceReferenceCollection.cs" />
+    <Compile Include="Web\StandardizationControls\BaseHeader.cs" />
+    <Compile Include="Web\StandardizationControls\ContentList.cs" />
+    <Compile Include="Web\StandardizationControls\ContentListItem.cs" />
+    <Compile Include="Web\StandardizationControls\ContentListItemCollection.cs" />
+    <Compile Include="Web\StandardizationControls\FormFieldLabel.cs" />
+    <Compile Include="Web\StandardizationControls\PageHeader.cs" />
+    <Compile Include="Web\StandardizationControls\SectionHeader.cs" />
+    <Compile Include="Web\StandardizationControls\StandardizationManager.cs" />
+    <Compile Include="Web\State\SessionStateValuesProvider.cs" />
+    <Compile Include="Web\StringControlWriter.cs" />
+    <Compile Include="Web\Styles\Stylesheet.cs" />
+    <Compile Include="Web\Styles\StylesheetCollection.cs" />
+    <Compile Include="Web\Styles\StylesheetManager.cs" />
+    <Compile Include="Web\TableRenderer.cs" />
+    <Compile Include="Web\Tags\AlternatingTagGroupRule.cs" />
+    <Compile Include="Web\Tags\CommonTagSettings.cs" />
+    <Compile Include="Web\Tags\CommonTagSettingsExtensions.cs" />
+    <Compile Include="Web\Tags\Custom\HiddenTagBuilder.cs" />
+    <Compile Include="Web\Tags\Custom\ICustomTagBuilder.cs" />
+    <Compile Include="Web\Tags\Custom\ICustomTagGroupBuilder.cs" />
+    <Compile Include="Web\Tags\Custom\JavaScriptTagBuilder.cs" />
+    <Compile Include="Web\Tags\Custom\TableTagBuilder.cs" />
+    <Compile Include="Web\Tags\TagAttribute.cs" />
+    <Compile Include="Web\Tags\TagAttributeCollection.cs" />
+    <Compile Include="Web\Tags\TagElement.cs" />
+    <Compile Include="Web\Tags\TagElementBuilder.cs" />
+    <Compile Include="Web\Tags\TagElementCollection.cs" />
+    <Compile Include="Web\Tags\TagElementCollectionExtensions.cs" />
+    <Compile Include="Web\Tags\TagElementGroup.cs" />
+    <Compile Include="Web\Tags\TagElementWizard.cs" />
+    <Compile Include="Web\Tags\TagGroupRule.cs" />
+    <Compile Include="Web\Tags\TagGroupSettings.cs" />
+    <Compile Include="Web\Templates\ActionElementTemplate.cs" />
+    <Compile Include="Web\Templates\ControlElementTemplate.cs" />
+    <Compile Include="Web\Templates\ElementTemplate.cs" />
+    <Compile Include="Web\Templates\FakeElementTemplate.cs" />
+    <Compile Include="Web\Templates\IElementTemplate.cs" />
+    <Compile Include="Web\Pages\Testing\PageRunner.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\TextStreamControlWriter.cs" />
+    <Compile Include="Web\Text\StaticMessagesExpressionsBuilder.cs" />
+    <Compile Include="Web\Url.cs" />
+    <Compile Include="Web\UserControls\IUserControl.cs" />
+    <Compile Include="Web\UserControls\UserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ValidationControls\AspNetValidatorCompatibilityOptions.cs" />
+    <Compile Include="Web\ValidationControls\BaseValidatorRenderer.cs" />
+    <Compile Include="Web\ValidationControls\BaseValidatorScriptMetadata.cs" />
+    <Compile Include="Web\ValidationControls\Categories\CategoryDefinitions.cs" />
+    <Compile Include="Web\ValidationControls\Categories\ErrorValidatorCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\ValidationControls\Categories\InformationValidatorCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\ValidationControls\Categories\IValidatorCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\ValidationControls\Categories\WarningValidatorCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\ValidationControls\Items\BaseValidationDisplayItem.cs" />
+    <Compile Include="Web\ValidationControls\Items\ErrorValidationDisplayItem.cs" />
+    <Compile Include="Web\ValidationControls\Items\InformationValidationDisplayItem.cs" />
+    <Compile Include="Web\ValidationControls\Items\IValidationDisplayItem.cs" />
+    <Compile Include="Web\ValidationControls\Items\ValidationDisplayItemCollection.cs" />
+    <Compile Include="Web\ValidationControls\Items\WarningValidationDisplayItem.cs" />
+    <Compile Include="Web\ValidationControls\IValidatorControl.cs" />
+    <Compile Include="Web\ValidationControls\RequiredValidator.cs" />
+    <Compile Include="Web\ValidationControls\ValidationManager.cs" />
+    <Compile Include="Web\ValidationControls\ValidationManagerRenderer.cs" />
+    <Compile Include="Web\ValidationControls\ValidationManagerScriptMetadata.cs" />
+    <Compile Include="Web\ValidationControls\ValidationResults.cs" />
+    <Compile Include="Web\ValidationControls\ValidationResultsCollection.cs" />
+    <Compile Include="Web\ValidationControls\ValidationResultsRenderer.cs" />
+    <Compile Include="Web\ValidationControls\ValidationResultsScriptMetadata.cs" />
+    <Compile Include="Web\ValidationControls\BaseValidator.cs" />
+    <Compile Include="Web\ValidationControls\ValidatorCollection.cs" />
+    <Compile Include="Web\ValidationControls\Results\ValidatorValidationResultItem.cs" />
+    <Compile Include="Web\ValidationControls\Results\ValidatorValidationResultItemCollection.cs" />
+    <Compile Include="Web\ValidationControls\Results\ValidatorValidationResults.cs" />
+    <Compile Include="Web\WebCssMetadata.cs" />
+    <Compile Include="Web\WebCssMetadataAttribute.cs" />
+    <Compile Include="Web\Collections\WebEventCollection.cs" />
+    <Compile Include="Web\WebImage.cs" />
+    <Compile Include="Web\WebLegacyRenderer.cs" />
+    <Compile Include="Web\WebLegacyRendererAttribute.cs" />
+    <Compile Include="Web\WebRenderer.cs" />
+    <Compile Include="Web\WebRendererAttribute.cs" />
+    <Compile Include="Web\Core\WebContext.cs" />
+    <Compile Include="Web\WebScriptMetadata.cs" />
+    <Compile Include="Web\WebScriptMetadataAttribute.cs" />
+    <Compile Include="Web\WebScriptMetadataRelationshipAttribute.cs" />
+    <Compile Include="Web\WebTemplate.cs" />
+    <Compile Include="Web\WebTemplateSelector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common.debug.js" />
+    <EmbeddedResource Include="Common.js" />
+    <EmbeddedResource Include="Framework.debug.js" />
+    <EmbeddedResource Include="Framework.js" />
+    <EmbeddedResource Include="ObjectUtilities.debug.js" />
+    <EmbeddedResource Include="ObjectUtilities.js" />
+    <EmbeddedResource Include="WebUtilities.debug.js" />
+    <EmbeddedResource Include="WebUtilities.js" />
+    <EmbeddedResource Include="Web\Controls\Check.debug.js" />
+    <EmbeddedResource Include="Web\Controls\Check.js" />
+    <EmbeddedResource Include="Web\Controls\checkempty.png" />
+    <EmbeddedResource Include="Web\Controls\checkno.png" />
+    <EmbeddedResource Include="Web\Controls\checknodisabled.png" />
+    <EmbeddedResource Include="Web\Controls\checkyes.png" />
+    <EmbeddedResource Include="Web\Controls\checkyesdisabled.png" />
+    <EmbeddedResource Include="Web\Controls\HiddenField.debug.js" />
+    <EmbeddedResource Include="Web\Controls\HiddenField.js" />
+    <EmbeddedResource Include="Web\Controls\HiddenFieldManager.debug.js" />
+    <EmbeddedResource Include="Web\Controls\HiddenFieldManager.js" />
+    <EmbeddedResource Include="Web\Controls\HiddenFieldScripts.js" />
+    <EmbeddedResource Include="Web\Controls\Link.debug.js" />
+    <EmbeddedResource Include="Web\Controls\Link.js" />
+    <EmbeddedResource Include="Web\Repeating\RepeaterInfo.debug.js" />
+    <EmbeddedResource Include="Web\Repeating\RepeaterInfo.js" />
+    <EmbeddedResource Include="Web\ValidationControls\Categories\Categories.debug.js" />
+    <EmbeddedResource Include="Web\ValidationControls\Categories\Categories.js" />
+    <EmbeddedResource Include="Web\ValidationControls\validationerror.png" />
+    <EmbeddedResource Include="Web\ValidationControls\validationinfo.png" />
+    <EmbeddedResource Include="Web\ValidationControls\ValidationResults.debug.js" />
+    <EmbeddedResource Include="Web\ValidationControls\ValidationResults.js" />
+    <EmbeddedResource Include="Web\ValidationControls\validationwarning.png" />
+    <EmbeddedResource Include="Web\ButtonControls\BaseButtonExtender.debug.js" />
+    <EmbeddedResource Include="Web\ButtonControls\BaseButtonExtender.js" />
+    <EmbeddedResource Include="Web\ButtonControls\Button.debug.js" />
+    <EmbeddedResource Include="Web\ButtonControls\Button.js" />
+    <EmbeddedResource Include="Web\ButtonControls\ButtonEnabledExtender.debug.js" />
+    <EmbeddedResource Include="Web\ButtonControls\ButtonEnabledExtender.js" />
+    <EmbeddedResource Include="Web\ButtonControls\ButtonList.debug.js" />
+    <EmbeddedResource Include="Web\ButtonControls\ButtonList.js" />
+    <EmbeddedResource Include="Web\ButtonControls\ButtonVisibilityExtender.debug.js" />
+    <EmbeddedResource Include="Web\ButtonControls\ButtonVisibilityExtender.js" />
+    <EmbeddedResource Include="Web\ClientState\ClientStateData.debug.js" />
+    <EmbeddedResource Include="Web\ClientState\ClientStateData.js" />
+    <EmbeddedResource Include="Web\ClientState\ListClientStateData.debug.js" />
+    <EmbeddedResource Include="Web\ClientState\ListClientStateData.js" />
+    <EmbeddedResource Include="Web\DataboundControls\DataSourceHelper.debug.js" />
+    <EmbeddedResource Include="Web\DataboundControls\DataSourceHelper.js" />
+    <EmbeddedResource Include="Web\DropDownControls\closemenu.png" />
+    <EmbeddedResource Include="Web\DropDownControls\DropDown.debug.js" />
+    <EmbeddedResource Include="Web\DropDownControls\DropDown.js" />
+    <EmbeddedResource Include="Web\DropDownControls\DropDownControlStyles.css" />
+    <EmbeddedResource Include="Web\DropDownControls\DropDownStyles.css" />
+    <EmbeddedResource Include="Web\DropDownControls\selectordropdown.png" />
+    <EmbeddedResource Include="Web\EditorControls\BaseEditorControl.debug.js" />
+    <EmbeddedResource Include="Web\EditorControls\BaseEditorControl.js" />
+    <EmbeddedResource Include="Web\EditorControls\EditorControlStyles.css" />
+    <EmbeddedResource Include="Web\EditorControls\Editors.js" />
+    <EmbeddedResource Include="Web\EditorControls\erroricon.png" />
+    <EmbeddedResource Include="Web\EditorControls\TextEditor.debug.js" />
+    <EmbeddedResource Include="Web\EditorControls\TextEditor.js" />
+    <EmbeddedResource Include="Web\ListControls\Builders\ListControlBuilder.debug.js" />
+    <EmbeddedResource Include="Web\ListControls\Builders\ListControlBuilder.js" />
+    <EmbeddedResource Include="Web\ListControls\ClientCheckboxList.debug.js" />
+    <EmbeddedResource Include="Web\ListControls\ClientCheckboxList.js" />
+    <EmbeddedResource Include="Web\ListControls\PageableList.debug.js" />
+    <EmbeddedResource Include="Web\ListControls\PageableList.js" />
+    <EmbeddedResource Include="Web\ListControls\PageableListItem.debug.js" />
+    <EmbeddedResource Include="Web\ListControls\PageableListItem.js" />
+    <EmbeddedResource Include="Web\MappingControls\ControlMappingExtender.debug.js" />
+    <EmbeddedResource Include="Web\MappingControls\ControlMappingExtender.js" />
+    <EmbeddedResource Include="Web\MappingControls\ControlMappingExtenderOperation.debug.js" />
+    <EmbeddedResource Include="Web\MappingControls\ControlMappingExtenderOperation.js" />
+    <EmbeddedResource Include="Web\MappingControls\ControlMappingManager.debug.js" />
+    <EmbeddedResource Include="Web\MappingControls\ControlMappingManager.js" />
+    <EmbeddedResource Include="Web\MappingControls\OperationNeededEventArgs.debug.js" />
+    <EmbeddedResource Include="Web\MappingControls\OperationNeededEventArgs.js" />
+    <EmbeddedResource Include="Web\MathControls\CalculatedFieldExtender.debug.js" />
+    <EmbeddedResource Include="Web\MathControls\CalculatedFieldExtender.js" />
+    <EmbeddedResource Include="Web\MathControls\CalculatorExtender.debug.js" />
+    <EmbeddedResource Include="Web\MathControls\CalculatorExtender.js" />
+    <EmbeddedResource Include="Web\MathControls\CalculatorView.debug.js" />
+    <EmbeddedResource Include="Web\MathControls\CalculatorView.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBar.debug.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBar.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBarContainer.debug.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBarContainer.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBarItem.debug.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBarItem.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBarStyles.css" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBarView.debug.js" />
+    <EmbeddedResource Include="Web\NavigationControls\NavigationBarView.js" />
+    <EmbeddedResource Include="Web\NucleoAjaxManager.debug.js" />
+    <EmbeddedResource Include="Web\WebTemplate.js" />
+    <EmbeddedResource Include="Web\WebTemplate.debug.js" />
+    <EmbeddedResource Include="Web\PrototypeWebTemplate.js" />
+    <EmbeddedResource Include="Web\PrototypeWebTemplate.debug.js" />
+    <EmbeddedResource Include="Web\NucleoAjaxManager.js" />
+    <EmbeddedResource Include="Web\BaseAjaxControl.debug.js" />
+    <EmbeddedResource Include="Web\BaseAjaxControl.js" />
+    <EmbeddedResource Include="Web\BaseAjaxExtender.debug.js" />
+    <EmbeddedResource Include="Web\BaseAjaxExtender.js" />
+    <EmbeddedResource Include="Web\BaseAjaxPanel.debug.js" />
+    <EmbeddedResource Include="Web\BaseAjaxPanel.js" />
+    <EmbeddedResource Include="Web\CommonStyles.css" />
+    <EmbeddedResource Include="Web\controlscript.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Errors.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo\Nucleo.40.csproj">
+      <Project>{5535BE6E-5982-4B9A-B812-09B225EDE2C0}</Project>
+      <Name>Nucleo.40</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Pages\BaseAjaxPage.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Pages\BaseAjaxPage.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\AccordionControls\Accordion.debug.js" />
+    <EmbeddedResource Include="Web\AccordionControls\AccordionItem.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\AccordionControls\Accordion.js" />
+    <EmbeddedResource Include="Web\AccordionControls\AccordionItem.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Pages\Widgets\PageWidget.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Pages\Widgets\PageWidget.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web\FormControls\FormItemDisplay.js" />
+    <Content Include="Web\FormControls\FormItemDisplay.debug.js" />
+    <EmbeddedResource Include="Web\Inspectors\ModelBindingInspectors.debug.js" />
+    <EmbeddedResource Include="Web\Inspectors\ModelBindingInspectors.js" />
+    <EmbeddedResource Include="Web\ValidationControls\RequiredValidator.js" />
+    <EmbeddedResource Include="Web\ValidationControls\RequiredValidator.debug.js" />
+    <EmbeddedResource Include="Web\ValidationControls\Items\DisplayItems.js" />
+    <EmbeddedResource Include="Web\ValidationControls\Items\DisplayItems.debug.js" />
+    <EmbeddedResource Include="Web\ValidationControls\ValidationManager.js" />
+    <EmbeddedResource Include="Web\ValidationControls\ValidationManager.debug.js" />
+    <EmbeddedResource Include="Web\ValidationControls\BaseValidator.debug.js" />
+    <EmbeddedResource Include="Web\ValidationControls\BaseValidator.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

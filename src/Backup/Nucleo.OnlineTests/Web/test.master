@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/site.master" AutoEventWireup="true" CodeBehind="test.master.cs" Inherits="Nucleo.Web.TestMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+	<asp:ContentPlaceHolder ID="head" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+
+	<div style="width:700px;border:1px solid navy;">
+		<div id="Sample" style="padding:10px; 5px; 10px; 5px;">
+			<asp:ContentPlaceHolder ID="CodeSample" runat="server" />
+		</div>
+
+		<ajax:TabContainer ID="TabsSample" runat="server">
+			<ajax:TabPanel ID="DescriptionTab" runat="server" HeaderText="Description">
+				<ContentTemplate>
+					<div class="CodeTabContent">
+						<asp:Label ID="DescriptionLabel" runat="server" />
+					</div>
+				</ContentTemplate>
+			</ajax:TabPanel>
+			<ajax:TabPanel ID="AspxTab" runat="server" HeaderText="ASP.NET Markup">
+				<ContentTemplate>
+					<div class="CodeTabContent" style="overflow:auto;">
+						<asp:Label ID="AspxLabel" runat="server" />
+					</div>
+				</ContentTemplate>
+			</ajax:TabPanel>
+			<ajax:TabPanel ID="CsTab" runat="server" HeaderText="C#">
+				<ContentTemplate>
+					<div class="CodeTabContent" style="overflow:auto;">
+						<asp:Label ID="CodeLabel" runat="server" />
+					</div>
+				</ContentTemplate>
+			</ajax:TabPanel>
+			<ajax:TabPanel ID="TraceTab" runat="server" HeaderText="Trace">
+				<ContentTemplate>
+					<div class="CodeTabContent">
+						<n:TraceConsoleTextArea ID="TraceConsole" runat="server" Rows="30" Columns="30" />
+					</div>
+				</ContentTemplate>
+			</ajax:TabPanel>
+			<ajax:TabPanel ID="ScriptsTab" runat="server" HeaderText="Scripts">
+				<ContentTemplate>
+					<div class="CodeTabContent">
+						Here is a list of scripts referenced by the component.<br /><br />
+
+						<asp:Label ID="lblScriptReferenceOutput" runat="server" EnableViewState="false"></asp:Label>
+					</div>
+				</ContentTemplate>
+			</ajax:TabPanel>
+		</ajax:TabContainer>
+	
+	</div>
+
+</asp:Content>

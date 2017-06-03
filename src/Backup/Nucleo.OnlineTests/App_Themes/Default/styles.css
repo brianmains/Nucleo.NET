@@ -1,0 +1,109 @@
+﻿.AccordionContent
+{
+	padding: 2px;
+	background-color: #FFFFCC;
+	color: #0000FF;
+}
+
+.AccordionHeader
+{
+	font-weight: bold;
+	background-color: #D7D21E;
+	color: #333399;
+}
+
+#aspnetform
+{
+	height:100%;
+}
+
+body
+{
+	height:100%;
+	background:none repeat scroll 0 0 #FFFFFF;
+	color:#333333;
+	direction:ltr;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size:11px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	unicode-bidi:embed;
+}
+
+#bodycontent
+{
+	height:100%;
+}
+
+.CodeTabContent
+{
+	height: 410px;
+}
+
+h1
+{
+	font-size:13pt;
+	font-weight:bold;
+	color:#1142A0;
+}
+
+h2
+{
+	font-size:12pt;
+	font-weight:bold;
+}
+
+html
+{
+	height:100%;
+}
+
+hr
+{
+	border:1px solid navy;
+}
+
+input[type=button]
+{
+	border:1px solid black;
+	background-color: #E6E6E6;
+}
+
+input[type=submit]
+{
+	border:1px solid black;
+	background-color: #E6E6E6;
+}
+
+input[type=text]
+{
+	border:1px solid black;
+	background-color: #E6E6E6;
+}
+
+td
+{
+	vertical-align:top;
+}
+
+th
+{
+	vertical-align:top;
+}
+
+#TraceConsole
+{
+	width:570px;
+	padding:5px;
+	height:400px;
+	font-size:8pt;
+	border: 1px solid black;
+}
+
+.TestHeader
+{
+	font-weight:bold;
+	font-size:13pt;
+	color: Navy;
+}

@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="Nucleo.OnlineTests.site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="aspnetform" runat="server">
+	<div id="bodycontent">
+		<asp:ScriptManager ID="asm" runat="server" />
+		<n:NucleoAjaxManager ID="nam" runat="server" ReferenceScripts="jquery,jqueryui" />
+    
+		<div style="position:relative;float:left;width:250px;">
+    		<%--<asp:TreeView ID="tvwIndex" runat="server"></asp:TreeView>--%>
+
+			<div id="SidebarAccordion">
+				<asp:Repeater ID="rptSidebar" runat="server">
+					<ItemTemplate>
+						<h3><a href="#"><%# Eval("Name") %></a></h3>
+						<div>
+							<asp:Repeater ID="rptItems" runat="server" DataSource='<%# Eval("Items") %>'>
+								<ItemTemplate>
+									<div>
+										<asp:HyperLink ID="hlUrl" runat="server" NavigateUrl='<%# Eval("Url") %>'
+											Text='<%# Eval("Name") %>' />
+									</div>
+								</ItemTemplate>
+							</asp:Repeater>
+						</div>
+					</ItemTemplate>
+				</asp:Repeater>
+			</div>
+		</div>
+    
+		<div style="position:relative;float:right;">
+			<asp:ContentPlaceHolder ID="body" runat="server">
+			</asp:ContentPlaceHolder>
+        
+			<br /><br /><br />
+		</div>
+
+		<script type="text/javascript">
+			var _selectedIndex = 0;
+
+			$(document).ready(function () {
+				$("#SidebarAccordion").accordion({ active: _selectedIndex });
+			});
+		</script>
+		</div>
+    </form>
+</body>
+</html>

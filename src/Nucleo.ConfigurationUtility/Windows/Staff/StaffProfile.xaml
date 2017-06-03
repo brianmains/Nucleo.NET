@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="StaffTracking.Profiles.StaffProfile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		
+		<TextBlock Grid.Row="0" Grid.Column="0">Name</TextBlock>
+		<TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Name}"/>
+		
+		<TextBlock Grid.Row="1" Grid.Column="0">Address Line 1</TextBlock>
+		<TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=Address.Line1}"/>
+		
+		<TextBlock Grid.Row="2" Grid.Column="0">Address Line 2</TextBlock>
+		<TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=Address.Line2}"/>
+		
+		<TextBlock Grid.Row="3" Grid.Column="0">Address Line 3</TextBlock>
+		<TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=Address.Line3}"/>
+		
+		<TextBlock Grid.Row="4" Grid.Column="0">City</TextBlock>
+		<TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=Address.City}"/>
+		
+		<TextBlock Grid.Row="5" Grid.Column="0">State</TextBlock>
+		<TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=Address.State}"/>
+		
+		<TextBlock Grid.Row="6" Grid.Column="0">Zip</TextBlock>
+		<TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=Address.ZipCode}"/>
+		
+		
+		<TextBlock Grid.Row="0" Grid.Column="2">Phone</TextBlock>
+		<TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Path=PhoneNumber}"/>
+		
+		<TextBlock Grid.Row="1" Grid.Column="2">Cell Phone</TextBlock>
+		<TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Path=CellPhoneNumber}"/>
+		
+		<TextBlock Grid.Row="2" Grid.Column="2">Alternate Phone</TextBlock>
+		<TextBox Grid.Row="2" Grid.Column="3" Text="{Binding Path=AlternatePhoneNumber}"/>
+		
+		<TextBlock Grid.Row="3" Grid.Column="2">Email</TextBlock>
+		<TextBox Grid.Row="3" Grid.Column="3" Text="{Binding Path=Email}"/>
+		
+		<TextBlock Grid.Row="4" Grid.Column="2">Primary Language</TextBlock>
+		<TextBox Grid.Row="4" Grid.Column="3" Text="{Binding Path=PrimaryLanguage}"/>
+		
+		<TextBlock Grid.Row="5" Grid.Column="2">Secondary Language</TextBlock>
+		<TextBox Grid.Row="5" Grid.Column="3" Text="{Binding Path=SecondaryLanguage}"/>
+	</Grid>
+</UserControl>

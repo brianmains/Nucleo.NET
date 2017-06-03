@@ -1,0 +1,46 @@
+﻿.ComboListEditor
+{
+	width:150px;
+	height:24px;
+	border:1px solid black;
+	vertical-align:middle;
+}
+
+.ComboListMenu
+{
+	border:1px solid black;
+	padding:1px 4px 2px 4px;
+}
+
+.ComboListMenuCloseButton
+{
+	position:absolute;
+	top:2px;
+	right:2px;
+	text-align:right;
+}
+
+.ComboListMenuInnerContent
+{
+	padding:17px 1px 1px 1px;
+}
+
+.ComboListMenuItem
+{
+	background-color:White;
+	color:Black;
+	list-style-type:none;
+}
+
+.ComboListMenuItemSelected
+{
+	background-color:Navy;
+	color:White;
+	font-weight:bolder;
+}
+
+.ComboListSelector
+{
+	border: 0px none;
+	vertical-align:middle;
+}

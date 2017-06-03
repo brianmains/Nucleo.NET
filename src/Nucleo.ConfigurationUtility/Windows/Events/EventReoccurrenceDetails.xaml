@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="Nucleo.Windows.Events.EventReoccurrenceDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:igEditors="http://infragistics.com/Editors"
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    Width="400">
+	<UserControl.Resources>
+		<Style x:Key="ReoccurCheckbox" TargetType="{x:Type Control}">
+			<Setter Property="Margin">
+				<Setter.Value>
+					<Thickness Right="5"/>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources>
+	<StackPanel>
+		<WrapPanel>
+			<TextBlock FontWeight="Bold">Select Dates:</TextBlock>
+			<TextBlock>Beginning Date:</TextBlock>
+			<igEditors:XamDateTimeEditor Name="BeginDateBox"></igEditors:XamDateTimeEditor>
+			
+			<TextBlock>Ending Date:</TextBlock>
+			<igEditors:XamDateTimeEditor Name="EndDatebox"></igEditors:XamDateTimeEditor>
+		</WrapPanel>
+		<GroupBox Header="Reoccurrence">
+			<StackPanel>
+				<WrapPanel>
+					<Label>Reoccurs every:</Label>
+					<igEditors:XamNumericEditor Name="ReoccurrenceInterval" ValueType="{x:Type sys:Int32}" MinWidth="50">
+						<igEditors:XamNumericEditor.ValueConstraint>
+							<igEditors:ValueConstraint ValidateAsType="Integer32" RegexPattern="\d+" />
+						</igEditors:XamNumericEditor.ValueConstraint>
+					</igEditors:XamNumericEditor>
+					<ComboBox SelectedIndex="1">
+						<ComboBoxItem>Day</ComboBoxItem>
+						<ComboBoxItem>Week</ComboBoxItem>
+						<ComboBoxItem>Month</ComboBoxItem>
+						<ComboBoxItem>Year</ComboBoxItem>
+					</ComboBox>
+				</WrapPanel>
+				<WrapPanel>
+					<Label>Reoccurs On</Label>
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+
+						<WrapPanel Grid.Row="0">
+							<CheckBox Style="{StaticResource ReoccurCheckbox}">Sunday</CheckBox>
+							<CheckBox Style="{StaticResource ReoccurCheckbox}">Monday</CheckBox>
+							<CheckBox Style="{StaticResource ReoccurCheckbox}">Tuesday</CheckBox>
+							<CheckBox Style="{StaticResource ReoccurCheckbox}">Wednesday</CheckBox>
+						</WrapPanel>
+						<WrapPanel Grid.Row="1">
+							<CheckBox Style="{StaticResource ReoccurCheckbox}">Thursday</CheckBox>
+							<CheckBox Style="{StaticResource ReoccurCheckbox}">Friday</CheckBox>
+							<CheckBox Style="{StaticResource ReoccurCheckbox}">Saturday</CheckBox>
+						</WrapPanel>
+					</Grid>
+				</WrapPanel>
+			</StackPanel>
+		</GroupBox>
+	</StackPanel>
+</UserControl>

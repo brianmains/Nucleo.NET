@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Nucleo.Windows.Registrations.RegistrationList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:idp="clr-namespace:Infragistics.Windows.DataPresenter;assembly=Infragistics3.Wpf.DataPresenter.v7.2"
+    Height="300" Width="300">
+	<StackPanel>
+		<WrapPanel>
+			<TextBlock>Select an Event:</TextBlock>
+			<ComboBox Name="EventsList">
+				<ComboBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel>
+							<WrapPanel>
+								<Label Content="{Binding Path=Name}" />
+								<Label>, beginning</Label>
+								<Label Content="{Binding Path=BeginDate}" />
+							</WrapPanel>
+							<WrapPanel>
+								<Label>Maximum:</Label>
+								<Label Content="{Binding Path=MaximumRegistration}" />
+							</WrapPanel>
+						</StackPanel>
+					</DataTemplate>
+				</ComboBox.ItemTemplate>				
+			</ComboBox>
+		</WrapPanel>
+		<idp:XamDataPresenter Name="ReoccurringSignupList">
+			
+		</idp:XamDataPresenter>
+	</StackPanel>
+</UserControl>

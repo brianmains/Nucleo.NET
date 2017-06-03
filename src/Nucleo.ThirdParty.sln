@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Autofac", "Nucleo.Autofac\Nucleo.Autofac.csproj", "{6D1E65AF-ACB7-42BC-8830-D667D98CC78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Mvp.Autofac", "Nucleo.Mvp.Autofac\Nucleo.Mvp.Autofac.csproj", "{AE79EEAE-227E-49B4-96E4-4A4A511B2EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Mvp.EnterpriseLibrary.50", "Nucleo.Mvp.EnterpriseLibrary.50\Nucleo.Mvp.EnterpriseLibrary.50.csproj", "{02EE875E-EF9E-4B0D-881E-4E10CD91D5E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Web.EnterpriseLibrary.50", "Nucleo.Web.EnterpriseLibrary.50\Nucleo.Web.EnterpriseLibrary.50.csproj", "{63FEE714-E169-4123-8F5F-56F181FC8C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.Web.Mvc.EnterpriseLibrary.50", "Nucleo.Web.Mvc.EnterpriseLibrary.50\Nucleo.Web.Mvc.EnterpriseLibrary.50.csproj", "{93CB5391-ECDE-44CB-B5B7-B8366D8743EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo.UnitTests.ThirdParty", "Nucleo.UnitTests.ThirdParty\Nucleo.UnitTests.ThirdParty.csproj", "{B1498968-8006-476E-9980-1F44E6B10EC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15E9007F-F605-4CAC-BCD9-E71DC386954E}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Nucleo.ThirdParty.vsmdi = Nucleo.ThirdParty.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Nucleo.ThirdParty.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D1E65AF-ACB7-42BC-8830-D667D98CC78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1E65AF-ACB7-42BC-8830-D667D98CC78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1E65AF-ACB7-42BC-8830-D667D98CC78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1E65AF-ACB7-42BC-8830-D667D98CC78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE79EEAE-227E-49B4-96E4-4A4A511B2EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE79EEAE-227E-49B4-96E4-4A4A511B2EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE79EEAE-227E-49B4-96E4-4A4A511B2EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE79EEAE-227E-49B4-96E4-4A4A511B2EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EE875E-EF9E-4B0D-881E-4E10CD91D5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EE875E-EF9E-4B0D-881E-4E10CD91D5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EE875E-EF9E-4B0D-881E-4E10CD91D5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EE875E-EF9E-4B0D-881E-4E10CD91D5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FEE714-E169-4123-8F5F-56F181FC8C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FEE714-E169-4123-8F5F-56F181FC8C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FEE714-E169-4123-8F5F-56F181FC8C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FEE714-E169-4123-8F5F-56F181FC8C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CB5391-ECDE-44CB-B5B7-B8366D8743EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CB5391-ECDE-44CB-B5B7-B8366D8743EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CB5391-ECDE-44CB-B5B7-B8366D8743EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CB5391-ECDE-44CB-B5B7-B8366D8743EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1498968-8006-476E-9980-1F44E6B10EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1498968-8006-476E-9980-1F44E6B10EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1498968-8006-476E-9980-1F44E6B10EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1498968-8006-476E-9980-1F44E6B10EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

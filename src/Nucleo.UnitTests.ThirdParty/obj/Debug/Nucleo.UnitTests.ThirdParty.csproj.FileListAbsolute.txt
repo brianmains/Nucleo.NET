@@ -1,0 +1,1 @@
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.UnitTests.ThirdParty\obj\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,12 @@
+﻿.NucleoTextEditorNormalState
+{
+	border: 1px solid black;
+}
+
+.NucleoTextEditorErrorState
+{
+	background:url(<%= WebResource("Nucleo.Web.EditorControls.erroricon.png") %>) #FFFFFF 0px 0px no-repeat;
+	padding-left:20px;
+	border: 1px solid #FB3939;
+	color: #CC0000;
+}

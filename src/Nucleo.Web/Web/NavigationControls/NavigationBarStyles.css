@@ -1,0 +1,25 @@
+﻿.NavigationBarItemContainer
+{
+	padding: 3px 5px;
+	display: block;
+}
+
+.NavigationBarItemContainer div
+{
+	display: block;
+}
+
+.NavigationBarItem
+{
+	display:inline-block;
+	margin:5px;
+}
+
+.NavigationBarItemSelected
+{
+	display:inline-block;
+	background-color: LightYellow;
+	border:1px solid black;
+	margin:5px;
+	padding:5px;
+}

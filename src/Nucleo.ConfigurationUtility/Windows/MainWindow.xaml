@@ -1,0 +1,13 @@
+﻿<Window x:Class="Nucleo.ConfigurationUtility.Windows.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ir="http://infragistics.com/Ribbon"
+    Title="MainWindow" Height="300" Width="300">
+    <Grid>
+		<ir:XamRibbon Name="ApplicationMenu">
+			<ir:XamRibbon.Tabs>
+				<ir:RibbonTabItem Name="FileMenu" Header="File" />
+			</ir:XamRibbon.Tabs>
+		</ir:XamRibbon>
+	</Grid>
+</Window>

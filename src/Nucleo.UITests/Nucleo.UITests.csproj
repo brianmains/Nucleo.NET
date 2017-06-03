@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DB3B2D1-2E72-4CC2-A75B-2F67116F4DBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo.UITests</RootNamespace>
+    <AssemblyName>Nucleo.UITests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArtOfTest.Common, Version=2010.2.830.0, Culture=neutral, PublicKeyToken=14a0200bfcbb7b62" />
+    <Reference Include="ArtOfTest.WebAii, Version=2010.2.830.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c" />
+    <Reference Include="ArtOfTest.WebAii.Design, Version=2010.2.830.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Telerik.WebAii.Controls.Html, Version=2010.2.830.0, Culture=neutral, PublicKeyToken=528163f3e645de45" />
+    <Reference Include="Telerik.WebAii.Controls.Xaml, Version=2010.2.830.0, Culture=neutral, PublicKeyToken=528163f3e645de45" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mvp\DataSource\PagesBindingToViewDataSource.aii" />
+    <None Include="Mvp\DataSource\UserControlsBindingToViewDataSource.aii" />
+    <None Include="Mvp\Messaging\ManyMessagesSamplePublishesManyCrossEvents.aii" />
+    <None Include="Mvp\ModelBinding\BindingFirstLook.aii" />
+    <None Include="Mvp\PresenterLoading\AttributeMatchFirstLook.aii" />
+    <None Include="Mvp\PresenterLoading\ConventionMatchFirstLook.aii" />
+    <None Include="Settings.aiis" />
+    <None Include="Web\Accordions\AccordionsFirstLook.aii" />
+    <None Include="Web\AjaxPages\AjaxPagesFirstLook.aii" />
+    <None Include="Web\ButtonEnabledExtender\ButtonEnabledExtenderClientSideAPI.aii" />
+    <None Include="Web\ButtonVisibilityExtender\ButtonVisibilityExtenderClientSideAPI.aii" />
+    <None Include="Web\Button\ButtonClientSideDisableOnClick.aii" />
+    <None Include="Web\Button\ButtonClientSideTextChange.aii" />
+    <None Include="Web\Check\CheckClientSideChangeToEmptyFails.aii" />
+    <None Include="Web\Check\CheckClientSideChangeToEmptySucceeds.aii" />
+    <None Include="Web\Check\CheckClientSideDisabledChange.aii" />
+    <None Include="Web\Check\CheckClientSideTextChange.aii" />
+    <None Include="Web\FormItemDisplay\FormItemDisplayChangingTemplates.aii" />
+    <None Include="Web\HiddenField\HiddenFieldFirstLook.aii" />
+    <None Include="Web\Link\LinkClientSideAPI.aii" />
+    <None Include="Web\Link\LinkServerSideAPIFireEventChange.aii" />
+    <None Include="Web\Link\LinkServerSideAPINavigateUrlChange.aii" />
+    <None Include="Web\Link\LinkServerSideAPITextChange.aii" />
+    <None Include="Web\Lookups\LookupsFirstLook.aii" />
+    <None Include="Web\Mapping\MappingClientSideAPI.aii" />
+    <None Include="Web\Mapping\MappingServerSideAPI.aii" />
+    <None Include="Web\Math\ExtenderClientSideAPI.aii" />
+    <None Include="Web\Math\ViewClientSideAPI.aii" />
+    <None Include="Web\NavigationBars\NavigationBarsFirstLook.aii" />
+    <None Include="Web\ScriptRendering\ScriptBlockFirstLook.aii" />
+    <None Include="Web\Validation\AspNetInoperability.aii" />
+    <None Include="Web\Validation\ValidationResultsFirstLook.aii" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web\Button\ButtonClientSideTextChange.resx">
+      <DependentUpon>ButtonClientSideTextChange.aii</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web\Button\ButtonClientSideDisableOnClick.resx">
+      <DependentUpon>ButtonClientSideDisableOnClick.aii</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mvp\DataSource\UserControlsBindingToViewDataSource.resx">
+      <DependentUpon>UserControlsBindingToViewDataSource.aii</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mvp\DataSource\PagesBindingToViewDataSource.resx">
+      <DependentUpon>PagesBindingToViewDataSource.aii</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mvp\Messaging\ManyMessagesSamplePublishesManyCrossEvents.resx">
+      <DependentUpon>ManyMessagesSamplePublishesManyCrossEvents.aii</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web\Check\CheckClientSideChangeToEmptyFails.resx">
+      <DependentUpon>CheckClientSideChangeToEmptyFails.aii</DependentUpon>
+    </None>
+    <None Include="Web\Check\CheckClientSideChangeToEmptySucceeds.resx">
+      <DependentUpon>CheckClientSideChangeToEmptySucceeds.aii</DependentUpon>
+    </None>
+    <None Include="Web\Check\CheckClientSideDisabledChange.resx">
+      <DependentUpon>CheckClientSideDisabledChange.aii</DependentUpon>
+    </None>
+    <None Include="Web\Check\CheckClientSideTextChange.resx">
+      <DependentUpon>CheckClientSideTextChange.aii</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mvp\PresenterLoading\ConventionMatchFirstLook.resx">
+      <DependentUpon>ConventionMatchFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\AjaxPages\AjaxPagesFirstLook.resx">
+      <DependentUpon>AjaxPagesFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\ButtonVisibilityExtender\ButtonVisibilityExtenderClientSideAPI.resx">
+      <DependentUpon>ButtonVisibilityExtenderClientSideAPI.aii</DependentUpon>
+    </None>
+    <None Include="Web\ButtonEnabledExtender\ButtonEnabledExtenderClientSideAPI.resx">
+      <DependentUpon>ButtonEnabledExtenderClientSideAPI.aii</DependentUpon>
+    </None>
+    <None Include="Mvp\ModelBinding\BindingFirstLook.resx">
+      <DependentUpon>BindingFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\ScriptRendering\ScriptBlockFirstLook.resx">
+      <DependentUpon>ScriptBlockFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\Accordions\AccordionsFirstLook.resx">
+      <DependentUpon>AccordionsFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\FormItemDisplay\FormItemDisplayChangingTemplates.resx">
+      <DependentUpon>FormItemDisplayChangingTemplates.aii</DependentUpon>
+    </None>
+    <None Include="Web\Mapping\MappingServerSideAPI.resx">
+      <DependentUpon>MappingServerSideAPI.aii</DependentUpon>
+    </None>
+    <None Include="Web\Mapping\MappingClientSideAPI.resx">
+      <DependentUpon>MappingClientSideAPI.aii</DependentUpon>
+    </None>
+    <None Include="Web\HiddenField\HiddenFieldFirstLook.resx">
+      <DependentUpon>HiddenFieldFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\Link\LinkServerSideAPIFireEventChange.resx">
+      <DependentUpon>LinkServerSideAPIFireEventChange.aii</DependentUpon>
+    </None>
+    <None Include="Web\Link\LinkServerSideAPINavigateUrlChange.resx">
+      <DependentUpon>LinkServerSideAPINavigateUrlChange.aii</DependentUpon>
+    </None>
+    <None Include="Web\Link\LinkServerSideAPITextChange.resx">
+      <DependentUpon>LinkServerSideAPITextChange.aii</DependentUpon>
+    </None>
+    <None Include="Web\Link\LinkClientSideAPI.resx">
+      <DependentUpon>LinkClientSideAPI.aii</DependentUpon>
+    </None>
+    <None Include="Web\Lookups\LookupsFirstLook.resx">
+      <DependentUpon>LookupsFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\Math\ExtenderClientSideAPI.resx">
+      <DependentUpon>ExtenderClientSideAPI.aii</DependentUpon>
+    </None>
+    <None Include="Web\Math\ViewClientSideAPI.resx">
+      <DependentUpon>ViewClientSideAPI.aii</DependentUpon>
+    </None>
+    <None Include="Web\NavigationBars\NavigationBarsFirstLook.resx">
+      <DependentUpon>NavigationBarsFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Mvp\PresenterLoading\AttributeMatchFirstLook.resx">
+      <DependentUpon>AttributeMatchFirstLook.aii</DependentUpon>
+    </None>
+    <None Include="Web\Validation\AspNetInoperability.resx">
+      <DependentUpon>AspNetInoperability.aii</DependentUpon>
+    </None>
+    <None Include="Web\Validation\ValidationResultsFirstLook.resx">
+      <DependentUpon>ValidationResultsFirstLook.aii</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="Nucleo.UITests" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

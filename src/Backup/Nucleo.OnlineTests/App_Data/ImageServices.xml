@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Images>
+	<Image>
+		<Identifier>HABITAT01</Identifier>
+		<Url>http://www.habitat.org/images/logo.gif</Url>
+	</Image>
+	<Image>
+		<Identifier>CROSBY</Identifier>
+		<Url>http://pittsburghpenguins.1afm.com/images/new%20images/40.jpg</Url>
+	</Image>
+	<Image>
+		<Identifier>ROETHLISBERGER</Identifier>
+		<Url>http://www.butlerwebs.com/pittsburgh/images/steelers-signball.jpg</Url>
+	</Image>
+	<Image>
+		<Identifier>PITTSBURGH</Identifier>
+		<Url>http://www.butlerwebs.com/pittsburgh/images/cityscene-steelers.jpg</Url>
+	</Image>
+</Images>

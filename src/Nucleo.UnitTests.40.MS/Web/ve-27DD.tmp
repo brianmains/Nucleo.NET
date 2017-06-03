@@ -1,0 +1,33 @@
+﻿using System;
+using System.Web.UI;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+
+namespace Nucleo.Web
+{
+	[TestClass]
+	public class ClientDescriptorRegistryTest
+	{
+		#region " Test Classes "
+
+		protected class TestClass
+		{
+
+		}
+
+		#endregion
+
+
+
+		#region " Tests "
+
+		[TestMethod]
+		public void CreatingRegistryWorksOK()
+		{
+			//Arrange
+
+		}
+
+		#endregion
+	}
+}

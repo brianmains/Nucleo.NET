@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5BFAD00-6422-4FE4-8EED-CB034AC09FC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.Windows</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="WindowsFormsIntegration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DependencyInjection\WindowsApplicationFrameworkReceiver.cs" />
+    <Compile Include="EventArguments\ActionEventArgs.cs" />
+    <Compile Include="EventArguments\ActionPerformedEventArgs.cs" />
+    <Compile Include="EventArguments\ApplicationEventEventArgs.cs" />
+    <Compile Include="EventArguments\ToolWindowEventArgs.cs" />
+    <Compile Include="Windows\Actions\ActionsList.cs" />
+    <Compile Include="Windows\Actions\ClickAction.cs" />
+    <Compile Include="Windows\Actions\EventAction.cs" />
+    <Compile Include="Windows\Actions\EventActionCollection.cs" />
+    <Compile Include="Windows\Actions\EventSubscriber.cs" />
+    <Compile Include="Windows\Actions\EventSubscriberDictionary.cs" />
+    <Compile Include="Windows\Actions\IAction.cs" />
+    <Compile Include="Windows\Actions\IActionableElement.cs" />
+    <Compile Include="Windows\Actions\IEventSubscribingObject.cs" />
+    <Compile Include="Windows\Actions\SelectionAction.cs" />
+    <Compile Include="Windows\ApplicationListeners\BaseModelListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\Configuration\ControlConversionSection.cs" />
+    <Compile Include="Windows\ApplicationListeners\ControlConversionManager.cs" />
+    <Compile Include="Windows\ApplicationListeners\DocumentWindowListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\ListenerControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\MenuItemListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\ObjectHandleToWindowsUIControlConverter.cs" />
+    <Compile Include="Windows\ApplicationListeners\PopupWindowListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\ToolbarItemListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\ToolbarListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\ToolWindowListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ApplicationListeners\WinToolbarListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Application\ApplicationActionSubscription.cs" />
+    <Compile Include="Windows\Application\ApplicationActionSubscriptionCollection.cs" />
+    <Compile Include="Windows\Application\BaseModelController.cs" />
+    <Compile Include="Windows\Application\BaseUIApplicationController.cs" />
+    <Compile Include="Windows\Application\Configuration\ApplicationControllerInterfaceElement.cs" />
+    <Compile Include="Windows\Application\Configuration\ApplicationControllerInterfaceElementCollection.cs" />
+    <Compile Include="Windows\Application\Configuration\ApplicationControllerSection.cs" />
+    <Compile Include="Windows\Application\IApplicationActionSubscriber.cs" />
+    <Compile Include="Windows\Application\IModule.cs" />
+    <Compile Include="Windows\Application\InterfaceRenderer.cs" />
+    <Compile Include="Windows\Application\BaseModule.cs" />
+    <Compile Include="Windows\ApplicationListeners\UIControlConverter.cs" />
+    <Compile Include="Windows\ApplicationListeners\WindowsUIControlConverter.cs" />
+    <Compile Include="Windows\ApplicationListeners\WindowsTabListenerControl.cs" />
+    <Compile Include="Windows\Application\ModuleAttribute.cs" />
+    <Compile Include="Windows\UI\NotificationBalloon.cs" />
+    <Compile Include="Windows\UI\ContextMenu.cs" />
+    <Compile Include="Windows\UI\PopupNotification.cs" />
+    <Compile Include="Windows\Application\WindowsPopupRenderer.cs" />
+    <Compile Include="Windows\Commands\CommandDictionary.cs" />
+    <Compile Include="Windows\Commands\EditCommands.cs" />
+    <Compile Include="Windows\Commands\HideCommand.cs" />
+    <Compile Include="Windows\Commands\ShowCommand.cs" />
+    <Compile Include="Windows\IDatabaseConnectionWindow.cs" />
+    <Compile Include="Windows\UI\ModuleDocumentWindow.cs" />
+    <Compile Include="Windows\Application\ModuleService.cs" />
+    <Compile Include="Windows\Application\WindowsDocumentRenderer.cs" />
+    <Compile Include="Windows\Application\WindowsMenuRenderer.cs" />
+    <Compile Include="Windows\Application\WindowsToolbarItemRenderer.cs" />
+    <Compile Include="Windows\Application\WindowsToolbarRenderer.cs" />
+    <Compile Include="Windows\Application\WindowsToolWindowRenderer.cs" />
+    <Compile Include="Windows\Commands\BaseCommand.cs" />
+    <Compile Include="Windows\Commands\CopyCommand.cs" />
+    <Compile Include="Windows\Commands\CutCommand.cs" />
+    <Compile Include="Windows\Commands\ICommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Commands\PasteCommand.cs" />
+    <Compile Include="Windows\Commands\PrintCommand.cs" />
+    <Compile Include="Windows\Commands\QuitCommand.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="EventArguments\ApplicationModelEventArgs.cs" />
+    <Compile Include="EventArguments\FileDialogEventArgs.cs" />
+    <Compile Include="Plugins\IApplicationModelPlugin.cs" />
+    <Compile Include="Windows\Application\ApplicationEventsManager.cs" />
+    <Compile Include="Windows\Application\BaseApplicationController.cs" />
+    <Compile Include="Windows\ControlUtility.cs" />
+    <Compile Include="Windows\UI\BaseCustomDocumentWindow.cs" />
+    <Compile Include="Windows\UI\BaseCustomToolWindow.cs" />
+    <Compile Include="Windows\UI\DocumentWindowCollection.cs" />
+    <Compile Include="Windows\Application\ApplicationModel.cs" />
+    <Compile Include="Windows\Application\WindowsStripApplicationController.cs" />
+    <Compile Include="Windows\UI\IChildElement.cs" />
+    <Compile Include="Windows\UI\IElementCollection.cs" />
+    <Compile Include="Windows\UI\IParentElement.cs" />
+    <Compile Include="Windows\UI\IToolbarListItem.cs" />
+    <Compile Include="Windows\UI\MenuItem.cs" />
+    <Compile Include="Windows\UI\MenuItemCollection.cs" />
+    <Compile Include="Windows\UI\ModuleElementCollection.cs" />
+    <Compile Include="Windows\UI\ModuleToolWindow.cs" />
+    <Compile Include="Windows\UI\NameRegister.cs" />
+    <Compile Include="Windows\UI\PopupWindow.cs" />
+    <Compile Include="Windows\UI\PopupWindowCollection.cs" />
+    <Compile Include="Windows\UI\StatusLabel.cs" />
+    <Compile Include="Windows\UI\Toolbar.cs" />
+    <Compile Include="Windows\UI\ToolbarButton.cs" />
+    <Compile Include="Windows\UI\ToolbarCollection.cs" />
+    <Compile Include="Windows\UI\ToolbarAssistant.cs" />
+    <Compile Include="Windows\UI\ToolbarDropDown.cs" />
+    <Compile Include="Windows\UI\ToolbarGroup.cs" />
+    <Compile Include="Windows\UI\ToolbarGroupCollection.cs" />
+    <Compile Include="Windows\UI\ToolbarItem.cs" />
+    <Compile Include="Windows\UI\ToolbarItemCollection.cs" />
+    <Compile Include="Windows\UI\ToolbarLabel.cs" />
+    <Compile Include="Windows\UI\ToolbarSeparator.cs" />
+    <Compile Include="Windows\UI\ToolbarTextBox.cs" />
+    <Compile Include="Windows\UI\ToolbarTextImageItem.cs" />
+    <Compile Include="Windows\UI\ToolbarTextItem.cs" />
+    <Compile Include="Windows\UI\ToolWindow.cs" />
+    <Compile Include="Windows\UI\DocumentWindow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windows\UI\BaseWindow.cs" />
+    <Compile Include="Windows\UI\BaseWindowCollection.cs" />
+    <Compile Include="Windows\UI\ToolWindowCollection.cs" />
+    <Compile Include="Windows\UI\UIElement.cs" />
+    <Compile Include="Windows\UI\UIElementCollection.cs" />
+    <Compile Include="Windows\UI\ValuePath.cs" />
+    <Compile Include="Utilities\AlignmentUtility.cs" />
+    <Compile Include="Windows\ValuePathUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo\Nucleo.20.csproj">
+      <Project>{6E5B09AA-617A-44B1-A96B-E3132E02ECE1}</Project>
+      <Name>Nucleo.20</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

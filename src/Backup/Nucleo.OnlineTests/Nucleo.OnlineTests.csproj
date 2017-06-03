@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F90C202D-45A4-46CF-B575-AB38379B16D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.OnlineTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Software\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\Default\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\Default\jquery-ui-1.8.custom.css" />
+    <Content Include="Content\Scripts\jquery.js" />
+    <Content Include="Content\Scripts\jqueryui.js" />
+    <Content Include="Css\CustomStyles.css" />
+    <Content Include="SampleClasses\Widgets\LoginWidget.js" />
+    <Content Include="TestImages\SampleButton.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web\FormItemDisplay\CustomTemplates.aspx" />
+    <Content Include="Web\Routing\PageConventionFirstLook.aspx" />
+    <Content Include="Web\Routing\RoutingTarget.aspx" />
+    <Content Include="Web\Standardization\FirstLook.aspx" />
+    <Content Include="Web\Validation\AspNetServerInteroperability.aspx" />
+    <Content Include="Web\Validation\NeedValuesClientEvent.aspx" />
+    <Content Include="Web\Validation\ValidateElementsWithResults.aspx" />
+    <Content Include="Web\Validation\RequiredFirstLook.aspx" />
+    <Content Include="Web\Validation\ValidationGroups.aspx" />
+    <Content Include="Web\Validation\ValidatorsFirstLook.aspx" />
+    <Content Include="Web\Validation\ValidatorsWithElements.aspx" />
+    <Content Include="Web\Validation\ValidatorsWithMultipleResults.aspx" />
+    <Content Include="Web\Validation\ValidatorsWithResults.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Lookups\CountriesLookupRepository.cs" />
+    <Compile Include="Framework\NameValueCollectionOutputPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\SiteMapGenerator.cs" />
+    <Compile Include="Framework\TestPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleClasses\Context\SampleApplicationLoader.cs" />
+    <Compile Include="SampleClasses\Widgets\LoginWidget.cs" />
+    <Compile Include="SampleComponents\SampleAttributeControl.cs" />
+    <Compile Include="SampleComponents\SampleAttributeControlRenderer.cs" />
+    <Compile Include="SampleComponents\SampleWebControl.cs" />
+    <Compile Include="SampleComponents\SampleWebControlScriptMetadata.cs" />
+    <Compile Include="SampleComponents\SampleWebControlWebRenderer.cs" />
+    <Compile Include="Script\ScriptTest.aspx.cs">
+      <DependentUpon>ScriptTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Script\ScriptTest.aspx.designer.cs">
+      <DependentUpon>ScriptTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site.master.cs">
+      <DependentUpon>site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site.master.designer.cs">
+      <DependentUpon>site.master</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\TestService.asmx.cs">
+      <DependentUpon>TestService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web\Accordions\BubblingEvents.aspx.cs">
+      <DependentUpon>BubblingEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Accordions\BubblingEvents.aspx.designer.cs">
+      <DependentUpon>BubblingEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Accordions\ClientEvents.aspx.cs">
+      <DependentUpon>ClientEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Accordions\ClientEvents.aspx.designer.cs">
+      <DependentUpon>ClientEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Accordions\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Accordions\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\AjaxPages\UsingWidgets.aspx.cs">
+      <DependentUpon>UsingWidgets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\AjaxPages\UsingWidgets.aspx.designer.cs">
+      <DependentUpon>UsingWidgets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Core\ControlLifecycle.aspx.cs">
+      <DependentUpon>ControlLifecycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Core\ControlLifecycle.aspx.designer.cs">
+      <DependentUpon>ControlLifecycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Core\CustomTheme.aspx.cs">
+      <DependentUpon>CustomTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Core\CustomTheme.aspx.designer.cs">
+      <DependentUpon>CustomTheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Core\LoadingClientState.aspx.cs">
+      <DependentUpon>LoadingClientState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Core\LoadingClientState.aspx.designer.cs">
+      <DependentUpon>LoadingClientState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\AjaxPages\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\AjaxPages\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Button\ClientSideAPI.aspx.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Button\ClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ButtonEnabledExtender\ClientSideAPI.aspx.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ButtonEnabledExtender\ClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ButtonEnabledExtender\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ButtonEnabledExtender\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Button\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Button\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ButtonList\ClientSideAPI.aspx.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ButtonList\ClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ButtonList\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ButtonList\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ButtonList\ServerSideAPI.aspx.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ButtonList\ServerSideAPI.aspx.designer.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Button\ImageButtons.aspx.cs">
+      <DependentUpon>ImageButtons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Button\ImageButtons.aspx.designer.cs">
+      <DependentUpon>ImageButtons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Button\LinkButtons.aspx.cs">
+      <DependentUpon>LinkButtons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Button\LinkButtons.aspx.designer.cs">
+      <DependentUpon>LinkButtons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Button\ServerSideAPI.aspx.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Button\ServerSideAPI.aspx.designer.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ButtonVisibilityExtender\ClientSideAPI.aspx.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ButtonVisibilityExtender\ClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ButtonVisibilityExtender\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ButtonVisibilityExtender\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Button\StandardButtons.aspx.cs">
+      <DependentUpon>StandardButtons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Button\StandardButtons.aspx.designer.cs">
+      <DependentUpon>StandardButtons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Button\ValidationSupport.aspx.cs">
+      <DependentUpon>ValidationSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Button\ValidationSupport.aspx.designer.cs">
+      <DependentUpon>ValidationSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Check\DataBinding.aspx.cs">
+      <DependentUpon>DataBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Check\DataBinding.aspx.designer.cs">
+      <DependentUpon>DataBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Check\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Check\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\BrowserCapabilitiesServiceFirstLook.aspx.cs">
+      <DependentUpon>BrowserCapabilitiesServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\BrowserCapabilitiesServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>BrowserCapabilitiesServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\CookieServiceFirstLook.aspx.cs">
+      <DependentUpon>CookieServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\CookieServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>CookieServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\LoggingServiceFirstLook.aspx.cs">
+      <DependentUpon>LoggingServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\LoggingServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>LoggingServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\PostDataServiceFirstLook.aspx.cs">
+      <DependentUpon>PostDataServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\PostDataServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>PostDataServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\QuerystringServiceFirstLook.aspx.cs">
+      <DependentUpon>QuerystringServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\QuerystringServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>QuerystringServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\RequestHeaderServiceFirstLook.aspx.cs">
+      <DependentUpon>RequestHeaderServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\RequestHeaderServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>RequestHeaderServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\ServerUtilityServiceFirstLook.aspx.cs">
+      <DependentUpon>ServerUtilityServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\ServerUtilityServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>ServerUtilityServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\ServerVariablesServiceFirstLook.aspx.cs">
+      <DependentUpon>ServerVariablesServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\ServerVariablesServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>ServerVariablesServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\SessionServiceFirstLook.aspx.cs">
+      <DependentUpon>SessionServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\SessionServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>SessionServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Context\UrlResolutionServiceFirstLook.aspx.cs">
+      <DependentUpon>UrlResolutionServiceFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Context\UrlResolutionServiceFirstLook.aspx.designer.cs">
+      <DependentUpon>UrlResolutionServiceFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Check\ClientSideAPI.aspx.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Check\ClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Check\ServerSideAPI.aspx.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Check\ServerSideAPI.aspx.designer.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\DynamicScripts\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\DynamicScripts\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\ChangingTemplates.aspx.cs">
+      <DependentUpon>ChangingTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\ChangingTemplates.aspx.designer.cs">
+      <DependentUpon>ChangingTemplates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\CustomTemplates.aspx.cs">
+      <DependentUpon>CustomTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\CustomTemplates.aspx.designer.cs">
+      <DependentUpon>CustomTemplates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\FormContainerFirstLook.aspx.cs">
+      <DependentUpon>FormContainerFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\FormContainerFirstLook.aspx.designer.cs">
+      <DependentUpon>FormContainerFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\VisibilityChanges.aspx.cs">
+      <DependentUpon>VisibilityChanges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\FormItemDisplay\VisibilityChanges.aspx.designer.cs">
+      <DependentUpon>VisibilityChanges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Link\ClientSideAPI.aspx.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Link\ClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Link\Databinding.aspx.cs">
+      <DependentUpon>Databinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Link\Databinding.aspx.designer.cs">
+      <DependentUpon>Databinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Link\ServerSideAPI.aspx.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Link\ServerSideAPI.aspx.designer.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\HiddenField\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\HiddenField\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CustomComponents\SampleAttributeControlFirstLook.aspx.cs">
+      <DependentUpon>SampleAttributeControlFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CustomComponents\SampleAttributeControlFirstLook.aspx.designer.cs">
+      <DependentUpon>SampleAttributeControlFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CustomComponents\SampleWebControlFirstLook.aspx.cs">
+      <DependentUpon>SampleWebControlFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CustomComponents\SampleWebControlFirstLook.aspx.designer.cs">
+      <DependentUpon>SampleWebControlFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\DropDown\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\DropDown\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Link\ClientEvents.aspx.cs">
+      <DependentUpon>ClientEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Link\ClientEvents.aspx.designer.cs">
+      <DependentUpon>ClientEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Link\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Link\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Lookups\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Lookups\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PagebleList\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PagebleList\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Mapping\ClientSideAPI.aspx.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Mapping\ClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Mapping\ServerSideAPI.aspx.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Mapping\ServerSideAPI.aspx.designer.cs">
+      <DependentUpon>ServerSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Mapping\MappingObject.cs" />
+    <Compile Include="Web\Math\ExtenderClientSideAPI.aspx.cs">
+      <DependentUpon>ExtenderClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Math\ExtenderClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ExtenderClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Math\ViewClientSideAPI.aspx.cs">
+      <DependentUpon>ViewClientSideAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Math\ViewClientSideAPI.aspx.designer.cs">
+      <DependentUpon>ViewClientSideAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\NavigationBars\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\NavigationBars\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Panel\DragDrop.aspx.cs">
+      <DependentUpon>DragDrop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Panel\DragDrop.aspx.designer.cs">
+      <DependentUpon>DragDrop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Panel\Hovering.aspx.cs">
+      <DependentUpon>Hovering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Panel\Hovering.aspx.designer.cs">
+      <DependentUpon>Hovering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Panel\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Panel\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Panel\Modal.aspx.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Panel\Modal.aspx.designer.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Panel\Resizing.aspx.cs">
+      <DependentUpon>Resizing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Panel\Resizing.aspx.designer.cs">
+      <DependentUpon>Resizing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Panel\TimeSensitivity.aspx.cs">
+      <DependentUpon>TimeSensitivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Panel\TimeSensitivity.aspx.designer.cs">
+      <DependentUpon>TimeSensitivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Routing\PageConventionFirstLook.aspx.cs">
+      <DependentUpon>PageConventionFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Routing\PageConventionFirstLook.aspx.designer.cs">
+      <DependentUpon>PageConventionFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Routing\RoutingTarget.aspx.cs">
+      <DependentUpon>RoutingTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Routing\RoutingTarget.aspx.designer.cs">
+      <DependentUpon>RoutingTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ScriptRendering\ScriptBlockFirstLook.aspx.cs">
+      <DependentUpon>ScriptBlockFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ScriptRendering\ScriptBlockFirstLook.aspx.designer.cs">
+      <DependentUpon>ScriptBlockFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Standardization\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Standardization\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\TextEditor\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\TextEditor\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\AspNetInteroperability.aspx.cs">
+      <DependentUpon>AspNetInteroperability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\AspNetInteroperability.aspx.designer.cs">
+      <DependentUpon>AspNetInteroperability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\AspNetServerInteroperability.aspx.cs">
+      <DependentUpon>AspNetServerInteroperability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\AspNetServerInteroperability.aspx.designer.cs">
+      <DependentUpon>AspNetServerInteroperability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\NeedValuesClientEvent.aspx.cs">
+      <DependentUpon>NeedValuesClientEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\NeedValuesClientEvent.aspx.designer.cs">
+      <DependentUpon>NeedValuesClientEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\ValidateElementsWithResults.aspx.cs">
+      <DependentUpon>ValidateElementsWithResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\ValidateElementsWithResults.aspx.designer.cs">
+      <DependentUpon>ValidateElementsWithResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\RequiredFirstLook.aspx.cs">
+      <DependentUpon>RequiredFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\RequiredFirstLook.aspx.designer.cs">
+      <DependentUpon>RequiredFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\ValidationGroups.aspx.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\ValidationGroups.aspx.designer.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\ValidationResultsFirstLook.aspx.cs">
+      <DependentUpon>ValidationResultsFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\ValidationResultsFirstLook.aspx.designer.cs">
+      <DependentUpon>ValidationResultsFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\test.master.cs">
+      <DependentUpon>test.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\test.master.designer.cs">
+      <DependentUpon>test.master</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsFirstLook.aspx.cs">
+      <DependentUpon>ValidatorsFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsFirstLook.aspx.designer.cs">
+      <DependentUpon>ValidatorsFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsWithElements.aspx.cs">
+      <DependentUpon>ValidatorsWithElements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsWithElements.aspx.designer.cs">
+      <DependentUpon>ValidatorsWithElements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsWithMultipleResults.aspx.cs">
+      <DependentUpon>ValidatorsWithMultipleResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsWithMultipleResults.aspx.designer.cs">
+      <DependentUpon>ValidatorsWithMultipleResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsWithResults.aspx.cs">
+      <DependentUpon>ValidatorsWithResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Validation\ValidatorsWithResults.aspx.designer.cs">
+      <DependentUpon>ValidatorsWithResults.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ImageServices.xml" />
+    <Content Include="App_Themes\Default\styles.css" />
+    <EmbeddedResource Include="SampleComponents\SampleWebControl.debug.js" />
+    <EmbeddedResource Include="SampleComponents\SampleAttributeControl.debug.js" />
+    <EmbeddedResource Include="SampleComponents\SampleAttributeScripts.debug.js" />
+    <EmbeddedResource Include="SampleComponents\SampleAttributeStyles.css" />
+    <Content Include="Content\Scripts\ui.draggable.js" />
+    <Content Include="Content\Scripts\ui.droppable.js" />
+    <EmbeddedResource Include="SampleComponents\SampleAttributeControl.js" />
+    <EmbeddedResource Include="SampleComponents\SampleAttributeScripts.js" />
+    <EmbeddedResource Include="SampleComponents\SampleWebControl.js" />
+    <Content Include="Script\ScriptTest.aspx" />
+    <Content Include="TestImages\check_empty.gif" />
+    <Content Include="TestImages\check_empty_disabled.gif" />
+    <Content Include="TestImages\check_no.gif" />
+    <Content Include="TestImages\check_no_disabled.gif" />
+    <Content Include="TestImages\check_yes.gif" />
+    <Content Include="TestImages\check_yes_disabled.gif" />
+    <Content Include="default.aspx" />
+    <Content Include="site.master" />
+    <Content Include="TestImages\onebit_01.png" />
+    <Content Include="TestImages\onebit_02.png" />
+    <Content Include="TestImages\onebit_03.png" />
+    <Content Include="TestImages\onebit_04.png" />
+    <Content Include="TestImages\onebit_05.png" />
+    <Content Include="TestImages\onebit_06.png" />
+    <Content Include="TestImages\onebit_07.png" />
+    <Content Include="TestImages\onebit_08.png" />
+    <Content Include="TestImages\onebit_09.png" />
+    <Content Include="TestImages\onebit_10.png" />
+    <Content Include="TestImages\onebit_11.png" />
+    <Content Include="TestImages\onebit_12.png" />
+    <Content Include="TestImages\onebit_13.png" />
+    <Content Include="TestImages\onebit_14.png" />
+    <Content Include="TestImages\onebit_15.png" />
+    <Content Include="TestImages\onebit_16.png" />
+    <Content Include="TestImages\onebit_17.png" />
+    <Content Include="TestImages\onebit_18.png" />
+    <Content Include="TestImages\onebit_19.png" />
+    <Content Include="TestImages\onebit_20.png" />
+    <Content Include="TestImages\onebit_21.png" />
+    <Content Include="TestImages\onebit_22.png" />
+    <Content Include="TestImages\onebit_23.png" />
+    <Content Include="TestImages\onebit_24.png" />
+    <Content Include="TestImages\onebit_25.png" />
+    <Content Include="TestImages\onebit_26.png" />
+    <Content Include="TestImages\onebit_27.png" />
+    <Content Include="TestImages\onebit_28.png" />
+    <Content Include="TestImages\onebit_29.png" />
+    <Content Include="TestImages\onebit_30.png" />
+    <Content Include="WebServices\TestService.asmx" />
+    <Content Include="Web\Accordions\BubblingEvents.aspx" />
+    <Content Include="Web\Accordions\ClientEvents.aspx" />
+    <Content Include="Web\Accordions\FirstLook.aspx" />
+    <Content Include="Web\AjaxPages\UsingWidgets.aspx" />
+    <Content Include="Web\AjaxPages\UsingWidgets.js" />
+    <Content Include="Web\Core\ControlLifecycle.aspx" />
+    <Content Include="Web\Core\CustomTheme.aspx" />
+    <Content Include="Web\Core\LoadingClientState.aspx" />
+    <Content Include="Web\AjaxPages\FirstLook.js" />
+    <Content Include="Web\AjaxPages\FirstLook.aspx" />
+    <Content Include="Web\Button\ClientSideAPI.aspx" />
+    <Content Include="Web\ButtonEnabledExtender\ClientSideAPI.aspx" />
+    <Content Include="Web\ButtonEnabledExtender\FirstLook.aspx" />
+    <Content Include="Web\Button\FirstLook.aspx" />
+    <Content Include="Web\ButtonList\ClientSideAPI.aspx" />
+    <Content Include="Web\ButtonList\FirstLook.aspx" />
+    <Content Include="Web\ButtonList\ServerSideAPI.aspx" />
+    <Content Include="Web\Button\ImageButtons.aspx" />
+    <Content Include="Web\Button\LinkButtons.aspx" />
+    <Content Include="Web\Button\ServerSideAPI.aspx" />
+    <Content Include="Web\ButtonVisibilityExtender\ClientSideAPI.aspx" />
+    <Content Include="Web\ButtonVisibilityExtender\FirstLook.aspx" />
+    <Content Include="Web\Button\StandardButtons.aspx" />
+    <Content Include="Web\Button\ValidationSupport.aspx" />
+    <Content Include="Web\Check\DataBinding.aspx" />
+    <Content Include="Web\Check\FirstLook.aspx" />
+    <Content Include="Web\Context\BrowserCapabilitiesServiceFirstLook.aspx" />
+    <Content Include="Web\Context\CookieServiceFirstLook.aspx" />
+    <Content Include="Web\Context\LoggingServiceFirstLook.aspx" />
+    <Content Include="Web\Context\PostDataServiceFirstLook.aspx" />
+    <Content Include="Web\Context\QuerystringServiceFirstLook.aspx" />
+    <Content Include="Web\Context\RequestHeaderServiceFirstLook.aspx" />
+    <Content Include="Web\Context\ServerUtilityServiceFirstLook.aspx" />
+    <Content Include="Web\Context\ServerVariablesServiceFirstLook.aspx" />
+    <Content Include="Web\Context\SessionServiceFirstLook.aspx" />
+    <Content Include="Web\Context\UrlResolutionServiceFirstLook.aspx" />
+    <Content Include="Web\Check\ClientSideAPI.aspx" />
+    <Content Include="Web\Check\ServerSideAPI.aspx" />
+    <Content Include="Web\DynamicScripts\FirstLook.aspx" />
+    <Content Include="Web\DynamicScripts\test2.js" />
+    <Content Include="Web\DynamicScripts\test1.js" />
+    <Content Include="Web\FormItemDisplay\ChangingTemplates.aspx" />
+    <Content Include="Web\FormItemDisplay\FormContainerFirstLook.aspx" />
+    <Content Include="Web\FormItemDisplay\VisibilityChanges.aspx" />
+    <Content Include="Web\Link\ClientSideAPI.aspx" />
+    <Content Include="Web\Link\Databinding.aspx" />
+    <Content Include="Web\Link\ServerSideAPI.aspx" />
+    <Content Include="Web\HiddenField\FirstLook.aspx" />
+    <Content Include="Web\CustomComponents\SampleAttributeControlFirstLook.aspx" />
+    <Content Include="Web\CustomComponents\SampleWebControlFirstLook.aspx" />
+    <Content Include="Web\DropDown\FirstLook.aspx" />
+    <Content Include="Web\Link\ClientEvents.aspx" />
+    <Content Include="Web\Link\FirstLook.aspx" />
+    <Content Include="Web\Lookups\FirstLook.aspx" />
+    <Content Include="Web\PagebleList\FirstLook.aspx" />
+    <Content Include="Web\Mapping\ClientSideAPI.aspx" />
+    <Content Include="Web\Mapping\ServerSideAPI.aspx" />
+    <Content Include="Web\Math\ExtenderClientSideAPI.aspx" />
+    <Content Include="Web\Math\ViewClientSideAPI.aspx" />
+    <Content Include="Web\NavigationBars\FirstLook.aspx" />
+    <Content Include="Web\Panel\DragDrop.aspx" />
+    <Content Include="Web\Panel\Hovering.aspx" />
+    <Content Include="Web\Panel\FirstLook.aspx" />
+    <Content Include="Web\Panel\Modal.aspx" />
+    <Content Include="Web\Panel\Resizing.aspx" />
+    <Content Include="Web\Panel\TimeSensitivity.aspx" />
+    <Content Include="Web\ScriptRendering\ScriptBlockFirstLook.aspx" />
+    <Content Include="Web\TextEditor\FirstLook.aspx" />
+    <Content Include="Web\Validation\AspNetInteroperability.aspx" />
+    <Content Include="Web\Validation\ValidationResultsFirstLook.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Web.Futures\Nucleo.Web.Futures.csproj">
+      <Project>{02ADB7E0-F5E9-451F-ADA5-533BEFB76CB9}</Project>
+      <Name>Nucleo.Web.Futures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Web\Nucleo.Web.40.csproj">
+      <Project>{DF95E95B-C899-401E-BD3F-A5DE3A298D28}</Project>
+      <Name>Nucleo.Web.40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo\Nucleo.40.csproj">
+      <Project>{5535BE6E-5982-4B9A-B812-09B225EDE2C0}</Project>
+      <Name>Nucleo.40</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web\test.master" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3316</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Nucleo.OnlineTests</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

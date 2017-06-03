@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59EB9A0A-29DB-46EA-A009-01747D7CF2A8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nucleo</RootNamespace>
+    <AssemblyName>Nucleo.OnlineMVPTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Software\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Samples\Views\CreateCustomer.aspx" />
+    <Content Include="Samples\Views\SampleView.aspx" />
+    <Content Include="Samples\Views\ViewCustomers.aspx" />
+    <Content Include="Scenarios\Tabs\SecondTab.ascx" />
+    <Content Include="Scenarios\Tabs\FirstTab.ascx" />
+    <Content Include="Scenarios\Tabs\TabPage.aspx" />
+    <Content Include="Scenarios\Tabs\ThirdTab.ascx" />
+    <Content Include="Tests\AjaxRequests\AjaxCallback.ascx" />
+    <Content Include="Tests\AjaxRequests\ConfigRequestFirstLook.aspx" />
+    <Content Include="Tests\AjaxRequests\ConfigAjaxCallback.ascx" />
+    <Content Include="Tests\AjaxRequests\WcfServicesFirstLook.aspx" />
+    <Content Include="Tests\AjaxRequests\WebRequestFirstLook.aspx" />
+    <Content Include="Tests\AjaxRequests\WebServicesFirstLook.aspx" />
+    <Content Include="Tests\Ajax\AjaxViewsFirstLook.aspx" />
+    <Content Include="Tests\Ajax\AjaxViewsFirstLook.js" />
+    <Content Include="Tests\Ajax\UsingScriptManager.aspx" />
+    <Content Include="Tests\Ajax\UsingScriptManager.js" />
+    <Content Include="Tests\Customizations\PresenterInitialization.aspx" />
+    <Content Include="Tests\Customizations\Resolvers.aspx" />
+    <Content Include="Tests\Customizations\PresenterCreation.aspx" />
+    <Content Include="Tests\Customizations\PresenterDiscovery.aspx" />
+    <Content Include="Tests\Customizations\ViewInitialization.aspx" />
+    <Content Include="Tests\DataSource\NestedControls.aspx" />
+    <Content Include="Tests\DataSource\NestedControls01.ascx" />
+    <Content Include="Tests\DataSource\NestedControls02.ascx" />
+    <Content Include="Tests\DataSource\PagesFirstLook.aspx" />
+    <Content Include="Tests\DataSource\Updating.aspx" />
+    <Content Include="Tests\DataSource\UserControlsFirstLook.aspx" />
+    <Content Include="Tests\DataSource\ViewDataSourceSample.ascx" />
+    <Content Include="Tests\Hierarchy\FirstLook.aspx" />
+    <Content Include="Tests\Hierarchy\Hierarchy1.ascx" />
+    <Content Include="Tests\Hierarchy\Hierarchy2.ascx" />
+    <Content Include="Tests\MessagingWithEvents\MessageChild02.ascx" />
+    <Content Include="Tests\MessagingWithEvents\MessageChild01.ascx" />
+    <Content Include="Tests\MessagingWithEvents\MessagingWithEvents.aspx" />
+    <Content Include="Tests\Messaging\ManyMessages.ascx" />
+    <Content Include="Tests\Messaging\ManyMessagesSample.aspx" />
+    <Content Include="Tests\Messaging\MessageReceiver.ascx" />
+    <Content Include="Tests\Messaging\MessageSample.aspx" />
+    <Content Include="Tests\Messaging\MessageSender.ascx" />
+    <Content Include="Tests\ModelBinding\BindingFirstLook.aspx" />
+    <Content Include="Tests\PresenterCreation\FirstLook.aspx" />
+    <Content Include="Tests\PresenterLoading\AttributeMatchFirstLook.aspx" />
+    <Content Include="Tests\PresenterLoading\ConventionMatchFirstLook.aspx" />
+    <Content Include="Tests\PresenterLoading\ConfigurationMatchFirstLook.aspx" />
+    <Content Include="Tests\Routing\ViewConventionFirstLook.aspx" />
+    <Content Include="Tests\Routing\ViewRoutingTarget.aspx" />
+    <Content Include="Tests\SkippingPresenter\NoPresenter.aspx" />
+    <Content Include="Tests\State\FirstLook.aspx" />
+    <Content Include="Tests\State\LoginSample.aspx" />
+    <Content Include="Tests\ViewBinding\FirstLook.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebServices\MvpSampleService.asmx" />
+    <Content Include="WebServices\MvpSampleWcfService.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\MvpSampleApplicationContextRegistry.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Samples\Presenters\CreateCustomerPresenter.cs" />
+    <Compile Include="Samples\Presenters\SamplePresenter.cs" />
+    <Compile Include="Samples\Presenters\ViewCustomersPresenter.cs" />
+    <Compile Include="Samples\Views\CreateCustomer.aspx.cs">
+      <DependentUpon>CreateCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Samples\Views\CreateCustomer.aspx.designer.cs">
+      <DependentUpon>CreateCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Views\SampleView.aspx.cs">
+      <DependentUpon>SampleView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Samples\Views\SampleView.aspx.designer.cs">
+      <DependentUpon>SampleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Views\ViewCustomers.aspx.cs">
+      <DependentUpon>ViewCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Samples\Views\ViewCustomers.aspx.designer.cs">
+      <DependentUpon>ViewCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\SecondTab.ascx.cs">
+      <DependentUpon>SecondTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\SecondTab.ascx.designer.cs">
+      <DependentUpon>SecondTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\FirstTab.ascx.cs">
+      <DependentUpon>FirstTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\FirstTab.ascx.designer.cs">
+      <DependentUpon>FirstTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\TabPage.aspx.cs">
+      <DependentUpon>TabPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\TabPage.aspx.designer.cs">
+      <DependentUpon>TabPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\ThirdTab.ascx.cs">
+      <DependentUpon>ThirdTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scenarios\Tabs\ThirdTab.ascx.designer.cs">
+      <DependentUpon>ThirdTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\AjaxCallback.ascx.cs">
+      <DependentUpon>AjaxCallback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\AjaxCallback.ascx.designer.cs">
+      <DependentUpon>AjaxCallback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\ConfigRequestFirstLook.aspx.cs">
+      <DependentUpon>ConfigRequestFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\ConfigRequestFirstLook.aspx.designer.cs">
+      <DependentUpon>ConfigRequestFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\ConfigAjaxCallback.ascx.cs">
+      <DependentUpon>ConfigAjaxCallback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\ConfigAjaxCallback.ascx.designer.cs">
+      <DependentUpon>ConfigAjaxCallback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\WcfServicesFirstLook.aspx.cs">
+      <DependentUpon>WcfServicesFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\WcfServicesFirstLook.aspx.designer.cs">
+      <DependentUpon>WcfServicesFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\WebRequestFirstLook.aspx.cs">
+      <DependentUpon>WebRequestFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\WebRequestFirstLook.aspx.designer.cs">
+      <DependentUpon>WebRequestFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\WebServicesFirstLook.aspx.cs">
+      <DependentUpon>WebServicesFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\AjaxRequests\WebServicesFirstLook.aspx.designer.cs">
+      <DependentUpon>WebServicesFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Ajax\AjaxViewsFirstLook.aspx.cs">
+      <DependentUpon>AjaxViewsFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Ajax\AjaxViewsFirstLook.aspx.designer.cs">
+      <DependentUpon>AjaxViewsFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Ajax\UsingScriptManager.aspx.cs">
+      <DependentUpon>UsingScriptManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Ajax\UsingScriptManager.aspx.designer.cs">
+      <DependentUpon>UsingScriptManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Customizations\PresenterInitialization.aspx.cs">
+      <DependentUpon>PresenterInitialization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Customizations\PresenterInitialization.aspx.designer.cs">
+      <DependentUpon>PresenterInitialization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Customizations\Resolvers.aspx.cs">
+      <DependentUpon>Resolvers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Customizations\Resolvers.aspx.designer.cs">
+      <DependentUpon>Resolvers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Customizations\PresenterCreation.aspx.cs">
+      <DependentUpon>PresenterCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Customizations\PresenterCreation.aspx.designer.cs">
+      <DependentUpon>PresenterCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Customizations\PresenterDiscovery.aspx.cs">
+      <DependentUpon>PresenterDiscovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Customizations\PresenterDiscovery.aspx.designer.cs">
+      <DependentUpon>PresenterDiscovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Customizations\ViewInitialization.aspx.cs">
+      <DependentUpon>ViewInitialization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Customizations\ViewInitialization.aspx.designer.cs">
+      <DependentUpon>ViewInitialization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DataSource\NestedControls.aspx.cs">
+      <DependentUpon>NestedControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\DataSource\NestedControls.aspx.designer.cs">
+      <DependentUpon>NestedControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DataSource\NestedControls01.ascx.cs">
+      <DependentUpon>NestedControls01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\DataSource\NestedControls01.ascx.designer.cs">
+      <DependentUpon>NestedControls01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DataSource\NestedControls02.ascx.cs">
+      <DependentUpon>NestedControls02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\DataSource\NestedControls02.ascx.designer.cs">
+      <DependentUpon>NestedControls02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DataSource\PagesFirstLook.aspx.cs">
+      <DependentUpon>PagesFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\DataSource\PagesFirstLook.aspx.designer.cs">
+      <DependentUpon>PagesFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DataSource\TestClass.cs" />
+    <Compile Include="Tests\DataSource\Updating.aspx.cs">
+      <DependentUpon>Updating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\DataSource\Updating.aspx.designer.cs">
+      <DependentUpon>Updating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DataSource\UserControlsFirstLook.aspx.cs">
+      <DependentUpon>UserControlsFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\DataSource\UserControlsFirstLook.aspx.designer.cs">
+      <DependentUpon>UserControlsFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DataSource\ViewDataSourceSample.ascx.cs">
+      <DependentUpon>ViewDataSourceSample.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\DataSource\ViewDataSourceSample.ascx.designer.cs">
+      <DependentUpon>ViewDataSourceSample.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Hierarchy\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Hierarchy\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Hierarchy\Hierarchy1.ascx.cs">
+      <DependentUpon>Hierarchy1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Hierarchy\Hierarchy1.ascx.designer.cs">
+      <DependentUpon>Hierarchy1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Hierarchy\Hierarchy2.ascx.cs">
+      <DependentUpon>Hierarchy2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Hierarchy\Hierarchy2.ascx.designer.cs">
+      <DependentUpon>Hierarchy2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\MessagingWithEvents\MessageChild02.ascx.cs">
+      <DependentUpon>MessageChild02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\MessagingWithEvents\MessageChild02.ascx.designer.cs">
+      <DependentUpon>MessageChild02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\MessagingWithEvents\MessageChild01.ascx.cs">
+      <DependentUpon>MessageChild01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\MessagingWithEvents\MessageChild01.ascx.designer.cs">
+      <DependentUpon>MessageChild01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\MessagingWithEvents\MessagingWithEvents.aspx.cs">
+      <DependentUpon>MessagingWithEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\MessagingWithEvents\MessagingWithEvents.aspx.designer.cs">
+      <DependentUpon>MessagingWithEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Messaging\ManyMessages.ascx.cs">
+      <DependentUpon>ManyMessages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Messaging\ManyMessages.ascx.designer.cs">
+      <DependentUpon>ManyMessages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Messaging\ManyMessagesSample.aspx.cs">
+      <DependentUpon>ManyMessagesSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Messaging\ManyMessagesSample.aspx.designer.cs">
+      <DependentUpon>ManyMessagesSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Messaging\MessageReceiver.ascx.cs">
+      <DependentUpon>MessageReceiver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Messaging\MessageReceiver.ascx.designer.cs">
+      <DependentUpon>MessageReceiver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Messaging\MessageSample.aspx.cs">
+      <DependentUpon>MessageSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Messaging\MessageSample.aspx.designer.cs">
+      <DependentUpon>MessageSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Messaging\MessageSender.ascx.cs">
+      <DependentUpon>MessageSender.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Messaging\MessageSender.ascx.designer.cs">
+      <DependentUpon>MessageSender.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\ModelBinding\BindingFirstLook.aspx.cs">
+      <DependentUpon>BindingFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\ModelBinding\BindingFirstLook.aspx.designer.cs">
+      <DependentUpon>BindingFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\PresenterCreation\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\PresenterCreation\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\PresenterCreation\TempPresenterCreator.cs" />
+    <Compile Include="Tests\PresenterLoading\AttributeMatchFirstLook.aspx.cs">
+      <DependentUpon>AttributeMatchFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\PresenterLoading\AttributeMatchFirstLook.aspx.designer.cs">
+      <DependentUpon>AttributeMatchFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\PresenterLoading\ConventionMatchFirstLook.aspx.cs">
+      <DependentUpon>ConventionMatchFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\PresenterLoading\ConventionMatchFirstLook.aspx.designer.cs">
+      <DependentUpon>ConventionMatchFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\PresenterLoading\ConfigurationMatchFirstLook.aspx.cs">
+      <DependentUpon>ConfigurationMatchFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\PresenterLoading\ConfigurationMatchFirstLook.aspx.designer.cs">
+      <DependentUpon>ConfigurationMatchFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Routing\ViewConventionFirstLook.aspx.cs">
+      <DependentUpon>ViewConventionFirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Routing\ViewConventionFirstLook.aspx.designer.cs">
+      <DependentUpon>ViewConventionFirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Routing\ViewRoutingTarget.aspx.cs">
+      <DependentUpon>ViewRoutingTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\Routing\ViewRoutingTarget.aspx.designer.cs">
+      <DependentUpon>ViewRoutingTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\SkippingPresenter\NoPresenter.aspx.cs">
+      <DependentUpon>NoPresenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\SkippingPresenter\NoPresenter.aspx.designer.cs">
+      <DependentUpon>NoPresenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\State\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\State\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\State\LoginSample.aspx.cs">
+      <DependentUpon>LoginSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\State\LoginSample.aspx.designer.cs">
+      <DependentUpon>LoginSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\ViewBinding\FirstLook.aspx.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\ViewBinding\FirstLook.aspx.designer.cs">
+      <DependentUpon>FirstLook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\MvpSampleService.asmx.cs">
+      <DependentUpon>MvpSampleService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\MvpSampleWcfService.svc.cs">
+      <DependentUpon>MvpSampleWcfService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleo.Mvp\Nucleo.Mvp.40.csproj">
+      <Project>{4630E4ED-061D-4169-A4A1-9182B2EE9844}</Project>
+      <Name>Nucleo.Mvp.40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Web.Mvp\Nucleo.Web.Mvp.40.csproj">
+      <Project>{40952415-B9C1-49EC-A8E7-8EE91209B10C}</Project>
+      <Name>Nucleo.Web.Mvp.40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo.Web\Nucleo.Web.40.csproj">
+      <Project>{DF95E95B-C899-401E-BD3F-A5DE3A298D28}</Project>
+      <Name>Nucleo.Web.40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nucleo\Nucleo.40.csproj">
+      <Project>{5535BE6E-5982-4B9A-B812-09B225EDE2C0}</Project>
+      <Name>Nucleo.40</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tests\Forms\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2065</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Nucleo.OnlineMVPTests</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

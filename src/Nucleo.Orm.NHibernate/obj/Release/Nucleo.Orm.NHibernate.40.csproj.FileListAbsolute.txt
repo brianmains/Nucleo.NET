@@ -1,0 +1,14 @@
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Nucleo.Orm.NHibernate.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Nucleo.Orm.NHibernate.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Antlr3.Runtime.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\NHibernate.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Nucleo.40.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Nucleo.Orm.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Remotion.Data.Linq.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Nucleo.Orm.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\Nucleo.40.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\NHibernate.pdb
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\bin\Release\NHibernate.xml
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\obj\Release\ResolveAssemblyReference.cache
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\obj\Release\Nucleo.Orm.NHibernate.dll
+C:\Content\VS Projects\NucleoNet.Solution\Nucleo.Orm.NHibernate\obj\Release\Nucleo.Orm.NHibernate.pdb

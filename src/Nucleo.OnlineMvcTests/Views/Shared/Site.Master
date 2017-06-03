@@ -1,0 +1,36 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>
+		<asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+	</title>
+	
+	<%
+		Html.NucleoControls().Content().Scripts((scripts) =>
+			{
+				scripts.Insert(0, new ScriptReferencingRequestDetails("~/Scripts/MicrosoftAjax.debug.js", ScriptMode.Debug));
+				scripts.Add(new ScriptReferencingRequestDetails("~/Scripts/jquery-1.4.1.js", ScriptMode.Debug));
+			});	
+	%>
+	
+	<asp:ContentPlaceHolder ID="CssContent" runat="server" />
+</head>
+<body>
+
+	<div style="float:left;width:200px;">
+		<h1>MVC</h1>
+		
+		
+		
+	</div>
+	<div style="float:left;">
+		<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+		
+		<%
+			Html.NucleoControls().Content().Render();
+		%>
+	</div>
+</body>
+</html>
